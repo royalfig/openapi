@@ -1,16 +1,16 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Ghost Content API
+  title: Example.com
   termsOfService: https://example.com/terms/
   contact:
-    name: Ghost
-    url: https://github.com/@tryghost
+    email: contact@example.com
+    url: http://example.com/contact
   license:
-    name: MIT
-    url: https://opensource.org/licenses/MIT
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
   x-logo:
-    url: https://ghost.org/images/logos/logo-black-1.webp
+    url: https://redocly.github.io/openapi-template/logo.png
   description: >
     This is an **example** API to demonstrate features of the OpenAPI
     specification.
@@ -39,47 +39,42 @@ info:
     interfaces have done for lower-level programming, OpenAPI removes the
     guesswork in calling the service.
 tags:
-  - name: Posts
-    description: Get lists of posts filtered by various criteria.
-    externalDocs:
-      description: See the posts docs
-      url: https://ghost.org/docs/content-api/#posts
-  - name: Authors
-    description: See the authors docs
-    externalDocs:
-      url: https://ghost.org/docs/content-api/#authors
-      description: See the authors docs
-  - name: Tags
-    description: Everything about tags
-    externalDocs:
-      url: https://ghost.org/docs/content-api/#tags
-      description: See the tags docs
-  - name: Pages
-    description: See the pages docs
-    externalDocs:
-      url: https://ghost.org/docs/content-api/#pages
-      description: See the pages docs
-  - name: Tiers
-    description: See the tiers docs
-    externalDocs:
-      url: https://ghost.org/docs/content-api/#tiers
-      description: See the tiers docs
-  - name: Settings
-    description: See the settings docs
-    externalDocs:
-      url: https://ghost.org/docs/content-api/#settings
-      description: See the settings docs
+  - name: Echo
+    description: Example echo operations.
+  - name: User
+    description: Operations about users.
+  - name: Tag
+    description: This is a tag description.
 servers:
-  - url: https://{user.url}/ghost/api/content
+  - url: https://{tenant}/api/v1
     variables:
-      user.url:
-        default: demo.ghost.io
+      tenant:
+        default: www
+        description: Your tenant id
+  - url: https://example.com/api/v1
 paths:
-  /posts:
-    $ref: paths/posts.yaml
+  /users/{username}:
+    $ref: paths/users_{username}.yaml
+  /echo:
+    $ref: paths/echo.yaml
+  /pathItem:
+    $ref: paths/pathItem.yaml
+  /pathItemWithExamples:
+    $ref: paths/pathItemWithExamples.yaml
 components:
   securitySchemes:
+    main_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: http://example.com/api/oauth/dialog
+          scopes:
+            read:users: read users info
+            write:users: modify or remove users
     api_key:
       type: apiKey
-      in: query
-      name: key
+      in: header
+      name: api_key
+    basic_auth:
+      type: http
+      scheme: basic

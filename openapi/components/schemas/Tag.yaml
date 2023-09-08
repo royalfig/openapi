@@ -1,0 +1,76 @@
+type: object
+properties:
+  name:
+    type: string
+    minLength: 1
+    maxLength: 191
+    pattern: ^([^,]|$)
+  slug:
+    type: string
+    maxLength: 191
+    nullable: true
+  description:
+    type: string
+    maxLength: 500
+    nullable: true
+  feature_image:
+    type: string
+    format: uri-reference
+    maxLength: 2000
+    nullable: true
+  visibility:
+    type: string
+    enum:
+      - public
+      - internal
+  meta_title:
+    type: string
+    maxLength: 300
+    nullable: true
+  meta_description:
+    type: string
+    maxLength: 500
+    nullable: true
+  og_image:
+    type: string
+    format: uri-reference
+    maxLength: 2000
+    nullable: true
+  og_title:
+    type: string
+    maxLength: 300
+    nullable: true
+  og_description:
+    type: string
+    maxLength: 500
+    nullable: true
+  twitter_image:
+    type: string
+    format: uri-reference
+    maxLength: 2000
+    nullable: true
+  twitter_title:
+    type: string
+    maxLength: 300
+    nullable: true
+  twitter_description:
+    type: string
+    maxLength: 500
+    nullable: true
+  codeinjection_head:
+    type: string
+    maxLength: 65535
+    nullable: true
+  codeinjection_foot:
+    type: string
+    maxLength: 65535
+    nullable: true
+  canonical_url:
+    type: string
+    format: uri-reference
+    maxLength: 2000
+    nullable: true
+  accent_color:
+    type: string
+    maxLength: 50
+    nullable: true

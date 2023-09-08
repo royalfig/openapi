@@ -1,0 +1,92 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+      "title": "Ghost Content API",
+      "version": "1.0.0",
+      "description": "JavaScript SDK for accessing Ghost's content API",
+      "contact": {
+        "name": "Ghost",
+        "url": "https://ghost.org"
+      },
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "servers": [
+      {
+        "url": "https://{user.url}/ghost/api/content",
+        "variables": {
+          "user.url": {
+            "default": "demo.ghost.io"
+          }
+        }
+      }
+    ],
+    "security": [
+      {
+        "api_key": []
+      }
+    ],
+    "tags": [
+      {
+        "name": "Posts",
+        "description": "Get lists of posts filtered by various criteria.",
+        "externalDocs": {
+          "description": "See the posts docs",
+          "url": "https://ghost.org/docs/content-api/#posts"
+        }
+      },
+      {
+        "name": "Authors",
+        "description": "See the authors docs",
+        "externalDocs": {
+          "url": "https://ghost.org/docs/content-api/#authors",
+          "description": "See the authors docs"
+        }
+      },
+      {
+        "name": "Tags",
+        "description": "Everything about tags",
+        "externalDocs": {
+          "url": "https://ghost.org/docs/content-api/#tags",
+          "description": "See the tags docs"
+        }
+      },
+      {
+        "name": "Pages",
+        "description": "See the pages docs",
+        "externalDocs": {
+          "url": "https://ghost.org/docs/content-api/#pages",
+          "description": "See the pages docs"
+        }
+      },
+      {
+        "name": "Tiers",
+        "description": "See the tiers docs",
+        "externalDocs": {
+          "url": "https://ghost.org/docs/content-api/#tiers",
+          "description": "See the tiers docs"
+        }
+      },
+      {
+        "name": "Settings",
+        "description": "See the settings docs",
+        "externalDocs": {
+          "url": "https://ghost.org/docs/content-api/#settings",
+          "description": "See the settings docs"
+        }
+      }
+    ],
+   "paths": {},
+    "components": {
+      "securitySchemes": {
+        "api_key": {
+          "type": "apiKey",
+          "in": "query",
+          "name": "key"
+        }
+      },
+      "schemas": {}
+    }
+  }
