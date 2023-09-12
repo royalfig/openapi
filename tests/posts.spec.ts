@@ -1,45 +1,34 @@
 import { test, expect, BrowserContext } from '@playwright/test';
+import { urlConstructor } from './testUtils';
 
 test('gets posts', async ({ page }) => {
-  await page.routeFromHAR('./HAR/posts200.har', {
-    updateContent: "embed",
+  await page.routeFromHAR('./HAR/posts-browse.har', {
+    updateContent: 'embed',
     update: true,
   });
 
-  await page.goto(
-    'https://demo.ghost.io/ghost/api/content/posts/?limit=1&key=22444f78447824223cefc48062'
-  );
-});
-
-test('unauthorized', async ({ page }) => {
-  await page.routeFromHAR('./HAR/posts400.har', {
-    updateContent: "embed",
-    update: true,
-  });
-
-  await page.goto(
-    'https://demo.ghost.io/ghost/api/content/posts/?limit=1&key=32444f78447824223cefc48062'
-  );
+  //200
+  await page.goto(urlConstructor('content', 'posts', true, true, false, true));
 });
 
 test('gets post by slug', async ({ page }) => {
-  await page.routeFromHAR('./HAR/postSlug200.har', {
-    updateContent: "embed",
+  await page.routeFromHAR('./HAR/posts-slug.har', {
+    updateContent: 'embed',
     update: true,
   });
 
-  await page.goto(
-    'https://demo.ghost.io/ghost/api/content/posts/slug/welcome/?key=22444f78447824223cefc48062'
-  );
+  //200
+  await page.goto(urlConstructor('content', 'posts/slug/lock', true, true));
 });
 
 test('gets post by id', async ({ page }) => {
-  await page.routeFromHAR('./HAR/postId200.har', {
-    updateContent: "embed",
+  await page.routeFromHAR('./HAR/posts-id.har', {
+    updateContent: 'embed',
     update: true,
   });
 
+  //200
   await page.goto(
-    'https://demo.ghost.io/ghost/api/content/posts/605360bbce93e1003bd6ddd6/?key=22444f78447824223cefc48062'
+    urlConstructor('content', 'posts/65007dbeb6f82000019271fa', true, true)
   );
 });

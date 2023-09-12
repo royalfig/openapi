@@ -1,0 +1,63 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "bio": {
+      "nullable": true
+    },
+    "count": {
+      "additionalProperties": false,
+      "properties": {
+        "posts": {
+          "type": "integer"
+        }
+      },
+      "required": [],
+      "title": "Count",
+      "type": "object"
+    },
+    "cover_image": {
+      "nullable": true
+    },
+    "facebook": {
+      "nullable": true
+    },
+    "id": {
+      "format": "integer",
+      "type": "string"
+    },
+    "location": {
+      "nullable": true
+    },
+    "meta_description": {
+      "nullable": true
+    },
+    "meta_title": {
+      "nullable": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "profile_image": {
+      "nullable": true
+    },
+    "slug": {
+      "type": "string"
+    },
+    "twitter": {
+      "nullable": true
+    },
+    "url": {
+      "format": "uri",
+      "type": "string",
+      "x-qt-uri-protocols": [
+        "https"
+      ]
+    },
+    "website": {
+      "nullable": true
+    }
+  },
+  "required": [],
+  "title": "Author",
+  "type": "object"
+}

@@ -1,0 +1,163 @@
+{
+  "get": {
+    "description": "",
+    "operationId": "getGhostApiContentPagesId",
+    "parameters": [
+      {
+        "description": "Select fields to return",
+        "in": "query",
+        "name": "field",
+        "schema": {
+          "type": "string",
+          "example": "fields=id,title,slug"
+        }
+      },
+      {
+        "description": "id",
+        "in": "path",
+        "name": "id",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "example": "..."
+        }
+      },
+      {
+        "description": "filter them posts, bois",
+        "in": "query",
+        "name": "key",
+        "schema": {
+          "example": "22444f78447824223cefc48062",
+          "type": "string"
+        },
+        "required": true
+      }
+    ],
+    "responses": {
+      "404": {
+        "content": {
+          "application/json": {
+            "example": {
+              "errors": [
+                {
+                  "code": null,
+                  "context": "Page not found.",
+                  "details": null,
+                  "ghostErrorCode": null,
+                  "help": null,
+                  "id": "f3b5f290-5182-11ee-ae8e-ebef09e65b5b",
+                  "message": "Resource not found error, cannot read page.",
+                  "property": null,
+                  "type": "NotFoundError"
+                }
+              ]
+            },
+            "schema": {
+              "additionalProperties": false,
+              "properties": {
+                "errors": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "code": {
+                        "nullable": true
+                      },
+                      "context": {
+                        "type": "string"
+                      },
+                      "details": {
+                        "nullable": true
+                      },
+                      "ghostErrorCode": {
+                        "nullable": true
+                      },
+                      "help": {
+                        "nullable": true
+                      },
+                      "id": {
+                        "format": "uuid",
+                        "type": "string"
+                      },
+                      "message": {
+                        "type": "string"
+                      },
+                      "property": {
+                        "nullable": true
+                      },
+                      "type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [],
+                    "title": "Error",
+                    "type": "object"
+                  },
+                  "type": "array"
+                }
+              },
+              "required": [],
+              "title": "GhostAPIContentPagesIDGetRequest",
+              "type": "object"
+            }
+          }
+        },
+        "description": "",
+        "headers": {
+          "ghost-age": {
+            "description": "Custom header ghost-age",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "ghost-cache": {
+            "description": "Custom header ghost-cache",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "ghost-fastly": {
+            "description": "Custom header ghost-fastly",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "description": "Custom header status",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-cache": {
+            "description": "Custom header x-cache",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-cache-hits": {
+            "description": "Custom header x-cache-hits",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-served-by": {
+            "description": "Custom header x-served-by",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-timer": {
+            "description": "Custom header x-timer",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "summary": "Get pages by id",
+    "tags": [
+      "pages"
+    ]
+  },
+  "parameters": []
+}

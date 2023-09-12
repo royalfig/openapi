@@ -1,0 +1,201 @@
+{
+  "get": {
+    "description": "",
+    "operationId": "getGhostApiContentTiers",
+    "parameters": [
+      {
+        "description": "Select fields to return",
+        "in": "query",
+        "name": "field",
+        "schema": {
+          "type": "string",
+          "example": "fields=id,title,slug"
+        }
+      },
+      {
+        "description": "filter them posts, bois",
+        "in": "query",
+        "name": "filter",
+        "schema": {
+          "example": "visibility:public",
+          "type": "string"
+        }
+      },
+      {
+        "description": "filter them posts, bois",
+        "in": "query",
+        "name": "include",
+        "schema": {
+          "example": "benefits,monthly_price,yearly_price",
+          "type": "string"
+        }
+      },
+      {
+        "description": "filter them posts, bois",
+        "in": "query",
+        "name": "key",
+        "schema": {
+          "example": "741f226e140b5051ed3edd4f6a",
+          "type": "string"
+        },
+        "required": true
+      },
+      {
+        "description": "filter them posts, bois",
+        "in": "query",
+        "name": "limit",
+        "schema": {
+          "example": "1",
+          "type": "string"
+        }
+      },
+      {
+        "description": "filter them posts, bois",
+        "in": "query",
+        "name": "order",
+        "schema": {
+          "example": "published_at desc",
+          "type": "string"
+        }
+      },
+      {
+        "description": "filter them posts, bois",
+        "in": "query",
+        "name": "page",
+        "schema": {
+          "example": "1",
+          "type": "string"
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "content": {
+          "application/json": {
+            "example": {
+              "meta": {
+                "pagination": {
+                  "limit": 2,
+                  "next": null,
+                  "page": 1,
+                  "pages": 1,
+                  "prev": null,
+                  "total": 2
+                }
+              },
+              "tiers": [
+                {
+                  "active": true,
+                  "benefits": [],
+                  "created_at": "2023-09-12T13:17:49.000Z",
+                  "description": null,
+                  "id": "650064fd8fa9f00008e5f41a",
+                  "name": "Free",
+                  "slug": "free",
+                  "trial_days": 0,
+                  "type": "free",
+                  "updated_at": "2023-09-12T13:17:49.000Z",
+                  "visibility": "public",
+                  "welcome_page_url": null
+                },
+                {
+                  "active": true,
+                  "benefits": [
+                    "Insights into art",
+                    "1 free appraisal"
+                  ],
+                  "created_at": "2023-09-12T13:17:49.000Z",
+                  "currency": "USD",
+                  "description": "Explore the captivating stories behind great works of art that have shaped human creative expression through the ages.",
+                  "id": "650064fd8fa9f00008e5f41b",
+                  "monthly_price": 500,
+                  "name": "Fine Art",
+                  "slug": "default-product",
+                  "trial_days": 0,
+                  "type": "paid",
+                  "updated_at": "2023-09-12T13:17:49.000Z",
+                  "visibility": "public",
+                  "welcome_page_url": null,
+                  "yearly_price": 5000
+                }
+              ]
+            },
+            "schema": {
+              "type": "object",
+              "properties": {
+                "tiers": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../components/schemas/tiers.json"
+                  }
+                },
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "$ref": "../components/schemas/meta.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "",
+        "headers": {
+          "ghost-age": {
+            "description": "Custom header ghost-age",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "ghost-cache": {
+            "description": "Custom header ghost-cache",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "ghost-fastly": {
+            "description": "Custom header ghost-fastly",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "description": "Custom header status",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-cache": {
+            "description": "Custom header x-cache",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-cache-hits": {
+            "description": "Custom header x-cache-hits",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-served-by": {
+            "description": "Custom header x-served-by",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-timer": {
+            "description": "Custom header x-timer",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "summary": "Get all tiers",
+    "tags": [
+      "tiers"
+    ]
+  },
+  "parameters": []
+}

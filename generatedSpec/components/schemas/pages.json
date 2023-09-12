@@ -1,0 +1,373 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "access": {
+      "type": "boolean"
+    },
+    "authors": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bio": {
+            "nullable": true
+          },
+          "cover_image": {
+            "nullable": true
+          },
+          "facebook": {
+            "nullable": true
+          },
+          "id": {
+            "format": "integer",
+            "type": "string"
+          },
+          "location": {
+            "nullable": true
+          },
+          "meta_description": {
+            "nullable": true
+          },
+          "meta_title": {
+            "nullable": true
+          },
+          "name": {
+            "type": "string"
+          },
+          "profile_image": {
+            "nullable": true
+          },
+          "slug": {
+            "type": "string"
+          },
+          "twitter": {
+            "nullable": true
+          },
+          "url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+              "https"
+            ]
+          },
+          "website": {
+            "nullable": true
+          }
+        },
+        "required": [],
+        "title": "Author",
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "canonical_url": {
+      "nullable": true
+    },
+    "codeinjection_foot": {
+      "nullable": true
+    },
+    "codeinjection_head": {
+      "nullable": true
+    },
+    "comment_id": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "custom_excerpt": {
+      "nullable": true
+    },
+    "custom_template": {
+      "nullable": true
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "feature_image": {
+      "format": "uri",
+      "type": "string",
+      "x-qt-uri-protocols": [
+        "https"
+      ]
+    },
+    "feature_image_alt": {
+      "nullable": true
+    },
+    "feature_image_caption": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean"
+    },
+    "frontmatter": {
+      "nullable": true
+    },
+    "html": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "meta_description": {
+      "nullable": true
+    },
+    "meta_title": {
+      "nullable": true
+    },
+    "og_description": {
+      "nullable": true
+    },
+    "og_image": {
+      "nullable": true
+    },
+    "og_title": {
+      "nullable": true
+    },
+    "plaintext": {
+      "type": "string"
+    },
+    "primary_author": {
+      "additionalProperties": false,
+      "properties": {
+        "bio": {
+          "nullable": true
+        },
+        "cover_image": {
+          "nullable": true
+        },
+        "facebook": {
+          "nullable": true
+        },
+        "id": {
+          "format": "integer",
+          "type": "string"
+        },
+        "location": {
+          "nullable": true
+        },
+        "meta_description": {
+          "nullable": true
+        },
+        "meta_title": {
+          "nullable": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "profile_image": {
+          "nullable": true
+        },
+        "slug": {
+          "type": "string"
+        },
+        "twitter": {
+          "nullable": true
+        },
+        "url": {
+          "format": "uri",
+          "type": "string",
+          "x-qt-uri-protocols": [
+            "https"
+          ]
+        },
+        "website": {
+          "nullable": true
+        }
+      },
+      "required": [],
+      "title": "Author",
+      "type": "object"
+    },
+    "primary_tag": {
+      "additionalProperties": false,
+      "properties": {
+        "accent_color": {
+          "nullable": true
+        },
+        "canonical_url": {
+          "nullable": true
+        },
+        "codeinjection_foot": {
+          "nullable": true
+        },
+        "codeinjection_head": {
+          "nullable": true
+        },
+        "description": {
+          "nullable": true
+        },
+        "feature_image": {
+          "nullable": true
+        },
+        "id": {
+          "type": "string"
+        },
+        "meta_description": {
+          "nullable": true
+        },
+        "meta_title": {
+          "nullable": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "og_description": {
+          "nullable": true
+        },
+        "og_image": {
+          "nullable": true
+        },
+        "og_title": {
+          "nullable": true
+        },
+        "slug": {
+          "type": "string"
+        },
+        "twitter_description": {
+          "nullable": true
+        },
+        "twitter_image": {
+          "nullable": true
+        },
+        "twitter_title": {
+          "nullable": true
+        },
+        "url": {
+          "format": "uri",
+          "type": "string",
+          "x-qt-uri-protocols": [
+            "https"
+          ]
+        },
+        "visibility": {
+          "type": "string"
+        }
+      },
+      "required": [],
+      "title": "Tag",
+      "type": "object"
+    },
+    "published_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "reading_time": {
+      "type": "integer"
+    },
+    "show_title_and_feature_image": {
+      "type": "boolean"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "tags": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "accent_color": {
+            "nullable": true
+          },
+          "canonical_url": {
+            "nullable": true
+          },
+          "codeinjection_foot": {
+            "nullable": true
+          },
+          "codeinjection_head": {
+            "nullable": true
+          },
+          "description": {
+            "nullable": true
+          },
+          "feature_image": {
+            "nullable": true
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta_description": {
+            "nullable": true
+          },
+          "meta_title": {
+            "nullable": true
+          },
+          "name": {
+            "type": "string"
+          },
+          "og_description": {
+            "nullable": true
+          },
+          "og_image": {
+            "nullable": true
+          },
+          "og_title": {
+            "nullable": true
+          },
+          "slug": {
+            "type": "string"
+          },
+          "twitter_description": {
+            "nullable": true
+          },
+          "twitter_image": {
+            "nullable": true
+          },
+          "twitter_title": {
+            "nullable": true
+          },
+          "url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+              "https"
+            ]
+          },
+          "visibility": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Tag",
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "title": {
+      "type": "string"
+    },
+    "twitter_description": {
+      "nullable": true
+    },
+    "twitter_image": {
+      "nullable": true
+    },
+    "twitter_title": {
+      "nullable": true
+    },
+    "updated_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "url": {
+      "format": "uri",
+      "type": "string",
+      "x-qt-uri-protocols": [
+        "https"
+      ]
+    },
+    "uuid": {
+      "format": "uuid",
+      "type": "string"
+    },
+    "visibility": {
+      "type": "string"
+    }
+  },
+  "required": [],
+  "title": "Page",
+  "type": "object"
+}

@@ -1,48 +1,34 @@
 import { test, expect, BrowserContext } from '@playwright/test';
+import { urlConstructor } from './testUtils';
 
 test('gets tags', async ({ page }) => {
-  await page.context().setExtraHTTPHeaders({
-    'Accept-Version': "v5.0"
-  })
-  await page.routeFromHAR('./HAR/tags200.har', {
-    updateContent: "embed",
+  await page.routeFromHAR('./HAR/tags-browse.har', {
+    updateContent: 'embed',
     update: true,
   });
 
-  await page.goto(
-    'https://demo.ghost.io/ghost/api/content/tags/?limit=1&key=22444f78447824223cefc48062'
-  );
-});
-
-test('tags unauthorized', async ({ page }) => {
-  await page.routeFromHAR('./HAR/tags400.har', {
-    updateContent: "embed",
-    update: true,
-  });
-
-  await page.goto(
-    'https://demo.ghost.io/ghost/api/content/tags/?limit=1&key=32444f78447824223cefc48062'
-  );
+  //200
+  await page.goto(urlConstructor('content', 'tags', true, true, false, true));
 });
 
 test('gets tag by slug', async ({ page }) => {
-  await page.routeFromHAR('./HAR/tagSlug200.har', {
-    updateContent: "embed",
+  await page.routeFromHAR('./HAR/tags-slug.har', {
+    updateContent: 'embed',
     update: true,
   });
 
-  await page.goto(
-    'https://demo.ghost.io/ghost/api/content/tags/slug/fables/?key=22444f78447824223cefc48062'
-  );
+  //200
+  await page.goto(urlConstructor('content', 'tags/slug/painting', true, true));
 });
 
 test('gets tag by id', async ({ page }) => {
-  await page.routeFromHAR('./HAR/tagsId200.har', {
-    updateContent: "embed",
+  await page.routeFromHAR('./HAR/tags-id.har', {
+    updateContent: 'embed',
     update: true,
   });
 
+  //200
   await page.goto(
-    'https://demo.ghost.io/ghost/api/content/tags/5979a779df093500228e958a/?key=22444f78447824223cefc48062'
+    urlConstructor('content', 'tags/65007f03b6f8200001927220', true, true)
   );
 });

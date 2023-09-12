@@ -1,0 +1,149 @@
+{
+  "get": {
+    "description": "",
+    "operationId": "getGhostApiContentTagsSlugPainting",
+    "parameters": [
+      {
+        "description": "Select fields to return",
+        "in": "query",
+        "name": "field",
+        "schema": {
+          "type": "string",
+          "example": "fields=id,title,slug"
+        }
+      },
+      {
+        "description": "filter them posts, bois",
+        "in": "query",
+        "name": "include",
+        "schema": {
+          "example": "count.posts",
+          "type": "string"
+        }
+      },
+      {
+        "description": "filter them posts, bois",
+        "in": "query",
+        "name": "key",
+        "schema": {
+          "example": "741f226e140b5051ed3edd4f6a",
+          "type": "string"
+        },
+        "required": true
+      },
+      {
+        "description": "slug",
+        "in": "path",
+        "name": "slug",
+        "required": true,
+        "schema": {
+          "type": "string",
+          "example": "..."
+        }
+      }
+    ],
+    "responses": {
+      "200": {
+        "content": {
+          "application/json": {
+            "example": {
+              "tags": [
+                {
+                  "accent_color": null,
+                  "canonical_url": null,
+                  "codeinjection_foot": null,
+                  "codeinjection_head": null,
+                  "count": {
+                    "posts": 8
+                  },
+                  "description": null,
+                  "feature_image": null,
+                  "id": "65007f03b6f8200001927220",
+                  "meta_description": null,
+                  "meta_title": null,
+                  "name": "Painting",
+                  "og_description": null,
+                  "og_image": null,
+                  "og_title": null,
+                  "slug": "painting",
+                  "twitter_description": null,
+                  "twitter_image": null,
+                  "twitter_title": null,
+                  "url": "https://openapi.ghost.io/tag/painting/",
+                  "visibility": "public"
+                }
+              ]
+            },
+            "schema": {
+              "type": "object",
+              "properties": {
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "../components/schemas/tags.json"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "description": "",
+        "headers": {
+          "ghost-age": {
+            "description": "Custom header ghost-age",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "ghost-cache": {
+            "description": "Custom header ghost-cache",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "ghost-fastly": {
+            "description": "Custom header ghost-fastly",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "description": "Custom header status",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-cache": {
+            "description": "Custom header x-cache",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-cache-hits": {
+            "description": "Custom header x-cache-hits",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-served-by": {
+            "description": "Custom header x-served-by",
+            "schema": {
+              "type": "string"
+            }
+          },
+          "x-timer": {
+            "description": "Custom header x-timer",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "summary": "Get tags by slug",
+    "tags": [
+      "tags"
+    ]
+  },
+  "parameters": []
+}
