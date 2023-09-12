@@ -1,7 +1,7 @@
 {
   "get": {
     "description": "",
-    "operationId": "getGhostApiContentPostsId",
+    "operationId": "getGhostApiContentPosts65007Dbeb6F82000019271Fa",
     "parameters": [
       {
         "description": "Select fields to return",
@@ -201,6 +201,12 @@
                   "type": "array",
                   "items": {
                     "$ref": "../components/schemas/posts.json"
+                  }
+                },
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "$ref": "../components/schemas/meta.json"
                   }
                 }
               }

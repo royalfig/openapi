@@ -2,15 +2,24 @@
   "additionalProperties": false,
   "properties": {
     "accent_color": {
+      "type": "string",
+      "maxLength": 50,
       "nullable": true
     },
     "canonical_url": {
+      "type": "string",
+      "format": "uri-reference",
+      "maxLength": 2000,
       "nullable": true
     },
     "codeinjection_foot": {
+      "type": "string",
+      "maxLength": 65535,
       "nullable": true
     },
     "codeinjection_head": {
+      "type": "string",
+      "maxLength": 65535,
       "nullable": true
     },
     "count": {
@@ -25,42 +34,70 @@
       "type": "object"
     },
     "description": {
+      "type": "string",
+      "maxLength": 500,
       "nullable": true
     },
     "feature_image": {
+      "type": "string",
+      "format": "uri-reference",
+      "maxLength": 2000,
       "nullable": true
     },
     "id": {
       "type": "string"
     },
     "meta_description": {
+      "type": "string",
+      "maxLength": 500,
       "nullable": true
     },
     "meta_title": {
+      "type": "string",
+      "maxLength": 300,
       "nullable": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 191,
+      "pattern": "^([^,]|$)"
     },
     "og_description": {
+      "type": "string",
+      "maxLength": 500,
       "nullable": true
     },
     "og_image": {
+      "type": "string",
+      "format": "uri-reference",
+      "maxLength": 2000,
       "nullable": true
     },
     "og_title": {
+      "type": "string",
+      "maxLength": 300,
       "nullable": true
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 191,
+      "nullable": true
     },
     "twitter_description": {
+      "type": "string",
+      "maxLength": 500,
       "nullable": true
     },
     "twitter_image": {
+      "type": "string",
+      "format": "uri-reference",
+      "maxLength": 2000,
       "nullable": true
     },
     "twitter_title": {
+      "type": "string",
+      "maxLength": 300,
       "nullable": true
     },
     "url": {
@@ -71,7 +108,11 @@
       ]
     },
     "visibility": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "public",
+        "internal"
+      ]
     }
   },
   "required": [],

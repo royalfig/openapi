@@ -82,6 +82,12 @@
                   "items": {
                     "$ref": "../components/schemas/tags.json"
                   }
+                },
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "$ref": "../components/schemas/meta.json"
+                  }
                 }
               }
             }

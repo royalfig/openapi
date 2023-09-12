@@ -1,7 +1,7 @@
 {
   "get": {
     "description": "",
-    "operationId": "getGhostApiContentPagesId",
+    "operationId": "getGhostApiContentPages65007Ce1B6F82000019271De",
     "parameters": [
       {
         "description": "Select fields to return",
@@ -96,7 +96,7 @@
                 }
               },
               "required": [],
-              "title": "GhostAPIContentPagesIDGetRequest",
+              "title": "GhostAPIContentPages65007Ce1B6F82000019271DeGetRequest",
               "type": "object"
             }
           }

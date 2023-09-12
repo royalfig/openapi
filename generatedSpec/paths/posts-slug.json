@@ -202,6 +202,12 @@
                   "items": {
                     "$ref": "../components/schemas/posts.json"
                   }
+                },
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "$ref": "../components/schemas/meta.json"
+                  }
                 }
               }
             }

@@ -1,7 +1,7 @@
 {
   "get": {
     "description": "",
-    "operationId": "getGhostApiContentTagsId",
+    "operationId": "getGhostApiContentTags65007F03B6F8200001927220",
     "parameters": [
       {
         "description": "Select fields to return",
@@ -81,6 +81,12 @@
                   "type": "array",
                   "items": {
                     "$ref": "../components/schemas/tags.json"
+                  }
+                },
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "$ref": "../components/schemas/meta.json"
                   }
                 }
               }

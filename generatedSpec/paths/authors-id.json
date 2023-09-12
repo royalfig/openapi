@@ -76,6 +76,12 @@
                   "items": {
                     "$ref": "../components/schemas/authors.json"
                   }
+                },
+                "meta": {
+                  "type": "object",
+                  "properties": {
+                    "$ref": "../components/schemas/meta.json"
+                  }
                 }
               }
             }

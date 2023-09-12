@@ -2,7 +2,9 @@
   "name": "ghost-api",
   "version": "1.0.0",
   "dependencies": {
+    "@openapi-contrib/json-schema-to-openapi-schema": "^2.2.5",
     "@redocly/cli": "1.0.0-beta.127",
+    "@tryghost/admin-api-schema": "^4.5.2",
     "har-to-openapi": "^2.0.0"
   },
   "private": true,

@@ -90,5 +90,18 @@
         }
       },
       "schemas": {}
-    }
+    },
+    "x-tagGroups": [
+      {
+        "name": "Content",
+        "tags": [
+          "posts",
+          "authors",
+          "tags",
+          "pages",
+          "tiers",
+          "settings"
+        ]
+      }
+    ]
   }

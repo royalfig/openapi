@@ -5,42 +5,44 @@
       "type": "boolean"
     },
     "benefits": {
+      "type": "array",
       "items": {
         "type": "string"
       },
-      "type": "array"
+      "nullable": true
     },
     "created_at": {
       "format": "date-time",
       "type": "string"
     },
     "currency": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     },
     "description": {
-      "anyOf": [
-        {
-          "nullable": true
-        },
-        {
-          "type": "string"
-        }
-      ]
+      "type": "string",
+      "maxLength": 191,
+      "nullable": true
     },
     "id": {
       "type": "string"
     },
     "monthly_price": {
-      "type": "integer"
+      "type": "number",
+      "nullable": true
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 191
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 191,
+      "nullable": true
     },
     "trial_days": {
-      "type": "integer"
+      "type": "number",
+      "nullable": true
     },
     "type": {
       "type": "string"
@@ -50,13 +52,20 @@
       "type": "string"
     },
     "visibility": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "public",
+        "none"
+      ]
     },
     "welcome_page_url": {
+      "type": "string",
+      "maxLength": 2000,
       "nullable": true
     },
     "yearly_price": {
-      "type": "integer"
+      "type": "number",
+      "nullable": true
     }
   },
   "required": [],

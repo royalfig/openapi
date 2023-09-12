@@ -5,67 +5,22 @@
       "type": "boolean"
     },
     "authors": {
-      "items": {
-        "additionalProperties": false,
-        "properties": {
-          "bio": {
-            "nullable": true
-          },
-          "cover_image": {
-            "nullable": true
-          },
-          "facebook": {
-            "nullable": true
-          },
-          "id": {
-            "format": "integer",
-            "type": "string"
-          },
-          "location": {
-            "nullable": true
-          },
-          "meta_description": {
-            "nullable": true
-          },
-          "meta_title": {
-            "nullable": true
-          },
-          "name": {
-            "type": "string"
-          },
-          "profile_image": {
-            "nullable": true
-          },
-          "slug": {
-            "type": "string"
-          },
-          "twitter": {
-            "nullable": true
-          },
-          "url": {
-            "format": "uri",
-            "type": "string",
-            "x-qt-uri-protocols": [
-              "https"
-            ]
-          },
-          "website": {
-            "nullable": true
-          }
-        },
-        "required": [],
-        "title": "Author",
-        "type": "object"
-      },
-      "type": "array"
+      "$ref": "#/definitions/post-authors"
     },
     "canonical_url": {
+      "type": "string",
+      "format": "uri-reference",
+      "maxLength": 2000,
       "nullable": true
     },
     "codeinjection_foot": {
+      "type": "string",
+      "maxLength": 65535,
       "nullable": true
     },
     "codeinjection_head": {
+      "type": "string",
+      "maxLength": 65535,
       "nullable": true
     },
     "comment_id": {
@@ -79,31 +34,37 @@
       "type": "string"
     },
     "custom_excerpt": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 300,
+      "nullable": true
     },
     "custom_template": {
+      "type": "string",
+      "maxLength": 100,
       "nullable": true
     },
     "email_subject": {
+      "type": "string",
+      "maxLength": 300,
       "nullable": true
     },
     "excerpt": {
       "type": "string"
     },
     "feature_image": {
-      "format": "uri",
       "type": "string",
-      "x-qt-uri-extensions": [
-        ".jpg"
-      ],
-      "x-qt-uri-protocols": [
-        "https"
-      ]
+      "format": "uri-reference",
+      "maxLength": 2000,
+      "nullable": true
     },
     "feature_image_alt": {
+      "type": "string",
+      "maxLength": 65535,
       "nullable": true
     },
     "feature_image_caption": {
+      "type": "string",
+      "maxLength": 65535,
       "nullable": true
     },
     "featured": {
@@ -113,24 +74,37 @@
       "nullable": true
     },
     "html": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 1000000000,
+      "nullable": true
     },
     "id": {
       "type": "string"
     },
     "meta_description": {
+      "type": "string",
+      "maxLength": 500,
       "nullable": true
     },
     "meta_title": {
+      "type": "string",
+      "maxLength": 300,
       "nullable": true
     },
     "og_description": {
+      "type": "string",
+      "maxLength": 500,
       "nullable": true
     },
     "og_image": {
+      "type": "string",
+      "format": "uri-reference",
+      "maxLength": 2000,
       "nullable": true
     },
     "og_title": {
+      "type": "string",
+      "maxLength": 300,
       "nullable": true
     },
     "plaintext": {
@@ -192,102 +166,44 @@
       "nullable": true
     },
     "published_at": {
+      "type": "string",
       "format": "date-time",
-      "type": "string"
+      "nullable": true
     },
     "reading_time": {
       "type": "integer"
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 191
     },
     "tags": {
-      "items": {
-        "additionalProperties": false,
-        "properties": {
-          "accent_color": {
-            "nullable": true
-          },
-          "canonical_url": {
-            "nullable": true
-          },
-          "codeinjection_foot": {
-            "nullable": true
-          },
-          "codeinjection_head": {
-            "nullable": true
-          },
-          "description": {
-            "nullable": true
-          },
-          "feature_image": {
-            "nullable": true
-          },
-          "id": {
-            "type": "string"
-          },
-          "meta_description": {
-            "nullable": true
-          },
-          "meta_title": {
-            "nullable": true
-          },
-          "name": {
-            "type": "string"
-          },
-          "og_description": {
-            "nullable": true
-          },
-          "og_image": {
-            "nullable": true
-          },
-          "og_title": {
-            "nullable": true
-          },
-          "slug": {
-            "type": "string"
-          },
-          "twitter_description": {
-            "nullable": true
-          },
-          "twitter_image": {
-            "nullable": true
-          },
-          "twitter_title": {
-            "nullable": true
-          },
-          "url": {
-            "format": "uri",
-            "type": "string",
-            "x-qt-uri-protocols": [
-              "https"
-            ]
-          },
-          "visibility": {
-            "type": "string"
-          }
-        },
-        "required": [],
-        "title": "Tag",
-        "type": "object"
-      },
-      "type": "array"
+      "$ref": "#/definitions/post-tags"
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "maxLength": 2000
     },
     "twitter_description": {
+      "type": "string",
+      "maxLength": 500,
       "nullable": true
     },
     "twitter_image": {
+      "type": "string",
+      "format": "uri-reference",
+      "maxLength": 2000,
       "nullable": true
     },
     "twitter_title": {
+      "type": "string",
+      "maxLength": 300,
       "nullable": true
     },
     "updated_at": {
+      "type": "string",
       "format": "date-time",
-      "type": "string"
+      "nullable": true
     },
     "url": {
       "format": "uri",
@@ -301,7 +217,8 @@
       "type": "string"
     },
     "visibility": {
-      "type": "string"
+      "type": "string",
+      "nullable": true
     }
   },
   "required": [],

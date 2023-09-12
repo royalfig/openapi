@@ -79,46 +79,46 @@
     }
   ],
   "paths": {
-    "/ghost/api/content/authors": {
+    "/authors": {
       "$ref": "./paths/authors-browse.json"
     },
-    "/ghost/api/content/authors/1": {
+    "/authors/{id}": {
       "$ref": "./paths/authors-id.json"
     },
-    "/ghost/api/content/authors/slug/jamie": {
+    "/authors/slug/{slug}": {
       "$ref": "./paths/authors-slug.json"
     },
-    "/ghost/api/content/pages": {
+    "/pages": {
       "$ref": "./paths/pages-browse.json"
     },
-    "/ghost/api/content/pages/id": {
+    "/pages/{id}": {
       "$ref": "./paths/pages-id.json"
     },
-    "/ghost/api/content/pages/slug/favorite-paintings": {
+    "/pages/slug/{slug}": {
       "$ref": "./paths/pages-slug.json"
     },
-    "/ghost/api/content/posts": {
+    "/posts": {
       "$ref": "./paths/posts-browse.json"
     },
-    "/ghost/api/content/posts/id": {
+    "/posts/{id}": {
       "$ref": "./paths/posts-id.json"
     },
-    "/ghost/api/content/posts/slug/lock": {
+    "/posts/slug/{slug}": {
       "$ref": "./paths/posts-slug.json"
     },
-    "/ghost/api/content/settings": {
+    "/settings": {
       "$ref": "./paths/settings-browse.json"
     },
-    "/ghost/api/content/tags": {
+    "/tags": {
       "$ref": "./paths/tags-browse.json"
     },
-    "/ghost/api/content/tags/id": {
+    "/tags/{id}": {
       "$ref": "./paths/tags-id.json"
     },
-    "/ghost/api/content/tags/slug/painting": {
+    "/tags/slug/{slug}": {
       "$ref": "./paths/tags-slug.json"
     },
-    "/ghost/api/content/tiers": {
+    "/tiers": {
       "$ref": "./paths/tiers-browse.json"
     }
   },
@@ -131,5 +131,18 @@
       }
     },
     "schemas": {}
-  }
+  },
+  "x-tagGroups": [
+    {
+      "name": "Content",
+      "tags": [
+        "posts",
+        "authors",
+        "tags",
+        "pages",
+        "tiers",
+        "settings"
+      ]
+    }
+  ]
 }
