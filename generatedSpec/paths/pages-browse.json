@@ -278,6 +278,78 @@
             }
           }
         }
+      },
+      "403": {
+        "content": {
+          "application/json": {
+            "example": {
+              "errors": [
+                {
+                  "code": null,
+                  "context": "Unable to determine the authenticated member or integration. Check the supplied Content API Key and ensure cookies are being passed through if member auth is failing.",
+                  "details": null,
+                  "ghostErrorCode": null,
+                  "help": null,
+                  "id": "d0bde160-526a-11ee-a4d9-39c9d51d534b",
+                  "message": "Authorization failed",
+                  "property": null,
+                  "type": "NoPermissionError"
+                }
+              ]
+            },
+            "schema": {
+              "$ref": "../components/schemas/403.json"
+            }
+          }
+        }
+      },
+      "404": {
+        "content": {
+          "application/json": {
+            "example": {
+              "errors": [
+                {
+                  "code": null,
+                  "context": null,
+                  "details": null,
+                  "ghostErrorCode": null,
+                  "help": null,
+                  "id": "bdc87d10-526d-11ee-a4d9-39c9d51d534b",
+                  "message": "Resource not found",
+                  "property": null,
+                  "type": "NotFoundError"
+                }
+              ]
+            },
+            "schema": {
+              "$ref": "../components/schemas/404.json"
+            }
+          }
+        }
+      },
+      "422": {
+        "content": {
+          "application/json": {
+            "example": {
+              "errors": [
+                {
+                  "code": null,
+                  "context": "Validation (matches) failed for limit undefined.limit",
+                  "details": null,
+                  "ghostErrorCode": null,
+                  "help": null,
+                  "id": "4c23e990-5274-11ee-a4d9-39c9d51d534b",
+                  "message": "Validation error, cannot list posts.",
+                  "property": null,
+                  "type": "ValidationError"
+                }
+              ]
+            },
+            "schema": {
+              "$ref": "../components/schemas/422.json"
+            }
+          }
+        }
       }
     },
     "summary": "Get all pages",

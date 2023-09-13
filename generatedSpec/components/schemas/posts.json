@@ -5,23 +5,81 @@
       "type": "boolean"
     },
     "authors": {
-      "$ref": "#/definitions/post-authors"
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bio": {
+            "nullable": true
+          },
+          "cover_image": {
+            "nullable": true
+          },
+          "facebook": {
+            "nullable": true
+          },
+          "id": {
+            "format": "integer",
+            "type": "string"
+          },
+          "location": {
+            "nullable": true
+          },
+          "meta_description": {
+            "nullable": true
+          },
+          "meta_title": {
+            "nullable": true
+          },
+          "name": {
+            "type": "string"
+          },
+          "profile_image": {
+            "nullable": true
+          },
+          "slug": {
+            "type": "string"
+          },
+          "twitter": {
+            "nullable": true
+          },
+          "url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+              "https"
+            ]
+          },
+          "website": {
+            "nullable": true
+          }
+        },
+        "required": [],
+        "title": "Author",
+        "type": "object"
+      },
+      "type": "array"
     },
     "canonical_url": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri-reference",
-      "maxLength": 2000,
-      "nullable": true
+      "maxLength": 2000
     },
     "codeinjection_foot": {
-      "type": "string",
-      "maxLength": 65535,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 65535
     },
     "codeinjection_head": {
-      "type": "string",
-      "maxLength": 65535,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 65535
     },
     "comment_id": {
       "type": "string"
@@ -34,38 +92,50 @@
       "type": "string"
     },
     "custom_excerpt": {
-      "type": "string",
-      "maxLength": 300,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 300
     },
     "custom_template": {
-      "type": "string",
-      "maxLength": 100,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 100
     },
     "email_subject": {
-      "type": "string",
-      "maxLength": 300,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 300
     },
     "excerpt": {
       "type": "string"
     },
     "feature_image": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri-reference",
-      "maxLength": 2000,
-      "nullable": true
+      "maxLength": 2000
     },
     "feature_image_alt": {
-      "type": "string",
-      "maxLength": 65535,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 65535
     },
     "feature_image_caption": {
-      "type": "string",
-      "maxLength": 65535,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 65535
     },
     "featured": {
       "type": "boolean"
@@ -74,38 +144,50 @@
       "nullable": true
     },
     "html": {
-      "type": "string",
-      "maxLength": 1000000000,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 1000000000
     },
     "id": {
       "type": "string"
     },
     "meta_description": {
-      "type": "string",
-      "maxLength": 500,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
     },
     "meta_title": {
-      "type": "string",
-      "maxLength": 300,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 300
     },
     "og_description": {
-      "type": "string",
-      "maxLength": 500,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
     },
     "og_image": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri-reference",
-      "maxLength": 2000,
-      "nullable": true
+      "maxLength": 2000
     },
     "og_title": {
-      "type": "string",
-      "maxLength": 300,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 300
     },
     "plaintext": {
       "type": "string"
@@ -166,9 +248,11 @@
       "nullable": true
     },
     "published_at": {
-      "type": "string",
-      "format": "date-time",
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
     },
     "reading_time": {
       "type": "integer"
@@ -178,32 +262,109 @@
       "maxLength": 191
     },
     "tags": {
-      "$ref": "#/definitions/post-tags"
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "accent_color": {
+            "nullable": true
+          },
+          "canonical_url": {
+            "nullable": true
+          },
+          "codeinjection_foot": {
+            "nullable": true
+          },
+          "codeinjection_head": {
+            "nullable": true
+          },
+          "description": {
+            "nullable": true
+          },
+          "feature_image": {
+            "nullable": true
+          },
+          "id": {
+            "type": "string"
+          },
+          "meta_description": {
+            "nullable": true
+          },
+          "meta_title": {
+            "nullable": true
+          },
+          "name": {
+            "type": "string"
+          },
+          "og_description": {
+            "nullable": true
+          },
+          "og_image": {
+            "nullable": true
+          },
+          "og_title": {
+            "nullable": true
+          },
+          "slug": {
+            "type": "string"
+          },
+          "twitter_description": {
+            "nullable": true
+          },
+          "twitter_image": {
+            "nullable": true
+          },
+          "twitter_title": {
+            "nullable": true
+          },
+          "url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+              "https"
+            ]
+          },
+          "visibility": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Tag",
+        "type": "object"
+      },
+      "type": "array"
     },
     "title": {
       "type": "string",
       "maxLength": 2000
     },
     "twitter_description": {
-      "type": "string",
-      "maxLength": 500,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
     },
     "twitter_image": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri-reference",
-      "maxLength": 2000,
-      "nullable": true
+      "maxLength": 2000
     },
     "twitter_title": {
-      "type": "string",
-      "maxLength": 300,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 300
     },
     "updated_at": {
-      "type": "string",
-      "format": "date-time",
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
     },
     "url": {
       "format": "uri",
@@ -217,8 +378,10 @@
       "type": "string"
     },
     "visibility": {
-      "type": "string",
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [],

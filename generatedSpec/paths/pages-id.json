@@ -34,6 +34,30 @@
       }
     ],
     "responses": {
+      "403": {
+        "content": {
+          "application/json": {
+            "example": {
+              "errors": [
+                {
+                  "code": null,
+                  "context": "Unable to determine the authenticated member or integration. Check the supplied Content API Key and ensure cookies are being passed through if member auth is failing.",
+                  "details": null,
+                  "ghostErrorCode": null,
+                  "help": null,
+                  "id": "d0bde160-526a-11ee-a4d9-39c9d51d534b",
+                  "message": "Authorization failed",
+                  "property": null,
+                  "type": "NoPermissionError"
+                }
+              ]
+            },
+            "schema": {
+              "$ref": "../components/schemas/403.json"
+            }
+          }
+        }
+      },
       "404": {
         "content": {
           "application/json": {
@@ -41,114 +65,43 @@
               "errors": [
                 {
                   "code": null,
-                  "context": "Page not found.",
+                  "context": null,
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "f3b5f290-5182-11ee-ae8e-ebef09e65b5b",
-                  "message": "Resource not found error, cannot read page.",
+                  "id": "bdc87d10-526d-11ee-a4d9-39c9d51d534b",
+                  "message": "Resource not found",
                   "property": null,
                   "type": "NotFoundError"
                 }
               ]
             },
             "schema": {
-              "additionalProperties": false,
-              "properties": {
-                "errors": {
-                  "items": {
-                    "additionalProperties": false,
-                    "properties": {
-                      "code": {
-                        "nullable": true
-                      },
-                      "context": {
-                        "type": "string"
-                      },
-                      "details": {
-                        "nullable": true
-                      },
-                      "ghostErrorCode": {
-                        "nullable": true
-                      },
-                      "help": {
-                        "nullable": true
-                      },
-                      "id": {
-                        "format": "uuid",
-                        "type": "string"
-                      },
-                      "message": {
-                        "type": "string"
-                      },
-                      "property": {
-                        "nullable": true
-                      },
-                      "type": {
-                        "type": "string"
-                      }
-                    },
-                    "required": [],
-                    "title": "Error",
-                    "type": "object"
-                  },
-                  "type": "array"
-                }
-              },
-              "required": [],
-              "title": "GhostAPIContentPages65007Ce1B6F82000019271DeGetRequest",
-              "type": "object"
+              "$ref": "../components/schemas/404.json"
             }
           }
-        },
-        "description": "",
-        "headers": {
-          "ghost-age": {
-            "description": "Custom header ghost-age",
+        }
+      },
+      "422": {
+        "content": {
+          "application/json": {
+            "example": {
+              "errors": [
+                {
+                  "code": null,
+                  "context": "Validation (matches) failed for limit undefined.limit",
+                  "details": null,
+                  "ghostErrorCode": null,
+                  "help": null,
+                  "id": "4c23e990-5274-11ee-a4d9-39c9d51d534b",
+                  "message": "Validation error, cannot list posts.",
+                  "property": null,
+                  "type": "ValidationError"
+                }
+              ]
+            },
             "schema": {
-              "type": "string"
-            }
-          },
-          "ghost-cache": {
-            "description": "Custom header ghost-cache",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "ghost-fastly": {
-            "description": "Custom header ghost-fastly",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "status": {
-            "description": "Custom header status",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "x-cache": {
-            "description": "Custom header x-cache",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "x-cache-hits": {
-            "description": "Custom header x-cache-hits",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "x-served-by": {
-            "description": "Custom header x-served-by",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "x-timer": {
-            "description": "Custom header x-timer",
-            "schema": {
-              "type": "string"
+              "$ref": "../components/schemas/422.json"
             }
           }
         }

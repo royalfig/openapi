@@ -1,0 +1,47 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "errors": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "nullable": true
+          },
+          "context": {
+            "type": "string"
+          },
+          "details": {
+            "nullable": true
+          },
+          "ghostErrorCode": {
+            "nullable": true
+          },
+          "help": {
+            "nullable": true
+          },
+          "id": {
+            "format": "uuid",
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "property": {
+            "nullable": true
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [],
+        "title": "Error",
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "required": [],
+  "title": "ghostError (422)",
+  "type": "object"
+}

@@ -2,25 +2,33 @@
   "additionalProperties": false,
   "properties": {
     "accent_color": {
-      "type": "string",
-      "maxLength": 50,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 50
     },
     "canonical_url": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri-reference",
-      "maxLength": 2000,
-      "nullable": true
+      "maxLength": 2000
     },
     "codeinjection_foot": {
-      "type": "string",
-      "maxLength": 65535,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 65535
     },
     "codeinjection_head": {
-      "type": "string",
-      "maxLength": 65535,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 65535
     },
     "count": {
       "additionalProperties": false,
@@ -34,28 +42,36 @@
       "type": "object"
     },
     "description": {
-      "type": "string",
-      "maxLength": 500,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
     },
     "feature_image": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri-reference",
-      "maxLength": 2000,
-      "nullable": true
+      "maxLength": 2000
     },
     "id": {
       "type": "string"
     },
     "meta_description": {
-      "type": "string",
-      "maxLength": 500,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
     },
     "meta_title": {
-      "type": "string",
-      "maxLength": 300,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 300
     },
     "name": {
       "type": "string",
@@ -64,41 +80,55 @@
       "pattern": "^([^,]|$)"
     },
     "og_description": {
-      "type": "string",
-      "maxLength": 500,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
     },
     "og_image": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri-reference",
-      "maxLength": 2000,
-      "nullable": true
+      "maxLength": 2000
     },
     "og_title": {
-      "type": "string",
-      "maxLength": 300,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 300
     },
     "slug": {
-      "type": "string",
-      "maxLength": 191,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 191
     },
     "twitter_description": {
-      "type": "string",
-      "maxLength": 500,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 500
     },
     "twitter_image": {
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "format": "uri-reference",
-      "maxLength": 2000,
-      "nullable": true
+      "maxLength": 2000
     },
     "twitter_title": {
-      "type": "string",
-      "maxLength": 300,
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 300
     },
     "url": {
       "format": "uri",

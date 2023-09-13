@@ -6,7 +6,7 @@ export function urlConstructor(
   path: string,
   includeKey: boolean,
   includeParams: boolean,
-  badFilter: boolean = false,
+  validationError: boolean = false,
   browse = false,
 ) {
   const basePath = 'https://openapi.ghost.io/ghost/api';
@@ -41,9 +41,9 @@ export function urlConstructor(
   let params: Params = {
     include: includesValue,
     formats: 'html,plaintext',
-    filter: badFilter ? 'visibility:invisible' : 'visibility:public',
+    filter: 'visibility:public',
     order: 'published_at desc',
-    limit: '1',
+    limit: validationError ? 'a' : '1',
     page: '1',
     key: process.env.CONTENT_API_KEY,
   };
@@ -62,6 +62,10 @@ export function urlConstructor(
   
   if (!includeKey) {
     delete params.key;
+  }
+
+  if (!includeParams) {
+    params = {};
   }
 
   if (endpoint === 'settings') {
