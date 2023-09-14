@@ -3,7 +3,10 @@
   "info": {
     "title": "Ghost Content API",
     "version": "1.0.0",
-    "description": "JavaScript SDK for accessing Ghost's content API",
+    "summary": "Ghost's RESTful Content API delivers published content to the world and can be accessed in a read-only manner by any client to render in a website, app, or other embedded media.",
+    "description": {
+      "$ref": "./content-api.md"
+    },
     "contact": {
       "name": "Ghost",
       "url": "https://ghost.org"
