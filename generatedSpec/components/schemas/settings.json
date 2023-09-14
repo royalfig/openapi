@@ -2,23 +2,35 @@
   "additionalProperties": false,
   "properties": {
     "accent_color": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "allow_self_signup": {
       "type": "boolean"
     },
     "codeinjection_foot": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "codeinjection_head": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "comments_enabled": {
       "type": "string"
     },
     "cover_image": {
       "format": "uri",
-      "type": "string",
+      "type": [
+        "string",
+        "null"
+      ],
       "x-qt-uri-extensions": [
         ".jpg"
       ],
@@ -27,16 +39,28 @@
       ]
     },
     "description": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "facebook": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "firstpromoter_account": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "icon": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "lang": {
       "type": "string"
@@ -45,7 +69,10 @@
       "type": "string"
     },
     "logo": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "members_enabled": {
       "type": "boolean"
@@ -57,10 +84,16 @@
       "type": "string"
     },
     "meta_description": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "meta_title": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "navigation": {
       "items": {
@@ -80,13 +113,22 @@
       "type": "array"
     },
     "og_description": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "og_image": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "og_title": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "paid_members_enabled": {
       "type": "boolean"
@@ -95,7 +137,10 @@
       "type": "boolean"
     },
     "portal_button_icon": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "portal_button_signup_text": {
       "type": "string"
@@ -116,7 +161,10 @@
       "type": "boolean"
     },
     "portal_signup_terms_html": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "recommendations_enabled": {
       "type": "boolean"
@@ -145,16 +193,28 @@
       "type": "string"
     },
     "twitter": {
-      "type": "string"
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "twitter_description": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "twitter_image": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "twitter_title": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "url": {
       "format": "uri",

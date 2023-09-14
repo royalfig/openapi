@@ -15,7 +15,7 @@
   },
   "servers": [
     {
-      "url": "https://{user.url}",
+      "url": "https://{user.url}/ghost/api/content",
       "variables": {
         "user.url": {
           "default": "demo.ghost.io"

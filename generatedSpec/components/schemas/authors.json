@@ -2,7 +2,10 @@
   "additionalProperties": false,
   "properties": {
     "bio": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "count": {
       "additionalProperties": false,
@@ -16,35 +19,56 @@
       "type": "object"
     },
     "cover_image": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "facebook": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "id": {
       "format": "integer",
       "type": "string"
     },
     "location": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "meta_description": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "meta_title": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "name": {
       "type": "string"
     },
     "profile_image": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "slug": {
       "type": "string"
     },
     "twitter": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "url": {
       "format": "uri",
@@ -54,7 +78,10 @@
       ]
     },
     "website": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     }
   },
   "required": [],

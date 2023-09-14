@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redoc</title>
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700"
+      rel="stylesheet"
+    />
+
+    <!--
+    Redoc doesn't change outer page styles
+    -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="redoc-container"></div>
+    <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
+    <script>
+      Redoc.init(
+        './dist/bundle.yaml',
+        {
+          scrollYOffset: 50,
+          theme: {
+            colors: {
+              accent: { main: '#ff0095', light: '#ff0095', dark: '#ff0095' },
+              border: { dark: '#ff0095', light: '#ff0095' },
+              http: {get: "#ff0095"}
+            },
+            typography: {
+              fontFamily: 'Inter',
+              headings: {
+                fontFamily: 'Inter',
+              },
+              links: {
+                color: '#000',
+                fontWeight: 'bold',
+                textDecoration: 'underline'
+              }
+            },
+          },
+        },
+        document.getElementById('redoc-container')
+      );
+    </script>
+  </body>
+</html>

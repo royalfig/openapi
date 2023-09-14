@@ -35,6 +35,5 @@
     }
   },
   "required": [],
-  "title": "Meta",
   "type": "object"
 }

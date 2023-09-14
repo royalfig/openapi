@@ -6,10 +6,10 @@
       {
         "description": "Select fields to return",
         "in": "query",
-        "name": "field",
+        "name": "fields",
         "schema": {
           "type": "string",
-          "example": "fields=id,title,slug"
+          "example": "id,title,slug"
         }
       },
       {
@@ -20,16 +20,6 @@
           "example": "count.posts",
           "type": "string"
         }
-      },
-      {
-        "description": "filter them posts, bois",
-        "in": "query",
-        "name": "key",
-        "schema": {
-          "example": "741f226e140b5051ed3edd4f6a",
-          "type": "string"
-        },
-        "required": true
       },
       {
         "description": "slug",
@@ -84,10 +74,7 @@
                   }
                 },
                 "meta": {
-                  "type": "object",
-                  "properties": {
-                    "$ref": "../components/schemas/meta.json"
-                  }
+                  "$ref": "../components/schemas/meta.json"
                 }
               }
             }
@@ -156,7 +143,7 @@
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "d0bde160-526a-11ee-a4d9-39c9d51d534b",
+                  "id": "64664270-5326-11ee-bd20-3d97eb5313ad",
                   "message": "Authorization failed",
                   "property": null,
                   "type": "NoPermissionError"
@@ -167,7 +154,8 @@
               "$ref": "../components/schemas/403.json"
             }
           }
-        }
+        },
+        "description": ""
       },
       "404": {
         "content": {
@@ -180,7 +168,7 @@
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "bdc87d10-526d-11ee-a4d9-39c9d51d534b",
+                  "id": "6469c4e0-5326-11ee-bd20-3d97eb5313ad",
                   "message": "Resource not found",
                   "property": null,
                   "type": "NotFoundError"
@@ -191,7 +179,8 @@
               "$ref": "../components/schemas/404.json"
             }
           }
-        }
+        },
+        "description": ""
       },
       "422": {
         "content": {
@@ -204,7 +193,7 @@
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "4c23e990-5274-11ee-a4d9-39c9d51d534b",
+                  "id": "647fbde0-5326-11ee-bd20-3d97eb5313ad",
                   "message": "Validation error, cannot list posts.",
                   "property": null,
                   "type": "ValidationError"
@@ -215,7 +204,8 @@
               "$ref": "../components/schemas/422.json"
             }
           }
-        }
+        },
+        "description": ""
       }
     },
     "summary": "Get tags by slug",

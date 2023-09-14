@@ -6,19 +6,34 @@
         "additionalProperties": false,
         "properties": {
           "code": {
-            "nullable": true
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "context": {
-            "nullable": true
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "details": {
-            "nullable": true
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "ghostErrorCode": {
-            "nullable": true
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "help": {
-            "nullable": true
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "id": {
             "format": "uuid",
@@ -28,7 +43,10 @@
             "type": "string"
           },
           "property": {
-            "nullable": true
+            "type": [
+              "string",
+              "null"
+            ]
           },
           "type": {
             "type": "string"

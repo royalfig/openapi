@@ -7,7 +7,6 @@ test('gets posts', async ({ page }) => {
     update: true,
   });
 
-  //200
   await page.goto(urlConstructor('content', 'posts', true, true, false, true));
 });
 
@@ -17,7 +16,6 @@ test('gets post by slug', async ({ page }) => {
     update: true,
   });
 
-  //200
   await page.goto(urlConstructor('content', 'posts/slug/lock', true, true));
 });
 
@@ -27,7 +25,6 @@ test('gets post by id', async ({ page }) => {
     update: true,
   });
 
-  //200
   await page.goto(
     urlConstructor('content', 'posts/65007dbeb6f82000019271fa', true, true)
   );
