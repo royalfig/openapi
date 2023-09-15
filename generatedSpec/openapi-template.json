@@ -41,7 +41,7 @@
         }
       },
       {
-        "name": "authors",
+        "name": "Authors",
         "description": "See the authors docs",
         "externalDocs": {
           "url": "https://ghost.org/docs/content-api/#authors",
@@ -49,7 +49,7 @@
         }
       },
       {
-        "name": "tags",
+        "name": "Tags",
         "description": "Tags are the primary taxonomy within a Ghost site.",
         "externalDocs": {
           "url": "https://ghost.org/docs/content-api/#tags",
@@ -57,7 +57,7 @@
         }
       },
       {
-        "name": "pages",
+        "name": "Pages",
         "description": "Pages are static resources that are not included in channels or collections on the Ghost front-end. The API will only return pages that were created as resources and will not contain routes created with [dynamic routing](https://ghost.org/docs/themes/routing/).",
         "externalDocs": {
           "url": "https://ghost.org/docs/content-api/#pages",
@@ -65,7 +65,7 @@
         }
       },
       {
-        "name": "tiers",
+        "name": "Tiers",
         "description": "See the tiers docs",
         "externalDocs": {
           "url": "https://ghost.org/docs/content-api/#tiers",
@@ -73,7 +73,7 @@
         }
       },
       {
-        "name": "settings",
+        "name": "Settings",
         "description": "See the settings docs",
         "externalDocs": {
           "url": "https://ghost.org/docs/content-api/#settings",

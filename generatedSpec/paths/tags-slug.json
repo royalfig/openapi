@@ -13,7 +13,7 @@
         }
       },
       {
-        "description": "filter them posts, bois",
+        "description": "Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields`",
         "in": "query",
         "name": "include",
         "schema": {

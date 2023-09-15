@@ -13,7 +13,7 @@
         }
       },
       {
-        "description": "filter them posts, bois",
+        "description": "Filter the result set to only include resources that match the provided criteria",
         "in": "query",
         "name": "filter",
         "schema": {
@@ -22,7 +22,7 @@
         }
       },
       {
-        "description": "filter them posts, bois",
+        "description": "Return `HTML` or `plaintext`",
         "in": "query",
         "name": "formats",
         "schema": {
@@ -31,7 +31,7 @@
         }
       },
       {
-        "description": "filter them posts, bois",
+        "description": "Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields`",
         "in": "query",
         "name": "include",
         "schema": {
@@ -40,7 +40,7 @@
         }
       },
       {
-        "description": "filter them posts, bois",
+        "description": "Limit the number of resources in the response",
         "in": "query",
         "name": "limit",
         "schema": {
@@ -49,7 +49,7 @@
         }
       },
       {
-        "description": "filter them posts, bois",
+        "description": "Order the returned resources.",
         "in": "query",
         "name": "order",
         "schema": {
@@ -58,7 +58,7 @@
         }
       },
       {
-        "description": "filter them posts, bois",
+        "description": "Paginate through collections of resources. By default, the first 15 records are returned.",
         "in": "query",
         "name": "page",
         "schema": {

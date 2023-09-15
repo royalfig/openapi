@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <!-- Important: rapi-doc uses utf8 characters -->
+    <title>Ghost Content API</title>
     <script
       type="module"
       src="https://unpkg.com/rapidoc/dist/rapidoc-min.js"
@@ -11,33 +12,35 @@
     <style>
       rapi-doc::part(section-navbar) {
         /* <<< targets navigation bar */
-        background: linear-gradient(
-          90deg,
-          hsl(210, 19%, 12%),
-          hsl(210, 9%, 9%)
-        );
       }
     </style>
   </head>
   <body>
     <rapi-doc
       spec-url="./dist/bundle.yaml"
-      theme="dark"
+      theme="light"
       regular-font="Inter,system-ui"
       mono-font="'JetBrains Mono'"
       show-header="true"
-    
+      header-color="#fff"
+      bg-color="#fff"
+      primary-color="#343f44"
+      text-color="rgb(17, 24, 39)"
       heading-text="Ghost"
       nav-logo="./public/ghost-logo.png"
       allow-spec-file-load="false"
-      show-curl-before-try="true"
       fill-request-fields-with-example="false"
       info-description-headings-in-navbar="true"
       show-components="true"
+      nav-bg-color="#fff"
+      nav-text-color="#343f44"
+      allow-spec-file-download="true"
+      schema-style="table"
+      
     >
       <img
         slot="logo"
-        src="/ghost-logo.png"
+        src="/ghost-logo-black.png"
         style="height: 30px; width: auto; margin: 0 0 0 10px"
       />
     </rapi-doc>
