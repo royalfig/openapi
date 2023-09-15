@@ -33,8 +33,8 @@
   ],
   "tags": [
     {
-      "name": "posts",
-      "description": "Get lists of posts filtered by various criteria.",
+      "name": "Posts",
+      "description": "Posts are the primary resource in a Ghost site. Using the posts endpoint it is possible to get lists of posts filtered by various criteria.",
       "externalDocs": {
         "description": "See the posts docs",
         "url": "https://ghost.org/docs/content-api/#posts"
@@ -50,7 +50,7 @@
     },
     {
       "name": "tags",
-      "description": "Everything about tags",
+      "description": "Tags are the primary taxonomy within a Ghost site.",
       "externalDocs": {
         "url": "https://ghost.org/docs/content-api/#tags",
         "description": "See the tags docs"
@@ -58,7 +58,7 @@
     },
     {
       "name": "pages",
-      "description": "See the pages docs",
+      "description": "Pages are static resources that are not included in channels or collections on the Ghost front-end. The API will only return pages that were created as resources and will not contain routes created with [dynamic routing](https://ghost.org/docs/themes/routing/).",
       "externalDocs": {
         "url": "https://ghost.org/docs/content-api/#pages",
         "description": "See the pages docs"

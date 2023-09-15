@@ -10,16 +10,18 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "start": "redocly preview-docs",
-    "build": "redocly bundle -o dist/bundle.yaml",
-    "lint": "redocly lint",
+    "bundle": "redocly bundle -o dist/bundle.yaml",
+    "lint:oas": "redocly lint",
     "convert": "node lib/converter.js",
-    "generate": "npm run test && npm run convert",
+    "generate": "npm run test && npm run convert && redocly bundle -o dist/bundle.yaml && redocly lint",
+    "types": "npx openapi-typescript ./dist/bundle.yaml -o ./types/schema.d.ts",
     "test": "npx playwright test"
   },
   "devDependencies": {
     "@playwright/test": "^1.37.1",
     "dotenv": "^16.3.1",
+    "eslint-plugin-ghost": "^3.3.2",
+    "httpsnippet-lite": "^3.0.5",
     "vite": "^4.4.9"
   },
   "type": "module"

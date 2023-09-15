@@ -85,7 +85,10 @@
       "type": "boolean"
     },
     "frontmatter": {
-      "nullable": true
+      "type": [
+        "string",
+        "null"
+      ]
     },
     "html": {
       "type": [

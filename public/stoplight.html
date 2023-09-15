@@ -6,6 +6,14 @@
 <!-- Embed elements Elements via Web Component -->
     <script src="https://unpkg.com/@stoplight/elements/web-components.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/@stoplight/elements/styles.min.css">
+    <style>
+      @media (max-width: 1279px) {
+        body {
+        padding: 3rem;
+      }
+      }
+      
+    </style>
   </head>
   <body>
 
@@ -13,7 +21,19 @@
       apiDescriptionUrl="./dist/bundle.yaml"
       router="hash"
       layout="sidebar"
+      logo="/ghost-logo-blue.png"
+      id="docs"
     />
+
+    <script>
+                      const doc = document.getElementById('docs');
+                const updateLayout = () => {
+                    doc.layout = window.innerWidth >= 1280 ? 'sidebar' : 'stacked';
+                }
+                updateLayout();
+
+                window.onresize = updateLayout;
+    </script>
 
   </body>
 </html>

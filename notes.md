@@ -1,10 +1,4 @@
-Run tests and create HAR files
+Rewrite OperationIDs
 
-Transformations
-- Params
-    - Schema
-- Paths
-    - Text transform
-    - Combine
-- Responses
-    - Extract and refer to schema
+Settings -> Meta?
+
