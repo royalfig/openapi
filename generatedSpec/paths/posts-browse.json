@@ -140,32 +140,31 @@
                     "url": "https://openapi.ghost.io/author/jamie/",
                     "website": null
                   },
-                  "primary_tag": null,
+                  "primary_tag": {
+                    "accent_color": null,
+                    "canonical_url": null,
+                    "codeinjection_foot": null,
+                    "codeinjection_head": null,
+                    "description": null,
+                    "feature_image": null,
+                    "id": "65007f03b6f8200001927220",
+                    "meta_description": null,
+                    "meta_title": null,
+                    "name": "Painting",
+                    "og_description": null,
+                    "og_image": null,
+                    "og_title": null,
+                    "slug": "painting",
+                    "twitter_description": null,
+                    "twitter_image": null,
+                    "twitter_title": null,
+                    "url": "https://openapi.ghost.io/tag/painting/",
+                    "visibility": "public"
+                  },
                   "published_at": "2023-08-29T20:17:51.000+00:00",
                   "reading_time": 0,
                   "slug": "lock",
                   "tags": [
-                    {
-                      "accent_color": null,
-                      "canonical_url": null,
-                      "codeinjection_foot": null,
-                      "codeinjection_head": null,
-                      "description": null,
-                      "feature_image": null,
-                      "id": "65007dbeb6f82000019271f2",
-                      "meta_description": null,
-                      "meta_title": null,
-                      "name": "#Import 2023-09-12 15:03",
-                      "og_description": null,
-                      "og_image": null,
-                      "og_title": null,
-                      "slug": "hash-import-2023-09-12-15-03",
-                      "twitter_description": null,
-                      "twitter_image": null,
-                      "twitter_title": null,
-                      "url": "https://openapi.ghost.io/404/",
-                      "visibility": "internal"
-                    },
                     {
                       "accent_color": null,
                       "canonical_url": null,
@@ -238,30 +237,6 @@
         },
         "description": "",
         "headers": {
-          "fastly-sec-ratelimit": {
-            "description": "Custom header fastly-sec-ratelimit",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "fastly-sec-ratelimit-10s": {
-            "description": "Custom header fastly-sec-ratelimit-10s",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "fastly-sec-ratelimit-1s": {
-            "description": "Custom header fastly-sec-ratelimit-1s",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "fastly-sec-ratelimit-60s": {
-            "description": "Custom header fastly-sec-ratelimit-60s",
-            "schema": {
-              "type": "string"
-            }
-          },
           "ghost-age": {
             "description": "Custom header ghost-age",
             "schema": {
@@ -323,7 +298,7 @@
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "0df7b840-53d2-11ee-b9d4-5d1534125550",
+                  "id": "79021a30-5428-11ee-8591-838e0f341f7b",
                   "message": "Authorization failed",
                   "property": null,
                   "type": "NoPermissionError"
@@ -348,7 +323,7 @@
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "0df3c0a0-53d2-11ee-b9d4-5d1534125550",
+                  "id": "79378210-5428-11ee-8591-838e0f341f7b",
                   "message": "Resource not found",
                   "property": null,
                   "type": "NotFoundError"
@@ -373,7 +348,7 @@
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "0e08cf40-53d2-11ee-b9d4-5d1534125550",
+                  "id": "793a6840-5428-11ee-8591-838e0f341f7b",
                   "message": "Validation error, cannot list posts.",
                   "property": null,
                   "type": "ValidationError"

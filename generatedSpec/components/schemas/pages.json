@@ -139,8 +139,12 @@
     "plaintext": {
       "type": "string"
     },
-    "primary_author": {},
-    "primary_tag": {},
+    "primary_author": {
+      "$ref": "./authors.json"
+    },
+    "primary_tag": {
+      "$ref": "./tags.json"
+    },
     "published_at": {
       "type": [
         "string",

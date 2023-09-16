@@ -86,30 +86,6 @@
         },
         "description": "",
         "headers": {
-          "fastly-sec-ratelimit": {
-            "description": "Custom header fastly-sec-ratelimit",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "fastly-sec-ratelimit-10s": {
-            "description": "Custom header fastly-sec-ratelimit-10s",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "fastly-sec-ratelimit-1s": {
-            "description": "Custom header fastly-sec-ratelimit-1s",
-            "schema": {
-              "type": "string"
-            }
-          },
-          "fastly-sec-ratelimit-60s": {
-            "description": "Custom header fastly-sec-ratelimit-60s",
-            "schema": {
-              "type": "string"
-            }
-          },
           "ghost-age": {
             "description": "Custom header ghost-age",
             "schema": {
@@ -171,7 +147,7 @@
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "0df7b840-53d2-11ee-b9d4-5d1534125550",
+                  "id": "79021a30-5428-11ee-8591-838e0f341f7b",
                   "message": "Authorization failed",
                   "property": null,
                   "type": "NoPermissionError"
@@ -196,7 +172,7 @@
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "0df3c0a0-53d2-11ee-b9d4-5d1534125550",
+                  "id": "79378210-5428-11ee-8591-838e0f341f7b",
                   "message": "Resource not found",
                   "property": null,
                   "type": "NotFoundError"
@@ -221,7 +197,7 @@
                   "details": null,
                   "ghostErrorCode": null,
                   "help": null,
-                  "id": "0e08cf40-53d2-11ee-b9d4-5d1534125550",
+                  "id": "793a6840-5428-11ee-8591-838e0f341f7b",
                   "message": "Validation error, cannot list posts.",
                   "property": null,
                   "type": "ValidationError"

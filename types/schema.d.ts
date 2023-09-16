@@ -374,15 +374,15 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Filter the result set to only include resources that match the provided criteria */
         filter?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
-        /** @description filter them posts, bois */
+        /** @description Limit the number of resources in the response */
         limit?: string;
-        /** @description filter them posts, bois */
+        /** @description Order the returned resources. */
         order?: string;
-        /** @description filter them posts, bois */
+        /** @description Paginate through collections of resources. By default, the first 15 records are returned. */
         page?: string;
       };
     };
@@ -444,7 +444,7 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
       };
       path: {
@@ -509,7 +509,7 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
       };
       path: {
@@ -574,17 +574,17 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Filter the result set to only include resources that match the provided criteria */
         filter?: string;
-        /** @description filter them posts, bois */
+        /** @description Return `HTML` or `plaintext` */
         formats?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
-        /** @description filter them posts, bois */
+        /** @description Limit the number of resources in the response */
         limit?: string;
-        /** @description filter them posts, bois */
+        /** @description Order the returned resources. */
         order?: string;
-        /** @description filter them posts, bois */
+        /** @description Paginate through collections of resources. By default, the first 15 records are returned. */
         page?: string;
       };
     };
@@ -646,9 +646,9 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Return `HTML` or `plaintext` */
         formats?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
       };
       path: {
@@ -713,9 +713,9 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Return `HTML` or `plaintext` */
         formats?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
       };
       path: {
@@ -780,17 +780,17 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Filter the result set to only include resources that match the provided criteria */
         filter?: string;
-        /** @description filter them posts, bois */
+        /** @description Return `HTML` or `plaintext` */
         formats?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
-        /** @description filter them posts, bois */
+        /** @description Limit the number of resources in the response */
         limit?: string;
-        /** @description filter them posts, bois */
+        /** @description Order the returned resources. */
         order?: string;
-        /** @description filter them posts, bois */
+        /** @description Paginate through collections of resources. By default, the first 15 records are returned. */
         page?: string;
       };
     };
@@ -852,9 +852,9 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Return `HTML` or `plaintext` */
         formats?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
       };
       path: {
@@ -919,9 +919,9 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Return `HTML` or `plaintext` */
         formats?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
       };
       path: {
@@ -1040,15 +1040,15 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Filter the result set to only include resources that match the provided criteria */
         filter?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
-        /** @description filter them posts, bois */
+        /** @description Limit the number of resources in the response */
         limit?: string;
-        /** @description filter them posts, bois */
+        /** @description Order the returned resources. */
         order?: string;
-        /** @description filter them posts, bois */
+        /** @description Paginate through collections of resources. By default, the first 15 records are returned. */
         page?: string;
       };
     };
@@ -1110,7 +1110,7 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
       };
       path: {
@@ -1175,7 +1175,7 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
       };
       path: {
@@ -1240,15 +1240,15 @@ export interface operations {
       query?: {
         /** @description Select fields to return */
         fields?: string;
-        /** @description filter them posts, bois */
+        /** @description Filter the result set to only include resources that match the provided criteria */
         filter?: string;
-        /** @description filter them posts, bois */
+        /** @description Tells the API to return additional data related to the resource you have requested. Doesn't work well with `fields` */
         include?: string;
-        /** @description filter them posts, bois */
+        /** @description Limit the number of resources in the response */
         limit?: string;
-        /** @description filter them posts, bois */
+        /** @description Order the returned resources. */
         order?: string;
-        /** @description filter them posts, bois */
+        /** @description Paginate through collections of resources. By default, the first 15 records are returned. */
         page?: string;
       };
     };
