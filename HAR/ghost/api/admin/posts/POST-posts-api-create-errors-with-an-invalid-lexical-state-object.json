@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://yoursite.com/ghost/api/admin/posts/?formats=mobiledoc,lexical,html",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "formats",
+                            "value": "mobiledoc,lexical,html"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"posts\":[{\"title\":\"Invalid lexical state\",\"lexical\":\"{\\\"notLexical\\\":true}\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 422,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "467"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"1d3-3iAFGL2ODTd/0PqzxTb/rKcCWAU\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "467",
+                        "text": "{\"errors\":[{\"message\":\"Validation error, cannot save post.\",\"context\":\"Invalid lexical structure. Minified Lexical error #38; visit https://lexical.dev/docs/error?code=38 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.\",\"type\":\"ValidationError\",\"details\":null,\"property\":\"lexical\",\"help\":\"https://ghost.org/docs/publishing/\",\"code\":null,\"id\":\"61afbd60-5e3c-11ee-9f6e-2b825fdb2626\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

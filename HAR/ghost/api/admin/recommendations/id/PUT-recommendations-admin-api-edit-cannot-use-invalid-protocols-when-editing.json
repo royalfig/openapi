@@ -1,0 +1,75 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://yoursite.com/ghost/api/admin/recommendations/6515dfe97c9d0336f50dc43c/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"recommendations\":[{\"title\":\"Cat Pictures\",\"url\":\"https://dogpictures.com\",\"reason\":\"Because cats are cute\",\"excerpt\":\"Cats are cute\",\"featured_image\":\"ftp://dogpictures.com/dog.jpg\",\"favicon\":\"ftp://dogpictures.com/favicon.ico\",\"one_click_subscribe\":false}]}"
+                    }
+                },
+                "response": {
+                    "status": 422,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "283"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"11b-w4qvRSZSXCziI+2r4mzeR4hZ8YE\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "283",
+                        "text": "{\"errors\":[{\"message\":\"Validation error, cannot edit recommendation.\",\"context\":\"recommendations.0.featured_image must be a valid URL\",\"type\":\"ValidationError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"627dbbc1-5e3c-11ee-9f6e-2b825fdb2626\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

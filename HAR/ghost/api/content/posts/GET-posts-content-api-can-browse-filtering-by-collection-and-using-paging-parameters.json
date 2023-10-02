@@ -1,0 +1,88 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://yoursite.com/ghost/api/content/posts/?collection=latest&limit=1&page=2&key=cccccccccccccccccccccccccc",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "collection",
+                            "value": "latest"
+                        },
+                        {
+                            "name": "limit",
+                            "value": "1"
+                        },
+                        {
+                            "name": "page",
+                            "value": "2"
+                        },
+                        {
+                            "name": "key",
+                            "value": "cccccccccccccccccccccccccc"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "public, max-age=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "5906"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"1712-UsqnT2vg7omGlG4T4BhEBWFLwiw\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "5906",
+                        "text": "{\"posts\":[{\"id\":\"6194d3ce51e2700162531a76\",\"uuid\":\"cbb5de40-dfba-46da-9e24-fd6ae9a30a84\",\"title\":\"Customizing your brand and design settings\",\"slug\":\"design\",\"html\":\"<p>As discussed in the <a href=\\\"http://127.0.0.1:2369/welcome/\\\">introduction</a> post, one of the best things about Ghost is just how much you can customize to turn your site into something unique. Everything about your layout and design can be changed, so you're not stuck with yet another clone of a social network profile.</p><p>How far you want to go with customization is completely up to you, there's no right or wrong approach! The majority of people use one of Ghost's built-in themes to get started, and then progress to something more bespoke later on as their site grows. </p><p>The best way to get started is with Ghost's branding settings, where you can set up colors, images and logos to fit with your brand.</p><figure class=\\\"kg-card kg-image-card kg-width-wide kg-card-hascaption\\\"><img src=\\\"https://static.ghost.org/v4.0.0/images/brandsettings.png\\\" class=\\\"kg-image\\\" alt loading=\\\"lazy\\\" width=\\\"3456\\\" height=\\\"2338\\\"><figcaption>Ghost Admin → Settings → Branding</figcaption></figure><p>Any Ghost theme that's up to date and compatible with Ghost 4.0 and higher will reflect your branding settings in the preview window, so you can see what your site will look like as you experiment with different options.</p><p>When selecting an accent color, try to choose something which will contrast well with white text. Many themes will use your accent color as the background for buttons, headers and navigational elements. Vibrant colors with a darker hue tend to work best, as a general rule.</p><h2 id=\\\"installing-ghost-themes\\\">Installing Ghost themes</h2><p>By default, new sites are created with Ghost's friendly publication theme, called Casper. Everything in Casper is optimized to work for the most common types of blog, newsletter and publication that people create with Ghost — so it's a perfect place to start.</p><p>However, there are hundreds of different themes available to install, so you can pick out a look and feel that suits you best.</p><figure class=\\\"kg-card kg-image-card kg-width-wide kg-card-hascaption\\\"><img src=\\\"https://static.ghost.org/v4.0.0/images/themesettings.png\\\" class=\\\"kg-image\\\" alt loading=\\\"lazy\\\" width=\\\"3208\\\" height=\\\"1618\\\"><figcaption>Ghost Admin → Settings → Theme</figcaption></figure><p>Inside Ghost's theme settings you'll find 4 more official themes that can be directly installed and activated. Each theme is suited to slightly different use-cases.</p><ul><li><strong>Casper</strong> <em>(default)</em> — Made for all sorts of blogs and newsletters</li><li><strong>Edition</strong> — A beautiful minimal template for newsletter authors</li><li><strong>Alto</strong> — A slick news/magazine style design for creators</li><li><strong>London</strong> — A light photography theme with a bold grid</li><li><strong>Ease</strong> — A library theme for organizing large content archives</li></ul><p>And if none of those feel quite right, head on over to the <a href=\\\"https://ghost.org/themes/?ref=127.0.0.1\\\">Ghost Marketplace</a>, where you'll find a huge variety of both free and premium themes.</p><h2 id=\\\"building-something-custom\\\">Building something custom</h2><p>Finally, if you want something completely bespoke for your site, you can always build a custom theme from scratch and upload it to your site.</p><p>Ghost's theming template files are very easy to work with, and can be picked up in the space of a few hours by anyone who has just a little bit of knowledge of HTML and CSS. Templates from other platforms can also be ported to Ghost with relatively little effort.</p><p>If you want to take a quick look at the theme syntax to see what it's like, you can <a href=\\\"https://github.com/tryghost/casper/?ref=127.0.0.1\\\">browse through the files of the default Casper theme</a>. We've added tons of inline code comments to make it easy to learn, and the structure is very readable.</p><figure class=\\\"kg-card kg-code-card\\\"><pre><code class=\\\"language-handlebars\\\">{{#post}}\\n&lt;article class=\\\"article {{post_class}}\\\"&gt;\\n\\n    &lt;h1&gt;{{title}}&lt;/h1&gt;\\n    \\n    {{#if feature_image}}\\n    \\t&lt;img src=\\\"{{feature_image}}\\\" alt=\\\"Feature image\\\" /&gt;\\n    {{/if}}\\n    \\n    {{content}}\\n\\n&lt;/article&gt;\\n{{/post}}</code></pre><figcaption>A snippet from a post template</figcaption></figure><p>See? Not that scary! But still completely optional. </p><p>If you're interested in creating your own Ghost theme, check out our extensive <a href=\\\"https://ghost.org/docs/themes/?ref=127.0.0.1\\\">theme documentation</a> for a full guide to all the different template variables and helpers which are available.</p>\",\"comment_id\":\"6194d3ce51e2700162531a76\",\"feature_image\":\"https://static.ghost.org/v4.0.0/images/publishing-options.png\",\"featured\":false,\"visibility\":\"public\",\"created_at\":\"2023-09-28T20:19:19.000+00:00\",\"updated_at\":\"2023-09-28T20:19:19.000+00:00\",\"published_at\":\"2023-09-28T20:19:23.000+00:00\",\"custom_excerpt\":\"How to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality.\",\"codeinjection_head\":null,\"codeinjection_foot\":null,\"custom_template\":null,\"canonical_url\":null,\"url\":\"http://127.0.0.1:2369/design/\",\"excerpt\":\"How to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality.\",\"reading_time\":3,\"access\":true,\"comments\":false,\"og_image\":null,\"og_title\":null,\"og_description\":null,\"twitter_image\":null,\"twitter_title\":null,\"twitter_description\":null,\"meta_title\":null,\"meta_description\":null,\"email_subject\":null,\"frontmatter\":null,\"feature_image_alt\":null,\"feature_image_caption\":null}],\"meta\":{\"pagination\":{\"page\":2,\"limit\":1,\"pages\":11,\"total\":11,\"next\":3,\"prev\":1}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

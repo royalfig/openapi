@@ -1,0 +1,88 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://yoursite.com/ghost/api/canary/content/tags/?limit=1&key=cccccccccccccccccccccccccc",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "limit",
+                            "value": "1"
+                        },
+                        {
+                            "name": "key",
+                            "value": "cccccccccccccccccccccccccc"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "deprecation",
+                            "value": "version=\"v4\""
+                        },
+                        {
+                            "name": "link",
+                            "value": "<http://127.0.0.1:2369/ghost/api/content/tags/?limit=1&key=cccccccccccccccccccccccccc>; rel=\"latest-version\""
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "public, max-age=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "552"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"228-TNkxtfhIMvo2uSRnNvH4QF6fM3Y\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "552",
+                        "text": "{\"tags\":[{\"id\":\"6194d3ce51e2700162531a70\",\"name\":\"Getting Started\",\"slug\":\"getting-started\",\"description\":null,\"feature_image\":null,\"visibility\":\"public\",\"og_image\":null,\"og_title\":null,\"og_description\":null,\"twitter_image\":null,\"twitter_title\":null,\"twitter_description\":null,\"meta_title\":null,\"meta_description\":null,\"codeinjection_head\":null,\"codeinjection_foot\":null,\"canonical_url\":null,\"accent_color\":null,\"url\":\"http://127.0.0.1:2369/tag/getting-started/\"}],\"meta\":{\"pagination\":{\"page\":1,\"limit\":1,\"pages\":1,\"total\":1,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

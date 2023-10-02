@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://yoursite.com/ghost/api/admin/members/events/?filter=type:comment_event",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "filter",
+                            "value": "type:comment_event"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "1238"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"4d6-oT9Mhj+2gVu3cBZw093FEJK2soY\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "1238",
+                        "text": "{\"events\":[{\"type\":\"comment_event\",\"data\":{\"id\":\"6195c6a1e792de832cd08145\",\"status\":\"published\",\"html\":\"<p>Really original</p>\",\"created_at\":\"2023-09-28T20:19:22.000Z\",\"edited_at\":null,\"member\":{\"id\":\"6515dfc67c9d0336f50d9aff\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b341\",\"name\":null,\"email\":\"member2@test.com\",\"expertise\":null,\"avatar_image\":null},\"parent\":{\"id\":\"6195c6a1e792de832cd08144\",\"status\":\"published\",\"html\":\"<p>First.</p>\",\"created_at\":\"2023-09-28T20:19:22.000Z\",\"edited_at\":null,\"member\":null},\"post\":{\"id\":\"618ba1ffbe2896088840a6df\",\"uuid\":\"222414b9-157e-4942-8814-fb29e35aad8d\",\"title\":\"HTML Ipsum\",\"url\":\"http://127.0.0.1:2369/html-ipsum/\"}}},{\"type\":\"comment_event\",\"data\":{\"id\":\"6195c6a1e792de832cd08144\",\"status\":\"published\",\"html\":\"<p>First.</p>\",\"created_at\":\"2023-09-28T20:19:22.000Z\",\"edited_at\":null,\"member\":{\"id\":\"6515dfc67c9d0336f50d9afe\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b340\",\"name\":\"Mr Egg\",\"email\":\"member1@test.com\",\"expertise\":null,\"avatar_image\":null},\"post\":{\"id\":\"618ba1ffbe2896088840a6df\",\"uuid\":\"222414b9-157e-4942-8814-fb29e35aad8d\",\"title\":\"HTML Ipsum\",\"url\":\"http://127.0.0.1:2369/html-ipsum/\"}}}],\"meta\":{\"pagination\":{\"limit\":10,\"total\":2,\"pages\":1,\"page\":null,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

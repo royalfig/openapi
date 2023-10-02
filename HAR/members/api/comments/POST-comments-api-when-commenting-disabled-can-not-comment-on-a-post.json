@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://yoursite.com/members/api/comments/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"comments\":[{\"post_id\":\"618ba1ffbe2896088840a6df\",\"html\":\"<p>This is a <strong>message</strong></p><p>New line</p>\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 405,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "271"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"10f-lyrur3GyiTPEz6wBvfyXQct/D54\""
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "271",
+                        "text": "{\"errors\":[{\"message\":\"Method not allowed, cannot save comment.\",\"context\":\"Comments are not enabled for this site.\",\"type\":\"MethodNotAllowedError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"7107a840-5e3c-11ee-9f73-2b825fdb2626\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

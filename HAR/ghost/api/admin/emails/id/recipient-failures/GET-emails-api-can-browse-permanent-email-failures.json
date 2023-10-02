@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://yoursite.com/ghost/api/admin/emails/6515dfc67c9d0336f50d9b28/recipient-failures/?filter=severity:permanent&order=failed_at%20DESC",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "filter",
+                            "value": "severity:permanent"
+                        },
+                        {
+                            "name": "order",
+                            "value": "failed_at DESC"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "342"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"156-PbcKjQ/FPhAVvH8d2DIOGLIVvbM\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "342",
+                        "text": "{\"failures\":[{\"id\":\"6515dfc67c9d0336f50d9b90\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Test failure\",\"severity\":\"permanent\",\"failed_at\":\"2023-09-28T20:19:18.000Z\",\"event_id\":\"event-id-6515dfc67c9d0336f50d9b91\",\"member\":null,\"email_recipient\":null}],\"meta\":{\"pagination\":{\"page\":1,\"limit\":15,\"pages\":1,\"total\":1,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

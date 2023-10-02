@@ -1,0 +1,75 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://yoursite.com/ghost/api/admin/offers/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"offers\":[{\"name\":\"Fourth of July Sales\",\"code\":\"july4\",\"cadence\":\"year\",\"amount\":150,\"duration\":\"once\",\"type\":\"fixed\",\"currency\":\"USD\",\"tier\":{\"id\":\"6515dfc67c9d0336f50d9c10\"}}]}"
+                    }
+                },
+                "response": {
+                    "status": 400,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "280"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"118-V9roL4zkbmmsVwpCNWMOgwoagj8\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "280",
+                        "text": "{\"errors\":[{\"message\":\"Validation error, cannot save offer.\",\"context\":\"Offer 'name' must be unique. Please change and try again.\",\"type\":\"InvalidOfferName\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"5ea78670-5e3c-11ee-9f6e-2b825fdb2626\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://yoursite.com/members/api/feedback/?uuid=f6f91461-d7d8-4a3f-aa5d-8e582c40b340",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "uuid",
+                            "value": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"feedback\":[{\"score\":\"text\",\"post_id\":\"618ba1ffbe2896088840a6df\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 422,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "282"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"11a-Xt6Q9zKsAXvRKpD+kIkiPkr9fvY\""
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "282",
+                        "text": "{\"errors\":[{\"message\":\"Validation error, cannot save feedback.\",\"context\":\"Invalid feedback score. Only 1 or 0 is currently allowed.\",\"type\":\"ValidationError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"69938bb0-5e3c-11ee-9f6f-2b825fdb2626\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

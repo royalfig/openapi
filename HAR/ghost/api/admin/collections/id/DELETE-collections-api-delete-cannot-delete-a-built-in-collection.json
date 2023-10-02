@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "DELETE",
+                    "url": "https://yoursite.com/ghost/api/admin/collections/6515dfc67c9d0336f50d9c0f/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 405,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "355"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"163-Obqz2MhYfg05ACRKwhwm9fhMiOE\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "355",
+                        "text": "{\"errors\":[{\"message\":\"Method not allowed, cannot delete collection.\",\"context\":\"Cannot delete builtin collection The collection 6515dfc67c9d0336f50d9c0f is a builtin collection and cannot be deleted\",\"type\":\"MethodNotAllowedError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"50d77410-5e3c-11ee-9f6e-2b825fdb2626\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

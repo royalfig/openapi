@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://yoursite.com/members/api/member/newsletters/?uuid=f6f91461-d7d8-4a3f-aa5d-8e582c40b340",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "uuid",
+                            "value": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"enable_comment_notifications\":false}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "253"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"fd-zI6gLE0kIBReccdAcLeuDuBtrOE\""
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "253",
+                        "text": "{\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b340\",\"email\":\"member1@test.com\",\"name\":\"Mr Egg\",\"newsletters\":[{\"id\":\"6515dfc67c9d0336f50d9b06\",\"name\":\"Daily newsletter\",\"description\":null,\"sort_order\":1}],\"enable_comment_notifications\":false,\"status\":\"free\"}"
+                    }
+                }
+            }
+        ]
+    }
+}

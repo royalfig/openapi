@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://yoursite.com/members/api/comments/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"comments\":[{\"post_id\":\"618ba1ffbe2896088840a6df\",\"parent_id\":\"6195c6a1e792de832cd08144\",\"html\":\"This is a reply\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 401,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "250"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"fa-OazIDq9E/7cYk7qKjg1GwA1WTMQ\""
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "250",
+                        "text": "{\"errors\":[{\"message\":\"Authorisation error, cannot save comment.\",\"context\":\"Unable to find member\",\"type\":\"UnauthorizedError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"70b6f030-5e3c-11ee-9f73-2b825fdb2626\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

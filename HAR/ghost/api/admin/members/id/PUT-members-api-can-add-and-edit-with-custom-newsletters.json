@@ -1,0 +1,75 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://yoursite.com/ghost/api/admin/members/6515dfde7c9d0336f50db431/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"members\":[{\"newsletters\":[{\"id\":\"6515dfc67c9d0336f50d9b06\"}]}]}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "943"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"3af-FnJReEngMzBFS/2dmUU63yThnWo\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "943",
+                        "text": "{\"members\":[{\"id\":\"6515dfde7c9d0336f50db431\",\"uuid\":\"c02b2772-acbf-4222-9e91-33d6de785bc0\",\"email\":\"memberTestAddNewsletter2@test.com\",\"name\":\"test newsletter\",\"note\":\"test note\",\"geolocation\":null,\"subscribed\":true,\"created_at\":\"2023-09-28T20:19:42.000Z\",\"updated_at\":\"2023-09-28T20:19:42.000Z\",\"labels\":[{\"id\":\"6515dfdd7c9d0336f50db393\",\"name\":\"test-label\",\"slug\":\"test-label\",\"created_at\":\"2023-09-28T20:19:41.000Z\",\"updated_at\":\"2023-09-28T20:19:41.000Z\"}],\"subscriptions\":[],\"avatar_image\":null,\"comped\":false,\"email_count\":0,\"email_opened_count\":0,\"email_open_rate\":null,\"status\":\"free\",\"last_seen_at\":null,\"attribution\":{\"id\":null,\"type\":null,\"url\":null,\"title\":null,\"referrer_source\":\"Created manually\",\"referrer_medium\":\"Ghost Admin\",\"referrer_url\":null},\"tiers\":[],\"email_suppression\":{\"suppressed\":false,\"info\":null},\"newsletters\":[{\"id\":\"6515dfc67c9d0336f50d9b06\",\"name\":\"Daily newsletter\",\"description\":null,\"status\":\"active\"}]}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

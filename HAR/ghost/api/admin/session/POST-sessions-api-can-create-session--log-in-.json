@@ -1,0 +1,79 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://yoursite.com/ghost/api/admin/session/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "text/plain; charset=utf-8",
+                        "text": "{\"grant_type\":\"password\",\"username\":\"jbloggs@example.com\",\"password\":\"Sl1m3rson99\"}"
+                    }
+                },
+                "response": {
+                    "status": 201,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "text/plain; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "7"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"7-rM9AyJuqT6iOan/xHh+AW+7K/T8\""
+                        },
+                        {
+                            "name": "set-cookie",
+                            "value": "ghost-admin-api-session=s%3AHjW7NEoovfNpjWs7iq-SONgVVg9FCm7O.A9YeG0tOuZEHsrm30ABMhkJWZncxXsRqY1NMLH8GT%2BA; Path=/ghost; Expires=Fri, 29 Mar 2024 08:19:54 GMT; HttpOnly; SameSite=Lax"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "text/plain; charset=utf-8",
+                        "size": "7",
+                        "text": "{}"
+                    }
+                }
+            }
+        ]
+    }
+}

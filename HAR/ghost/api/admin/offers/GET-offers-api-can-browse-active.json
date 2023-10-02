@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://yoursite.com/ghost/api/admin/offers/?filter=status%3Aactive",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "filter",
+                            "value": "status:active"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "1461"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"5b5-VhVXXx6E9QZDqbLR6AVGSMxHwF8\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "1461",
+                        "text": "{\"offers\":[{\"id\":\"6515dfe37c9d0336f50dbc37\",\"name\":\"Easter Sales\",\"code\":\"easter\",\"display_title\":\"\",\"display_description\":\"\",\"type\":\"percent\",\"cadence\":\"month\",\"amount\":50,\"duration\":\"once\",\"duration_in_months\":null,\"currency_restriction\":false,\"currency\":null,\"status\":\"active\",\"redemption_count\":0,\"tier\":{\"id\":\"6515dfc67c9d0336f50d9c10\",\"name\":\"Default Product\"}},{\"id\":\"6515dfe37c9d0336f50dbc39\",\"name\":\"Summer Sale\",\"code\":\"summer-sale\",\"display_title\":\"\",\"display_description\":\"\",\"type\":\"percent\",\"cadence\":\"year\",\"amount\":20,\"duration\":\"once\",\"duration_in_months\":null,\"currency_restriction\":false,\"currency\":null,\"status\":\"active\",\"redemption_count\":0,\"tier\":{\"id\":\"6515dfc67c9d0336f50d9c10\",\"name\":\"Default Product\"}},{\"id\":\"6515dfe37c9d0336f50dbc3b\",\"name\":\"Fourth of July Sales\",\"code\":\"4th\",\"display_title\":\"\",\"display_description\":\"\",\"type\":\"fixed\",\"cadence\":\"year\",\"amount\":100,\"duration\":\"once\",\"duration_in_months\":null,\"currency_restriction\":true,\"currency\":\"USD\",\"status\":\"active\",\"redemption_count\":0,\"tier\":{\"id\":\"6515dfc67c9d0336f50d9c10\",\"name\":\"Default Product\"}},{\"id\":\"6515dfe37c9d0336f50dbc3d\",\"name\":\"Fourth of July Sales trial\",\"code\":\"4th-trial\",\"display_title\":\"\",\"display_description\":\"\",\"type\":\"trial\",\"cadence\":\"year\",\"amount\":20,\"duration\":\"trial\",\"duration_in_months\":null,\"currency_restriction\":false,\"currency\":null,\"status\":\"active\",\"redemption_count\":0,\"tier\":{\"id\":\"6515dfc67c9d0336f50d9c10\",\"name\":\"Default Product\"}}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

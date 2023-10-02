@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://yoursite.com/ghost/api/admin/members/events/?filter=type:email_opened_event",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "filter",
+                            "value": "type:email_opened_event"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "1358"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"54e-rrevtxwTTCSqlb+wj+PgzhKFiO4\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "1358",
+                        "text": "{\"events\":[{\"type\":\"email_opened_event\",\"data\":{\"id\":\"6515dfc67c9d0336f50d9b2f\",\"member_id\":\"6515dfc67c9d0336f50d9b02\",\"created_at\":\"2023-09-28T20:19:18.000Z\",\"member\":{\"id\":\"6515dfc67c9d0336f50d9b02\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b344\",\"email\":\"comped@test.com\",\"status\":\"paid\",\"name\":\"Vinz Clortho\",\"expertise\":null,\"note\":null,\"geolocation\":null,\"enable_comment_notifications\":true,\"email_count\":1,\"email_opened_count\":1,\"email_open_rate\":null,\"email_disabled\":false,\"last_seen_at\":null,\"last_commented_at\":null,\"created_at\":\"2023-09-28T20:19:22.000Z\",\"updated_at\":\"2023-09-28T20:19:22.000Z\",\"avatar_image\":null},\"email\":{\"id\":\"6515dfc67c9d0336f50d9b28\",\"post_id\":\"618ba1ffbe2896088840a6df\",\"uuid\":\"6b6afda6-4b5e-4893-bff6-f16859e8349a\",\"status\":\"submitted\",\"recipient_filter\":\"all\",\"error\":null,\"error_data\":null,\"email_count\":2,\"delivered_count\":1,\"opened_count\":1,\"failed_count\":0,\"subject\":\"You got mailed!\",\"from\":null,\"reply_to\":null,\"html\":\"<p>Look! I'm an email</p>\",\"plaintext\":\"Waba-daba-dab-da\",\"source\":null,\"source_type\":\"html\",\"track_opens\":false,\"track_clicks\":false,\"feedback_enabled\":false,\"submitted_at\":\"2023-09-28T20:19:18.000Z\",\"newsletter_id\":null,\"created_at\":\"2023-09-28T20:19:18.000Z\",\"updated_at\":\"2023-09-28T20:19:18.000Z\"}}}],\"meta\":{\"pagination\":{\"limit\":10,\"total\":1,\"pages\":1,\"page\":null,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

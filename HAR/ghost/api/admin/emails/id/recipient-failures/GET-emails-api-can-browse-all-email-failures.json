@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://yoursite.com/ghost/api/admin/emails/6515dfc67c9d0336f50d9b28/recipient-failures/?order=failed_at%20DESC",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "order",
+                            "value": "failed_at DESC"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "1322"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"52a-nX8bWnndYdKwq/oqDY3rKTSJkzQ\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "1322",
+                        "text": "{\"failures\":[{\"id\":\"6515dfc67c9d0336f50d9b88\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Temporary failure\",\"severity\":\"temporary\",\"failed_at\":\"2023-09-28T20:19:18.000Z\",\"event_id\":\"event-id-6515dfc67c9d0336f50d9b89\",\"member\":null,\"email_recipient\":null},{\"id\":\"6515dfc67c9d0336f50d9b8a\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Temporary failure\",\"severity\":\"temporary\",\"failed_at\":\"2023-09-28T20:19:18.000Z\",\"event_id\":\"event-id-6515dfc67c9d0336f50d9b8b\",\"member\":null,\"email_recipient\":null},{\"id\":\"6515dfc67c9d0336f50d9b8c\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Temporary failure\",\"severity\":\"temporary\",\"failed_at\":\"2023-09-28T20:19:18.000Z\",\"event_id\":\"event-id-6515dfc67c9d0336f50d9b8d\",\"member\":null,\"email_recipient\":null},{\"id\":\"6515dfc67c9d0336f50d9b8e\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Temporary failure\",\"severity\":\"temporary\",\"failed_at\":\"2023-09-28T20:19:18.000Z\",\"event_id\":\"event-id-6515dfc67c9d0336f50d9b8f\",\"member\":null,\"email_recipient\":null},{\"id\":\"6515dfc67c9d0336f50d9b90\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Test failure\",\"severity\":\"permanent\",\"failed_at\":\"2023-09-28T20:19:18.000Z\",\"event_id\":\"event-id-6515dfc67c9d0336f50d9b91\",\"member\":null,\"email_recipient\":null}],\"meta\":{\"pagination\":{\"page\":1,\"limit\":15,\"pages\":1,\"total\":5,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

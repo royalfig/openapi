@@ -1,0 +1,79 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://yoursite.com/ghost/api/admin/settings/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"settings\":[{\"key\":\"title\",\"value\":\"Ghost\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "x-cache-invalidate",
+                            "value": "/*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "4571"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"11db-faLXycZVirOiVlM1lb4urHfkBOA\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "4571",
+                        "text": "{\"settings\":[{\"key\":\"members_track_sources\",\"value\":true},{\"key\":\"title\",\"value\":\"Ghost\"},{\"key\":\"description\",\"value\":\"Thoughts, stories and ideas\"},{\"key\":\"logo\",\"value\":\"\"},{\"key\":\"cover_image\",\"value\":\"https://static.ghost.org/v5.0.0/images/publication-cover.jpg\"},{\"key\":\"icon\",\"value\":\"\"},{\"key\":\"accent_color\",\"value\":\"#FF1A75\"},{\"key\":\"locale\",\"value\":\"en\"},{\"key\":\"timezone\",\"value\":\"Etc/UTC\"},{\"key\":\"codeinjection_head\",\"value\":\"\"},{\"key\":\"codeinjection_foot\",\"value\":\"\"},{\"key\":\"facebook\",\"value\":\"ghost\"},{\"key\":\"twitter\",\"value\":\"@ghost\"},{\"key\":\"navigation\",\"value\":\"[{\\\"label\\\":\\\"Home\\\",\\\"url\\\":\\\"/\\\"},{\\\"label\\\":\\\"About\\\",\\\"url\\\":\\\"/about/\\\"},{\\\"label\\\":\\\"Collection\\\",\\\"url\\\":\\\"/tag/getting-started/\\\"},{\\\"label\\\":\\\"Author\\\",\\\"url\\\":\\\"/author/ghost/\\\"},{\\\"label\\\":\\\"Portal\\\",\\\"url\\\":\\\"/portal/\\\"}]\"},{\"key\":\"secondary_navigation\",\"value\":\"[{\\\"label\\\":\\\"Data & privacy\\\",\\\"url\\\":\\\"/privacy/\\\"},{\\\"label\\\":\\\"Contact\\\",\\\"url\\\":\\\"/contact/\\\"},{\\\"label\\\":\\\"Contribute →\\\",\\\"url\\\":\\\"/contribute/\\\"}]\"},{\"key\":\"meta_title\",\"value\":null},{\"key\":\"meta_description\",\"value\":null},{\"key\":\"og_image\",\"value\":null},{\"key\":\"og_title\",\"value\":null},{\"key\":\"og_description\",\"value\":null},{\"key\":\"twitter_image\",\"value\":null},{\"key\":\"twitter_title\",\"value\":null},{\"key\":\"twitter_description\",\"value\":null},{\"key\":\"active_theme\",\"value\":\"casper\"},{\"key\":\"is_private\",\"value\":false},{\"key\":\"password\",\"value\":\"\"},{\"key\":\"public_hash\",\"value\":\"71659446db0384716584b5176f6824\"},{\"key\":\"default_content_visibility\",\"value\":\"public\"},{\"key\":\"default_content_visibility_tiers\",\"value\":\"[]\"},{\"key\":\"members_signup_access\",\"value\":\"all\"},{\"key\":\"members_support_address\",\"value\":\"noreply\"},{\"key\":\"stripe_secret_key\",\"value\":null},{\"key\":\"stripe_publishable_key\",\"value\":null},{\"key\":\"stripe_plans\",\"value\":\"[]\"},{\"key\":\"stripe_connect_publishable_key\",\"value\":\"pk_test_for_stripe\"},{\"key\":\"stripe_connect_secret_key\",\"value\":\"••••••••\"},{\"key\":\"stripe_connect_livemode\",\"value\":null},{\"key\":\"stripe_connect_display_name\",\"value\":null},{\"key\":\"stripe_connect_account_id\",\"value\":null},{\"key\":\"members_monthly_price_id\",\"value\":null},{\"key\":\"members_yearly_price_id\",\"value\":null},{\"key\":\"portal_name\",\"value\":true},{\"key\":\"portal_button\",\"value\":true},{\"key\":\"portal_plans\",\"value\":\"[\\\"free\\\"]\"},{\"key\":\"portal_products\",\"value\":\"[]\"},{\"key\":\"portal_button_style\",\"value\":\"icon-and-text\"},{\"key\":\"portal_button_icon\",\"value\":null},{\"key\":\"portal_button_signup_text\",\"value\":\"Subscribe\"},{\"key\":\"portal_signup_terms_html\",\"value\":null},{\"key\":\"portal_signup_checkbox_required\",\"value\":false},{\"key\":\"mailgun_domain\",\"value\":null},{\"key\":\"mailgun_api_key\",\"value\":null},{\"key\":\"mailgun_base_url\",\"value\":null},{\"key\":\"email_track_opens\",\"value\":true},{\"key\":\"email_track_clicks\",\"value\":true},{\"key\":\"email_verification_required\",\"value\":true},{\"key\":\"amp\",\"value\":false},{\"key\":\"amp_gtag_id\",\"value\":null},{\"key\":\"firstpromoter\",\"value\":false},{\"key\":\"firstpromoter_id\",\"value\":null},{\"key\":\"labs\",\"value\":\"{\\\"i18n\\\":true,\\\"activitypub\\\":true,\\\"webmentions\\\":true,\\\"lexicalEditor\\\":true,\\\"urlCache\\\":true,\\\"lexicalMultiplayer\\\":true,\\\"websockets\\\":true,\\\"stripeAutomaticTax\\\":true,\\\"emailCustomization\\\":true,\\\"adminXSettings\\\":true,\\\"mailEvents\\\":true,\\\"collectionsCard\\\":true,\\\"tipsAndDonations\\\":true,\\\"importMemberTier\\\":true,\\\"recommendations\\\":true,\\\"lexicalIndicators\\\":true,\\\"audienceFeedback\\\":true,\\\"collections\\\":true,\\\"themeErrorsNotification\\\":true,\\\"outboundLinkTagging\\\":true,\\\"announcementBar\\\":true,\\\"signupForm\\\":true,\\\"members\\\":true}\"},{\"key\":\"slack_url\",\"value\":\"\"},{\"key\":\"slack_username\",\"value\":\"Ghost\"},{\"key\":\"unsplash\",\"value\":true},{\"key\":\"shared_views\",\"value\":\"[]\"},{\"key\":\"editor_default_email_recipients\",\"value\":\"visibility\"},{\"key\":\"editor_default_email_recipients_filter\",\"value\":\"all\"},{\"key\":\"announcement_content\",\"value\":null},{\"key\":\"announcement_visibility\",\"value\":\"[]\"},{\"key\":\"announcement_background\",\"value\":\"dark\"},{\"key\":\"comments_enabled\",\"value\":\"off\"},{\"key\":\"outbound_link_tagging\",\"value\":true},{\"key\":\"pintura\",\"value\":true},{\"key\":\"pintura_js_url\",\"value\":null},{\"key\":\"pintura_css_url\",\"value\":null},{\"key\":\"donations_currency\",\"value\":\"USD\"},{\"key\":\"donations_suggested_amount\",\"value\":\"0\"},{\"key\":\"recommendations_enabled\",\"value\":false},{\"key\":\"members_enabled\",\"value\":true},{\"key\":\"members_invite_only\",\"value\":false},{\"key\":\"allow_self_signup\",\"value\":true},{\"key\":\"paid_members_enabled\",\"value\":true},{\"key\":\"firstpromoter_account\",\"value\":null},{\"key\":\"donations_enabled\",\"value\":true}],\"meta\":{}}"
+                    }
+                }
+            }
+        ]
+    }
+}

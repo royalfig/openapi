@@ -1,0 +1,62 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://yoursite.com/members/api/create-stripe-checkout-session/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json",
+                        "text": "{\"customerEmail\":\"paid@test.com\",\"type\":\"donation\",\"successUrl\":\"https://example.com/?type=success\",\"cancelUrl\":\"https://example.com/?type=cancel\",\"metadata\":{\"test\":\"hello\",\"attribution_id\":\"618ba1ffbe2896088840a6df\",\"attribution_url\":\"/html-ipsum/\",\"attribution_type\":\"post\",\"referrer_source\":\"Ghost Explore\",\"referrer_medium\":\"Ghost Network\",\"referrer_url\":\"example.com\"}}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json",
+                        "text": "{\"url\":\"https://checkout.stripe.com/c/pay/fake-data\"}"
+                    }
+                }
+            }
+        ]
+    }
+}

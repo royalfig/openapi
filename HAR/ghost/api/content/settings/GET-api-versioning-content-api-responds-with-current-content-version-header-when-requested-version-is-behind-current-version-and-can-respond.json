@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://yoursite.com/ghost/api/content/settings/?key=cccccccccccccccccccccccccc",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "Accept-Version",
+                            "value": "v3.0"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "key",
+                            "value": "cccccccccccccccccccccccccc"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "public, max-age=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "1418"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"58a-kDjaYMWRzTHGsbpq1anhFwexxT0\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "1418",
+                        "text": "{\"settings\":{\"title\":\"Ghost\",\"description\":\"Thoughts, stories and ideas\",\"logo\":null,\"icon\":null,\"accent_color\":\"#FF1A75\",\"cover_image\":\"https://static.ghost.org/v5.0.0/images/publication-cover.jpg\",\"facebook\":\"ghost\",\"twitter\":\"@ghost\",\"lang\":\"en\",\"locale\":\"en\",\"timezone\":\"Etc/UTC\",\"codeinjection_head\":null,\"codeinjection_foot\":null,\"navigation\":[{\"label\":\"Home\",\"url\":\"/\"},{\"label\":\"About\",\"url\":\"/about/\"},{\"label\":\"Collection\",\"url\":\"/tag/getting-started/\"},{\"label\":\"Author\",\"url\":\"/author/ghost/\"},{\"label\":\"Portal\",\"url\":\"/portal/\"}],\"secondary_navigation\":[{\"label\":\"Data & privacy\",\"url\":\"/privacy/\"},{\"label\":\"Contact\",\"url\":\"/contact/\"},{\"label\":\"Contribute →\",\"url\":\"/contribute/\"}],\"meta_title\":null,\"meta_description\":null,\"og_image\":null,\"og_title\":null,\"og_description\":null,\"twitter_image\":null,\"twitter_title\":null,\"twitter_description\":null,\"members_support_address\":\"noreply\",\"members_enabled\":true,\"allow_self_signup\":true,\"members_invite_only\":false,\"paid_members_enabled\":true,\"firstpromoter_account\":null,\"portal_button_style\":\"icon-and-text\",\"portal_button_signup_text\":\"Subscribe\",\"portal_button_icon\":null,\"portal_signup_terms_html\":null,\"portal_signup_checkbox_required\":false,\"portal_plans\":[\"free\"],\"portal_name\":true,\"portal_button\":true,\"comments_enabled\":\"off\",\"recommendations_enabled\":false,\"outbound_link_tagging\":true,\"url\":\"http://127.0.0.1:2369/\",\"version\":\"5.65\"},\"meta\":{}}"
+                    }
+                }
+            }
+        ]
+    }
+}

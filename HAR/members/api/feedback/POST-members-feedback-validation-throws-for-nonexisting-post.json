@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://yoursite.com/members/api/feedback/?uuid=f6f91461-d7d8-4a3f-aa5d-8e582c40b340",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "uuid",
+                            "value": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"feedback\":[{\"score\":1,\"post_id\":\"123\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 404,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "246"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"f6-InKZ3J/ctdgCqbnuRY1lJGa8gHE\""
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "246",
+                        "text": "{\"errors\":[{\"message\":\"Resource not found error, cannot save feedback.\",\"context\":\"Post not found.\",\"type\":\"NotFoundError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"6995ae90-5e3c-11ee-9f6f-2b825fdb2626\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

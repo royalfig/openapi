@@ -1,0 +1,79 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://yoursite.com/ghost/api/admin/members/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"members\":[{\"name\":\"Name\",\"email\":\"compedtest2@test.com\",\"newsletters\":[{\"id\":\"6515dfc67c9d0336f50d9c12\",\"uuid\":\"068884a7-f4cb-466e-be55-7fe4c1e7dc17\",\"name\":\"Default Newsletter\",\"description\":null,\"feedback_enabled\":false,\"slug\":\"default-newsletter\",\"sender_name\":null,\"sender_email\":null,\"sender_reply_to\":\"newsletter\",\"status\":\"active\",\"visibility\":\"members\",\"subscribe_on_signup\":true,\"sort_order\":0,\"header_image\":null,\"show_header_icon\":true,\"show_header_title\":true,\"title_font_category\":\"sans_serif\",\"title_alignment\":\"center\",\"show_feature_image\":true,\"body_font_category\":\"sans_serif\",\"footer_content\":null,\"show_badge\":true,\"show_header_name\":true,\"show_post_title_section\":true,\"show_comment_cta\":true,\"show_subscription_details\":false,\"show_latest_posts\":false,\"background_color\":\"light\",\"border_color\":null,\"title_color\":null,\"created_at\":\"2023-09-28T20:19:18.000Z\",\"updated_at\":\"2023-09-28T20:19:18.000Z\"}]}]}"
+                    }
+                },
+                "response": {
+                    "status": 201,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "location",
+                            "value": "http://127.0.0.1:2369/ghost/api/admin/members/6515dfde7c9d0336f50db3c7/"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "761"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"2f9-2t84wy1K8Ol0wuNXDJtFMlhZhoQ\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "761",
+                        "text": "{\"members\":[{\"id\":\"6515dfde7c9d0336f50db3c7\",\"uuid\":\"50a70b6e-e07e-481a-b7cd-98a43438baf0\",\"email\":\"compedtest2@test.com\",\"name\":\"Name\",\"note\":null,\"geolocation\":null,\"subscribed\":true,\"created_at\":\"2023-09-28T20:19:42.000Z\",\"updated_at\":\"2023-09-28T20:19:42.000Z\",\"labels\":[],\"subscriptions\":[],\"avatar_image\":null,\"comped\":false,\"email_count\":0,\"email_opened_count\":0,\"email_open_rate\":null,\"status\":\"free\",\"last_seen_at\":null,\"attribution\":{\"id\":null,\"type\":null,\"url\":null,\"title\":null,\"referrer_source\":\"Created manually\",\"referrer_medium\":\"Ghost Admin\",\"referrer_url\":null},\"tiers\":[],\"email_suppression\":{\"suppressed\":false,\"info\":null},\"newsletters\":[{\"id\":\"6515dfc67c9d0336f50d9c12\",\"name\":\"Default Newsletter\",\"description\":null,\"status\":\"active\"}]}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

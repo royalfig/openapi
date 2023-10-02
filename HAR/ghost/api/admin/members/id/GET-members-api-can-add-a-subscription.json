@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://yoursite.com/ghost/api/admin/members/6515dfc67c9d0336f50d9afe/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "2736"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"ab0-fqcKPlXgh6LQ7OetMJPlV+F7SFA\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "2736",
+                        "text": "{\"members\":[{\"id\":\"6515dfc67c9d0336f50d9afe\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b340\",\"email\":\"member1@test.com\",\"name\":\"Mr Egg\",\"note\":null,\"geolocation\":null,\"subscribed\":true,\"created_at\":\"2023-09-28T20:19:41.000Z\",\"updated_at\":\"2023-09-28T20:19:42.000Z\",\"labels\":[{\"id\":\"6515dfc67c9d0336f50d9b09\",\"name\":\"Label 1\",\"slug\":\"label-1\",\"created_at\":\"2023-09-28T20:19:18.000Z\",\"updated_at\":\"2023-09-28T20:19:18.000Z\"}],\"subscriptions\":[{\"id\":\"subs_d61a32ad22d95ad2\",\"customer\":{\"id\":\"cust_5481a2971823b8b7\",\"name\":null,\"email\":\"member1@test.com\"},\"plan\":{\"id\":\"pric_49e95000a0167c94\",\"nickname\":\"Monthly\",\"amount\":500,\"interval\":\"month\",\"currency\":\"USD\"},\"status\":\"active\",\"start_date\":\"2023-09-28T20:19:42.000Z\",\"default_payment_card_last4\":null,\"cancel_at_period_end\":false,\"cancellation_reason\":null,\"current_period_end\":\"2023-10-29T20:19:42.000Z\",\"trial_start_at\":null,\"trial_end_at\":null,\"price\":{\"id\":\"pric_49e95000a0167c94\",\"price_id\":\"6515dfde7c9d0336f50db41e\",\"nickname\":\"Monthly\",\"amount\":500,\"interval\":\"month\",\"type\":\"recurring\",\"currency\":\"USD\",\"tier\":{\"id\":\"prod_fea9b9c552554395\",\"name\":\"Default Product\",\"tier_id\":\"6515dfc67c9d0336f50d9c10\"}},\"tier\":{\"id\":\"6515dfc67c9d0336f50d9c10\",\"name\":\"Default Product\",\"slug\":\"default-product\",\"active\":true,\"welcome_page_url\":\"/welcome-paid\",\"visibility\":\"public\",\"trial_days\":0,\"description\":null,\"type\":\"paid\",\"currency\":\"usd\",\"monthly_price\":500,\"yearly_price\":5000,\"created_at\":\"2023-09-28T20:19:18.000Z\",\"updated_at\":\"2023-09-28T20:19:42.000Z\",\"monthly_price_id\":\"6515dfc67c9d0336f50d9b18\",\"yearly_price_id\":\"6515dfc67c9d0336f50d9b19\",\"expiry_at\":null},\"offer\":null,\"attribution\":{\"id\":null,\"type\":null,\"url\":null,\"title\":null,\"referrer_source\":null,\"referrer_medium\":null,\"referrer_url\":null}}],\"avatar_image\":null,\"comped\":false,\"email_count\":0,\"email_opened_count\":0,\"email_open_rate\":null,\"status\":\"paid\",\"last_seen_at\":null,\"attribution\":{\"id\":\"618ba1ffbe2896088840a6df\",\"type\":\"post\",\"url\":\"http://127.0.0.1:2369/html-ipsum/\",\"title\":\"HTML Ipsum\",\"referrer_source\":\"Twitter\",\"referrer_medium\":\"Social\",\"referrer_url\":\"https://twitter.com\"},\"tiers\":[{\"id\":\"6515dfc67c9d0336f50d9c10\",\"name\":\"Default Product\",\"slug\":\"default-product\",\"active\":true,\"welcome_page_url\":\"/welcome-paid\",\"visibility\":\"public\",\"trial_days\":0,\"description\":null,\"type\":\"paid\",\"currency\":\"usd\",\"monthly_price\":500,\"yearly_price\":5000,\"created_at\":\"2023-09-28T20:19:18.000Z\",\"updated_at\":\"2023-09-28T20:19:42.000Z\",\"monthly_price_id\":\"6515dfc67c9d0336f50d9b18\",\"yearly_price_id\":\"6515dfc67c9d0336f50d9b19\",\"expiry_at\":null}],\"email_suppression\":{\"suppressed\":false,\"info\":null},\"newsletters\":[{\"id\":\"6515dfc67c9d0336f50d9b06\",\"name\":\"Daily newsletter\",\"description\":null,\"status\":\"active\"}]}]}"
+                    }
+                }
+            }
+        ]
+    }
+}
