@@ -1,0 +1,75 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/members/stripe_connect/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 302,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "location",
+                            "value": "https://connect.stripe.com/oauth/authorize?response_type=code&scope=read_write&client_id=ca_8LBuZWhYshxF0A55KgCXu8PRTquCKC5x&redirect_uri=https%3A%2F%2Fstripe.ghost.org&state=eyJtb2RlIjoibGl2ZSIsInJhbmRvbVN0YXRlIjoiNzdkNjkxMjQwNGNlYzlkOGYxMDMwY2RkZTE1YmQyZjYifQ%3D%3D"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "text/plain; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "289"
+                        },
+                        {
+                            "name": "set-cookie",
+                            "value": "ghost-admin-api-session=s%3A4u5MA0irJVpp8Yb_PuiRb_0Pkb4AcghV.phRqDp2iW0i30M9FEnxbW%2FzLMJroZGDH7QdmwLkcatI; Path=/ghost; Expires=Wed, 03 Apr 2024 09:00:40 GMT; HttpOnly; SameSite=Lax"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "text/plain; charset=utf-8",
+                        "size": "289",
+                        "text": "{}"
+                    }
+                }
+            }
+        ]
+    }
+}

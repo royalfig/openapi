@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/content/posts/?fields=excerpt&key=cccccccccccccccccccccccccc",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "fields",
+                            "value": "excerpt"
+                        },
+                        {
+                            "name": "key",
+                            "value": "cccccccccccccccccccccccccc"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "public, max-age=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "2241"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"8c1-BFpj6fkqc2TQ09Ih8hIgAoKbYsY\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "2241",
+                        "text": "{\"posts\":[{\"excerpt\":\"\"},{\"excerpt\":\"\"},{\"excerpt\":\"\"},{\"excerpt\":\"markdown\\n\"},{\"excerpt\":\"We've crammed the most important information to help you get started with Ghost into this one post. It's your cheat-sheet to get started, and your shortcut to advanced features.\"},{\"excerpt\":\"How to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality.\"},{\"excerpt\":\"A full overview of all the features built into the Ghost editor, including powerful workflow automations to speed up your creative process.\"},{\"excerpt\":\"How Ghost allows you to turn anonymous readers into an audience of active subscribers, so you know what's working and what isn't.\"},{\"excerpt\":\"\"},{\"excerpt\":\"A guide to collaborating with other staff users to publish, and some resources to help you with the next steps of growing your business\"},{\"excerpt\":\"Work with all your favorite apps and tools or create your own custom integrations using the Ghost API.\"},{\"excerpt\":\" * Lorem\\n * Aliquam\\n * Tortor\\n * Morbi\\n * Praesent\\n * Pellentesque\\n\\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.\\n\\n1234abcdefghijkl\\n\\nDefinition listConsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia\"},{\"excerpt\":\"testing\\n\\n\\nmctesters\\n\\n\\n * test\\n * line\\n * items\\n\"},{\"excerpt\":\"HTML Ipsum Presents\\n\\nPellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum o\"},{\"excerpt\":\"This is my custom excerpt!\"}],\"meta\":{\"pagination\":{\"page\":1,\"limit\":15,\"pages\":1,\"total\":15,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "CanFetchMrrHistory",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "meta": {
+                                "totals": [
+                                    {
+                                        "currency": "usd",
+                                        "mrr": 1000
+                                    }
+                                ]
+                            },
+                            "stats": [
+                                {
+                                    "currency": "usd",
+                                    "date": "2023-10-02",
+                                    "mrr": 0
+                                },
+                                {
+                                    "currency": "usd",
+                                    "date": "2023-10-03",
+                                    "mrr": 1000
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "mrr": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/mrr.json"
+                                    }
+                                },
+                                "meta": {
+                                    "$ref": "../components/schemas/meta.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can fetch mrr history",
+        "tags": [
+            "mrr"
+        ]
+    },
+    "parameters": []
+}

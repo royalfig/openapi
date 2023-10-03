@@ -1,0 +1,91 @@
+{
+    "parameters": [],
+    "post": {
+        "description": "",
+        "operationId": "ErrorsWhenPriceIsTooLarge",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "tiers": [
+                            {
+                                "currency": "usd",
+                                "monthly_price": 9007199254740991,
+                                "name": "Blah"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "tiers": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "currency": {
+                                            "type": "string"
+                                        },
+                                        "monthly_price": {
+                                            "type": "integer"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Tier",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminTiersPostRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "422": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Tier prices may not exceed 999999.99",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "f3f94a50-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Validation error, cannot save tier.",
+                                    "property": null,
+                                    "type": "ValidationError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "tiers": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/tiers.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Errors when price is too large",
+        "tags": [
+            "tiers"
+        ]
+    }
+}

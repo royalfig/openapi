@@ -1,0 +1,133 @@
+{
+    "parameters": [],
+    "post": {
+        "description": "",
+        "operationId": "SlugifiesOfferCodes",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "offers": [
+                            {
+                                "amount": 20,
+                                "cadence": "year",
+                                "code": "Summer sale",
+                                "duration": "once",
+                                "name": "Summer Sale",
+                                "tier": {
+                                    "id": "651c80e31334699742ce735a"
+                                },
+                                "type": "percent"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "offers": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "amount": {
+                                            "type": "integer"
+                                        },
+                                        "cadence": {
+                                            "type": "string"
+                                        },
+                                        "code": {
+                                            "type": "string"
+                                        },
+                                        "duration": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "tier": {
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "id": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [],
+                                            "title": "Tier",
+                                            "type": "object"
+                                        },
+                                        "type": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Offer",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminOffersPostRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "offers": [
+                                {
+                                    "amount": 20,
+                                    "cadence": "year",
+                                    "code": "summer-sale",
+                                    "currency": null,
+                                    "currency_restriction": false,
+                                    "display_description": "",
+                                    "display_title": "",
+                                    "duration": "once",
+                                    "duration_in_months": null,
+                                    "id": "651c81001334699742ce9383",
+                                    "name": "Summer Sale",
+                                    "redemption_count": 0,
+                                    "status": "active",
+                                    "tier": {
+                                        "id": "651c80e31334699742ce735a"
+                                    },
+                                    "type": "percent"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "offers": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/offers.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": "",
+                "headers": {
+                    "x-cache-invalidate": {
+                        "description": "Custom header x-cache-invalidate",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "summary": "Slugifies offer codes",
+        "tags": [
+            "offers"
+        ]
+    }
+}

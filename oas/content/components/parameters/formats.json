@@ -1,0 +1,9 @@
+{
+    "description": "Return `HTML` or `plaintext`",
+    "in": "query",
+    "name": "formats",
+    "schema": {
+        "example": "mobiledoc,lexical",
+        "type": "string"
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/stats/subscriptions/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "463"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"1cf-KHC46uimpDk0lJU3EW3kqrZT7YU\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "463",
+                        "text": "{\"stats\":[{\"date\":\"2023-10-03\",\"tier\":\"651c80e31334699742ce735a\",\"cadence\":\"month\",\"positive_delta\":5,\"negative_delta\":1,\"signups\":5,\"cancellations\":0,\"count\":2},{\"date\":\"2023-10-03\",\"tier\":\"651c80e31334699742ce735a\",\"cadence\":\"year\",\"positive_delta\":0,\"negative_delta\":0,\"signups\":0,\"cancellations\":0,\"count\":0}],\"meta\":{\"cadences\":[\"year\",\"month\"],\"tiers\":[\"651c80e31334699742ce735a\"],\"totals\":[{\"count\":2,\"tier\":\"651c80e31334699742ce735a\",\"cadence\":\"month\"}]}}"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "pagination": {
+            "additionalProperties": false,
+            "properties": {
+                "limit": {
+                    "type": "integer"
+                },
+                "next": {
+                    "nullable": true
+                },
+                "page": {
+                    "type": "integer"
+                },
+                "pages": {
+                    "type": "integer"
+                },
+                "prev": {
+                    "nullable": true
+                },
+                "total": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Pagination",
+            "type": "object"
+        }
+    },
+    "required": [],
+    "type": "object"
+}

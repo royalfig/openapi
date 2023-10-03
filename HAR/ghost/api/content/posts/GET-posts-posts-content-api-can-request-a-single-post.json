@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/content/posts/618ba1ffbe2896088840a6df/?key=cccccccccccccccccccccccccc",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "key",
+                            "value": "cccccccccccccccccccccccccc"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "public, max-age=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "2358"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"936-RfRzB8loLstTixmac9c6QK9Koc0\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "2358",
+                        "text": "{\"posts\":[{\"id\":\"618ba1ffbe2896088840a6df\",\"uuid\":\"557a334b-595f-4910-ab60-31e321e6ef3f\",\"title\":\"HTML Ipsum\",\"slug\":\"html-ipsum\",\"html\":\"<!--kg-card-begin: markdown--><h1>HTML Ipsum Presents</h1><p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href=\\\"#\\\">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p><h2>Header Level 2</h2><ol><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ol><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote><h3>Header Level 3</h3><ul><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ul><pre><code>#header h1 a{display: block;width: 300px;height: 80px;}</code></pre><!--kg-card-end: markdown-->\",\"comment_id\":\"618ba1ffbe2896088840a6df\",\"feature_image\":\"https://example.com/super_photo.jpg\",\"featured\":false,\"visibility\":\"public\",\"created_at\":\"2023-10-03T21:00:19.000+00:00\",\"updated_at\":\"2023-10-03T21:01:01.000+00:00\",\"published_at\":\"2015-01-01T00:00:00.000+00:00\",\"custom_excerpt\":\"This is my custom excerpt!\",\"codeinjection_head\":null,\"codeinjection_foot\":null,\"custom_template\":null,\"canonical_url\":null,\"url\":\"http://127.0.0.1:2369/html-ipsum/\",\"excerpt\":\"This is my custom excerpt!\",\"reading_time\":1,\"access\":true,\"comments\":false,\"og_image\":null,\"og_title\":null,\"og_description\":null,\"twitter_image\":null,\"twitter_title\":null,\"twitter_description\":null,\"meta_title\":null,\"meta_description\":null,\"email_subject\":null,\"frontmatter\":null,\"feature_image_alt\":null,\"feature_image_caption\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

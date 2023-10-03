@@ -1,0 +1,84 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/ghost/api/admin/snippets/?formats=lexical",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "formats",
+                            "value": "lexical"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"snippets\":[{\"name\":\"change me\",\"mobiledoc\":\"{}\",\"lexical\":\"{}\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 201,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "location",
+                            "value": "http://127.0.0.1:2369/ghost/api/admin/snippets/651c81091334699742cea25e/"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "162"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"a2-r03xNk/V3527CjgivACgfGd5tfc\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "162",
+                        "text": "{\"snippets\":[{\"id\":\"651c81091334699742cea25e\",\"name\":\"change me\",\"lexical\":\"{}\",\"created_at\":\"2023-10-03T21:00:57.000Z\",\"updated_at\":\"2023-10-03T21:00:57.000Z\"}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

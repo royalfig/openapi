@@ -1,0 +1,62 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/members/api/create-stripe-checkout-session/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json",
+                        "text": "{\"customerEmail\":\"test-member-create-donation-session@email.com\",\"identity\":\"eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCIsImtpZCI6InBwSDdVU3ZycGljc2p6WDhiOTFxc01NUXFaeDBxOVRBUG5RMFpTTEV0cncifQ.eyJzdWIiOiJ0ZXN0LW1lbWJlci1jcmVhdGUtZG9uYXRpb24tc2Vzc2lvbkBlbWFpbC5jb20iLCJraWQiOiJwcEg3VVN2cnBpY3Nqelg4YjkxcXNNTVFxWngwcTlUQVBuUTBaU0xFdHJ3IiwiaWF0IjoxNjk2MzY2ODY1LCJleHAiOjE2OTYzNjc0NjUsImF1ZCI6Imh0dHA6Ly8xMjcuMC4wLjE6MjM2OS9tZW1iZXJzL2FwaSIsImlzcyI6Imh0dHA6Ly8xMjcuMC4wLjE6MjM2OS9tZW1iZXJzL2FwaSJ9.JOJ1xImMNL48p2jnLgFonbM1351kn2pXc7YiuEVHdjIb5IL4WwoGqdjvdaSqM-MwS1VykkAOr2__AD0rsryZaSq_7_BT1wkQD6g6FD26nrxekuRk9n7MRm9mJMCKuPsHZxLup_32UbtQ33B1rvQiu08h9VComOcConZnPSjNhg4\",\"type\":\"donation\",\"successUrl\":\"https://example.com/?type=success\",\"cancelUrl\":\"https://example.com/?type=cancel\",\"metadata\":{\"test\":\"hello\",\"attribution_id\":\"618ba1ffbe2896088840a6df\",\"attribution_url\":\"/html-ipsum/\",\"attribution_type\":\"post\",\"referrer_source\":\"Ghost Explore\",\"referrer_medium\":\"Ghost Network\",\"referrer_url\":\"example.com\"}}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json",
+                        "text": "{\"url\":\"https://checkout.stripe.com/c/pay/fake-data\"}"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://demo.ghost.io/ghost/api/admin/pages/651c81011334699742ce959c/?formats=mobiledoc,lexical,html",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "formats",
+                            "value": "mobiledoc,lexical,html"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"pages\":[{\"id\":\"651c81011334699742ce959c\",\"show_title_and_feature_image\":false,\"updated_at\":\"2023-10-03T21:00:49.000Z\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "x-cache-invalidate",
+                            "value": "/p/d2e0eced-7ffe-4682-8b8c-c3252f5c675a/"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "3800"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"ed8-QjgZA2627Is2E5Anj9d7dDQ0WD0\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "3800",
+                        "text": "{\"pages\":[{\"id\":\"651c81011334699742ce959c\",\"uuid\":\"d2e0eced-7ffe-4682-8b8c-c3252f5c675a\",\"title\":\"Test Page\",\"slug\":\"test-page\",\"mobiledoc\":\"{\\\"version\\\":\\\"0.3.1\\\",\\\"ghostVersion\\\":\\\"4.0\\\",\\\"markups\\\":[],\\\"atoms\\\":[],\\\"cards\\\":[],\\\"sections\\\":[[1,\\\"p\\\",[[0,[],0,\\\"\\\"]]]]}\",\"lexical\":null,\"html\":null,\"comment_id\":\"651c81011334699742ce959c\",\"feature_image\":null,\"featured\":false,\"status\":\"draft\",\"visibility\":\"public\",\"created_at\":\"2023-10-03T21:00:49.000Z\",\"updated_at\":\"2023-10-03T21:00:49.000Z\",\"published_at\":null,\"custom_excerpt\":null,\"codeinjection_head\":null,\"codeinjection_foot\":null,\"custom_template\":null,\"canonical_url\":null,\"show_title_and_feature_image\":false,\"authors\":[{\"id\":\"1\",\"name\":\"Joe Bloggs\",\"slug\":\"joe-bloggs\",\"email\":\"jbloggs@example.com\",\"profile_image\":\"https://example.com/super_photo.jpg\",\"cover_image\":null,\"bio\":\"bio\",\"website\":null,\"location\":\"location\",\"facebook\":null,\"twitter\":null,\"accessibility\":null,\"status\":\"active\",\"meta_title\":null,\"meta_description\":null,\"tour\":null,\"last_seen\":\"2023-10-03T21:00:49.000Z\",\"comment_notifications\":true,\"free_member_signup_notification\":true,\"paid_subscription_started_notification\":true,\"paid_subscription_canceled_notification\":false,\"mention_notifications\":true,\"recommendation_notifications\":true,\"milestone_notifications\":true,\"donation_notifications\":true,\"created_at\":\"2023-10-03T21:00:49.000Z\",\"updated_at\":\"2023-10-03T21:00:49.000Z\",\"roles\":[{\"id\":\"651c80e31334699742ce7350\",\"name\":\"Owner\",\"description\":\"Blog Owner\",\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\"}],\"url\":\"http://127.0.0.1:2369/author/joe-bloggs/\"}],\"tiers\":[{\"id\":\"651c80e31334699742ce735b\",\"name\":\"Free\",\"slug\":\"free\",\"active\":true,\"welcome_page_url\":null,\"visibility\":\"public\",\"trial_days\":0,\"description\":null,\"type\":\"free\",\"currency\":null,\"monthly_price\":null,\"yearly_price\":null,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\",\"monthly_price_id\":null,\"yearly_price_id\":null},{\"id\":\"651c80e31334699742ce735a\",\"name\":\"Default Product\",\"slug\":\"default-product\",\"active\":true,\"welcome_page_url\":null,\"visibility\":\"public\",\"trial_days\":0,\"description\":null,\"type\":\"paid\",\"currency\":\"usd\",\"monthly_price\":500,\"yearly_price\":5000,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\",\"monthly_price_id\":null,\"yearly_price_id\":null}],\"tags\":[],\"post_revisions\":[],\"count\":{\"signups\":0,\"paid_conversions\":0,\"positive_feedback\":0,\"negative_feedback\":0},\"primary_author\":{\"id\":\"1\",\"name\":\"Joe Bloggs\",\"slug\":\"joe-bloggs\",\"email\":\"jbloggs@example.com\",\"profile_image\":\"https://example.com/super_photo.jpg\",\"cover_image\":null,\"bio\":\"bio\",\"website\":null,\"location\":\"location\",\"facebook\":null,\"twitter\":null,\"accessibility\":null,\"status\":\"active\",\"meta_title\":null,\"meta_description\":null,\"tour\":null,\"last_seen\":\"2023-10-03T21:00:49.000Z\",\"comment_notifications\":true,\"free_member_signup_notification\":true,\"paid_subscription_started_notification\":true,\"paid_subscription_canceled_notification\":false,\"mention_notifications\":true,\"recommendation_notifications\":true,\"milestone_notifications\":true,\"donation_notifications\":true,\"created_at\":\"2023-10-03T21:00:49.000Z\",\"updated_at\":\"2023-10-03T21:00:49.000Z\",\"roles\":[{\"id\":\"651c80e31334699742ce7350\",\"name\":\"Owner\",\"description\":\"Blog Owner\",\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\"}],\"url\":\"http://127.0.0.1:2369/author/joe-bloggs/\"},\"primary_tag\":null,\"url\":\"http://127.0.0.1:2369/p/d2e0eced-7ffe-4682-8b8c-c3252f5c675a/\",\"excerpt\":null,\"og_image\":null,\"og_title\":null,\"og_description\":null,\"twitter_image\":null,\"twitter_title\":null,\"twitter_description\":null,\"meta_title\":null,\"meta_description\":null,\"frontmatter\":null,\"feature_image_alt\":null,\"feature_image_caption\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

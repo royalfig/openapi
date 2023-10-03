@@ -1,0 +1,75 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "ReadCanRequestExploreData",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "explore": {
+                                "most_recently_published_at": "2023-10-04T01:00:30.000Z",
+                                "mrr_stats": {
+                                    "data": [
+                                        {
+                                            "currency": "usd",
+                                            "date": "2023-10-02",
+                                            "mrr": 0
+                                        },
+                                        {
+                                            "currency": "usd",
+                                            "date": "2023-10-03",
+                                            "mrr": 1000
+                                        }
+                                    ],
+                                    "meta": {
+                                        "totals": [
+                                            {
+                                                "currency": "usd",
+                                                "mrr": 1000
+                                            }
+                                        ]
+                                    }
+                                },
+                                "owner_email": "jbloggs@example.com",
+                                "site": {
+                                    "accent_color": "#FF1A75",
+                                    "description": "Thoughts, stories and ideas",
+                                    "icon": null,
+                                    "locale": "en",
+                                    "title": "Ghost",
+                                    "url": "http://127.0.0.1:2369/"
+                                },
+                                "stripe": {
+                                    "configured": true,
+                                    "livemode": false
+                                },
+                                "total_members": 8,
+                                "total_posts_published": 16,
+                                "version": "5.65.1"
+                            }
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "explore": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/explore.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Read can request explore data",
+        "tags": [
+            "explore"
+        ]
+    },
+    "parameters": []
+}

@@ -1,0 +1,68 @@
+{
+    "parameters": [],
+    "put": {
+        "description": "",
+        "operationId": "VerifyKeyUpdateCannotUpdateInvalidKeysViaToken",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "token": "Qas6jr5HyU3WDFkkxOgaXqvenQCakFMo"
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "token": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminSettingsVerificationsPutRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "400": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": null,
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "f272aa50-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Not allowed to update this setting key via tokens",
+                                    "property": null,
+                                    "type": "IncorrectUsageError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "verifications": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/verifications.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Verify key update cannot update invalid keys via token",
+        "tags": [
+            "verifications"
+        ]
+    }
+}

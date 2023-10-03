@@ -1,0 +1,131 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "background_color": {
+            "type": "string"
+        },
+        "body_font_category": {
+            "type": "string"
+        },
+        "border_color": {
+            "type": "string"
+        },
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "feedback_enabled": {
+            "type": "boolean"
+        },
+        "footer_content": {
+            "type": "string"
+        },
+        "header_image": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-extensions": [
+                ".jpg"
+            ],
+            "x-qt-uri-protocols": [
+                "http"
+            ]
+        },
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "sender_email": {
+            "type": "string"
+        },
+        "sender_name": {
+            "type": "string"
+        },
+        "sender_reply_to": {
+            "type": "string"
+        },
+        "show_badge": {
+            "type": "boolean"
+        },
+        "show_comment_cta": {
+            "type": "boolean"
+        },
+        "show_feature_image": {
+            "type": "boolean"
+        },
+        "show_header_icon": {
+            "type": "boolean"
+        },
+        "show_header_name": {
+            "type": "boolean"
+        },
+        "show_header_title": {
+            "type": "boolean"
+        },
+        "show_latest_posts": {
+            "type": "boolean"
+        },
+        "show_post_title_section": {
+            "type": "boolean"
+        },
+        "show_subscription_details": {
+            "type": "boolean"
+        },
+        "slug": {
+            "type": "string"
+        },
+        "sort_order": {
+            "type": "integer"
+        },
+        "status": {
+            "type": "string"
+        },
+        "subscribe_on_signup": {
+            "type": "boolean"
+        },
+        "title_alignment": {
+            "type": "string"
+        },
+        "title_color": {
+            "type": "string"
+        },
+        "title_font_category": {
+            "type": "string"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "uuid": {
+            "format": "uuid",
+            "type": "string"
+        },
+        "visibility": {
+            "type": "string"
+        },
+        "count": {
+            "additionalProperties": false,
+            "properties": {
+                "active_members": {
+                    "type": "integer"
+                },
+                "members": {
+                    "type": "integer"
+                },
+                "posts": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Count",
+            "type": "object"
+        }
+    },
+    "required": [],
+    "title": "Newsletter",
+    "type": "object"
+}

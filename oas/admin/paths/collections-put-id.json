@@ -1,0 +1,87 @@
+{
+    "parameters": [],
+    "put": {
+        "description": "",
+        "operationId": "EditFailsToEditUnexistentCollection",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "collections": [
+                            {
+                                "id": "5951f5fca366002ebd5dbef7",
+                                "title": "Editing unexistent Collection"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "collections": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "title": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Collection",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminCollections5951F5Fca366002Ebd5Dbef7PutRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "404": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Collection not found.",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "dfd29950-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Resource not found error, cannot edit collection.",
+                                    "property": null,
+                                    "type": "NotFoundError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "collections": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/collections.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Edit fails to edit unexistent collection",
+        "tags": [
+            "collections"
+        ]
+    }
+}

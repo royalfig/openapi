@@ -1,0 +1,51 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "count": {
+            "additionalProperties": false,
+            "properties": {
+                "clicks": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Count",
+            "type": "object"
+        },
+        "link": {
+            "additionalProperties": false,
+            "properties": {
+                "edited": {
+                    "type": "boolean"
+                },
+                "from": {
+                    "format": "uri",
+                    "type": "string",
+                    "x-qt-uri-protocols": [
+                        "http"
+                    ]
+                },
+                "link_id": {
+                    "type": "string"
+                },
+                "to": {
+                    "format": "uri",
+                    "type": "string",
+                    "x-qt-uri-protocols": [
+                        "http",
+                        "https"
+                    ]
+                }
+            },
+            "required": [],
+            "title": "LinkLink",
+            "type": "object"
+        },
+        "post_id": {
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "LinkElement",
+    "type": "object"
+}

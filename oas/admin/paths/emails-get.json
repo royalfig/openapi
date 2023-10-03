@@ -1,0 +1,103 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "CanBrowseEmails",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "emails": [
+                                {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "delivered_count": 1,
+                                    "email_count": 2,
+                                    "error": null,
+                                    "error_data": null,
+                                    "failed_count": 1,
+                                    "feedback_enabled": false,
+                                    "from": null,
+                                    "html": "<p>Look! I'm an email</p>",
+                                    "id": "651c80e31334699742ce7272",
+                                    "newsletter_id": null,
+                                    "opened_count": 1,
+                                    "plaintext": "Waba-daba-dab-da",
+                                    "post_id": "618ba1ffbe2896088840a6df",
+                                    "recipient_filter": "all",
+                                    "reply_to": null,
+                                    "source": null,
+                                    "source_type": "html",
+                                    "status": "submitted",
+                                    "subject": "You got mailed!",
+                                    "submitted_at": "2023-10-03T21:00:19.000Z",
+                                    "track_clicks": false,
+                                    "track_opens": false,
+                                    "updated_at": "2023-10-03T21:00:19.000Z",
+                                    "uuid": "6b6afda6-4b5e-4893-bff6-f16859e8349a"
+                                },
+                                {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "delivered_count": 0,
+                                    "email_count": 3,
+                                    "error": "Everything went south",
+                                    "error_data": null,
+                                    "failed_count": 0,
+                                    "feedback_enabled": false,
+                                    "from": null,
+                                    "html": "<p>What's that? Another email!</p>",
+                                    "id": "651c80e31334699742ce7273",
+                                    "newsletter_id": null,
+                                    "opened_count": 0,
+                                    "plaintext": "yes this is an email",
+                                    "post_id": "618ba1ffbe2896088840a6e1",
+                                    "recipient_filter": "status:-free",
+                                    "reply_to": null,
+                                    "source": null,
+                                    "source_type": "html",
+                                    "status": "failed",
+                                    "subject": "You got mailed! Again!",
+                                    "submitted_at": "2023-10-03T21:00:19.000Z",
+                                    "track_clicks": false,
+                                    "track_opens": false,
+                                    "updated_at": "2023-10-03T21:00:19.000Z",
+                                    "uuid": "365daa11-4bf0-4614-ad43-6346387ffa00"
+                                }
+                            ],
+                            "meta": {
+                                "pagination": {
+                                    "limit": 15,
+                                    "next": null,
+                                    "page": 1,
+                                    "pages": 1,
+                                    "prev": null,
+                                    "total": 2
+                                }
+                            }
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "emails": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/emails.json"
+                                    }
+                                },
+                                "meta": {
+                                    "$ref": "../components/schemas/meta.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can browse emails",
+        "tags": [
+            "emails"
+        ]
+    },
+    "parameters": []
+}

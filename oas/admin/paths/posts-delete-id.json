@@ -1,0 +1,47 @@
+{
+    "delete": {
+        "description": "",
+        "operationId": "DeleteCannotDeleteANonExistentPosts",
+        "parameters": {},
+        "responses": {
+            "404": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Post not found.",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "f0d6d4a0-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Resource not found error, cannot delete post.",
+                                    "property": null,
+                                    "type": "NotFoundError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "posts": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/posts.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Delete cannot delete a non existent posts",
+        "tags": [
+            "posts"
+        ]
+    },
+    "parameters": []
+}

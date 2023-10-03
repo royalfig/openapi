@@ -1,0 +1,37 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "feature_image": {
+            "type": "string"
+        },
+        "filter": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Collection",
+    "type": "object"
+}

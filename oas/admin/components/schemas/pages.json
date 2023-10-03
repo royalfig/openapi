@@ -1,0 +1,910 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "authors": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "accessibility": {
+                        "nullable": true
+                    },
+                    "bio": {
+                        "type": "string"
+                    },
+                    "comment_notifications": {
+                        "type": "boolean"
+                    },
+                    "cover_image": {
+                        "nullable": true
+                    },
+                    "created_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "donation_notifications": {
+                        "type": "boolean"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "facebook": {
+                        "anyOf": [
+                            {
+                                "nullable": true
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
+                        "nullable": true
+                    },
+                    "free_member_signup_notification": {
+                        "type": "boolean"
+                    },
+                    "id": {
+                        "type": "string",
+                        "format": "integer"
+                    },
+                    "last_seen": {
+                        "anyOf": [
+                            {
+                                "format": "date-time",
+                                "type": "string"
+                            },
+                            {
+                                "nullable": true
+                            }
+                        ],
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "location": {
+                        "type": "string"
+                    },
+                    "mention_notifications": {
+                        "type": "boolean"
+                    },
+                    "meta_description": {
+                        "nullable": true
+                    },
+                    "meta_title": {
+                        "nullable": true
+                    },
+                    "milestone_notifications": {
+                        "type": "boolean"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "paid_subscription_canceled_notification": {
+                        "type": "boolean"
+                    },
+                    "paid_subscription_started_notification": {
+                        "type": "boolean"
+                    },
+                    "profile_image": {
+                        "format": "uri",
+                        "type": "string",
+                        "x-qt-uri-extensions": [
+                            ".jpg",
+                            ".png"
+                        ],
+                        "x-qt-uri-protocols": [
+                            "https"
+                        ],
+                        "nullable": true
+                    },
+                    "recommendation_notifications": {
+                        "type": "boolean"
+                    },
+                    "roles": {
+                        "items": {
+                            "additionalProperties": false,
+                            "properties": {
+                                "created_at": {
+                                    "format": "date-time",
+                                    "type": "string"
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "type": "string"
+                                },
+                                "name": {
+                                    "type": "string"
+                                },
+                                "updated_at": {
+                                    "format": "date-time",
+                                    "type": "string"
+                                }
+                            },
+                            "required": [],
+                            "title": "Role",
+                            "type": "object"
+                        },
+                        "type": "array"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "tour": {
+                        "nullable": true
+                    },
+                    "twitter": {
+                        "anyOf": [
+                            {
+                                "nullable": true
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
+                        "nullable": true
+                    },
+                    "updated_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "url": {
+                        "format": "uri",
+                        "type": "string",
+                        "x-qt-uri-protocols": [
+                            "http"
+                        ]
+                    },
+                    "website": {
+                        "anyOf": [
+                            {
+                                "nullable": true
+                            },
+                            {
+                                "format": "uri",
+                                "type": "string",
+                                "x-qt-uri-protocols": [
+                                    "https"
+                                ]
+                            }
+                        ],
+                        "nullable": true
+                    }
+                },
+                "required": [],
+                "title": "AuthorElement",
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "canonical_url": {
+            "type": "string"
+        },
+        "codeinjection_foot": {
+            "type": "string"
+        },
+        "codeinjection_head": {
+            "type": "string"
+        },
+        "comment_id": {
+            "type": "string"
+        },
+        "count": {
+            "additionalProperties": false,
+            "properties": {
+                "negative_feedback": {
+                    "type": "integer"
+                },
+                "paid_conversions": {
+                    "type": "integer"
+                },
+                "positive_feedback": {
+                    "type": "integer"
+                },
+                "signups": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Count",
+            "type": "object"
+        },
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "custom_excerpt": {
+            "type": "string"
+        },
+        "custom_template": {
+            "type": "string"
+        },
+        "excerpt": {
+            "type": "string"
+        },
+        "feature_image": {
+            "type": "string"
+        },
+        "feature_image_alt": {
+            "type": "string"
+        },
+        "feature_image_caption": {
+            "type": "string"
+        },
+        "featured": {
+            "type": "boolean"
+        },
+        "frontmatter": {
+            "type": "string"
+        },
+        "html": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "lexical": {
+            "type": "string"
+        },
+        "meta_description": {
+            "type": "string"
+        },
+        "meta_title": {
+            "type": "string"
+        },
+        "mobiledoc": {
+            "type": "string"
+        },
+        "og_description": {
+            "type": "string"
+        },
+        "og_image": {
+            "type": "string"
+        },
+        "og_title": {
+            "type": "string"
+        },
+        "post_revisions": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "author": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "accessibility": {
+                                "nullable": true
+                            },
+                            "bio": {
+                                "type": "string"
+                            },
+                            "comment_notifications": {
+                                "type": "boolean"
+                            },
+                            "cover_image": {
+                                "nullable": true
+                            },
+                            "created_at": {
+                                "format": "date-time",
+                                "type": "string"
+                            },
+                            "donation_notifications": {
+                                "type": "boolean"
+                            },
+                            "email": {
+                                "type": "string"
+                            },
+                            "facebook": {
+                                "nullable": true
+                            },
+                            "free_member_signup_notification": {
+                                "type": "boolean"
+                            },
+                            "id": {
+                                "format": "integer",
+                                "type": "string"
+                            },
+                            "last_seen": {
+                                "format": "date-time",
+                                "type": "string"
+                            },
+                            "locale": {
+                                "nullable": true
+                            },
+                            "location": {
+                                "type": "string"
+                            },
+                            "mention_notifications": {
+                                "type": "boolean"
+                            },
+                            "meta_description": {
+                                "nullable": true
+                            },
+                            "meta_title": {
+                                "nullable": true
+                            },
+                            "milestone_notifications": {
+                                "type": "boolean"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "paid_subscription_canceled_notification": {
+                                "type": "boolean"
+                            },
+                            "paid_subscription_started_notification": {
+                                "type": "boolean"
+                            },
+                            "profile_image": {
+                                "format": "uri",
+                                "type": "string",
+                                "x-qt-uri-extensions": [
+                                    ".jpg"
+                                ],
+                                "x-qt-uri-protocols": [
+                                    "https"
+                                ]
+                            },
+                            "recommendation_notifications": {
+                                "type": "boolean"
+                            },
+                            "slug": {
+                                "type": "string"
+                            },
+                            "status": {
+                                "type": "string"
+                            },
+                            "tour": {
+                                "nullable": true
+                            },
+                            "twitter": {
+                                "nullable": true
+                            },
+                            "updated_at": {
+                                "format": "date-time",
+                                "type": "string"
+                            },
+                            "visibility": {
+                                "type": "string"
+                            },
+                            "website": {
+                                "nullable": true
+                            }
+                        },
+                        "required": [],
+                        "title": "PostRevisionAuthor",
+                        "type": "object"
+                    },
+                    "created_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "created_at_ts": {
+                        "type": "integer"
+                    },
+                    "feature_image": {
+                        "nullable": true
+                    },
+                    "feature_image_alt": {
+                        "nullable": true
+                    },
+                    "feature_image_caption": {
+                        "nullable": true
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "lexical": {
+                        "type": "string"
+                    },
+                    "post_id": {
+                        "type": "string"
+                    },
+                    "post_status": {
+                        "type": "string"
+                    },
+                    "reason": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "title": "PostRevision",
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "primary_author": {
+            "additionalProperties": false,
+            "properties": {
+                "accessibility": {
+                    "nullable": true
+                },
+                "bio": {
+                    "type": "string"
+                },
+                "comment_notifications": {
+                    "type": "boolean"
+                },
+                "cover_image": {
+                    "nullable": true
+                },
+                "created_at": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "donation_notifications": {
+                    "type": "boolean"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "facebook": {
+                    "anyOf": [
+                        {
+                            "nullable": true
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "nullable": true
+                },
+                "free_member_signup_notification": {
+                    "type": "boolean"
+                },
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "last_seen": {
+                    "anyOf": [
+                        {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        {
+                            "nullable": true
+                        }
+                    ],
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "location": {
+                    "type": "string"
+                },
+                "mention_notifications": {
+                    "type": "boolean"
+                },
+                "meta_description": {
+                    "nullable": true
+                },
+                "meta_title": {
+                    "nullable": true
+                },
+                "milestone_notifications": {
+                    "type": "boolean"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "paid_subscription_canceled_notification": {
+                    "type": "boolean"
+                },
+                "paid_subscription_started_notification": {
+                    "type": "boolean"
+                },
+                "profile_image": {
+                    "format": "uri",
+                    "type": "string",
+                    "x-qt-uri-extensions": [
+                        ".jpg",
+                        ".png"
+                    ],
+                    "x-qt-uri-protocols": [
+                        "https"
+                    ],
+                    "nullable": true
+                },
+                "recommendation_notifications": {
+                    "type": "boolean"
+                },
+                "roles": {
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "created_at": {
+                                "format": "date-time",
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "updated_at": {
+                                "format": "date-time",
+                                "type": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Role",
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "slug": {
+                    "type": "string"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "tour": {
+                    "nullable": true
+                },
+                "twitter": {
+                    "anyOf": [
+                        {
+                            "nullable": true
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "nullable": true
+                },
+                "updated_at": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "url": {
+                    "format": "uri",
+                    "type": "string",
+                    "x-qt-uri-protocols": [
+                        "http"
+                    ]
+                },
+                "website": {
+                    "anyOf": [
+                        {
+                            "nullable": true
+                        },
+                        {
+                            "format": "uri",
+                            "type": "string",
+                            "x-qt-uri-protocols": [
+                                "https"
+                            ]
+                        }
+                    ],
+                    "nullable": true
+                }
+            },
+            "required": [],
+            "title": "PrimaryAuthor",
+            "type": "object"
+        },
+        "primary_tag": {
+            "type": "string",
+            "additionalProperties": false,
+            "properties": {
+                "accent_color": {
+                    "nullable": true
+                },
+                "canonical_url": {
+                    "nullable": true
+                },
+                "codeinjection_foot": {
+                    "nullable": true
+                },
+                "codeinjection_head": {
+                    "nullable": true
+                },
+                "created_at": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "description": {
+                    "nullable": true
+                },
+                "feature_image": {
+                    "nullable": true
+                },
+                "id": {
+                    "type": "string"
+                },
+                "meta_description": {
+                    "nullable": true
+                },
+                "meta_title": {
+                    "nullable": true
+                },
+                "name": {
+                    "type": "string"
+                },
+                "og_description": {
+                    "nullable": true
+                },
+                "og_image": {
+                    "nullable": true
+                },
+                "og_title": {
+                    "nullable": true
+                },
+                "slug": {
+                    "type": "string"
+                },
+                "twitter_description": {
+                    "nullable": true
+                },
+                "twitter_image": {
+                    "nullable": true
+                },
+                "twitter_title": {
+                    "nullable": true
+                },
+                "updated_at": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "url": {
+                    "format": "uri",
+                    "type": "string",
+                    "x-qt-uri-protocols": [
+                        "http"
+                    ]
+                },
+                "visibility": {
+                    "type": "string"
+                }
+            },
+            "required": [],
+            "title": "Tag"
+        },
+        "published_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "reading_time": {
+            "type": "integer"
+        },
+        "show_title_and_feature_image": {
+            "type": "boolean"
+        },
+        "slug": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "tags": {
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "accent_color": {
+                        "nullable": true
+                    },
+                    "canonical_url": {
+                        "nullable": true
+                    },
+                    "codeinjection_foot": {
+                        "nullable": true
+                    },
+                    "codeinjection_head": {
+                        "nullable": true
+                    },
+                    "created_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "description": {
+                        "nullable": true
+                    },
+                    "feature_image": {
+                        "nullable": true
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "meta_description": {
+                        "nullable": true
+                    },
+                    "meta_title": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "og_description": {
+                        "nullable": true
+                    },
+                    "og_image": {
+                        "nullable": true
+                    },
+                    "og_title": {
+                        "nullable": true
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "twitter_description": {
+                        "nullable": true
+                    },
+                    "twitter_image": {
+                        "nullable": true
+                    },
+                    "twitter_title": {
+                        "nullable": true
+                    },
+                    "updated_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "url": {
+                        "format": "uri",
+                        "type": "string",
+                        "x-qt-uri-protocols": [
+                            "http"
+                        ]
+                    },
+                    "visibility": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "title": "Tag"
+            },
+            "type": "array"
+        },
+        "tiers": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "active": {
+                        "type": "boolean"
+                    },
+                    "created_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "currency": {
+                        "anyOf": [
+                            {
+                                "nullable": true
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "nullable": true
+                    },
+                    "id": {
+                        "enum": [
+                            "651c80e31334699742ce735b",
+                            "651c80e31334699742ce735a"
+                        ],
+                        "title": "ID",
+                        "type": "string"
+                    },
+                    "monthly_price": {
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "nullable": true
+                            }
+                        ]
+                    },
+                    "monthly_price_id": {
+                        "nullable": true
+                    },
+                    "name": {
+                        "enum": [
+                            "Free",
+                            "Default Product"
+                        ],
+                        "title": "Name",
+                        "type": "string"
+                    },
+                    "slug": {
+                        "enum": [
+                            "free",
+                            "default-product"
+                        ],
+                        "title": "Slug",
+                        "type": "string"
+                    },
+                    "trial_days": {
+                        "type": "integer"
+                    },
+                    "type": {
+                        "enum": [
+                            "free",
+                            "paid"
+                        ],
+                        "title": "Type",
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "visibility": {
+                        "enum": [
+                            "public"
+                        ],
+                        "title": "Visibility",
+                        "type": "string"
+                    },
+                    "welcome_page_url": {
+                        "nullable": true
+                    },
+                    "yearly_price": {
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "nullable": true
+                            }
+                        ]
+                    },
+                    "yearly_price_id": {
+                        "nullable": true
+                    }
+                },
+                "required": [],
+                "title": "Tier",
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "title": {
+            "type": "string"
+        },
+        "twitter_description": {
+            "type": "string"
+        },
+        "twitter_image": {
+            "type": "string"
+        },
+        "twitter_title": {
+            "type": "string"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+                "http"
+            ]
+        },
+        "uuid": {
+            "format": "uuid",
+            "type": "string"
+        },
+        "visibility": {
+            "enum": [
+                "public"
+            ],
+            "title": "Visibility",
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Page",
+    "type": "object"
+}

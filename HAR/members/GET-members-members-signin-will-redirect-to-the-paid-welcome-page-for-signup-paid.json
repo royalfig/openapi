@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/members/?token=oza0fH9Sd7NQfk8_K8dO7NMRoXe7rTCu&action=signup-paid",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "token",
+                            "value": "oza0fH9Sd7NQfk8_K8dO7NMRoXe7rTCu"
+                        },
+                        {
+                            "name": "action",
+                            "value": "signup-paid"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 302,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "set-cookie",
+                            "value": "ghost-members-ssr=paid@test.com; path=/; expires=Thu, 04 Apr 2024 21:01:10 GMT; samesite=lax; httponly,ghost-members-ssr.sig=aVd3NxlJoo_8QNxpgNN5DmG6U7E; path=/; expires=Thu, 04 Apr 2024 21:01:10 GMT; samesite=lax; httponly"
+                        },
+                        {
+                            "name": "location",
+                            "value": "http://127.0.0.1:2369/welcome-paid/"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept, Accept-Encoding"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "text/plain; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "57"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "text/plain; charset=utf-8",
+                        "size": "57",
+                        "text": "{}"
+                    }
+                }
+            }
+        ]
+    }
+}

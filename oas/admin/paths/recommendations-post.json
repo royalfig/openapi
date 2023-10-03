@@ -1,0 +1,91 @@
+{
+    "parameters": [],
+    "post": {
+        "description": "",
+        "operationId": "ApiAddCannotAddTheSameRecommendationUrlTwiceExactUrlMatch",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "recommendations": [
+                            {
+                                "title": "Recommendation 3 with the exact same URL",
+                                "url": "https://recommendation3.com"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "recommendations": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "title": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "format": "uri",
+                                            "type": "string",
+                                            "x-qt-uri-protocols": [
+                                                "https"
+                                            ]
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Recommendation",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminRecommendationsPostRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "422": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "A recommendation with this URL already exists.",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "f15e5420-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Validation error, cannot save recommendation.",
+                                    "property": null,
+                                    "type": "ValidationError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "recommendations": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/recommendations.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Api add cannot add the same recommendation url twice  exact url match ",
+        "tags": [
+            "recommendations"
+        ]
+    }
+}

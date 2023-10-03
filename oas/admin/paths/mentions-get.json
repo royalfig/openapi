@@ -1,0 +1,79 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "CanBrowseWithLimits",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "mentions": [
+                                {
+                                    "id": "651c80e31334699742ce7281",
+                                    "payload": null,
+                                    "resource": null,
+                                    "source": "https://source.com/",
+                                    "source_author": null,
+                                    "source_excerpt": null,
+                                    "source_favicon": null,
+                                    "source_featured_image": null,
+                                    "source_site_title": "source.com",
+                                    "source_title": "source.com",
+                                    "target": "https://target.com/",
+                                    "timestamp": "2023-10-03T21:00:19.000Z",
+                                    "verified": false
+                                },
+                                {
+                                    "id": "651c80e31334699742ce7282",
+                                    "payload": null,
+                                    "resource": null,
+                                    "source": "https://anothersource.com/",
+                                    "source_author": null,
+                                    "source_excerpt": null,
+                                    "source_favicon": null,
+                                    "source_featured_image": null,
+                                    "source_site_title": "anothersource.com",
+                                    "source_title": "anothersource.com",
+                                    "target": "https://anothertarget.com/",
+                                    "timestamp": "2023-10-03T21:00:19.000Z",
+                                    "verified": false
+                                }
+                            ],
+                            "meta": {
+                                "pagination": {
+                                    "limit": 2,
+                                    "next": 2,
+                                    "page": 1,
+                                    "pages": 2,
+                                    "prev": null,
+                                    "total": 3
+                                }
+                            }
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "mentions": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/mentions.json"
+                                    }
+                                },
+                                "meta": {
+                                    "$ref": "../components/schemas/meta.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can browse with limits",
+        "tags": [
+            "mentions"
+        ]
+    },
+    "parameters": []
+}

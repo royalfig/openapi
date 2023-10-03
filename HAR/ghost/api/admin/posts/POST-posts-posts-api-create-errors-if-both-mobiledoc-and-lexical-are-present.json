@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/ghost/api/admin/posts/?formats=mobiledoc,lexical",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "formats",
+                            "value": "mobiledoc,lexical"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"posts\":[{\"title\":\"Mobiledoc+lexical test\",\"mobiledoc\":\"{\\\"version\\\":\\\"0.3.1\\\",\\\"ghostVersion\\\":\\\"4.0\\\",\\\"markups\\\":[],\\\"atoms\\\":[],\\\"cards\\\":[],\\\"sections\\\":[[1,\\\"p\\\",[[0,[],0,\\\"Testing post creation with mobiledoc\\\"]]]]}\",\"lexical\":\"{\\\"root\\\":{\\\"children\\\":[{\\\"children\\\":[{\\\"detail\\\":0,\\\"format\\\":0,\\\"mode\\\":\\\"normal\\\",\\\"style\\\":\\\"\\\",\\\"text\\\":\\\"Testing post creation with lexical\\\",\\\"type\\\":\\\"text\\\",\\\"version\\\":1}],\\\"direction\\\":\\\"ltr\\\",\\\"format\\\":\\\"\\\",\\\"indent\\\":0,\\\"type\\\":\\\"paragraph\\\",\\\"version\\\":1}],\\\"direction\\\":\\\"ltr\\\",\\\"format\\\":\\\"\\\",\\\"indent\\\":0,\\\"type\\\":\\\"root\\\",\\\"version\\\":1}}\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 422,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "409"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"199-/De4bkgTKqnZoT54ILrU4hkFgcQ\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "409",
+                        "text": "{\"errors\":[{\"message\":\"Validation error, cannot save post.\",\"context\":\"Posts can have either a mobiledoc or a lexical property, never both. Both the mobiledoc and lexical properties are set, one must be null\",\"type\":\"ValidationError\",\"details\":null,\"property\":\"lexical\",\"help\":\"https://ghost.org/docs/admin-api/#the-post-object\",\"code\":null,\"id\":\"f0afc4a0-622f-11ee-b83d-01dc9a879334\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

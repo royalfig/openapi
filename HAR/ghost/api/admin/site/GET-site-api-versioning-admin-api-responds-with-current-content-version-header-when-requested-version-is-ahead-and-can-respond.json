@@ -1,0 +1,75 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/site/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "Accept-Version",
+                            "value": "v999.5"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "287"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"11f-eHqgovoUowplMVTNxX4FSeEkP2c\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "287",
+                        "text": "{\"site\":{\"title\":\"Ghost\",\"description\":\"Thoughts, stories and ideas\",\"logo\":null,\"icon\":null,\"cover_image\":\"https://static.ghost.org/v5.0.0/images/publication-cover.jpg\",\"accent_color\":\"#FF1A75\",\"locale\":\"en\",\"url\":\"http://127.0.0.1:2369/\",\"version\":\"5.65\",\"allow_external_signup\":true}}"
+                    }
+                }
+            }
+        ]
+    }
+}

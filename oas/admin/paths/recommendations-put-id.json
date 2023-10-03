@@ -1,0 +1,125 @@
+{
+    "parameters": [],
+    "put": {
+        "description": "",
+        "operationId": "ApiEditCannotUseInvalidProtocolsWhenEditing",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "recommendations": [
+                            {
+                                "excerpt": "Cats are cute",
+                                "favicon": "ftp://dogpictures.com/favicon.ico",
+                                "featured_image": "ftp://dogpictures.com/dog.jpg",
+                                "one_click_subscribe": false,
+                                "reason": "Because cats are cute",
+                                "title": "Cat Pictures",
+                                "url": "https://dogpictures.com"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "recommendations": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "excerpt": {
+                                            "type": "string"
+                                        },
+                                        "favicon": {
+                                            "format": "uri",
+                                            "type": "string",
+                                            "x-qt-uri-extensions": [
+                                                ".ico"
+                                            ],
+                                            "x-qt-uri-protocols": [
+                                                "ftp"
+                                            ]
+                                        },
+                                        "featured_image": {
+                                            "format": "uri",
+                                            "type": "string",
+                                            "x-qt-uri-extensions": [
+                                                ".jpg"
+                                            ],
+                                            "x-qt-uri-protocols": [
+                                                "ftp"
+                                            ]
+                                        },
+                                        "one_click_subscribe": {
+                                            "type": "boolean"
+                                        },
+                                        "reason": {
+                                            "type": "string"
+                                        },
+                                        "title": {
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "format": "uri",
+                                            "type": "string",
+                                            "x-qt-uri-protocols": [
+                                                "https"
+                                            ]
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Recommendation",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminRecommendations651C81061334699742Ce9B86PutRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "422": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "recommendations.0.featured_image must be a valid URL",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "f157c471-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Validation error, cannot edit recommendation.",
+                                    "property": null,
+                                    "type": "ValidationError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "recommendations": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/recommendations.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Api edit cannot use invalid protocols when editing",
+        "tags": [
+            "recommendations"
+        ]
+    }
+}

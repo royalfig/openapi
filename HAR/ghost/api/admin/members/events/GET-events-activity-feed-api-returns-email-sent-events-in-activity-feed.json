@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/members/events/?filter=type:email_sent_event",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "filter",
+                            "value": "type:email_sent_event"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "5096"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"13e8-lNBq5M8/xKEW2CfOhAmG7Kg0k58\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "5096",
+                        "text": "{\"events\":[{\"type\":\"email_sent_event\",\"data\":{\"id\":\"651c80e31334699742ce7278\",\"member_id\":\"651c80e31334699742ce724b\",\"created_at\":\"2023-10-03T21:00:19.000Z\",\"member\":{\"id\":\"651c80e31334699742ce724b\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b343\",\"email\":\"trialing@test.com\",\"status\":\"paid\",\"name\":\"Ray Stantz\",\"expertise\":null,\"note\":null,\"geolocation\":null,\"enable_comment_notifications\":true,\"email_count\":1,\"email_opened_count\":0,\"email_open_rate\":null,\"email_disabled\":false,\"last_seen_at\":null,\"last_commented_at\":null,\"created_at\":\"2023-10-03T21:00:24.000Z\",\"updated_at\":\"2023-10-03T21:00:24.000Z\",\"avatar_image\":null},\"email\":{\"id\":\"651c80e31334699742ce7272\",\"post_id\":\"618ba1ffbe2896088840a6df\",\"uuid\":\"6b6afda6-4b5e-4893-bff6-f16859e8349a\",\"status\":\"submitted\",\"recipient_filter\":\"all\",\"error\":null,\"error_data\":null,\"email_count\":2,\"delivered_count\":1,\"opened_count\":1,\"failed_count\":0,\"subject\":\"You got mailed!\",\"from\":null,\"reply_to\":null,\"html\":\"<p>Look! I'm an email</p>\",\"plaintext\":\"Waba-daba-dab-da\",\"source\":null,\"source_type\":\"html\",\"track_opens\":false,\"track_clicks\":false,\"feedback_enabled\":false,\"submitted_at\":\"2023-10-03T21:00:19.000Z\",\"newsletter_id\":null,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\"}}},{\"type\":\"email_sent_event\",\"data\":{\"id\":\"651c80e31334699742ce7277\",\"member_id\":\"651c80e31334699742ce724a\",\"created_at\":\"2023-10-03T21:00:19.000Z\",\"member\":{\"id\":\"651c80e31334699742ce724a\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b342\",\"email\":\"paid@test.com\",\"status\":\"paid\",\"name\":\"Egon Spengler\",\"expertise\":null,\"note\":null,\"geolocation\":null,\"enable_comment_notifications\":true,\"email_count\":1,\"email_opened_count\":0,\"email_open_rate\":80,\"email_disabled\":false,\"last_seen_at\":null,\"last_commented_at\":null,\"created_at\":\"2023-10-03T21:00:24.000Z\",\"updated_at\":\"2023-10-03T21:00:24.000Z\",\"avatar_image\":null},\"email\":{\"id\":\"651c80e31334699742ce7272\",\"post_id\":\"618ba1ffbe2896088840a6df\",\"uuid\":\"6b6afda6-4b5e-4893-bff6-f16859e8349a\",\"status\":\"submitted\",\"recipient_filter\":\"all\",\"error\":null,\"error_data\":null,\"email_count\":2,\"delivered_count\":1,\"opened_count\":1,\"failed_count\":0,\"subject\":\"You got mailed!\",\"from\":null,\"reply_to\":null,\"html\":\"<p>Look! I'm an email</p>\",\"plaintext\":\"Waba-daba-dab-da\",\"source\":null,\"source_type\":\"html\",\"track_opens\":false,\"track_clicks\":false,\"feedback_enabled\":false,\"submitted_at\":\"2023-10-03T21:00:19.000Z\",\"newsletter_id\":null,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\"}}},{\"type\":\"email_sent_event\",\"data\":{\"id\":\"651c80e31334699742ce7276\",\"member_id\":\"651c80e31334699742ce7249\",\"created_at\":\"2023-10-03T21:00:19.000Z\",\"member\":{\"id\":\"651c80e31334699742ce7249\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b341\",\"email\":\"member2@test.com\",\"status\":\"free\",\"name\":null,\"expertise\":null,\"note\":null,\"geolocation\":null,\"enable_comment_notifications\":true,\"email_count\":1,\"email_opened_count\":0,\"email_open_rate\":50,\"email_disabled\":false,\"last_seen_at\":null,\"last_commented_at\":null,\"created_at\":\"2023-10-03T21:00:24.000Z\",\"updated_at\":\"2023-10-03T21:00:24.000Z\",\"avatar_image\":null},\"email\":{\"id\":\"651c80e31334699742ce7272\",\"post_id\":\"618ba1ffbe2896088840a6df\",\"uuid\":\"6b6afda6-4b5e-4893-bff6-f16859e8349a\",\"status\":\"submitted\",\"recipient_filter\":\"all\",\"error\":null,\"error_data\":null,\"email_count\":2,\"delivered_count\":1,\"opened_count\":1,\"failed_count\":0,\"subject\":\"You got mailed!\",\"from\":null,\"reply_to\":null,\"html\":\"<p>Look! I'm an email</p>\",\"plaintext\":\"Waba-daba-dab-da\",\"source\":null,\"source_type\":\"html\",\"track_opens\":false,\"track_clicks\":false,\"feedback_enabled\":false,\"submitted_at\":\"2023-10-03T21:00:19.000Z\",\"newsletter_id\":null,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\"}}},{\"type\":\"email_sent_event\",\"data\":{\"id\":\"651c80e31334699742ce7275\",\"member_id\":\"651c80e31334699742ce7248\",\"created_at\":\"2023-10-03T21:00:19.000Z\",\"member\":{\"id\":\"651c80e31334699742ce7248\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b340\",\"email\":\"member1@test.com\",\"status\":\"free\",\"name\":\"Mr Egg\",\"expertise\":null,\"note\":null,\"geolocation\":null,\"enable_comment_notifications\":true,\"email_count\":1,\"email_opened_count\":0,\"email_open_rate\":null,\"email_disabled\":false,\"last_seen_at\":null,\"last_commented_at\":null,\"created_at\":\"2023-10-03T21:00:24.000Z\",\"updated_at\":\"2023-10-03T21:00:24.000Z\",\"avatar_image\":null},\"email\":{\"id\":\"651c80e31334699742ce7272\",\"post_id\":\"618ba1ffbe2896088840a6df\",\"uuid\":\"6b6afda6-4b5e-4893-bff6-f16859e8349a\",\"status\":\"submitted\",\"recipient_filter\":\"all\",\"error\":null,\"error_data\":null,\"email_count\":2,\"delivered_count\":1,\"opened_count\":1,\"failed_count\":0,\"subject\":\"You got mailed!\",\"from\":null,\"reply_to\":null,\"html\":\"<p>Look! I'm an email</p>\",\"plaintext\":\"Waba-daba-dab-da\",\"source\":null,\"source_type\":\"html\",\"track_opens\":false,\"track_clicks\":false,\"feedback_enabled\":false,\"submitted_at\":\"2023-10-03T21:00:19.000Z\",\"newsletter_id\":null,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\"}}}],\"meta\":{\"pagination\":{\"limit\":10,\"total\":4,\"pages\":1,\"page\":null,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

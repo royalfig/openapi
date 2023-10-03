@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/links/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "929"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"3a1-sU0zcNNafEjEuGkly+L9AeqVQx4\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "929",
+                        "text": "{\"links\":[{\"post_id\":\"618ba1ffbe2896088840a6df\",\"link\":{\"link_id\":\"651c80e31334699742ce7280\",\"from\":\"http://127.0.0.1:2369/r/20b0129a\",\"to\":\"https://example.com/subscribe?ref=Test-newsletter\",\"edited\":true},\"count\":{\"clicks\":0}},{\"post_id\":\"618ba1ffbe2896088840a6df\",\"link\":{\"link_id\":\"651c80e31334699742ce727e\",\"from\":\"http://127.0.0.1:2369/r/70b0129a\",\"to\":\"http://127.0.0.1:2369/blog/email/01cd4df3-83fa-4921-83be-3bb9a465ef83/?ref=Test-newsletter&attribution_id=6343994e7216ffcbce491716&attribution_type=post\",\"edited\":false},\"count\":{\"clicks\":0}},{\"post_id\":\"618ba1ffbe2896088840a6df\",\"link\":{\"link_id\":\"651c80e31334699742ce727f\",\"from\":\"http://127.0.0.1:2369/r/a0b0129a\",\"to\":\"http://127.0.0.1:2369/blog/email/01cd4df3-83fa-4921-83be-3bb9a465ef83/?ref=Test-newsletter&attribution_id=6343994e7216ffcbce491716&attribution_type=post\",\"edited\":false},\"count\":{\"clicks\":0}}],\"meta\":{\"pagination\":{\"total\":3,\"page\":1,\"pages\":1}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

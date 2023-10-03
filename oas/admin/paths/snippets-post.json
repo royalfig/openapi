@@ -1,0 +1,83 @@
+{
+    "parameters": [],
+    "post": {
+        "description": "",
+        "operationId": "CanEdit",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "snippets": [
+                            {
+                                "mobiledoc": "{}",
+                                "name": "change me"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "snippets": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "mobiledoc": {
+                                            "type": "string"
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Snippet",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminSnippetsPostRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "201": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "snippets": [
+                                {
+                                    "created_at": "2023-10-03T21:00:57.000Z",
+                                    "id": "651c81091334699742cea25b",
+                                    "mobiledoc": "{}",
+                                    "name": "change me",
+                                    "updated_at": "2023-10-03T21:00:57.000Z"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "snippets": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/snippets.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can edit",
+        "tags": [
+            "snippets"
+        ]
+    }
+}

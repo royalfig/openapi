@@ -1,0 +1,122 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "most_recently_published_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "mrr_stats": {
+            "additionalProperties": false,
+            "properties": {
+                "data": {
+                    "items": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "currency": {
+                                "type": "string"
+                            },
+                            "date": {
+                                "format": "date",
+                                "type": "string"
+                            },
+                            "mrr": {
+                                "type": "integer"
+                            }
+                        },
+                        "required": [],
+                        "title": "Datum",
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "meta": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "totals": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "currency": {
+                                        "type": "string"
+                                    },
+                                    "mrr": {
+                                        "type": "integer"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Total",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "Meta",
+                    "type": "object"
+                }
+            },
+            "required": [],
+            "title": "MrrStats",
+            "type": "object"
+        },
+        "owner_email": {
+            "type": "string"
+        },
+        "site": {
+            "additionalProperties": false,
+            "properties": {
+                "accent_color": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "icon": {
+                    "nullable": true
+                },
+                "locale": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string"
+                },
+                "url": {
+                    "format": "uri",
+                    "type": "string",
+                    "x-qt-uri-protocols": [
+                        "http"
+                    ]
+                }
+            },
+            "required": [],
+            "title": "Site",
+            "type": "object"
+        },
+        "stripe": {
+            "additionalProperties": false,
+            "properties": {
+                "configured": {
+                    "type": "boolean"
+                },
+                "livemode": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "Stripe",
+            "type": "object"
+        },
+        "total_members": {
+            "type": "integer"
+        },
+        "total_posts_published": {
+            "type": "integer"
+        },
+        "version": {
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Explore",
+    "type": "object"
+}

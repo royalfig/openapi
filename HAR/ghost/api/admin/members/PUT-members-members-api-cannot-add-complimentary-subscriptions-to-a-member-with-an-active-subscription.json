@@ -1,0 +1,75 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://demo.ghost.io/ghost/api/admin/members/651c80fa1334699742ce8b3a/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"members\":[{\"id\":\"651c80fa1334699742ce8b3a\",\"tiers\":[{\"id\":\"651c80e31334699742ce735a\",\"name\":\"Default Product\",\"slug\":\"default-product\",\"active\":true,\"welcome_page_url\":\"/welcome-paid\",\"visibility\":\"public\",\"trial_days\":0,\"description\":null,\"type\":\"paid\",\"currency\":\"usd\",\"monthly_price\":500,\"yearly_price\":5000,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:42.000Z\",\"monthly_price_id\":\"651c80e31334699742ce7262\",\"yearly_price_id\":\"651c80e31334699742ce7263\",\"expiry_at\":null},{\"id\":\"651c80e31334699742ce735b\"}]}]}"
+                    }
+                },
+                "response": {
+                    "status": 400,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "277"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"115-pWES8U7BklyVJiYowgWc+urP13k\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "277",
+                        "text": "{\"errors\":[{\"message\":\"Request not understood error, cannot edit member.\",\"context\":\"A member cannot have more than one Product\",\"type\":\"BadRequestError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"ea14a2f0-622f-11ee-b83d-01dc9a879334\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

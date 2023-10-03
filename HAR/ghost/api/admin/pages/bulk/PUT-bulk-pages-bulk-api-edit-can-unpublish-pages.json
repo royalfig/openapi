@@ -1,0 +1,84 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://demo.ghost.io/ghost/api/admin/pages/bulk/?filter=status%3A%5Bpublished%5D",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "filter",
+                            "value": "status:[published]"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"bulk\":{\"action\":\"unpublish\"}}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "x-cache-invalidate",
+                            "value": "/*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "95"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"5f-fMKuRYj+yRCQ+UgNsCQ0rn0Coq4\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "95",
+                        "text": "{\"bulk\":{\"meta\":{\"stats\":{\"successful\":5,\"unsuccessful\":0},\"errors\":[],\"unsuccessfulData\":[]}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

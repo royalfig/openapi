@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/content/newsletters/?filter=status:archived&key=cccccccccccccccccccccccccc",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "filter",
+                            "value": "status:archived"
+                        },
+                        {
+                            "name": "key",
+                            "value": "cccccccccccccccccccccccccc"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "public, max-age=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "1090"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"442-VeqNk6mL2mj1wYPRB2ktPTGgDFY\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "1090",
+                        "text": "{\"newsletters\":[{\"id\":\"651c80e31334699742ce735c\",\"uuid\":\"ed5d8fba-29e3-413e-9934-5499629890f4\",\"name\":\"Default Newsletter\",\"description\":null,\"slug\":\"default-newsletter\",\"sender_email\":null,\"subscribe_on_signup\":true,\"visibility\":\"members\",\"sort_order\":0,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\"},{\"id\":\"651c80e31334699742ce7250\",\"uuid\":\"60127659-9a66-4e00-907a-2e312eb54d65\",\"name\":\"Daily newsletter\",\"description\":null,\"slug\":\"daily-newsletter\",\"sender_email\":\"jamie@example.com\",\"subscribe_on_signup\":false,\"visibility\":\"members\",\"sort_order\":1,\"created_at\":\"2023-10-03T21:01:00.000Z\",\"updated_at\":\"2023-10-03T21:01:00.000Z\"},{\"id\":\"651c80e31334699742ce7251\",\"uuid\":\"c7f4a725-77b3-4153-9fa6-722996beda2b\",\"name\":\"Weekly newsletter\",\"description\":null,\"slug\":\"weekly-newsletter\",\"sender_email\":\"jamie@example.com\",\"subscribe_on_signup\":true,\"visibility\":\"members\",\"sort_order\":2,\"created_at\":\"2023-10-03T21:01:00.000Z\",\"updated_at\":\"2023-10-03T21:01:00.000Z\"}],\"meta\":{\"pagination\":{\"page\":1,\"limit\":15,\"pages\":1,\"total\":3,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

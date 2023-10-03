@@ -1,0 +1,56 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/members/api/send-magic-link/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "Referer",
+                            "value": "http://localhost:2368/custom-signup-form-page"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "text": "{\"email\":\"newly-created-user-magic-link-test@test.com\",\"emailType\":\"signup\",\"autoRedirect\":true}"
+                    }
+                },
+                "response": {
+                    "status": 201,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        }
+                    ],
+                    "content": {
+                        "text": "{}"
+                    }
+                }
+            }
+        ]
+    }
+}

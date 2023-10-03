@@ -1,0 +1,79 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/ghost/api/admin/mail_events/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"signature\":\"51ab01400f9a78669733d85fcf344401f5da648f8c95707bc06da0456cb99fbc\",\"mail_events\":[{\"id\":\"Ase7i2zsRYeDXztHGENqRA\",\"timestamp\":1521243339.873676,\"event\":\"opened\",\"message\":{\"headers\":{\"message-id\":\"20130503182626.18666.16540@sandboxb052085d6a7b401bb117d3a432d1d659.mailgun.org\"}},\"recipient\":\"alice@example.com\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "2"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "2",
+                        "text": "{}"
+                    }
+                }
+            }
+        ]
+    }
+}

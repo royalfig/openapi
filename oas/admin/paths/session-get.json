@@ -1,0 +1,47 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "ErrorsWhenReadingSessionAgainNowOwnerIsNotLoggedIn",
+        "parameters": {},
+        "responses": {
+            "403": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Unable to determine the authenticated user or integration. Check that cookies are being passed through if using session authentication.",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "f1a01810-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Authorization failed",
+                                    "property": null,
+                                    "type": "NoPermissionError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "session": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/session.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Errors when reading session again now owner is not logged in",
+        "tags": [
+            "session"
+        ]
+    },
+    "parameters": []
+}

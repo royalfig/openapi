@@ -1,0 +1,51 @@
+{
+    "delete": {
+        "description": "",
+        "operationId": "ApiDeleteCanDeletePostsThatMatchATag",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "bulk": {
+                                "meta": {
+                                    "errors": [],
+                                    "stats": {
+                                        "successful": 11,
+                                        "unsuccessful": 0
+                                    }
+                                }
+                            }
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "posts": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/posts.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": "",
+                "headers": {
+                    "x-cache-invalidate": {
+                        "description": "Custom header x-cache-invalidate",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "summary": "Api delete can delete posts that match a tag",
+        "tags": [
+            "posts"
+        ]
+    },
+    "parameters": []
+}

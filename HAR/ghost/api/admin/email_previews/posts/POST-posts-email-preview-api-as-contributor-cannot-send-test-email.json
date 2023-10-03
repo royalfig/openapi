@@ -1,0 +1,75 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/ghost/api/admin/email_previews/posts/618ba1ffbe2896088840a6df/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"emails\":[\"test@ghost.org\"]}"
+                    }
+                },
+                "response": {
+                    "status": 403,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "248"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"f8-8ztC3Xl+iHdNlCjAoWzAZgDsJJo\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "248",
+                        "text": "{\"errors\":[{\"message\":\"You do not have permission to sendTestEmail email_previews\",\"context\":null,\"type\":\"NoPermissionError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"e13cfec0-622f-11ee-b83d-01dc9a879334\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

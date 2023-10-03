@@ -1,0 +1,75 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://demo.ghost.io/ghost/api/admin/members/651c80fa1334699742ce8b57/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"members\":[{\"newsletters\":[{\"id\":\"651c80e31334699742ce7250\",\"uuid\":\"60127659-9a66-4e00-907a-2e312eb54d65\",\"name\":\"Daily newsletter\",\"description\":null,\"feedback_enabled\":false,\"slug\":\"daily-newsletter\",\"sender_name\":\"Jamie\",\"sender_email\":\"jamie@example.com\",\"sender_reply_to\":\"newsletter\",\"status\":\"active\",\"visibility\":\"members\",\"subscribe_on_signup\":false,\"sort_order\":1,\"header_image\":\"http://127.0.0.1:2369/content/images/2022/05/test.jpg\",\"show_header_icon\":true,\"show_header_title\":true,\"title_font_category\":\"serif\",\"title_alignment\":\"center\",\"show_feature_image\":true,\"body_font_category\":\"serif\",\"footer_content\":null,\"show_badge\":true,\"show_header_name\":true,\"show_post_title_section\":true,\"show_comment_cta\":true,\"show_subscription_details\":false,\"show_latest_posts\":false,\"background_color\":\"light\",\"border_color\":null,\"title_color\":null,\"created_at\":\"2023-10-03T21:00:41.000Z\",\"updated_at\":\"2023-10-03T21:00:41.000Z\"}]}]}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "766"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"2fe-t9oQiFjJNGG3OYJ3IlG59ESU3c0\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "766",
+                        "text": "{\"members\":[{\"id\":\"651c80fa1334699742ce8b57\",\"uuid\":\"99d18071-7160-4ecf-a595-75752a47dffe\",\"email\":\"member3change@test.com\",\"name\":\"change me\",\"note\":null,\"geolocation\":null,\"subscribed\":true,\"created_at\":\"2023-10-03T21:00:42.000Z\",\"updated_at\":\"2023-10-03T21:00:42.000Z\",\"labels\":[],\"subscriptions\":[],\"avatar_image\":null,\"comped\":false,\"email_count\":0,\"email_opened_count\":0,\"email_open_rate\":null,\"status\":\"free\",\"last_seen_at\":null,\"attribution\":{\"id\":null,\"type\":null,\"url\":null,\"title\":null,\"referrer_source\":\"Created manually\",\"referrer_medium\":\"Ghost Admin\",\"referrer_url\":null},\"tiers\":[],\"email_suppression\":{\"suppressed\":false,\"info\":null},\"newsletters\":[{\"id\":\"651c80e31334699742ce7250\",\"name\":\"Daily newsletter\",\"description\":null,\"status\":\"active\"}]}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

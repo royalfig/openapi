@@ -1,0 +1,1061 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "data": {
+            "additionalProperties": false,
+            "properties": {
+                "attribution": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "id": {
+                            "type": "string",
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ],
+                            "nullable": true
+                        },
+                        "referrer_medium": {
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ],
+                            "type": "string",
+                            "nullable": true
+                        },
+                        "referrer_source": {
+                            "type": "string",
+                            "nullable": true
+                        },
+                        "referrer_url": {
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "format": "uri",
+                                    "type": "string",
+                                    "x-qt-uri-protocols": [
+                                        "https"
+                                    ]
+                                }
+                            ],
+                            "format": "uri",
+                            "type": "string",
+                            "x-qt-uri-protocols": [
+                                "https"
+                            ],
+                            "nullable": true
+                        },
+                        "title": {
+                            "type": "string",
+                            "nullable": true,
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "type": {
+                            "type": "string",
+                            "nullable": true,
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "url": {
+                            "format": "uri",
+                            "type": "string",
+                            "x-qt-uri-protocols": [
+                                "http"
+                            ],
+                            "nullable": true,
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "format": "uri",
+                                    "type": "string",
+                                    "x-qt-uri-protocols": [
+                                        "http"
+                                    ]
+                                }
+                            ]
+                        }
+                    },
+                    "required": [],
+                    "title": "Attribution",
+                    "type": "object",
+                    "anyOf": [
+                        {
+                            "additionalProperties": false,
+                            "properties": {
+                                "id": {
+                                    "enum": [
+                                        "618ba1ffbe2896088840a6e3",
+                                        "618ba1ffbe2896088840a6e1",
+                                        "618ba1ffbe2896088840a6df"
+                                    ],
+                                    "title": "AttributionID",
+                                    "type": "string"
+                                },
+                                "referrer_medium": {
+                                    "anyOf": [
+                                        {
+                                            "nullable": true
+                                        },
+                                        {
+                                            "type": "string"
+                                        }
+                                    ]
+                                },
+                                "referrer_source": {
+                                    "enum": [
+                                        "Twitter",
+                                        "Direct"
+                                    ],
+                                    "title": "ReferrerSource",
+                                    "type": "string"
+                                },
+                                "referrer_url": {
+                                    "anyOf": [
+                                        {
+                                            "nullable": true
+                                        },
+                                        {
+                                            "format": "uri",
+                                            "type": "string",
+                                            "x-qt-uri-protocols": [
+                                                "https"
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "title": {
+                                    "enum": [
+                                        "Short and Sweet",
+                                        "Ghostly Kitchen Sink",
+                                        "HTML Ipsum"
+                                    ],
+                                    "title": "Title",
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "enum": [
+                                        "post"
+                                    ],
+                                    "title": "Type",
+                                    "type": "string"
+                                },
+                                "url": {
+                                    "format": "uri",
+                                    "type": "string",
+                                    "x-qt-uri-protocols": [
+                                        "http"
+                                    ]
+                                }
+                            },
+                            "required": [],
+                            "title": "Attribution",
+                            "type": "object"
+                        },
+                        {
+                            "nullable": true
+                        }
+                    ]
+                },
+                "attribution_id": {
+                    "type": "string",
+                    "enum": [
+                        "618ba1ffbe2896088840a6e3",
+                        "618ba1ffbe2896088840a6e1",
+                        "618ba1ffbe2896088840a6df"
+                    ],
+                    "title": "AttributionID",
+                    "anyOf": [
+                        {
+                            "nullable": true
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "nullable": true
+                },
+                "attribution_type": {
+                    "type": "string",
+                    "enum": [
+                        "post"
+                    ],
+                    "title": "Type",
+                    "nullable": true
+                },
+                "attribution_url": {
+                    "type": "string",
+                    "nullable": true
+                },
+                "batch_id": {
+                    "nullable": true
+                },
+                "count": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "clicks": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [],
+                    "title": "Count",
+                    "type": "object"
+                },
+                "created_at": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "currency": {
+                    "type": "string"
+                },
+                "edited_at": {
+                    "nullable": true
+                },
+                "email": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "created_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "delivered_count": {
+                            "type": "integer"
+                        },
+                        "email_count": {
+                            "type": "integer"
+                        },
+                        "error": {
+                            "nullable": true
+                        },
+                        "error_data": {
+                            "nullable": true
+                        },
+                        "failed_count": {
+                            "type": "integer"
+                        },
+                        "feedback_enabled": {
+                            "type": "boolean"
+                        },
+                        "from": {
+                            "nullable": true
+                        },
+                        "html": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "string"
+                        },
+                        "newsletter_id": {
+                            "nullable": true
+                        },
+                        "opened_count": {
+                            "type": "integer"
+                        },
+                        "plaintext": {
+                            "type": "string"
+                        },
+                        "post_id": {
+                            "type": "string",
+                            "enum": [
+                                "618ba1ffbe2896088840a6e3",
+                                "618ba1ffbe2896088840a6e1",
+                                "618ba1ffbe2896088840a6df"
+                            ],
+                            "title": "AttributionID"
+                        },
+                        "recipient_filter": {
+                            "type": "string"
+                        },
+                        "reply_to": {
+                            "nullable": true
+                        },
+                        "source": {
+                            "nullable": true
+                        },
+                        "source_type": {
+                            "type": "string"
+                        },
+                        "status": {
+                            "type": "string"
+                        },
+                        "subject": {
+                            "type": "string"
+                        },
+                        "submitted_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "track_clicks": {
+                            "type": "boolean"
+                        },
+                        "track_opens": {
+                            "type": "boolean"
+                        },
+                        "updated_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "uuid": {
+                            "format": "uuid",
+                            "type": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "Email",
+                    "type": "object"
+                },
+                "from_plan": {
+                    "nullable": true
+                },
+                "html": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "link": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "from": {
+                            "type": "string"
+                        },
+                        "to": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "Link",
+                    "type": "object"
+                },
+                "member": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "avatar_image": {
+                            "nullable": true
+                        },
+                        "created_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "email_count": {
+                            "type": "integer"
+                        },
+                        "email_disabled": {
+                            "type": "boolean"
+                        },
+                        "email_open_rate": {
+                            "anyOf": [
+                                {
+                                    "type": "integer"
+                                },
+                                {
+                                    "nullable": true
+                                }
+                            ],
+                            "nullable": true
+                        },
+                        "email_opened_count": {
+                            "type": "integer"
+                        },
+                        "enable_comment_notifications": {
+                            "type": "boolean"
+                        },
+                        "expertise": {
+                            "nullable": true
+                        },
+                        "geolocation": {
+                            "nullable": true
+                        },
+                        "id": {
+                            "type": "string"
+                        },
+                        "last_commented_at": {
+                            "nullable": true
+                        },
+                        "last_seen_at": {
+                            "nullable": true
+                        },
+                        "name": {
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ],
+                            "type": "string",
+                            "nullable": true
+                        },
+                        "note": {
+                            "nullable": true
+                        },
+                        "status": {
+                            "enum": [
+                                "paid",
+                                "free"
+                            ],
+                            "title": "Status",
+                            "type": "string"
+                        },
+                        "updated_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "uuid": {
+                            "format": "uuid",
+                            "type": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "Member",
+                    "type": "object"
+                },
+                "member_id": {
+                    "type": "string"
+                },
+                "mrr_delta": {
+                    "type": "integer"
+                },
+                "parent": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "created_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "edited_at": {
+                            "nullable": true
+                        },
+                        "html": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "string"
+                        },
+                        "member": {
+                            "nullable": true
+                        },
+                        "status": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "Parent",
+                    "type": "object"
+                },
+                "post": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "format": "uri",
+                            "type": "string",
+                            "x-qt-uri-protocols": [
+                                "http"
+                            ]
+                        },
+                        "uuid": {
+                            "format": "uuid",
+                            "type": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "Post",
+                    "type": "object"
+                },
+                "postAttribution": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "canonical_url": {
+                            "nullable": true
+                        },
+                        "codeinjection_foot": {
+                            "nullable": true
+                        },
+                        "codeinjection_head": {
+                            "nullable": true
+                        },
+                        "comment_id": {
+                            "type": "string",
+                            "enum": [
+                                "618ba1ffbe2896088840a6e3",
+                                "618ba1ffbe2896088840a6e1",
+                                "618ba1ffbe2896088840a6df"
+                            ],
+                            "title": "AttributionID"
+                        },
+                        "created_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "custom_excerpt": {
+                            "type": "string",
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "custom_template": {
+                            "nullable": true
+                        },
+                        "email_recipient_filter": {
+                            "type": "string"
+                        },
+                        "feature_image": {
+                            "format": "uri",
+                            "type": "string",
+                            "x-qt-uri-extensions": [
+                                ".jpg"
+                            ],
+                            "x-qt-uri-protocols": [
+                                "http",
+                                "https"
+                            ],
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "format": "uri",
+                                    "type": "string",
+                                    "x-qt-uri-extensions": [
+                                        ".jpg"
+                                    ],
+                                    "x-qt-uri-protocols": [
+                                        "https"
+                                    ]
+                                }
+                            ]
+                        },
+                        "featured": {
+                            "type": "boolean"
+                        },
+                        "html": {
+                            "type": "string"
+                        },
+                        "id": {
+                            "type": "string",
+                            "enum": [
+                                "618ba1ffbe2896088840a6e3",
+                                "618ba1ffbe2896088840a6e1",
+                                "618ba1ffbe2896088840a6df"
+                            ],
+                            "title": "AttributionID"
+                        },
+                        "locale": {
+                            "nullable": true
+                        },
+                        "newsletter_id": {
+                            "nullable": true
+                        },
+                        "primary_author": {
+                            "nullable": true
+                        },
+                        "primary_tag": {
+                            "nullable": true
+                        },
+                        "published_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "show_title_and_feature_image": {
+                            "type": "boolean"
+                        },
+                        "slug": {
+                            "type": "string"
+                        },
+                        "status": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string",
+                            "enum": [
+                                "Short and Sweet",
+                                "Ghostly Kitchen Sink",
+                                "HTML Ipsum"
+                            ],
+                            "title": "Title"
+                        },
+                        "type": {
+                            "type": "string",
+                            "enum": [
+                                "post"
+                            ],
+                            "title": "Type"
+                        },
+                        "updated_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "uuid": {
+                            "format": "uuid",
+                            "type": "string"
+                        },
+                        "visibility": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "PostAttribution",
+                    "type": "object"
+                },
+                "referrer_medium": {
+                    "anyOf": [
+                        {
+                            "nullable": true
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ],
+                    "type": "string",
+                    "nullable": true
+                },
+                "referrer_source": {
+                    "type": "string",
+                    "enum": [
+                        "Twitter",
+                        "Direct"
+                    ],
+                    "title": "ReferrerSource",
+                    "nullable": true
+                },
+                "referrer_url": {
+                    "anyOf": [
+                        {
+                            "nullable": true
+                        },
+                        {
+                            "format": "uri",
+                            "type": "string",
+                            "x-qt-uri-protocols": [
+                                "https"
+                            ]
+                        }
+                    ],
+                    "format": "uri",
+                    "type": "string",
+                    "x-qt-uri-protocols": [
+                        "https"
+                    ],
+                    "nullable": true
+                },
+                "score": {
+                    "type": "integer"
+                },
+                "signup": {
+                    "type": "boolean"
+                },
+                "source": {
+                    "type": "string",
+                    "enum": [
+                        "stripe",
+                        "system"
+                    ],
+                    "title": "Source"
+                },
+                "status": {
+                    "type": "string"
+                },
+                "subscription_id": {
+                    "type": "string",
+                    "anyOf": [
+                        {
+                            "nullable": true
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "tagAttribution": {
+                    "additionalProperties": false,
+                    "title": "TagAttribution",
+                    "type": "object",
+                    "properties": {
+                        "accent_color": {
+                            "nullable": true
+                        },
+                        "canonical_url": {
+                            "nullable": true
+                        },
+                        "codeinjection_foot": {
+                            "nullable": true
+                        },
+                        "codeinjection_head": {
+                            "nullable": true
+                        },
+                        "created_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "feature_image": {
+                            "format": "uri",
+                            "type": "string",
+                            "x-qt-uri-extensions": [
+                                ".jpg"
+                            ],
+                            "x-qt-uri-protocols": [
+                                "https"
+                            ]
+                        },
+                        "id": {
+                            "type": "string"
+                        },
+                        "meta_description": {
+                            "nullable": true
+                        },
+                        "meta_title": {
+                            "nullable": true
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "og_description": {
+                            "nullable": true
+                        },
+                        "og_image": {
+                            "nullable": true
+                        },
+                        "og_title": {
+                            "nullable": true
+                        },
+                        "parent": {
+                            "nullable": true
+                        },
+                        "slug": {
+                            "type": "string"
+                        },
+                        "twitter_description": {
+                            "nullable": true
+                        },
+                        "twitter_image": {
+                            "nullable": true
+                        },
+                        "twitter_title": {
+                            "nullable": true
+                        },
+                        "updated_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "visibility": {
+                            "type": "string"
+                        }
+                    },
+                    "required": []
+                },
+                "tierName": {
+                    "type": "string"
+                },
+                "to_plan": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "userAttribution": {
+                    "additionalProperties": false,
+                    "title": "UserAttribution",
+                    "type": "object",
+                    "properties": {
+                        "accessibility": {
+                            "nullable": true
+                        },
+                        "bio": {
+                            "type": "string"
+                        },
+                        "comment_notifications": {
+                            "type": "boolean"
+                        },
+                        "cover_image": {
+                            "nullable": true
+                        },
+                        "created_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "donation_notifications": {
+                            "type": "boolean"
+                        },
+                        "email": {
+                            "type": "string"
+                        },
+                        "facebook": {
+                            "nullable": true
+                        },
+                        "free_member_signup_notification": {
+                            "type": "boolean"
+                        },
+                        "id": {
+                            "format": "integer",
+                            "type": "string"
+                        },
+                        "last_seen": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "locale": {
+                            "nullable": true
+                        },
+                        "location": {
+                            "type": "string"
+                        },
+                        "mention_notifications": {
+                            "type": "boolean"
+                        },
+                        "meta_description": {
+                            "nullable": true
+                        },
+                        "meta_title": {
+                            "nullable": true
+                        },
+                        "milestone_notifications": {
+                            "type": "boolean"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "paid_subscription_canceled_notification": {
+                            "type": "boolean"
+                        },
+                        "paid_subscription_started_notification": {
+                            "type": "boolean"
+                        },
+                        "profile_image": {
+                            "format": "uri",
+                            "type": "string",
+                            "x-qt-uri-extensions": [
+                                ".jpg"
+                            ],
+                            "x-qt-uri-protocols": [
+                                "https"
+                            ]
+                        },
+                        "recommendation_notifications": {
+                            "type": "boolean"
+                        },
+                        "slug": {
+                            "type": "string"
+                        },
+                        "status": {
+                            "type": "string"
+                        },
+                        "tour": {
+                            "nullable": true
+                        },
+                        "twitter": {
+                            "nullable": true
+                        },
+                        "updated_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "visibility": {
+                            "type": "string"
+                        },
+                        "website": {
+                            "nullable": true
+                        }
+                    },
+                    "required": []
+                },
+                "newsletter": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "background_color": {
+                            "type": "string"
+                        },
+                        "body_font_category": {
+                            "type": "string"
+                        },
+                        "border_color": {
+                            "nullable": true
+                        },
+                        "created_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "description": {
+                            "nullable": true
+                        },
+                        "feedback_enabled": {
+                            "type": "boolean"
+                        },
+                        "footer_content": {
+                            "nullable": true
+                        },
+                        "header_image": {
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "format": "uri",
+                                    "type": "string",
+                                    "x-qt-uri-extensions": [
+                                        ".jpg"
+                                    ],
+                                    "x-qt-uri-protocols": [
+                                        "http"
+                                    ]
+                                }
+                            ]
+                        },
+                        "id": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "sender_email": {
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "sender_name": {
+                            "anyOf": [
+                                {
+                                    "nullable": true
+                                },
+                                {
+                                    "type": "string"
+                                }
+                            ]
+                        },
+                        "sender_reply_to": {
+                            "type": "string"
+                        },
+                        "show_badge": {
+                            "type": "boolean"
+                        },
+                        "show_comment_cta": {
+                            "type": "boolean"
+                        },
+                        "show_feature_image": {
+                            "type": "boolean"
+                        },
+                        "show_header_icon": {
+                            "type": "boolean"
+                        },
+                        "show_header_name": {
+                            "type": "boolean"
+                        },
+                        "show_header_title": {
+                            "type": "boolean"
+                        },
+                        "show_latest_posts": {
+                            "type": "boolean"
+                        },
+                        "show_post_title_section": {
+                            "type": "boolean"
+                        },
+                        "show_subscription_details": {
+                            "type": "boolean"
+                        },
+                        "slug": {
+                            "type": "string"
+                        },
+                        "sort_order": {
+                            "type": "integer"
+                        },
+                        "status": {
+                            "type": "string"
+                        },
+                        "subscribe_on_signup": {
+                            "type": "boolean"
+                        },
+                        "title_alignment": {
+                            "type": "string"
+                        },
+                        "title_color": {
+                            "nullable": true
+                        },
+                        "title_font_category": {
+                            "type": "string"
+                        },
+                        "updated_at": {
+                            "format": "date-time",
+                            "type": "string"
+                        },
+                        "uuid": {
+                            "format": "uuid",
+                            "type": "string"
+                        },
+                        "visibility": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [],
+                    "title": "Newsletter",
+                    "type": "object"
+                },
+                "newsletter_id": {
+                    "type": "string"
+                },
+                "subscribed": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "Data",
+            "type": "object"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "comment_event",
+                "click_event"
+            ],
+            "title": "Type"
+        }
+    },
+    "required": [],
+    "title": "Event",
+    "type": "object"
+}

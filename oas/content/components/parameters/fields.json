@@ -1,0 +1,9 @@
+{
+    "description": "Select fields to return. Doesn't work well with `include`",
+    "in": "query",
+    "name": "fields",
+    "schema": {
+        "example": "plaintext",
+        "type": "string"
+    }
+}

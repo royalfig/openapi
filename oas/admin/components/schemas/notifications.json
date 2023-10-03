@@ -1,0 +1,29 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "custom": {
+            "type": "boolean"
+        },
+        "dismissible": {
+            "type": "boolean"
+        },
+        "id": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "message": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Notification",
+    "type": "object"
+}

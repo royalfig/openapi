@@ -1,0 +1,51 @@
+{
+    "delete": {
+        "description": "",
+        "operationId": "ApiDeleteCanDeletePagesThatMatchATag",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "bulk": {
+                                "meta": {
+                                    "errors": [],
+                                    "stats": {
+                                        "successful": 5,
+                                        "unsuccessful": 0
+                                    }
+                                }
+                            }
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "pages": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/pages.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": "",
+                "headers": {
+                    "x-cache-invalidate": {
+                        "description": "Custom header x-cache-invalidate",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "summary": "Api delete can delete pages that match a tag",
+        "tags": [
+            "pages"
+        ]
+    },
+    "parameters": []
+}

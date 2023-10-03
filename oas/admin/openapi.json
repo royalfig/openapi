@@ -1,0 +1,197 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "admin",
+        "version": "1.0.0",
+        "summary": "Ghost's RESTful Content API delivers published content to the world and can be accessed in a read-only manner by any client to render in a website, app, or other embedded media.",
+        "contact": {
+            "name": "Ghost",
+            "url": "https://ghost.org"
+        },
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "servers": [
+        {
+            "url": "https://{user.url}/ghost/api/admin",
+            "variables": {
+                "user.url": {
+                    "default": "demo.ghost.io"
+                }
+            }
+        }
+    ],
+    "security": [
+        {
+            "admin_key": []
+        }
+    ],
+    "tags": [
+        {
+            "name": "Posts",
+            "description": "Posts are the primary resource in a Ghost site. Using the posts endpoint it is possible to get lists of posts filtered by various criteria.",
+            "externalDocs": {
+                "description": "Posts API Documentation",
+                "url": "https://ghost.org/docs/content-api/#posts"
+            }
+        }
+    ],
+    "paths": {
+        "/collections/{id}": {
+            "$ref": "./paths/collections-put-id.json"
+        },
+        "/collections": {
+            "$ref": "./paths/collections-post.json"
+        },
+        "/collections/slug/{slug}": {
+            "$ref": "./paths/collections-get-slug.json"
+        },
+        "/posts/{id}": {
+            "$ref": "./paths/posts-get-id.json"
+        },
+        "/emails/{id}": {
+            "$ref": "./paths/emails-put-id.json"
+        },
+        "/emails": {
+            "$ref": "./paths/emails-get.json"
+        },
+        "/explore": {
+            "$ref": "./paths/explore-get.json"
+        },
+        "/integrations": {
+            "$ref": "./paths/integrations-get.json"
+        },
+        "/labels/{id}": {
+            "$ref": "./paths/labels-put-id.json"
+        },
+        "/labels": {
+            "$ref": "./paths/labels-post.json"
+        },
+        "/labels/slug/{slug}": {
+            "$ref": "./paths/labels-get-slug.json"
+        },
+        "/links": {
+            "$ref": "./paths/links-get.json"
+        },
+        "/bulk": {
+            "$ref": "./paths/bulk-put.json"
+        },
+        "/members": {
+            "$ref": "./paths/members-post.json"
+        },
+        "/members/{id}": {
+            "$ref": "./paths/members-put-id.json"
+        },
+        "/events": {
+            "$ref": "./paths/events-get.json"
+        },
+        "/member_does_not_exist@example.com": {
+            "$ref": "./paths/member_does_not_exist@example.com-get.json"
+        },
+        "/stats": {
+            "$ref": "./paths/stats-get.json"
+        },
+        "/count": {
+            "$ref": "./paths/count-get.json"
+        },
+        "/mentions": {
+            "$ref": "./paths/mentions-get.json"
+        },
+        "/newsletters": {
+            "$ref": "./paths/newsletters-post.json"
+        },
+        "/newsletters/{id}": {
+            "$ref": "./paths/newsletters-put-id.json"
+        },
+        "/verifications": {
+            "$ref": "./paths/verifications-put.json"
+        },
+        "/notifications": {
+            "$ref": "./paths/notifications-post.json"
+        },
+        "/offers": {
+            "$ref": "./paths/offers-post.json"
+        },
+        "/offers/{id}": {
+            "$ref": "./paths/offers-put-id.json"
+        },
+        "/pages": {
+            "$ref": "./paths/pages-post.json"
+        },
+        "/pages/{id}": {
+            "$ref": "./paths/pages-put-id.json"
+        },
+        "/posts": {
+            "$ref": "./paths/posts-post.json"
+        },
+        "/recommendations": {
+            "$ref": "./paths/recommendations-post.json"
+        },
+        "/recommendations/{id}": {
+            "$ref": "./paths/recommendations-put-id.json"
+        },
+        "/i": {
+            "$ref": "./paths/i-get.json"
+        },
+        "/removed_endpoint": {
+            "$ref": "./paths/removed_endpoint-get.json"
+        },
+        "/session": {
+            "$ref": "./paths/session-post.json"
+        },
+        "/settings": {
+            "$ref": "./paths/settings-put.json"
+        },
+        "/site": {
+            "$ref": "./paths/site-get.json"
+        },
+        "/snippets/{id}": {
+            "$ref": "./paths/snippets-put-id.json"
+        },
+        "/snippets": {
+            "$ref": "./paths/snippets-post.json"
+        },
+        "/member_count": {
+            "$ref": "./paths/member_count-get.json"
+        },
+        "/mrr": {
+            "$ref": "./paths/mrr-get.json"
+        },
+        "/referrers": {
+            "$ref": "./paths/referrers-get.json"
+        },
+        "/subscriptions": {
+            "$ref": "./paths/subscriptions-get.json"
+        },
+        "/tags": {
+            "$ref": "./paths/tags-post.json"
+        },
+        "/tags/{id}": {
+            "$ref": "./paths/tags-put-id.json"
+        },
+        "/tiers": {
+            "$ref": "./paths/tiers-post.json"
+        },
+        "/tiers/{id}": {
+            "$ref": "./paths/tiers-put-id.json"
+        },
+        "/webhooks/{id}": {
+            "$ref": "./paths/webhooks-put-id.json"
+        },
+        "/webhooks": {
+            "$ref": "./paths/webhooks-post.json"
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "admin_key": {
+                "type": "apiKey",
+                "in": "query",
+                "name": "key"
+            }
+        },
+        "schemas": {}
+    }
+}

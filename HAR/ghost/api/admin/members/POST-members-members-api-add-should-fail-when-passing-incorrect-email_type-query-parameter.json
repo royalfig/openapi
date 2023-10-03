@@ -1,0 +1,84 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/ghost/api/admin/members/?send_email=true&email_type=lel",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "send_email",
+                            "value": "true"
+                        },
+                        {
+                            "name": "email_type",
+                            "value": "lel"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"members\":[{\"name\":\"test\",\"email\":\"memberTestAdd@test.com\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 422,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "271"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"10f-x+xJ4tbSSKu7oOHnHkxfKpsQ2Kc\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "271",
+                        "text": "{\"errors\":[{\"message\":\"Validation error, cannot save member.\",\"context\":\"Validation (AllowedValues) failed for email_type\",\"type\":\"ValidationError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"e9f50d00-622f-11ee-b83d-01dc9a879334\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

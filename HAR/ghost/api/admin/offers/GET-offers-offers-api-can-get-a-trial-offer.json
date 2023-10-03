@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/offers/651c81001334699742ce9387/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "384"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"180-lRoRin+IscweSm0fQenLPSWwCW8\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "384",
+                        "text": "{\"offers\":[{\"id\":\"651c81001334699742ce9387\",\"name\":\"Fourth of July Sales trial\",\"code\":\"4th-trial\",\"display_title\":\"\",\"display_description\":\"\",\"type\":\"trial\",\"cadence\":\"year\",\"amount\":20,\"duration\":\"trial\",\"duration_in_months\":null,\"currency_restriction\":false,\"currency\":null,\"status\":\"active\",\"redemption_count\":0,\"tier\":{\"id\":\"651c80e31334699742ce735a\",\"name\":\"Default Product\"}}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

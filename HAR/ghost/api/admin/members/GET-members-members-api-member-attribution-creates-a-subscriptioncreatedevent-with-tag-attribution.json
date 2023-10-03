@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/members/651c811c1334699742cebb7d/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "2592"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"a20-f3x5lGwc6Yzi22jY0IVAoxgpLCI\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "2592",
+                        "text": "{\"members\":[{\"id\":\"651c811c1334699742cebb7d\",\"uuid\":\"fe681713-09c4-4366-bbd3-4cd96b2109d1\",\"email\":\"cust_63ab1aeb722dfcbb291befea0459bce9@email.com\",\"name\":null,\"note\":null,\"geolocation\":null,\"subscribed\":true,\"created_at\":\"2023-10-03T21:01:16.000Z\",\"updated_at\":\"2023-10-03T21:01:16.000Z\",\"labels\":[],\"subscriptions\":[{\"id\":\"sub_5d89aed98038345e66f09b7521c1be99\",\"customer\":{\"id\":\"cust_63ab1aeb722dfcbb291befea0459bce9\",\"name\":\"Test Member\",\"email\":\"cust_63ab1aeb722dfcbb291befea0459bce9@email.com\"},\"plan\":{\"id\":\"price_123\",\"nickname\":\"month\",\"amount\":150,\"interval\":\"month\",\"currency\":\"USD\"},\"status\":\"active\",\"start_date\":\"2023-10-03T21:00:17.000Z\",\"default_payment_card_last4\":null,\"cancel_at_period_end\":false,\"cancellation_reason\":null,\"current_period_end\":\"2023-11-03T21:00:17.000Z\",\"trial_start_at\":null,\"trial_end_at\":null,\"price\":{\"id\":\"price_123\",\"price_id\":\"651c811c1334699742cebb49\",\"nickname\":\"month\",\"amount\":150,\"interval\":\"month\",\"type\":\"recurring\",\"currency\":\"USD\",\"tier\":{\"id\":\"product_123\",\"name\":\"Default Product\",\"tier_id\":\"651c80e31334699742ce735a\"}},\"tier\":{\"id\":\"651c80e31334699742ce735a\",\"name\":\"Default Product\",\"slug\":\"default-product\",\"active\":true,\"welcome_page_url\":null,\"visibility\":\"public\",\"trial_days\":0,\"description\":null,\"type\":\"paid\",\"currency\":\"usd\",\"monthly_price\":500,\"yearly_price\":5000,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:01:16.000Z\",\"monthly_price_id\":null,\"yearly_price_id\":null,\"expiry_at\":null},\"offer\":null,\"attribution\":{\"id\":\"618ba1febe2896088840a6db\",\"type\":\"tag\",\"url\":\"http://127.0.0.1:2369/tag/kitchen-sink/\",\"title\":\"kitchen sink\",\"referrer_source\":null,\"referrer_medium\":null,\"referrer_url\":null}}],\"avatar_image\":null,\"comped\":false,\"email_count\":0,\"email_opened_count\":0,\"email_open_rate\":null,\"status\":\"paid\",\"last_seen_at\":null,\"attribution\":{\"id\":\"618ba1febe2896088840a6db\",\"type\":\"tag\",\"url\":\"http://127.0.0.1:2369/tag/kitchen-sink/\",\"title\":\"kitchen sink\",\"referrer_source\":null,\"referrer_medium\":null,\"referrer_url\":null},\"tiers\":[{\"id\":\"651c80e31334699742ce735a\",\"name\":\"Default Product\",\"slug\":\"default-product\",\"active\":true,\"welcome_page_url\":null,\"visibility\":\"public\",\"trial_days\":0,\"description\":null,\"type\":\"paid\",\"currency\":\"usd\",\"monthly_price\":500,\"yearly_price\":5000,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:01:16.000Z\",\"monthly_price_id\":null,\"yearly_price_id\":null,\"expiry_at\":null}],\"email_suppression\":{\"suppressed\":false,\"info\":null},\"newsletters\":[{\"id\":\"651c80e31334699742ce735c\",\"name\":\"Default Newsletter\",\"description\":null,\"status\":\"active\"}]}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

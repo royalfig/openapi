@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "OPTIONS",
+                    "url": "https://demo.ghost.io/ghost/api/admin/site/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "https://otherdomain.tld/"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "allow",
+                            "value": "GET,HEAD"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "text/html; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "8"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"8-ZRAf8oNBS3Bjb/SU2GYZCmbtmXg\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "text/html; charset=utf-8",
+                        "size": "8",
+                        "text": "{}"
+                    }
+                }
+            }
+        ]
+    }
+}

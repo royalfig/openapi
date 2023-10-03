@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/collections/651c80e31334699742ce7359/?include=count.posts",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "include",
+                            "value": "count.posts"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "284"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"11c-kM5uJaBwrfW9Aw4kg7j7ju1u9wk\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "284",
+                        "text": "{\"collections\":[{\"id\":\"651c80e31334699742ce7359\",\"title\":\"Featured\",\"slug\":\"featured\",\"description\":\"Featured posts\",\"type\":\"automatic\",\"filter\":\"featured:true\",\"feature_image\":null,\"created_at\":\"2023-10-03T21:00:25.000Z\",\"updated_at\":\"2023-10-03T21:00:25.000Z\",\"count\":{\"posts\":2}}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "accent_color": {
+            "type": "string"
+        },
+        "allow_external_signup": {
+            "type": "boolean"
+        },
+        "cover_image": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-extensions": [
+                ".jpg"
+            ],
+            "x-qt-uri-protocols": [
+                "https"
+            ]
+        },
+        "description": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        },
+        "locale": {
+            "type": "string"
+        },
+        "logo": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+                "http"
+            ]
+        },
+        "version": {
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Site",
+    "type": "object"
+}

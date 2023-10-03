@@ -1,0 +1,85 @@
+{
+    "parameters": [],
+    "post": {
+        "description": "",
+        "operationId": "HostSettingsNewsletterLimitsRequestFailsWhenNewsletterLimitIsInPlace",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "newsletters": [
+                            {
+                                "name": "Naughty newsletter"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "newsletters": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "name": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Newsletter",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminNewslettersPostRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "403": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Nuh uh",
+                                    "details": {
+                                        "name": "newsletters"
+                                    },
+                                    "ghostErrorCode": null,
+                                    "help": "https://ghost.org/help/",
+                                    "id": "ec1ea3c0-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Host Limit error, cannot save newsletter.",
+                                    "property": null,
+                                    "type": "HostLimitError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "newsletters": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/newsletters.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Host settings  newsletter limits request fails when newsletter limit is in place",
+        "tags": [
+            "newsletters"
+        ]
+    }
+}

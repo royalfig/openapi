@@ -1,0 +1,596 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "attribution": {
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "integer",
+                    "nullable": true
+                },
+                "referrer_medium": {
+                    "nullable": true,
+                    "type": "string"
+                },
+                "referrer_source": {
+                    "nullable": true,
+                    "type": "string"
+                },
+                "referrer_url": {
+                    "nullable": true,
+                    "format": "uri",
+                    "type": "string",
+                    "x-qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "title": {
+                    "type": "string",
+                    "nullable": true
+                },
+                "type": {
+                    "type": "string",
+                    "nullable": true
+                },
+                "url": {
+                    "format": "uri",
+                    "type": "string",
+                    "x-qt-uri-protocols": [
+                        "http"
+                    ],
+                    "nullable": true
+                }
+            },
+            "required": [],
+            "title": "Attribution",
+            "type": "object"
+        },
+        "avatar_image": {
+            "type": "string"
+        },
+        "comped": {
+            "type": "boolean"
+        },
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "email": {
+            "type": "string"
+        },
+        "email_count": {
+            "type": "integer"
+        },
+        "email_open_rate": {
+            "type": "string"
+        },
+        "email_opened_count": {
+            "type": "integer"
+        },
+        "email_suppression": {
+            "additionalProperties": false,
+            "properties": {
+                "info": {
+                    "nullable": true
+                },
+                "suppressed": {
+                    "type": "boolean"
+                }
+            },
+            "required": [],
+            "title": "EmailSuppression",
+            "type": "object"
+        },
+        "geolocation": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "labels": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "created_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "title": "Label",
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "last_seen_at": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "newsletters": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "description": {
+                        "nullable": true
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string"
+                    }
+                },
+                "required": [],
+                "title": "Newsletter",
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "note": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "subscribed": {
+            "type": "boolean"
+        },
+        "subscriptions": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "cancel_at_period_end": {
+                        "type": "boolean"
+                    },
+                    "cancellation_reason": {
+                        "nullable": true
+                    },
+                    "current_period_end": {
+                        "nullable": true,
+                        "format": "date-time",
+                        "type": "string",
+                        "anyOf": [
+                            {
+                                "format": "date-time",
+                                "type": "string"
+                            },
+                            {
+                                "nullable": true
+                            }
+                        ]
+                    },
+                    "customer": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "email": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string",
+                                "nullable": true,
+                                "anyOf": [
+                                    {
+                                        "nullable": true
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ]
+                            }
+                        },
+                        "required": [],
+                        "title": "Customer",
+                        "type": "object"
+                    },
+                    "default_payment_card_last4": {
+                        "type": "string",
+                        "format": "integer",
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "nullable": true
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "offer": {
+                        "nullable": true
+                    },
+                    "plan": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "amount": {
+                                "type": "integer"
+                            },
+                            "currency": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "interval": {
+                                "type": "string"
+                            },
+                            "nickname": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Plan",
+                        "type": "object"
+                    },
+                    "price": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "amount": {
+                                "type": "integer"
+                            },
+                            "currency": {
+                                "type": "string"
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "interval": {
+                                "type": "string"
+                            },
+                            "nickname": {
+                                "type": "string"
+                            },
+                            "price_id": {
+                                "type": "string"
+                            },
+                            "tier": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "tier_id": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "PriceTier",
+                                "type": "object"
+                            },
+                            "type": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "Price",
+                        "type": "object"
+                    },
+                    "start_date": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "status": {
+                        "type": "string"
+                    },
+                    "tier": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "active": {
+                                "type": "boolean"
+                            },
+                            "created_at": {
+                                "format": "date-time",
+                                "type": "string"
+                            },
+                            "currency": {
+                                "type": "string",
+                                "anyOf": [
+                                    {
+                                        "nullable": true
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ]
+                            },
+                            "description": {
+                                "nullable": true
+                            },
+                            "expiry_at": {
+                                "nullable": true
+                            },
+                            "id": {
+                                "type": "string"
+                            },
+                            "monthly_price": {
+                                "type": "integer",
+                                "anyOf": [
+                                    {
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "nullable": true
+                                    }
+                                ]
+                            },
+                            "monthly_price_id": {
+                                "type": "string",
+                                "anyOf": [
+                                    {
+                                        "nullable": true
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ],
+                                "nullable": true
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "slug": {
+                                "type": "string"
+                            },
+                            "trial_days": {
+                                "type": "integer"
+                            },
+                            "type": {
+                                "type": "string"
+                            },
+                            "updated_at": {
+                                "format": "date-time",
+                                "type": "string"
+                            },
+                            "visibility": {
+                                "type": "string"
+                            },
+                            "welcome_page_url": {
+                                "type": "string",
+                                "nullable": true,
+                                "anyOf": [
+                                    {
+                                        "nullable": true
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ]
+                            },
+                            "yearly_price": {
+                                "type": "integer",
+                                "anyOf": [
+                                    {
+                                        "type": "integer"
+                                    },
+                                    {
+                                        "nullable": true
+                                    }
+                                ]
+                            },
+                            "yearly_price_id": {
+                                "type": "string",
+                                "anyOf": [
+                                    {
+                                        "nullable": true
+                                    },
+                                    {
+                                        "type": "string"
+                                    }
+                                ],
+                                "nullable": true
+                            }
+                        },
+                        "required": [],
+                        "title": "TierElement",
+                        "type": "object"
+                    },
+                    "trial_end_at": {
+                        "nullable": true
+                    },
+                    "trial_start_at": {
+                        "nullable": true
+                    },
+                    "attribution": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "id": {
+                                "nullable": true,
+                                "format": "integer",
+                                "type": "string"
+                            },
+                            "referrer_medium": {
+                                "nullable": true
+                            },
+                            "referrer_source": {
+                                "nullable": true
+                            },
+                            "referrer_url": {
+                                "nullable": true
+                            },
+                            "title": {
+                                "nullable": true,
+                                "type": "string"
+                            },
+                            "type": {
+                                "nullable": true,
+                                "type": "string"
+                            },
+                            "url": {
+                                "nullable": true,
+                                "format": "uri",
+                                "type": "string",
+                                "x-qt-uri-protocols": [
+                                    "http"
+                                ]
+                            }
+                        },
+                        "required": [],
+                        "title": "SubscriptionAttribution",
+                        "type": "object"
+                    }
+                },
+                "required": [],
+                "title": "Subscription",
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "tiers": {
+            "items": {
+                "additionalProperties": false,
+                "properties": {
+                    "active": {
+                        "type": "boolean"
+                    },
+                    "created_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "currency": {
+                        "type": "string",
+                        "anyOf": [
+                            {
+                                "nullable": true
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "description": {
+                        "nullable": true
+                    },
+                    "expiry_at": {
+                        "nullable": true
+                    },
+                    "id": {
+                        "type": "string"
+                    },
+                    "monthly_price": {
+                        "type": "integer",
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "nullable": true
+                            }
+                        ]
+                    },
+                    "monthly_price_id": {
+                        "type": "string",
+                        "anyOf": [
+                            {
+                                "nullable": true
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
+                        "nullable": true
+                    },
+                    "name": {
+                        "type": "string"
+                    },
+                    "slug": {
+                        "type": "string"
+                    },
+                    "trial_days": {
+                        "type": "integer"
+                    },
+                    "type": {
+                        "type": "string"
+                    },
+                    "updated_at": {
+                        "format": "date-time",
+                        "type": "string"
+                    },
+                    "visibility": {
+                        "type": "string"
+                    },
+                    "welcome_page_url": {
+                        "type": "string",
+                        "nullable": true,
+                        "anyOf": [
+                            {
+                                "nullable": true
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    "yearly_price": {
+                        "type": "integer",
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "nullable": true
+                            }
+                        ]
+                    },
+                    "yearly_price_id": {
+                        "type": "string",
+                        "anyOf": [
+                            {
+                                "nullable": true
+                            },
+                            {
+                                "type": "string"
+                            }
+                        ],
+                        "nullable": true
+                    }
+                },
+                "required": [],
+                "title": "TierElement",
+                "type": "object"
+            },
+            "type": "array"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "uuid": {
+            "format": "uuid",
+            "type": "string"
+        },
+        "email_recipients": {
+            "items": {},
+            "type": "array"
+        }
+    },
+    "required": [],
+    "title": "Member",
+    "type": "object"
+}

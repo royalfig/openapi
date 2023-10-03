@@ -1,0 +1,14 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "key": {
+            "type": "string"
+        },
+        "value": {
+            "type": "boolean"
+        }
+    },
+    "required": [],
+    "title": "Setting",
+    "type": "object"
+}

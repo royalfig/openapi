@@ -1,0 +1,165 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "MemberAttributionCreatesASubscriptioncreatedeventWithoutAttribution",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "members": [
+                                {
+                                    "attribution": {
+                                        "id": null,
+                                        "referrer_medium": null,
+                                        "referrer_source": null,
+                                        "referrer_url": null,
+                                        "title": null,
+                                        "type": null,
+                                        "url": null
+                                    },
+                                    "avatar_image": null,
+                                    "comped": false,
+                                    "created_at": "2023-10-03T21:01:16.000Z",
+                                    "email": "cust_f6e0e96c136c0311ebcb02b8b0eaaf07@email.com",
+                                    "email_count": 0,
+                                    "email_open_rate": null,
+                                    "email_opened_count": 0,
+                                    "email_suppression": {
+                                        "info": null,
+                                        "suppressed": false
+                                    },
+                                    "geolocation": null,
+                                    "id": "651c811c1334699742cebb99",
+                                    "labels": [],
+                                    "last_seen_at": null,
+                                    "name": null,
+                                    "newsletters": [
+                                        {
+                                            "description": null,
+                                            "id": "651c80e31334699742ce735c",
+                                            "name": "Default Newsletter",
+                                            "status": "active"
+                                        }
+                                    ],
+                                    "note": null,
+                                    "status": "paid",
+                                    "subscribed": true,
+                                    "subscriptions": [
+                                        {
+                                            "attribution": {
+                                                "id": null,
+                                                "referrer_medium": null,
+                                                "referrer_source": null,
+                                                "referrer_url": null,
+                                                "title": null,
+                                                "type": null,
+                                                "url": null
+                                            },
+                                            "cancel_at_period_end": false,
+                                            "cancellation_reason": null,
+                                            "current_period_end": "2023-11-03T21:00:17.000Z",
+                                            "customer": {
+                                                "email": "cust_f6e0e96c136c0311ebcb02b8b0eaaf07@email.com",
+                                                "id": "cust_f6e0e96c136c0311ebcb02b8b0eaaf07",
+                                                "name": "Test Member"
+                                            },
+                                            "default_payment_card_last4": null,
+                                            "id": "sub_cbb9cfe1f3008d9bcc911a8cbba91e28",
+                                            "offer": null,
+                                            "plan": {
+                                                "amount": 150,
+                                                "currency": "USD",
+                                                "id": "price_123",
+                                                "interval": "month",
+                                                "nickname": "month"
+                                            },
+                                            "price": {
+                                                "amount": 150,
+                                                "currency": "USD",
+                                                "id": "price_123",
+                                                "interval": "month",
+                                                "nickname": "month",
+                                                "price_id": "651c811c1334699742cebb49",
+                                                "tier": {
+                                                    "id": "product_123",
+                                                    "name": "Default Product",
+                                                    "tier_id": "651c80e31334699742ce735a"
+                                                },
+                                                "type": "recurring"
+                                            },
+                                            "start_date": "2023-10-03T21:00:17.000Z",
+                                            "status": "active",
+                                            "tier": {
+                                                "active": true,
+                                                "created_at": "2023-10-03T21:00:19.000Z",
+                                                "currency": "usd",
+                                                "description": null,
+                                                "expiry_at": null,
+                                                "id": "651c80e31334699742ce735a",
+                                                "monthly_price": 500,
+                                                "monthly_price_id": null,
+                                                "name": "Default Product",
+                                                "slug": "default-product",
+                                                "trial_days": 0,
+                                                "type": "paid",
+                                                "updated_at": "2023-10-03T21:01:16.000Z",
+                                                "visibility": "public",
+                                                "welcome_page_url": null,
+                                                "yearly_price": 5000,
+                                                "yearly_price_id": null
+                                            },
+                                            "trial_end_at": null,
+                                            "trial_start_at": null
+                                        }
+                                    ],
+                                    "tiers": [
+                                        {
+                                            "active": true,
+                                            "created_at": "2023-10-03T21:00:19.000Z",
+                                            "currency": "usd",
+                                            "description": null,
+                                            "expiry_at": null,
+                                            "id": "651c80e31334699742ce735a",
+                                            "monthly_price": 500,
+                                            "monthly_price_id": null,
+                                            "name": "Default Product",
+                                            "slug": "default-product",
+                                            "trial_days": 0,
+                                            "type": "paid",
+                                            "updated_at": "2023-10-03T21:01:16.000Z",
+                                            "visibility": "public",
+                                            "welcome_page_url": null,
+                                            "yearly_price": 5000,
+                                            "yearly_price_id": null
+                                        }
+                                    ],
+                                    "updated_at": "2023-10-03T21:01:16.000Z",
+                                    "uuid": "14c7ae29-12ec-4ab5-bc73-577c21b1491f"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "members": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/members.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Member attribution creates a subscriptioncreatedevent without attribution",
+        "tags": [
+            "members"
+        ]
+    },
+    "parameters": []
+}

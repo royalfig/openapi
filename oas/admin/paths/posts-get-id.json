@@ -1,0 +1,50 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "PostAttributionStatsCanFetchAttributionStats",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "meta": {},
+                            "stats": [
+                                {
+                                    "paid_conversions": 1,
+                                    "signups": 2,
+                                    "source": "Direct"
+                                },
+                                {
+                                    "paid_conversions": 0,
+                                    "signups": 1,
+                                    "source": "Twitter"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "posts": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/posts.json"
+                                    }
+                                },
+                                "meta": {
+                                    "$ref": "../components/schemas/meta.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Post attribution stats can fetch attribution stats",
+        "tags": [
+            "posts"
+        ]
+    },
+    "parameters": []
+}

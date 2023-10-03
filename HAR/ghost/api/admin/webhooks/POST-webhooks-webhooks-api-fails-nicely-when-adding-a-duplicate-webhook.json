@@ -1,0 +1,75 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/ghost/api/admin/webhooks/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"webhooks\":[{\"event\":\"test.create\",\"target_url\":\"http://example.com/webhooks/test/extra/1\",\"name\":\"test\",\"secret\":\"thisissecret\",\"integration_id\":\"651c80e31334699742ce7269\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 422,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "272"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"110-o1ZsjQ61tsuVRqUc+5hkx/qG/PI\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "272",
+                        "text": "{\"errors\":[{\"message\":\"Validation error, cannot save webhook.\",\"context\":\"Target URL has already been used for this event.\",\"type\":\"ValidationError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"f48313c0-622f-11ee-b83d-01dc9a879334\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

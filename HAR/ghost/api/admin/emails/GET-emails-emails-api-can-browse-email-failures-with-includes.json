@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/emails/651c80e31334699742ce7272/recipient-failures/?order=failed_at%20DESC&include=member,email_recipient",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "order",
+                            "value": "failed_at DESC"
+                        },
+                        {
+                            "name": "include",
+                            "value": "member,email_recipient"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "3401"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"d49-T/Aln4QQ5wrlsyDGazFxw6aC/oE\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "3401",
+                        "text": "{\"failures\":[{\"id\":\"651c80e31334699742ce72d2\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Temporary failure\",\"severity\":\"temporary\",\"failed_at\":\"2023-10-03T21:00:19.000Z\",\"event_id\":\"event-id-651c80e31334699742ce72d3\",\"member\":{\"id\":\"651c80e31334699742ce7248\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b340\",\"name\":\"Mr Egg\",\"email\":\"member1@test.com\",\"avatar_image\":null},\"email_recipient\":{\"id\":\"651c80e31334699742ce7275\",\"batch_id\":\"651c80e31334699742ce7274\",\"processed_at\":\"2023-10-03T21:00:19.000Z\",\"delivered_at\":null,\"opened_at\":null,\"failed_at\":null,\"member_uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b340\",\"member_email\":\"member1@test.com\",\"member_name\":\"Mr Egg\"}},{\"id\":\"651c80e31334699742ce72d4\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Temporary failure\",\"severity\":\"temporary\",\"failed_at\":\"2023-10-03T21:00:19.000Z\",\"event_id\":\"event-id-651c80e31334699742ce72d5\",\"member\":{\"id\":\"651c80e31334699742ce7249\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b341\",\"name\":null,\"email\":\"member2@test.com\",\"avatar_image\":null},\"email_recipient\":{\"id\":\"651c80e31334699742ce7276\",\"batch_id\":\"651c80e31334699742ce7274\",\"processed_at\":\"2023-10-03T21:00:19.000Z\",\"delivered_at\":null,\"opened_at\":null,\"failed_at\":null,\"member_uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b341\",\"member_email\":\"member2@test.com\",\"member_name\":null}},{\"id\":\"651c80e31334699742ce72d6\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Temporary failure\",\"severity\":\"temporary\",\"failed_at\":\"2023-10-03T21:00:19.000Z\",\"event_id\":\"event-id-651c80e31334699742ce72d7\",\"member\":{\"id\":\"651c80e31334699742ce724a\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b342\",\"name\":\"Egon Spengler\",\"email\":\"paid@test.com\",\"avatar_image\":null},\"email_recipient\":{\"id\":\"651c80e31334699742ce7277\",\"batch_id\":\"651c80e31334699742ce7274\",\"processed_at\":\"2023-10-03T21:00:19.000Z\",\"delivered_at\":null,\"opened_at\":null,\"failed_at\":null,\"member_uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b342\",\"member_email\":\"paid@test.com\",\"member_name\":\"Mr Egg\"}},{\"id\":\"651c80e31334699742ce72d8\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Temporary failure\",\"severity\":\"temporary\",\"failed_at\":\"2023-10-03T21:00:19.000Z\",\"event_id\":\"event-id-651c80e31334699742ce72d9\",\"member\":{\"id\":\"651c80e31334699742ce724b\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b343\",\"name\":\"Ray Stantz\",\"email\":\"trialing@test.com\",\"avatar_image\":null},\"email_recipient\":{\"id\":\"651c80e31334699742ce7278\",\"batch_id\":\"651c80e31334699742ce7274\",\"processed_at\":\"2023-10-03T21:00:19.000Z\",\"delivered_at\":null,\"opened_at\":null,\"failed_at\":null,\"member_uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b343\",\"member_email\":\"trialing@test.com\",\"member_name\":\"Mr Egg\"}},{\"id\":\"651c80e31334699742ce72da\",\"code\":555,\"enhanced_code\":\"5.5.5\",\"message\":\"Test failure\",\"severity\":\"permanent\",\"failed_at\":\"2023-10-03T21:00:19.000Z\",\"event_id\":\"event-id-651c80e31334699742ce72db\",\"member\":{\"id\":\"651c80e31334699742ce724d\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b345\",\"name\":\"Winston Zeddemore\",\"email\":\"vip@test.com\",\"avatar_image\":null},\"email_recipient\":{\"id\":\"651c80e31334699742ce727a\",\"batch_id\":\"651c80e31334699742ce7274\",\"processed_at\":\"2023-10-03T21:00:19.000Z\",\"delivered_at\":null,\"opened_at\":null,\"failed_at\":\"2023-10-03T21:00:19.000Z\",\"member_uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b344\",\"member_email\":\"vip@test.com\",\"member_name\":\"Mr Egg\"}}],\"meta\":{\"pagination\":{\"page\":1,\"limit\":15,\"pages\":1,\"total\":5,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

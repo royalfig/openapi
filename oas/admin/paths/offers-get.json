@@ -1,0 +1,35 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "HasNoInitialOffers",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "offers": []
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "offers": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/offers.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Has no initial offers",
+        "tags": [
+            "offers"
+        ]
+    },
+    "parameters": []
+}

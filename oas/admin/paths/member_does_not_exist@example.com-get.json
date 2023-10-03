@@ -1,0 +1,47 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "AdminApiRespondsWith404ErrorWhenTheResourceCannotBeFound",
+        "parameters": {},
+        "responses": {
+            "404": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Member not found.",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "00475090-6230-11ee-b842-01dc9a879334",
+                                    "message": "Resource not found error, cannot read member.",
+                                    "property": null,
+                                    "type": "NotFoundError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "member_does_not_exist@example.com": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/member_does_not_exist@example.com.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Admin api responds with 404 error when the resource cannot be found",
+        "tags": [
+            "member_does_not_exist@example.com"
+        ]
+    },
+    "parameters": []
+}

@@ -1,0 +1,50 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "api_version": {
+            "type": "string"
+        },
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "event": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "integration_id": {
+            "type": "string"
+        },
+        "last_triggered_at": {
+            "type": "string"
+        },
+        "last_triggered_error": {
+            "type": "string"
+        },
+        "last_triggered_status": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "secret": {
+            "type": "string"
+        },
+        "target_url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+                "https"
+            ]
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Webhook",
+    "type": "object"
+}

@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/posts/export/?order=published_at%20ASC",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "order",
+                            "value": "published_at ASC"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-disposition",
+                            "value": "Attachment; filename=\"post-analytics.2023-10-03.csv\""
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "text/csv; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "2721"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"aa1-8Nxb8S6gi/W0oYp2R/9Nrawi2T0\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "text/csv; charset=utf-8",
+                        "size": "2721",
+                        "text": "{}"
+                    }
+                }
+            }
+        ]
+    }
+}

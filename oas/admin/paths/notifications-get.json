@@ -1,0 +1,45 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "CanDeleteNotification",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "notifications": [
+                                {
+                                    "custom": true,
+                                    "dismissible": true,
+                                    "id": "59a952be7d79ed06b0d21133",
+                                    "location": "bottom",
+                                    "message": "test notification",
+                                    "status": "alert",
+                                    "type": "info"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "notifications": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/notifications.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can delete notification",
+        "tags": [
+            "notifications"
+        ]
+    },
+    "parameters": []
+}

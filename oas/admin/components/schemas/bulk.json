@@ -1,0 +1,41 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "action": {
+            "type": "string"
+        },
+        "meta": {
+            "additionalProperties": false,
+            "properties": {
+                "errors": {
+                    "items": {},
+                    "type": "array"
+                },
+                "stats": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "successful": {
+                            "type": "integer"
+                        },
+                        "unsuccessful": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": [],
+                    "title": "Stats",
+                    "type": "object"
+                },
+                "unsuccessfulData": {
+                    "items": {},
+                    "type": "array"
+                }
+            },
+            "required": [],
+            "title": "Meta",
+            "type": "object"
+        }
+    },
+    "required": [],
+    "title": "Bulk",
+    "type": "object"
+}

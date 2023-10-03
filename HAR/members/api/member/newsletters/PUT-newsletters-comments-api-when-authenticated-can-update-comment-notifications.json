@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://demo.ghost.io/members/api/member/newsletters/?uuid=98ea442a-74fc-4bd3-bf9a-20f72d767655",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "uuid",
+                            "value": "98ea442a-74fc-4bd3-bf9a-20f72d767655"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"enable_comment_notifications\":true}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "354"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"162-DeLwujo7fbaye3RzyYO29DIcWvo\""
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "354",
+                        "text": "{\"uuid\":\"98ea442a-74fc-4bd3-bf9a-20f72d767655\",\"email\":\"member@example.com\",\"name\":\"Test User\",\"newsletters\":[{\"id\":\"651c80e31334699742ce735c\",\"name\":\"Default Newsletter\",\"description\":null,\"sort_order\":0},{\"id\":\"651c80e31334699742ce7251\",\"name\":\"Weekly newsletter\",\"description\":null,\"sort_order\":2}],\"enable_comment_notifications\":true,\"status\":\"free\"}"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "accent_color": {
+            "type": "string"
+        },
+        "canonical_url": {
+            "type": "string"
+        },
+        "codeinjection_foot": {
+            "type": "string"
+        },
+        "codeinjection_head": {
+            "type": "string"
+        },
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "feature_image": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "meta_description": {
+            "type": "string"
+        },
+        "meta_title": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "og_description": {
+            "type": "string"
+        },
+        "og_image": {
+            "type": "string"
+        },
+        "og_title": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "string"
+        },
+        "twitter_description": {
+            "type": "string"
+        },
+        "twitter_image": {
+            "type": "string"
+        },
+        "twitter_title": {
+            "type": "string"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+                "http"
+            ]
+        },
+        "visibility": {
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Tag",
+    "type": "object"
+}

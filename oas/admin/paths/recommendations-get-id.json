@@ -1,0 +1,48 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "ApiReadCanGetARecommendationById",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "recommendations": [
+                                {
+                                    "created_at": "1970-01-01T00:00:05.000Z",
+                                    "excerpt": "Test excerpt",
+                                    "favicon": "https://recommendation1.com/favicon.ico",
+                                    "featured_image": "https://recommendation1.com/featured.jpg",
+                                    "id": "651c81061334699742ce9b82",
+                                    "one_click_subscribe": true,
+                                    "reason": "Reason 1",
+                                    "title": "Recommendation 1",
+                                    "updated_at": "2023-10-03T21:00:54.000Z",
+                                    "url": "https://recommendation1.com/"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "recommendations": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/recommendations.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Api read can get a recommendation by id",
+        "tags": [
+            "recommendations"
+        ]
+    },
+    "parameters": []
+}

@@ -1,0 +1,79 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/ghost/api/admin/members/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"members\":[{\"name\":\"Test User\",\"email\":\"cus_50f8633e86200abd@example.com\",\"subscribed\":true,\"stripe_customer_id\":\"cus_50f8633e86200abd\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 201,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "location",
+                            "value": "http://127.0.0.1:2369/ghost/api/admin/members/651c81341334699742cecdc9/"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "2473"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"9a9-4wHjmu9x7BZJVYPd0y6nNKk51f8\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "2473",
+                        "text": "{\"members\":[{\"id\":\"651c81341334699742cecdc9\",\"uuid\":\"54549fe4-cb63-48ea-8cfb-cc8a9a2933af\",\"email\":\"cus_50f8633e86200abd@example.com\",\"name\":\"Test User\",\"note\":null,\"geolocation\":null,\"subscribed\":true,\"created_at\":\"2023-10-03T21:01:40.000Z\",\"updated_at\":\"2023-10-03T21:01:40.000Z\",\"labels\":[],\"subscriptions\":[{\"id\":\"sub_6a1e7cfacc8bbe8b\",\"customer\":{\"id\":\"cus_50f8633e86200abd\",\"name\":\"Test User\",\"email\":\"cus_50f8633e86200abd@example.com\"},\"plan\":{\"id\":\"pric_63f5e59e0116561e\",\"nickname\":\"Yearly\",\"amount\":12,\"interval\":\"year\",\"currency\":\"USD\"},\"status\":\"active\",\"start_date\":\"2000-01-10T00:00:00.000Z\",\"default_payment_card_last4\":null,\"cancel_at_period_end\":false,\"cancellation_reason\":null,\"current_period_end\":\"2023-11-03T21:01:40.000Z\",\"trial_start_at\":null,\"trial_end_at\":null,\"price\":{\"id\":\"pric_63f5e59e0116561e\",\"price_id\":\"651c81341334699742cecdc7\",\"nickname\":\"Yearly\",\"amount\":12,\"interval\":\"year\",\"type\":\"recurring\",\"currency\":\"USD\",\"tier\":{\"id\":\"prod_2316d96333681f2a\",\"name\":\"Tier 6431ab2b35002597\",\"tier_id\":\"651c81341334699742cecdc4\"}},\"tier\":{\"id\":\"651c81341334699742cecdc4\",\"name\":\"Tier 6431ab2b35002597\",\"slug\":\"tier-6431ab2b35002597\",\"active\":true,\"welcome_page_url\":null,\"visibility\":\"public\",\"trial_days\":0,\"description\":null,\"type\":\"paid\",\"currency\":\"USD\",\"monthly_price\":12,\"yearly_price\":12,\"created_at\":\"2023-10-03T21:01:40.000Z\",\"updated_at\":\"2023-10-03T21:01:40.000Z\",\"monthly_price_id\":null,\"yearly_price_id\":null,\"expiry_at\":null},\"offer\":null,\"attribution\":{\"id\":null,\"type\":null,\"url\":null,\"title\":null,\"referrer_source\":null,\"referrer_medium\":null,\"referrer_url\":null}}],\"avatar_image\":null,\"comped\":false,\"email_count\":0,\"email_opened_count\":0,\"email_open_rate\":null,\"status\":\"paid\",\"last_seen_at\":null,\"attribution\":{\"id\":null,\"type\":null,\"url\":null,\"title\":null,\"referrer_source\":\"Created manually\",\"referrer_medium\":\"Ghost Admin\",\"referrer_url\":null},\"tiers\":[{\"id\":\"651c81341334699742cecdc4\",\"name\":\"Tier 6431ab2b35002597\",\"slug\":\"tier-6431ab2b35002597\",\"active\":true,\"welcome_page_url\":null,\"visibility\":\"public\",\"trial_days\":0,\"description\":null,\"type\":\"paid\",\"currency\":\"USD\",\"monthly_price\":12,\"yearly_price\":12,\"created_at\":\"2023-10-03T21:01:40.000Z\",\"updated_at\":\"2023-10-03T21:01:40.000Z\",\"monthly_price_id\":null,\"yearly_price_id\":null,\"expiry_at\":null}],\"email_suppression\":{\"suppressed\":false,\"info\":null},\"newsletters\":[{\"id\":\"651c80e31334699742ce735c\",\"name\":\"Default Newsletter\",\"description\":null,\"status\":\"active\"}]}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "DeleteCannotDeleteABuiltInCollection",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "collections": [
+                                {
+                                    "created_at": "2023-10-03T21:00:25.000Z",
+                                    "description": "Featured posts",
+                                    "feature_image": null,
+                                    "filter": "featured:true",
+                                    "id": "651c80e31334699742ce7359",
+                                    "slug": "featured",
+                                    "title": "Featured",
+                                    "type": "automatic",
+                                    "updated_at": "2023-10-03T21:00:25.000Z"
+                                }
+                            ],
+                            "meta": {
+                                "pagination": {
+                                    "limit": 1,
+                                    "next": null,
+                                    "page": 1,
+                                    "pages": 1,
+                                    "prev": null,
+                                    "total": 1
+                                }
+                            }
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "collections": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/collections.json"
+                                    }
+                                },
+                                "meta": {
+                                    "$ref": "../components/schemas/meta.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Delete cannot delete a built in collection",
+        "tags": [
+            "collections"
+        ]
+    },
+    "parameters": []
+}

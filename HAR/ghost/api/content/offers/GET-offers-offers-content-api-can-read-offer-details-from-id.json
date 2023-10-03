@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/content/offers/651c810c1334699742cea8b8/?key=cccccccccccccccccccccccccc",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "key",
+                            "value": "cccccccccccccccccccccccccc"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "public, max-age=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "331"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"14b-ipnAEYN7PI5b/WUr+YUOuxvTbqI\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "331",
+                        "text": "{\"offers\":[{\"id\":\"651c810c1334699742cea8b8\",\"name\":\"Black Friday\",\"display_title\":\"\",\"display_description\":\"\",\"type\":\"percent\",\"cadence\":\"year\",\"amount\":12,\"duration\":\"once\",\"duration_in_months\":null,\"currency_restriction\":false,\"currency\":null,\"status\":\"active\",\"tier\":{\"id\":\"651c80e31334699742ce735a\",\"name\":\"Default Product\"}}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

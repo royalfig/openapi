@@ -1,0 +1,83 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "ApiCanRequestPage",
+        "parameters": [
+            {
+                "description": "id",
+                "in": "path",
+                "name": "id",
+                "required": true,
+                "schema": {
+                    "type": "string",
+                    "example": "..."
+                }
+            }
+        ],
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "pages": [
+                                {
+                                    "access": true,
+                                    "canonical_url": null,
+                                    "codeinjection_foot": null,
+                                    "codeinjection_head": null,
+                                    "comment_id": "618ba1ffbe2896088840a6e9",
+                                    "comments": false,
+                                    "created_at": "2023-10-03T21:00:19.000+00:00",
+                                    "custom_excerpt": null,
+                                    "custom_template": null,
+                                    "excerpt": "Static page test is what this is for.\n\nHopefully you don't find it a bore.",
+                                    "feature_image": null,
+                                    "feature_image_alt": null,
+                                    "feature_image_caption": null,
+                                    "featured": false,
+                                    "frontmatter": null,
+                                    "html": "<!--kg-card-begin: markdown--><h1>Static page test is what this is for.</h1><p>Hopefully you don't find it a bore.</p><!--kg-card-end: markdown-->",
+                                    "id": "618ba1ffbe2896088840a6e9",
+                                    "meta_description": null,
+                                    "meta_title": null,
+                                    "og_description": null,
+                                    "og_image": null,
+                                    "og_title": null,
+                                    "published_at": "2023-10-03T21:00:19.000+00:00",
+                                    "reading_time": 0,
+                                    "show_title_and_feature_image": true,
+                                    "slug": "static-page-test",
+                                    "title": "This is a static page",
+                                    "twitter_description": null,
+                                    "twitter_image": null,
+                                    "twitter_title": null,
+                                    "updated_at": "2023-10-03T21:00:19.000+00:00",
+                                    "url": "http://127.0.0.1:2369/static-page-test/",
+                                    "uuid": "2037bed8-7cbc-4156-87ff-7dd7d1f15680",
+                                    "visibility": "public"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "pages": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/pages.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Api can request page",
+        "tags": [
+            "pages"
+        ]
+    },
+    "parameters": []
+}

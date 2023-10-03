@@ -1,0 +1,54 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "CanFetchMemberCountHistory",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "meta": {
+                                "totals": {
+                                    "comped": 0,
+                                    "free": 3,
+                                    "paid": 5
+                                }
+                            },
+                            "stats": [
+                                {
+                                    "comped": 0,
+                                    "date": "2023-10-03",
+                                    "free": 3,
+                                    "paid": 5,
+                                    "paid_canceled": 0,
+                                    "paid_subscribed": 0
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "member_count": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/member_count.json"
+                                    }
+                                },
+                                "meta": {
+                                    "$ref": "../components/schemas/meta.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can fetch member count history",
+        "tags": [
+            "member_count"
+        ]
+    },
+    "parameters": []
+}

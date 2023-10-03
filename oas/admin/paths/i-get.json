@@ -1,0 +1,47 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "RecommendationsAdminApiReadReturnsAnEmptyArrayWhenTheRecommendationIsNotFound",
+        "parameters": {},
+        "responses": {
+            "422": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Validation (matches) failed for id undefined.id",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "f1515bd0-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Validation error, cannot read recommendation.",
+                                    "property": null,
+                                    "type": "ValidationError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "i": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/i.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Recommendations admin api read returns an empty array when the recommendation is not found",
+        "tags": [
+            "i-dont-exist"
+        ]
+    },
+    "parameters": []
+}

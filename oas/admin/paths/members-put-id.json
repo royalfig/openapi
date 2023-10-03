@@ -1,0 +1,116 @@
+{
+    "parameters": [],
+    "put": {
+        "description": "",
+        "operationId": "UpdatingNewsletterSubscriptionsDoesNotUnsubscribeMemberFromArchivedNewsletter",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "members": [
+                            {
+                                "newsletters": []
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "members": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "newsletters": {
+                                            "items": {},
+                                            "type": "array"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Member",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminMembers651C80E31334699742Ce724DPutRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "members": [
+                                {
+                                    "attribution": {
+                                        "id": "618ba1ffbe2896088840a6e3",
+                                        "referrer_medium": null,
+                                        "referrer_source": "Direct",
+                                        "referrer_url": null,
+                                        "title": "Short and Sweet",
+                                        "type": "post",
+                                        "url": "http://127.0.0.1:2369/short-and-sweet/"
+                                    },
+                                    "avatar_image": null,
+                                    "comped": false,
+                                    "created_at": "2023-10-03T21:00:41.000Z",
+                                    "email": "vip@test.com",
+                                    "email_count": 0,
+                                    "email_open_rate": null,
+                                    "email_opened_count": 0,
+                                    "email_suppression": {
+                                        "info": null,
+                                        "suppressed": false
+                                    },
+                                    "geolocation": null,
+                                    "id": "651c80e31334699742ce724d",
+                                    "labels": [
+                                        {
+                                            "created_at": "2023-10-03T21:00:19.000Z",
+                                            "id": "651c80e31334699742ce7255",
+                                            "name": "VIP",
+                                            "slug": "vip",
+                                            "updated_at": "2023-10-03T21:00:19.000Z"
+                                        }
+                                    ],
+                                    "last_seen_at": null,
+                                    "name": "new name",
+                                    "newsletters": [],
+                                    "note": null,
+                                    "status": "free",
+                                    "subscribed": false,
+                                    "subscriptions": [],
+                                    "tiers": [],
+                                    "updated_at": "2023-10-03T21:00:42.000Z",
+                                    "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b345"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "members": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/members.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Updating newsletter subscriptions does not unsubscribe member from archived newsletter",
+        "tags": [
+            "members"
+        ]
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "CanBrowseTiers",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "meta": {
+                                "pagination": {
+                                    "limit": 2,
+                                    "next": null,
+                                    "page": 1,
+                                    "pages": 1,
+                                    "prev": null,
+                                    "total": 2
+                                }
+                            },
+                            "tiers": [
+                                {
+                                    "active": true,
+                                    "benefits": [],
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "description": null,
+                                    "id": "651c80e31334699742ce735b",
+                                    "name": "Free",
+                                    "slug": "free",
+                                    "trial_days": 0,
+                                    "type": "free",
+                                    "updated_at": "2023-10-03T21:00:59.000Z",
+                                    "visibility": "public",
+                                    "welcome_page_url": "/welcome-free"
+                                },
+                                {
+                                    "active": true,
+                                    "benefits": [],
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "currency": "USD",
+                                    "description": null,
+                                    "id": "651c80e31334699742ce735a",
+                                    "monthly_price": 500,
+                                    "name": "Default Product",
+                                    "slug": "default-product",
+                                    "trial_days": 0,
+                                    "type": "paid",
+                                    "updated_at": "2023-10-03T21:00:59.000Z",
+                                    "visibility": "public",
+                                    "welcome_page_url": "/welcome-paid",
+                                    "yearly_price": 5000
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "tiers": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/tiers.json"
+                                    }
+                                },
+                                "meta": {
+                                    "$ref": "../components/schemas/meta.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can browse tiers",
+        "tags": [
+            "tiers"
+        ]
+    },
+    "parameters": []
+}

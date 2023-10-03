@@ -1,0 +1,44 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "sender_email": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "string"
+        },
+        "sort_order": {
+            "type": "integer"
+        },
+        "subscribe_on_signup": {
+            "type": "boolean"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "uuid": {
+            "format": "uuid",
+            "type": "string"
+        },
+        "visibility": {
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Newsletter",
+    "type": "object"
+}

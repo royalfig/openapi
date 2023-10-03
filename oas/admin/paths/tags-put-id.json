@@ -1,0 +1,189 @@
+{
+    "parameters": [],
+    "put": {
+        "description": "",
+        "operationId": "EventsTagEditedEventIsTriggered",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "tags": [
+                            {
+                                "accent_color": null,
+                                "canonical_url": null,
+                                "codeinjection_foot": null,
+                                "codeinjection_head": null,
+                                "created_at": "2023-10-03T21:01:46.000Z",
+                                "description": "Test description",
+                                "feature_image": null,
+                                "id": "651c813a1334699742ced1d6",
+                                "meta_description": null,
+                                "meta_title": null,
+                                "name": "Updated Tag 3",
+                                "og_description": null,
+                                "og_image": null,
+                                "og_title": null,
+                                "slug": "updated-tag-3",
+                                "twitter_description": null,
+                                "twitter_image": null,
+                                "twitter_title": null,
+                                "updated_at": "2023-10-03T21:01:46.000Z",
+                                "url": "http://127.0.0.1:2369/404/",
+                                "visibility": "public"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "tags": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "accent_color": {
+                                            "nullable": true
+                                        },
+                                        "canonical_url": {
+                                            "nullable": true
+                                        },
+                                        "codeinjection_foot": {
+                                            "nullable": true
+                                        },
+                                        "codeinjection_head": {
+                                            "nullable": true
+                                        },
+                                        "created_at": {
+                                            "format": "date-time",
+                                            "type": "string"
+                                        },
+                                        "description": {
+                                            "type": "string"
+                                        },
+                                        "feature_image": {
+                                            "nullable": true
+                                        },
+                                        "id": {
+                                            "type": "string"
+                                        },
+                                        "meta_description": {
+                                            "nullable": true
+                                        },
+                                        "meta_title": {
+                                            "nullable": true
+                                        },
+                                        "name": {
+                                            "type": "string"
+                                        },
+                                        "og_description": {
+                                            "nullable": true
+                                        },
+                                        "og_image": {
+                                            "nullable": true
+                                        },
+                                        "og_title": {
+                                            "nullable": true
+                                        },
+                                        "slug": {
+                                            "type": "string"
+                                        },
+                                        "twitter_description": {
+                                            "nullable": true
+                                        },
+                                        "twitter_image": {
+                                            "nullable": true
+                                        },
+                                        "twitter_title": {
+                                            "nullable": true
+                                        },
+                                        "updated_at": {
+                                            "format": "date-time",
+                                            "type": "string"
+                                        },
+                                        "url": {
+                                            "format": "uri",
+                                            "type": "string",
+                                            "x-qt-uri-protocols": [
+                                                "http"
+                                            ]
+                                        },
+                                        "visibility": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Tag",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminTags651C813A1334699742Ced1D6PutRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "tags": [
+                                {
+                                    "accent_color": null,
+                                    "canonical_url": null,
+                                    "codeinjection_foot": null,
+                                    "codeinjection_head": null,
+                                    "created_at": "2023-10-03T21:01:46.000Z",
+                                    "description": "Test description",
+                                    "feature_image": null,
+                                    "id": "651c813a1334699742ced1d6",
+                                    "meta_description": null,
+                                    "meta_title": null,
+                                    "name": "Updated Tag 3",
+                                    "og_description": null,
+                                    "og_image": null,
+                                    "og_title": null,
+                                    "slug": "updated-tag-3",
+                                    "twitter_description": null,
+                                    "twitter_image": null,
+                                    "twitter_title": null,
+                                    "updated_at": "2023-10-03T21:01:46.000Z",
+                                    "url": "http://127.0.0.1:2369/404/",
+                                    "visibility": "public"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "tags": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/tags.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": "",
+                "headers": {
+                    "x-cache-invalidate": {
+                        "description": "Custom header x-cache-invalidate",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "summary": " events tag edited event is triggered",
+        "tags": [
+            "tags"
+        ]
+    }
+}

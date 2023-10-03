@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/members/api/feedback/?uuid=00000000-0000-0000-0000-000000000000",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "uuid",
+                            "value": "00000000-0000-0000-0000-000000000000"
+                        }
+                    ],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"feedback\":[{\"score\":1,\"post_id\":\"618ba1ffbe2896088840a6df\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 401,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "203"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"cb-KhgnJZUyF2O1eW13SgaJECwOun8\""
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "203",
+                        "text": "{\"errors\":[{\"message\":\"Invalid uuid.\",\"context\":null,\"type\":\"UnauthorizedError\",\"details\":null,\"property\":null,\"help\":null,\"code\":null,\"id\":\"f8833f41-622f-11ee-b83e-01dc9a879334\",\"ghostErrorCode\":null}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

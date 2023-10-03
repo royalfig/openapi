@@ -1,0 +1,289 @@
+{
+    "parameters": [],
+    "post": {
+        "description": "",
+        "operationId": "UpdateWorksWithLatestCollectionCard",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "pages": [
+                            {
+                                "lexical": "{\"root\":{\"children\":[{\"type\":\"collection\",\"version\":1,\"collection\":\"latest\",\"postCount\":3,\"layout\":\"grid\",\"columns\":3,\"header\":\"Latest\"}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+                                "status": "draft",
+                                "title": "Latest Collection Card Test"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "pages": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "lexical": {
+                                            "type": "string"
+                                        },
+                                        "status": {
+                                            "type": "string"
+                                        },
+                                        "title": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Page",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminPagesPostRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "201": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "pages": [
+                                {
+                                    "authors": [
+                                        {
+                                            "accessibility": null,
+                                            "bio": "bio",
+                                            "comment_notifications": true,
+                                            "cover_image": null,
+                                            "created_at": "2023-10-03T21:00:49.000Z",
+                                            "donation_notifications": true,
+                                            "email": "jbloggs@example.com",
+                                            "facebook": null,
+                                            "free_member_signup_notification": true,
+                                            "id": "1",
+                                            "last_seen": "2023-10-03T21:00:49.000Z",
+                                            "location": "location",
+                                            "mention_notifications": true,
+                                            "meta_description": null,
+                                            "meta_title": null,
+                                            "milestone_notifications": true,
+                                            "name": "Joe Bloggs",
+                                            "paid_subscription_canceled_notification": false,
+                                            "paid_subscription_started_notification": true,
+                                            "profile_image": "https://example.com/super_photo.jpg",
+                                            "recommendation_notifications": true,
+                                            "roles": [
+                                                {
+                                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                                    "description": "Blog Owner",
+                                                    "id": "651c80e31334699742ce7350",
+                                                    "name": "Owner",
+                                                    "updated_at": "2023-10-03T21:00:19.000Z"
+                                                }
+                                            ],
+                                            "slug": "joe-bloggs",
+                                            "status": "active",
+                                            "tour": null,
+                                            "twitter": null,
+                                            "updated_at": "2023-10-03T21:00:49.000Z",
+                                            "url": "http://127.0.0.1:2369/author/joe-bloggs/",
+                                            "website": null
+                                        }
+                                    ],
+                                    "canonical_url": null,
+                                    "codeinjection_foot": null,
+                                    "codeinjection_head": null,
+                                    "comment_id": "651c81011334699742ce95a1",
+                                    "count": {
+                                        "negative_feedback": 0,
+                                        "paid_conversions": 0,
+                                        "positive_feedback": 0,
+                                        "signups": 0
+                                    },
+                                    "created_at": "2023-10-03T21:00:49.000Z",
+                                    "custom_excerpt": null,
+                                    "custom_template": null,
+                                    "excerpt": "\n\n\nLatest\n\n\n\n\n\n\n\n\n\n\nStart here for a quick overview of everything you need to know\n\n\nWe've crammed the most important information to help you get started with Ghost into this one post. It's your cheat-sheet to get started, and your shortcut to advanced features.\n\n\n\n3 Oct 2023\n\n\n · 2 min\n\n\n\n\n\n\n\n\n\n\n\n\nCustomizing your brand and design settings\n\n\nHow to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality.\n\n\n\n3 Oct 2023\n\n\n · 3 min\n",
+                                    "feature_image": null,
+                                    "feature_image_alt": null,
+                                    "feature_image_caption": null,
+                                    "featured": false,
+                                    "frontmatter": null,
+                                    "html": "<div class=\"kg-card kg-collection-card kg-width-wide\" data-kg-collection-slug=\"latest\" data-kg-collection-limit=\"3\">\n            <h4 class=\"kg-collection-card-title\">Latest</h4>\n            <div class=\"kg-collection-card-feed kg-collection-card-grid columns-3\">\n                <a href=\"http://127.0.0.1:2369/welcome/\" class=\"kg-collection-card-post-wrapper\">\n            <div class=\"kg-collection-card-post\">\n                <div class=\"kg-collection-card-img\">\n                        <img class=\"aspect-[3/2]\" src=\"https://static.ghost.org/v4.0.0/images/welcome-to-ghost.png\" alt=\"Start here for a quick overview of everything you need to know\">\n                    </div>\n                <div class=\"kg-collection-card-content\">\n                    <h2 class=\"kg-collection-card-post-title\">Start here for a quick overview of everything you need to know</h2>\n                    <p class=\"kg-collection-card-post-excerpt\">We've crammed the most important information to help you get started with Ghost into this one post. It's your cheat-sheet to get started, and your shortcut to advanced features.</p>\n                    <div class=\"kg-collection-card-post-meta\">\n                        <p>3 Oct 2023</p>\n                        <p>&nbsp;· 2 min</p>\n                    </div>\n                </div>\n            </div>\n        </a><a href=\"http://127.0.0.1:2369/design/\" class=\"kg-collection-card-post-wrapper\">\n            <div class=\"kg-collection-card-post\">\n                <div class=\"kg-collection-card-img\">\n                        <img class=\"aspect-[3/2]\" src=\"https://static.ghost.org/v4.0.0/images/publishing-options.png\" alt=\"Customizing your brand and design settings\">\n                    </div>\n                <div class=\"kg-collection-card-content\">\n                    <h2 class=\"kg-collection-card-post-title\">Customizing your brand and design settings</h2>\n                    <p class=\"kg-collection-card-post-excerpt\">How to tweak a few settings in Ghost to transform your site from a generic template to a custom brand with style and personality.</p>\n                    <div class=\"kg-collection-card-post-meta\">\n                        <p>3 Oct 2023</p>\n                        <p>&nbsp;· 3 min</p>\n                    </div>\n                </div>\n            </div>\n        </a><a href=\"http://127.0.0.1:2369/write/\" class=\"kg-collection-card-post-wrapper\">\n            <div class=\"kg-collection-card-post\">\n                <div class=\"kg-collection-card-img\">\n                        <img class=\"aspect-[3/2]\" src=\"https://static.ghost.org/v4.0.0/images/writing-posts-with-ghost.png\" alt=\"Writing and managing content in Ghost, an advanced guide\">\n                    </div>\n                <div class=\"kg-collection-card-content\">\n                    <h2 class=\"kg-collection-card-post-title\">Writing and managing content in Ghost, an advanced guide</h2>\n                    <p class=\"kg-collection-card-post-excerpt\">A full overview of all the features built into the Ghost editor, including powerful workflow automations to speed up your creative process.</p>\n                    <div class=\"kg-collection-card-post-meta\">\n                        <p>3 Oct 2023</p>\n                        <p>&nbsp;· 5 min</p>\n                    </div>\n                </div>\n            </div>\n        </a>\n            </div>\n        </div>",
+                                    "id": "651c81011334699742ce95a1",
+                                    "lexical": "{\"root\":{\"children\":[{\"type\":\"collection\",\"version\":1,\"collection\":\"latest\",\"postCount\":3,\"layout\":\"grid\",\"columns\":3,\"header\":\"Latest\"}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+                                    "meta_description": null,
+                                    "meta_title": null,
+                                    "mobiledoc": null,
+                                    "og_description": null,
+                                    "og_image": null,
+                                    "og_title": null,
+                                    "post_revisions": [
+                                        {
+                                            "author": {
+                                                "accessibility": null,
+                                                "bio": "bio",
+                                                "comment_notifications": true,
+                                                "cover_image": null,
+                                                "created_at": "2023-10-03T21:00:49.000Z",
+                                                "donation_notifications": true,
+                                                "email": "jbloggs@example.com",
+                                                "facebook": null,
+                                                "free_member_signup_notification": true,
+                                                "id": "1",
+                                                "last_seen": "2023-10-03T21:00:49.000Z",
+                                                "locale": null,
+                                                "location": "location",
+                                                "mention_notifications": true,
+                                                "meta_description": null,
+                                                "meta_title": null,
+                                                "milestone_notifications": true,
+                                                "name": "Joe Bloggs",
+                                                "paid_subscription_canceled_notification": false,
+                                                "paid_subscription_started_notification": true,
+                                                "profile_image": "https://example.com/super_photo.jpg",
+                                                "recommendation_notifications": true,
+                                                "slug": "joe-bloggs",
+                                                "status": "active",
+                                                "tour": null,
+                                                "twitter": null,
+                                                "updated_at": "2023-10-03T21:00:49.000Z",
+                                                "visibility": "public",
+                                                "website": null
+                                            },
+                                            "created_at": "2023-10-03T21:00:49.000Z",
+                                            "created_at_ts": 1696366849880,
+                                            "feature_image": null,
+                                            "feature_image_alt": null,
+                                            "feature_image_caption": null,
+                                            "id": "651c81011334699742ce95a3",
+                                            "lexical": "{\"root\":{\"children\":[{\"type\":\"collection\",\"version\":1,\"collection\":\"latest\",\"postCount\":3,\"layout\":\"grid\",\"columns\":3,\"header\":\"Latest\"}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+                                            "post_id": "651c81011334699742ce95a1",
+                                            "post_status": "draft",
+                                            "reason": "initial_revision",
+                                            "title": "Latest Collection Card Test"
+                                        }
+                                    ],
+                                    "primary_author": {
+                                        "accessibility": null,
+                                        "bio": "bio",
+                                        "comment_notifications": true,
+                                        "cover_image": null,
+                                        "created_at": "2023-10-03T21:00:49.000Z",
+                                        "donation_notifications": true,
+                                        "email": "jbloggs@example.com",
+                                        "facebook": null,
+                                        "free_member_signup_notification": true,
+                                        "id": "1",
+                                        "last_seen": "2023-10-03T21:00:49.000Z",
+                                        "location": "location",
+                                        "mention_notifications": true,
+                                        "meta_description": null,
+                                        "meta_title": null,
+                                        "milestone_notifications": true,
+                                        "name": "Joe Bloggs",
+                                        "paid_subscription_canceled_notification": false,
+                                        "paid_subscription_started_notification": true,
+                                        "profile_image": "https://example.com/super_photo.jpg",
+                                        "recommendation_notifications": true,
+                                        "roles": [
+                                            {
+                                                "created_at": "2023-10-03T21:00:19.000Z",
+                                                "description": "Blog Owner",
+                                                "id": "651c80e31334699742ce7350",
+                                                "name": "Owner",
+                                                "updated_at": "2023-10-03T21:00:19.000Z"
+                                            }
+                                        ],
+                                        "slug": "joe-bloggs",
+                                        "status": "active",
+                                        "tour": null,
+                                        "twitter": null,
+                                        "updated_at": "2023-10-03T21:00:49.000Z",
+                                        "url": "http://127.0.0.1:2369/author/joe-bloggs/",
+                                        "website": null
+                                    },
+                                    "primary_tag": null,
+                                    "published_at": null,
+                                    "reading_time": 1,
+                                    "show_title_and_feature_image": true,
+                                    "slug": "latest-collection-card-test",
+                                    "status": "draft",
+                                    "tags": [],
+                                    "tiers": [
+                                        {
+                                            "active": true,
+                                            "created_at": "2023-10-03T21:00:19.000Z",
+                                            "currency": null,
+                                            "description": null,
+                                            "id": "651c80e31334699742ce735b",
+                                            "monthly_price": null,
+                                            "monthly_price_id": null,
+                                            "name": "Free",
+                                            "slug": "free",
+                                            "trial_days": 0,
+                                            "type": "free",
+                                            "updated_at": "2023-10-03T21:00:19.000Z",
+                                            "visibility": "public",
+                                            "welcome_page_url": null,
+                                            "yearly_price": null,
+                                            "yearly_price_id": null
+                                        },
+                                        {
+                                            "active": true,
+                                            "created_at": "2023-10-03T21:00:19.000Z",
+                                            "currency": "usd",
+                                            "description": null,
+                                            "id": "651c80e31334699742ce735a",
+                                            "monthly_price": 500,
+                                            "monthly_price_id": null,
+                                            "name": "Default Product",
+                                            "slug": "default-product",
+                                            "trial_days": 0,
+                                            "type": "paid",
+                                            "updated_at": "2023-10-03T21:00:19.000Z",
+                                            "visibility": "public",
+                                            "welcome_page_url": null,
+                                            "yearly_price": 5000,
+                                            "yearly_price_id": null
+                                        }
+                                    ],
+                                    "title": "Latest Collection Card Test",
+                                    "twitter_description": null,
+                                    "twitter_image": null,
+                                    "twitter_title": null,
+                                    "updated_at": "2023-10-03T21:00:49.000Z",
+                                    "url": "http://127.0.0.1:2369/p/41e7a5f6-f230-45ff-ba27-adfbdb70992a/",
+                                    "uuid": "41e7a5f6-f230-45ff-ba27-adfbdb70992a",
+                                    "visibility": "public"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "pages": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/pages.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Update works with latest collection card",
+        "tags": [
+            "pages"
+        ]
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/recommendations/?include=count.clicks,count.subscribers",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "include",
+                            "value": "count.clicks,count.subscribers"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "2103"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"837-vfp7UaEoTQSWDU6RwpbN4zWu884\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "2103",
+                        "text": "{\"recommendations\":[{\"id\":\"651c81061334699742ce9b4f\",\"title\":\"Recommendation 4\",\"reason\":\"Reason 4\",\"excerpt\":\"Test excerpt\",\"featured_image\":\"https://recommendation4.com/featured.jpg\",\"favicon\":\"https://recommendation4.com/favicon.ico\",\"url\":\"https://recommendation4.com/\",\"one_click_subscribe\":true,\"created_at\":\"1970-01-01T00:00:20.000Z\",\"updated_at\":\"2023-10-03T21:00:54.000Z\",\"count\":{\"clicks\":2,\"subscribers\":3}},{\"id\":\"651c81061334699742ce9b4e\",\"title\":\"Recommendation 3\",\"reason\":\"Reason 3\",\"excerpt\":\"Test excerpt\",\"featured_image\":\"https://recommendation3.com/featured.jpg\",\"favicon\":\"https://recommendation3.com/favicon.ico\",\"url\":\"https://recommendation3.com/\",\"one_click_subscribe\":true,\"created_at\":\"1970-01-01T00:00:15.000Z\",\"updated_at\":\"2023-10-03T21:00:54.000Z\",\"count\":{\"clicks\":3,\"subscribers\":0}},{\"id\":\"651c81061334699742ce9b4d\",\"title\":\"Recommendation 2\",\"reason\":\"Reason 2\",\"excerpt\":\"Test excerpt\",\"featured_image\":\"https://recommendation2.com/featured.jpg\",\"favicon\":\"https://recommendation2.com/favicon.ico\",\"url\":\"https://recommendation2.com/\",\"one_click_subscribe\":true,\"created_at\":\"1970-01-01T00:00:10.000Z\",\"updated_at\":\"2023-10-03T21:00:54.000Z\",\"count\":{\"clicks\":0,\"subscribers\":2}},{\"id\":\"651c81061334699742ce9b4c\",\"title\":\"Recommendation 1\",\"reason\":\"Reason 1\",\"excerpt\":\"Test excerpt\",\"featured_image\":\"https://recommendation1.com/featured.jpg\",\"favicon\":\"https://recommendation1.com/favicon.ico\",\"url\":\"https://recommendation1.com/\",\"one_click_subscribe\":true,\"created_at\":\"1970-01-01T00:00:05.000Z\",\"updated_at\":\"2023-10-03T21:00:54.000Z\",\"count\":{\"clicks\":0,\"subscribers\":0}},{\"id\":\"651c81061334699742ce9b4b\",\"title\":\"Recommendation 0\",\"reason\":\"Reason 0\",\"excerpt\":\"Test excerpt\",\"featured_image\":\"https://recommendation0.com/featured.jpg\",\"favicon\":\"https://recommendation0.com/favicon.ico\",\"url\":\"https://recommendation0.com/\",\"one_click_subscribe\":true,\"created_at\":\"1970-01-01T00:00:00.000Z\",\"updated_at\":\"2023-10-03T21:00:54.000Z\",\"count\":{\"clicks\":0,\"subscribers\":0}}],\"meta\":{\"pagination\":{\"page\":1,\"limit\":5,\"total\":5,\"pages\":1,\"prev\":null,\"next\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

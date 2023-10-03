@@ -1,0 +1,80 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/api/admin/members/events/?filter=type%3A-%5Bemail_opened_event%2Cemail_failed_event%2Cemail_sent_event%2Cclick_event%5D%2B(data.created_at%3A%3C%272023-10-03%2021%3A00%3A19%27%2C(data.created_at%3A%272023-10-03%2021%3A00%3A19%27%2Bid%3A%3C651c80e31334699742ce7313))&limit=32",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [
+                        {
+                            "name": "filter",
+                            "value": "type:-[email_opened_event,email_failed_event,email_sent_event,click_event]+(data.created_at:<'2023-10-03 21:00:19',(data.created_at:'2023-10-03 21:00:19'+id:<651c80e31334699742ce7313))"
+                        },
+                        {
+                            "name": "limit",
+                            "value": "32"
+                        }
+                    ]
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "1363"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"553-r2/f/xK7lpkxw0bFaxIZdX8+Rh0\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "1363",
+                        "text": "{\"events\":[{\"type\":\"email_delivered_event\",\"data\":{\"id\":\"651c80e31334699742ce7279\",\"member_id\":\"651c80e31334699742ce724c\",\"created_at\":\"2023-10-03T21:00:19.000Z\",\"member\":{\"id\":\"651c80e31334699742ce724c\",\"uuid\":\"f6f91461-d7d8-4a3f-aa5d-8e582c40b344\",\"email\":\"comped@test.com\",\"status\":\"paid\",\"name\":\"Vinz Clortho\",\"expertise\":null,\"note\":null,\"geolocation\":null,\"enable_comment_notifications\":true,\"email_count\":1,\"email_opened_count\":1,\"email_open_rate\":null,\"email_disabled\":false,\"last_seen_at\":null,\"last_commented_at\":null,\"created_at\":\"2023-10-03T21:00:24.000Z\",\"updated_at\":\"2023-10-03T21:00:24.000Z\",\"avatar_image\":null},\"email\":{\"id\":\"651c80e31334699742ce7272\",\"post_id\":\"618ba1ffbe2896088840a6df\",\"uuid\":\"6b6afda6-4b5e-4893-bff6-f16859e8349a\",\"status\":\"submitted\",\"recipient_filter\":\"all\",\"error\":null,\"error_data\":null,\"email_count\":2,\"delivered_count\":1,\"opened_count\":1,\"failed_count\":0,\"subject\":\"You got mailed!\",\"from\":null,\"reply_to\":null,\"html\":\"<p>Look! I'm an email</p>\",\"plaintext\":\"Waba-daba-dab-da\",\"source\":null,\"source_type\":\"html\",\"track_opens\":false,\"track_clicks\":false,\"feedback_enabled\":false,\"submitted_at\":\"2023-10-03T21:00:19.000Z\",\"newsletter_id\":null,\"created_at\":\"2023-10-03T21:00:19.000Z\",\"updated_at\":\"2023-10-03T21:00:19.000Z\"}}}],\"meta\":{\"pagination\":{\"limit\":\"32\",\"total\":1,\"pages\":1,\"page\":null,\"next\":null,\"prev\":null}}}"
+                    }
+                }
+            }
+        ]
+    }
+}

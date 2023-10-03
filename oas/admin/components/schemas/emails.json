@@ -1,0 +1,87 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "delivered_count": {
+            "type": "integer"
+        },
+        "email_count": {
+            "type": "integer"
+        },
+        "error": {
+            "type": "string"
+        },
+        "error_data": {
+            "type": "string"
+        },
+        "failed_count": {
+            "type": "integer"
+        },
+        "feedback_enabled": {
+            "type": "boolean"
+        },
+        "from": {
+            "type": "string"
+        },
+        "html": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "newsletter_id": {
+            "type": "string"
+        },
+        "opened_count": {
+            "type": "integer"
+        },
+        "plaintext": {
+            "type": "string"
+        },
+        "post_id": {
+            "type": "string"
+        },
+        "recipient_filter": {
+            "type": "string"
+        },
+        "reply_to": {
+            "type": "string"
+        },
+        "source": {
+            "type": "string"
+        },
+        "source_type": {
+            "type": "string"
+        },
+        "status": {
+            "type": "string"
+        },
+        "subject": {
+            "type": "string"
+        },
+        "submitted_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "track_clicks": {
+            "type": "boolean"
+        },
+        "track_opens": {
+            "type": "boolean"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "uuid": {
+            "format": "uuid",
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Email",
+    "type": "object"
+}

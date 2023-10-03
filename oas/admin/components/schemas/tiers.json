@@ -1,0 +1,58 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "active": {
+            "type": "boolean"
+        },
+        "benefits": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "currency": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "monthly_price": {
+            "type": "integer"
+        },
+        "name": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "string"
+        },
+        "trial_days": {
+            "type": "integer"
+        },
+        "type": {
+            "type": "string"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "visibility": {
+            "type": "string"
+        },
+        "welcome_page_url": {
+            "type": "string"
+        },
+        "yearly_price": {
+            "type": "integer"
+        }
+    },
+    "required": [],
+    "title": "Tier",
+    "type": "object"
+}

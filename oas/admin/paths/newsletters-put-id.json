@@ -1,0 +1,87 @@
+{
+    "parameters": [],
+    "put": {
+        "description": "",
+        "operationId": "HostSettingsNewsletterLimitsMaxLimitUnarchivingANewsletterFails",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "newsletters": [
+                            {
+                                "status": "active"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "newsletters": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "status": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Newsletter",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminNewsletters651C80E31334699742Ce7252PutRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "403": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Your plan supports up to 3 newsletters. Please upgrade to add more.",
+                                    "details": {
+                                        "limit": 3,
+                                        "name": "newsletters",
+                                        "total": 3
+                                    },
+                                    "ghostErrorCode": null,
+                                    "help": "https://ghost.org/help/",
+                                    "id": "ec506220-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Host Limit error, cannot edit newsletter.",
+                                    "property": null,
+                                    "type": "HostLimitError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "newsletters": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/newsletters.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Host settings  newsletter limits max limit unarchiving a newsletter fails",
+        "tags": [
+            "newsletters"
+        ]
+    }
+}

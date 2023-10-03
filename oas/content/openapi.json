@@ -1,0 +1,83 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "content",
+        "version": "1.0.0",
+        "summary": "Ghost's RESTful Content API delivers published content to the world and can be accessed in a read-only manner by any client to render in a website, app, or other embedded media.",
+        "contact": {
+            "name": "Ghost",
+            "url": "https://ghost.org"
+        },
+        "license": {
+            "name": "MIT",
+            "url": "https://opensource.org/licenses/MIT"
+        }
+    },
+    "servers": [
+        {
+            "url": "https://{user.url}/ghost/api/content",
+            "variables": {
+                "user.url": {
+                    "default": "demo.ghost.io"
+                }
+            }
+        }
+    ],
+    "security": [
+        {
+            "api_key": []
+        }
+    ],
+    "tags": [
+        {
+            "name": "Posts",
+            "description": "Posts are the primary resource in a Ghost site. Using the posts endpoint it is possible to get lists of posts filtered by various criteria.",
+            "externalDocs": {
+                "description": "Posts API Documentation",
+                "url": "https://ghost.org/docs/content-api/#posts"
+            }
+        }
+    ],
+    "paths": {
+        "/collections/{id}": {
+            "$ref": "./paths/collections-get-id.json"
+        },
+        "/newsletters": {
+            "$ref": "./paths/newsletters-get.json"
+        },
+        "/offers/{id}": {
+            "$ref": "./paths/offers-get-id.json"
+        },
+        "/pages/{id}": {
+            "$ref": "./paths/pages-get-id.json"
+        },
+        "/pages": {
+            "$ref": "./paths/pages-get.json"
+        },
+        "/posts/{id}": {
+            "$ref": "./paths/posts-get-id.json"
+        },
+        "/posts": {
+            "$ref": "./paths/posts-get.json"
+        },
+        "/recommendations": {
+            "$ref": "./paths/recommendations-get.json"
+        },
+        "/settings": {
+            "$ref": "./paths/settings-get.json"
+        },
+        "/tiers": {
+            "$ref": "./paths/tiers-get.json"
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "api_key": {
+                "type": "apiKey",
+                "in": "query",
+                "name": "key"
+            }
+        },
+        "schemas": {}
+    }
+}

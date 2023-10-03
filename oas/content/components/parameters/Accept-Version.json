@@ -1,0 +1,9 @@
+{
+    "description": "Accept-Version",
+    "in": "header",
+    "name": "Accept-Version",
+    "schema": {
+        "example": "v3.0",
+        "type": "string"
+    }
+}

@@ -1,0 +1,71 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://demo.ghost.io/members/api/comments/651c811e1334699742cebcc7/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"comments\":[{\"html\":\"Updated comment\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "678"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"2a6-JI+Mj/RX9RWdcgZIe+r9syfzycs\""
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "678",
+                        "text": "{\"comments\":[{\"id\":\"651c811e1334699742cebcc7\",\"status\":\"published\",\"html\":\"Updated comment\",\"created_at\":\"2023-10-03T21:01:18.000Z\",\"edited_at\":\"2023-10-03T21:01:19.000Z\",\"member\":{\"id\":\"651c811e1334699742cebcb8\",\"uuid\":\"a8048b79-d2cf-43aa-a83a-a052c5c4ebcd\",\"name\":null,\"expertise\":null,\"avatar_image\":null},\"replies\":[{\"id\":\"651c811e1334699742cebcc8\",\"status\":\"published\",\"html\":\"This is a reply\",\"created_at\":\"2023-10-03T21:01:18.000Z\",\"edited_at\":null,\"member\":{\"id\":\"651c811e1334699742cebcb8\",\"uuid\":\"a8048b79-d2cf-43aa-a83a-a052c5c4ebcd\",\"name\":null,\"expertise\":null,\"avatar_image\":null},\"liked\":false,\"count\":{\"likes\":0}}],\"liked\":false,\"count\":{\"replies\":1,\"likes\":0}}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

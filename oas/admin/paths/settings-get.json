@@ -1,0 +1,376 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "StripeConnectCanDoDisconnectstripeconnectintegration",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "meta": {},
+                            "settings": [
+                                {
+                                    "key": "members_track_sources",
+                                    "value": true
+                                },
+                                {
+                                    "key": "title",
+                                    "value": "[]"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "Thoughts, stories and ideas"
+                                },
+                                {
+                                    "key": "logo",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "cover_image",
+                                    "value": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg"
+                                },
+                                {
+                                    "key": "icon",
+                                    "value": "http://127.0.0.1:2369/content/images/size/w256h256/2019/07/icon.png"
+                                },
+                                {
+                                    "key": "accent_color",
+                                    "value": "#FF1A75"
+                                },
+                                {
+                                    "key": "locale",
+                                    "value": "ua"
+                                },
+                                {
+                                    "key": "timezone",
+                                    "value": "Pacific/Auckland"
+                                },
+                                {
+                                    "key": "codeinjection_head",
+                                    "value": null
+                                },
+                                {
+                                    "key": "codeinjection_foot",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "facebook",
+                                    "value": "ghost"
+                                },
+                                {
+                                    "key": "twitter",
+                                    "value": "@ghost"
+                                },
+                                {
+                                    "key": "navigation",
+                                    "value": "[{\"label\":\"label1\"}]"
+                                },
+                                {
+                                    "key": "secondary_navigation",
+                                    "value": "[{\"label\":\"Data & privacy\",\"url\":\"/privacy/\"},{\"label\":\"Contact\",\"url\":\"/contact/\"},{\"label\":\"Contribute →\",\"url\":\"/contribute/\"}]"
+                                },
+                                {
+                                    "key": "meta_title",
+                                    "value": "SEO title"
+                                },
+                                {
+                                    "key": "meta_description",
+                                    "value": "SEO description"
+                                },
+                                {
+                                    "key": "og_image",
+                                    "value": "http://127.0.0.1:2369/content/images/2019/07/facebook.png"
+                                },
+                                {
+                                    "key": "og_title",
+                                    "value": "facebook title"
+                                },
+                                {
+                                    "key": "og_description",
+                                    "value": "facebook description"
+                                },
+                                {
+                                    "key": "twitter_image",
+                                    "value": "http://127.0.0.1:2369/content/images/2019/07/twitter.png"
+                                },
+                                {
+                                    "key": "twitter_title",
+                                    "value": "twitter title"
+                                },
+                                {
+                                    "key": "twitter_description",
+                                    "value": "twitter description"
+                                },
+                                {
+                                    "key": "active_theme",
+                                    "value": "casper"
+                                },
+                                {
+                                    "key": "is_private",
+                                    "value": false
+                                },
+                                {
+                                    "key": "password",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "public_hash",
+                                    "value": "1100dcb49005d349ff1e9dd43c798b"
+                                },
+                                {
+                                    "key": "default_content_visibility",
+                                    "value": "public"
+                                },
+                                {
+                                    "key": "default_content_visibility_tiers",
+                                    "value": "[]"
+                                },
+                                {
+                                    "key": "members_signup_access",
+                                    "value": "all"
+                                },
+                                {
+                                    "key": "members_support_address",
+                                    "value": "support@example.com"
+                                },
+                                {
+                                    "key": "stripe_secret_key",
+                                    "value": null
+                                },
+                                {
+                                    "key": "stripe_publishable_key",
+                                    "value": null
+                                },
+                                {
+                                    "key": "stripe_plans",
+                                    "value": "[]"
+                                },
+                                {
+                                    "key": "stripe_connect_publishable_key",
+                                    "value": null
+                                },
+                                {
+                                    "key": "stripe_connect_secret_key",
+                                    "value": null
+                                },
+                                {
+                                    "key": "stripe_connect_livemode",
+                                    "value": null
+                                },
+                                {
+                                    "key": "stripe_connect_display_name",
+                                    "value": null
+                                },
+                                {
+                                    "key": "stripe_connect_account_id",
+                                    "value": null
+                                },
+                                {
+                                    "key": "members_monthly_price_id",
+                                    "value": null
+                                },
+                                {
+                                    "key": "members_yearly_price_id",
+                                    "value": null
+                                },
+                                {
+                                    "key": "portal_name",
+                                    "value": true
+                                },
+                                {
+                                    "key": "portal_button",
+                                    "value": true
+                                },
+                                {
+                                    "key": "portal_plans",
+                                    "value": "[\"free\"]"
+                                },
+                                {
+                                    "key": "portal_products",
+                                    "value": "[]"
+                                },
+                                {
+                                    "key": "portal_button_style",
+                                    "value": "icon-and-text"
+                                },
+                                {
+                                    "key": "portal_button_icon",
+                                    "value": null
+                                },
+                                {
+                                    "key": "portal_button_signup_text",
+                                    "value": "Subscribe"
+                                },
+                                {
+                                    "key": "portal_signup_terms_html",
+                                    "value": null
+                                },
+                                {
+                                    "key": "portal_signup_checkbox_required",
+                                    "value": false
+                                },
+                                {
+                                    "key": "mailgun_domain",
+                                    "value": null
+                                },
+                                {
+                                    "key": "mailgun_api_key",
+                                    "value": null
+                                },
+                                {
+                                    "key": "mailgun_base_url",
+                                    "value": null
+                                },
+                                {
+                                    "key": "email_track_opens",
+                                    "value": true
+                                },
+                                {
+                                    "key": "email_track_clicks",
+                                    "value": true
+                                },
+                                {
+                                    "key": "email_verification_required",
+                                    "value": false
+                                },
+                                {
+                                    "key": "amp",
+                                    "value": false
+                                },
+                                {
+                                    "key": "amp_gtag_id",
+                                    "value": null
+                                },
+                                {
+                                    "key": "firstpromoter",
+                                    "value": false
+                                },
+                                {
+                                    "key": "firstpromoter_id",
+                                    "value": null
+                                },
+                                {
+                                    "key": "labs",
+                                    "value": "{\"audienceFeedback\":true,\"collections\":true,\"themeErrorsNotification\":true,\"outboundLinkTagging\":true,\"announcementBar\":true,\"signupForm\":true,\"members\":true}"
+                                },
+                                {
+                                    "key": "slack_url",
+                                    "value": ""
+                                },
+                                {
+                                    "key": "slack_username",
+                                    "value": "New Slack Username"
+                                },
+                                {
+                                    "key": "unsplash",
+                                    "value": false
+                                },
+                                {
+                                    "key": "shared_views",
+                                    "value": "[]"
+                                },
+                                {
+                                    "key": "editor_default_email_recipients",
+                                    "value": "visibility"
+                                },
+                                {
+                                    "key": "editor_default_email_recipients_filter",
+                                    "value": "all"
+                                },
+                                {
+                                    "key": "announcement_content",
+                                    "value": "<p>Great news coming soon!</p>"
+                                },
+                                {
+                                    "key": "announcement_visibility",
+                                    "value": "[\"visitors\",\"free_members\"]"
+                                },
+                                {
+                                    "key": "announcement_background",
+                                    "value": "dark"
+                                },
+                                {
+                                    "key": "comments_enabled",
+                                    "value": "off"
+                                },
+                                {
+                                    "key": "outbound_link_tagging",
+                                    "value": true
+                                },
+                                {
+                                    "key": "pintura",
+                                    "value": true
+                                },
+                                {
+                                    "key": "pintura_js_url",
+                                    "value": null
+                                },
+                                {
+                                    "key": "pintura_css_url",
+                                    "value": null
+                                },
+                                {
+                                    "key": "donations_currency",
+                                    "value": "USD"
+                                },
+                                {
+                                    "key": "donations_suggested_amount",
+                                    "value": "0"
+                                },
+                                {
+                                    "key": "recommendations_enabled",
+                                    "value": false
+                                },
+                                {
+                                    "key": "members_enabled",
+                                    "value": true
+                                },
+                                {
+                                    "key": "members_invite_only",
+                                    "value": false
+                                },
+                                {
+                                    "key": "allow_self_signup",
+                                    "value": true
+                                },
+                                {
+                                    "key": "paid_members_enabled",
+                                    "value": false
+                                },
+                                {
+                                    "key": "firstpromoter_account",
+                                    "value": null
+                                },
+                                {
+                                    "key": "donations_enabled",
+                                    "value": false
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "settings": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/settings.json"
+                                    }
+                                },
+                                "meta": {
+                                    "$ref": "../components/schemas/meta.json"
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Stripe connect can do disconnectstripeconnectintegration",
+        "tags": [
+            "settings"
+        ]
+    },
+    "parameters": []
+}

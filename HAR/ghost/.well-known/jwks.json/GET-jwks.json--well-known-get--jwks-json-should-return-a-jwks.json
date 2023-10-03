@@ -1,0 +1,63 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "GET",
+                    "url": "https://demo.ghost.io/ghost/.well-known/jwks.json/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": []
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "public, max-age=86400"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "277"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"115-kT2YeCW+23hZWl93I7/BE+MnYfs\""
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Encoding"
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "277",
+                        "text": "{\"keys\":[{\"e\":\"AQAB\",\"kid\":\"QrbA1GYwjLvzxpfqHSu3b-JZsCWAICPscUqqxnsp4h8\",\"kty\":\"RSA\",\"n\":\"yoo7RoEHV9YZCl72TH7FlcE3E-cQzTVgdm21D3GWV0O7j2ZAk-6LHaY9cB0_YId-reOTqRkVhnhBqmvUx1Aaahmd4EWPM5jqaJxc_j4fPvjognHYTCwddZkhjytaEc4kYIrL6rK7ZqDUpIfpMJJhVj-bu_59CmftrvQaAIQM9nM\",\"use\":\"sig\"}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

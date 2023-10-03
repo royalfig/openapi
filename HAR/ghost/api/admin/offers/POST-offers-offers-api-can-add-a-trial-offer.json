@@ -1,0 +1,83 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/ghost/api/admin/offers/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"offers\":[{\"name\":\"Fourth of July Sales trial\",\"code\":\"4th-trial\",\"cadence\":\"year\",\"amount\":20,\"duration\":\"trial\",\"type\":\"trial\",\"currency\":\"USD\",\"tier\":{\"id\":\"651c80e31334699742ce735a\"}}]}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "x-cache-invalidate",
+                            "value": "/*"
+                        },
+                        {
+                            "name": "location",
+                            "value": "http://127.0.0.1:2369/ghost/api/admin/offers/651c81001334699742ce9387/"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "359"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"167-smtJQN08XLtHbRUbS57UApNkfpQ\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "359",
+                        "text": "{\"offers\":[{\"id\":\"651c81001334699742ce9387\",\"name\":\"Fourth of July Sales trial\",\"code\":\"4th-trial\",\"display_title\":\"\",\"display_description\":\"\",\"type\":\"trial\",\"cadence\":\"year\",\"amount\":20,\"duration\":\"trial\",\"duration_in_months\":null,\"currency_restriction\":false,\"currency\":null,\"status\":\"active\",\"redemption_count\":0,\"tier\":{\"id\":\"651c80e31334699742ce735a\"}}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

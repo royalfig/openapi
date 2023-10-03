@@ -1,0 +1,43 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "CanRead",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "snippets": [
+                                {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "id": "651c80e31334699742ce727b",
+                                    "mobiledoc": "{}",
+                                    "name": "Test snippet 1",
+                                    "updated_at": "2023-10-03T21:00:19.000Z"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "snippets": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/snippets.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can read",
+        "tags": [
+            "snippets"
+        ]
+    },
+    "parameters": []
+}

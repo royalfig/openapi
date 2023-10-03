@@ -1,0 +1,79 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "POST",
+                    "url": "https://demo.ghost.io/ghost/api/admin/members/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"members\":[{\"name\":\"test newsletter\",\"email\":\"memberTestChangeSubscribedAttribute@test.com\",\"newsletters\":[{\"id\":\"651c80e31334699742ce7250\"},{\"id\":\"651c80e31334699742ce7251\"}]}]}"
+                    }
+                },
+                "response": {
+                    "status": 201,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "location",
+                            "value": "http://127.0.0.1:2369/ghost/api/admin/members/651c80fa1334699742ce8b87/"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "892"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"37c-bbxmfPu82upP7W8Tv73Fjzk0YTk\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "892",
+                        "text": "{\"members\":[{\"id\":\"651c80fa1334699742ce8b87\",\"uuid\":\"cb109c4a-ec6a-4f69-9c53-98ab25aac96e\",\"email\":\"memberTestChangeSubscribedAttribute@test.com\",\"name\":\"test newsletter\",\"note\":null,\"geolocation\":null,\"subscribed\":true,\"created_at\":\"2023-10-03T21:00:42.000Z\",\"updated_at\":\"2023-10-03T21:00:42.000Z\",\"labels\":[],\"subscriptions\":[],\"avatar_image\":null,\"comped\":false,\"email_count\":0,\"email_opened_count\":0,\"email_open_rate\":null,\"status\":\"free\",\"last_seen_at\":null,\"attribution\":{\"id\":null,\"type\":null,\"url\":null,\"title\":null,\"referrer_source\":\"Created manually\",\"referrer_medium\":\"Ghost Admin\",\"referrer_url\":null},\"tiers\":[],\"email_suppression\":{\"suppressed\":false,\"info\":null},\"newsletters\":[{\"id\":\"651c80e31334699742ce7250\",\"name\":\"Daily newsletter\",\"description\":null,\"status\":\"active\"},{\"id\":\"651c80e31334699742ce7251\",\"name\":\"Weekly newsletter\",\"description\":null,\"status\":\"active\"}]}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

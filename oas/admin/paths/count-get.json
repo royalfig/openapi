@@ -1,0 +1,44 @@
+{
+    "get": {
+        "description": "",
+        "operationId": "CanFetchMemberCountsStats",
+        "parameters": {},
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "data": [
+                                {
+                                    "comped": 4,
+                                    "date": "2023-10-03",
+                                    "free": 4,
+                                    "paid": 2
+                                }
+                            ],
+                            "resource": "members",
+                            "total": 10
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "count": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/count.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can fetch member counts stats",
+        "tags": [
+            "count"
+        ]
+    },
+    "parameters": []
+}

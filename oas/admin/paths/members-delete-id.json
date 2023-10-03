@@ -1,0 +1,47 @@
+{
+    "delete": {
+        "description": "",
+        "operationId": "CannotDeleteANonExistentMember",
+        "parameters": {},
+        "responses": {
+            "404": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Resource could not be found.",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "ea3c4f30-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Resource not found error, cannot delete member.",
+                                    "property": null,
+                                    "type": "NotFoundError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "members": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/members.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Cannot delete a non existent member",
+        "tags": [
+            "members"
+        ]
+    },
+    "parameters": []
+}

@@ -1,0 +1,72 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "excerpt": {
+            "type": "string"
+        },
+        "favicon": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-extensions": [
+                ".ico"
+            ],
+            "x-qt-uri-protocols": [
+                "https"
+            ]
+        },
+        "featured_image": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-extensions": [
+                ".jpg"
+            ],
+            "x-qt-uri-protocols": [
+                "https"
+            ]
+        },
+        "id": {
+            "type": "string"
+        },
+        "one_click_subscribe": {
+            "type": "boolean"
+        },
+        "reason": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+                "https"
+            ]
+        },
+        "count": {
+            "additionalProperties": false,
+            "properties": {
+                "clicks": {
+                    "type": "integer"
+                },
+                "subscribers": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Count",
+            "type": "object"
+        }
+    },
+    "required": [],
+    "title": "Recommendation",
+    "type": "object"
+}

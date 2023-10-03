@@ -1,0 +1,56 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "payload": {
+            "type": "string"
+        },
+        "resource": {
+            "type": "string"
+        },
+        "source": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+                "https"
+            ]
+        },
+        "source_author": {
+            "type": "string"
+        },
+        "source_excerpt": {
+            "type": "string"
+        },
+        "source_favicon": {
+            "type": "string"
+        },
+        "source_featured_image": {
+            "type": "string"
+        },
+        "source_site_title": {
+            "type": "string"
+        },
+        "source_title": {
+            "type": "string"
+        },
+        "target": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+                "https"
+            ]
+        },
+        "timestamp": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "verified": {
+            "type": "boolean"
+        }
+    },
+    "required": [],
+    "title": "Mention",
+    "type": "object"
+}

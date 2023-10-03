@@ -1,0 +1,83 @@
+{
+    "parameters": [],
+    "put": {
+        "description": "",
+        "operationId": "ApiEditCanUnpublishPosts",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "bulk": {
+                            "action": "unpublish"
+                        }
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "bulk": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "action": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Bulk",
+                                "type": "object"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminPostsBulkPutRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "bulk": {
+                                "meta": {
+                                    "errors": [],
+                                    "stats": {
+                                        "successful": 11,
+                                        "unsuccessful": 0
+                                    },
+                                    "unsuccessfulData": []
+                                }
+                            }
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "bulk": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/bulk.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": "",
+                "headers": {
+                    "x-cache-invalidate": {
+                        "description": "Custom header x-cache-invalidate",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "summary": "Api edit can unpublish posts",
+        "tags": [
+            "bulk"
+        ]
+    }
+}

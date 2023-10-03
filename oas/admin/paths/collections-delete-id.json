@@ -1,0 +1,47 @@
+{
+    "delete": {
+        "description": "",
+        "operationId": "DeleteCannotDeleteABuiltInCollection",
+        "parameters": {},
+        "responses": {
+            "405": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "Cannot delete builtin collection The collection 651c80e31334699742ce7359 is a builtin collection and cannot be deleted",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "dfda6180-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Method not allowed, cannot delete collection.",
+                                    "property": null,
+                                    "type": "MethodNotAllowedError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "collections": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/collections.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Delete cannot delete a built in collection",
+        "tags": [
+            "collections"
+        ]
+    },
+    "parameters": []
+}

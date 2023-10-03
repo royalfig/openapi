@@ -1,0 +1,79 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://demo.ghost.io/ghost/api/admin/recommendations/651c81061334699742ce9b85/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"recommendations\":[{\"title\":\"Changed\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "x-cache-invalidate",
+                            "value": "/*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "374"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"176-y59ABE0q73Dq6L9CRUl107g2Klk\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "374",
+                        "text": "{\"recommendations\":[{\"id\":\"651c81061334699742ce9b85\",\"title\":\"Changed\",\"reason\":\"Reason 0\",\"excerpt\":\"Test excerpt\",\"featured_image\":\"https://recommendation0.com/featured.jpg\",\"favicon\":\"https://recommendation0.com/favicon.ico\",\"url\":\"https://recommendation0.com/\",\"one_click_subscribe\":true,\"created_at\":\"1970-01-01T00:00:00.000Z\",\"updated_at\":\"2023-10-03T21:00:54.000Z\"}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

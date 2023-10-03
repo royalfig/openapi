@@ -1,0 +1,36 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "count": {
+            "additionalProperties": false,
+            "properties": {
+                "members": {
+                    "type": "integer"
+                }
+            },
+            "required": [],
+            "title": "Count",
+            "type": "object"
+        },
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "string"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Label",
+    "type": "object"
+}

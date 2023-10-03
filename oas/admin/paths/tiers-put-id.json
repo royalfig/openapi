@@ -1,0 +1,94 @@
+{
+    "parameters": [],
+    "put": {
+        "description": "",
+        "operationId": "CanSaveWithTrial_daysAsNull",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "tiers": [
+                            {
+                                "trial_days": null
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "tiers": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "trial_days": {
+                                            "nullable": true
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Tier",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminTiers651C80E31334699742Ce735BPutRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "tiers": [
+                                {
+                                    "active": true,
+                                    "benefits": [],
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "description": null,
+                                    "id": "651c80e31334699742ce735b",
+                                    "name": "Free",
+                                    "slug": "free",
+                                    "trial_days": 0,
+                                    "type": "free",
+                                    "updated_at": "2023-10-03T21:00:59.000Z",
+                                    "visibility": "public",
+                                    "welcome_page_url": "/welcome-free"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "tiers": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/tiers.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": "",
+                "headers": {
+                    "x-cache-invalidate": {
+                        "description": "Custom header x-cache-invalidate",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "summary": "Can save with trial_days as null",
+        "tags": [
+            "tiers"
+        ]
+    }
+}

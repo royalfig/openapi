@@ -1,0 +1,79 @@
+{
+    "log": {
+        "version": "1.2",
+        "creator": {
+            "name": "Ghost Synthetic Har Generator",
+            "version": "1.0"
+        },
+        "entries": [
+            {
+                "request": {
+                    "method": "PUT",
+                    "url": "https://demo.ghost.io/ghost/api/admin/newsletters/651c80e31334699742ce7252/",
+                    "headers": [
+                        {
+                            "name": "host",
+                            "value": "127.0.0.1:2369"
+                        },
+                        {
+                            "name": "origin",
+                            "value": "http://127.0.0.1:2369"
+                        }
+                    ],
+                    "cookies": [],
+                    "queryString": [],
+                    "postData": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "text": "{\"newsletters\":[{\"name\":\"Updated archived newsletter name\"}]}"
+                    }
+                },
+                "response": {
+                    "status": 200,
+                    "headers": [
+                        {
+                            "name": "x-powered-by",
+                            "value": "Express"
+                        },
+                        {
+                            "name": "content-version",
+                            "value": "v5.65"
+                        },
+                        {
+                            "name": "vary",
+                            "value": "Accept-Version, Origin, Accept-Encoding"
+                        },
+                        {
+                            "name": "cache-control",
+                            "value": "no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0"
+                        },
+                        {
+                            "name": "access-control-allow-origin",
+                            "value": "http://127.0.0.1:2369"
+                        },
+                        {
+                            "name": "x-cache-invalidate",
+                            "value": "/*"
+                        },
+                        {
+                            "name": "content-type",
+                            "value": "application/json; charset=utf-8"
+                        },
+                        {
+                            "name": "content-length",
+                            "value": "937"
+                        },
+                        {
+                            "name": "etag",
+                            "value": "W/\"3a9-FlVEFVHT73U7SxdUPQp+LQLT6Os\""
+                        }
+                    ],
+                    "content": {
+                        "mimeType": "application/json; charset=utf-8",
+                        "size": "937",
+                        "text": "{\"newsletters\":[{\"id\":\"651c80e31334699742ce7252\",\"uuid\":\"1c5e64af-fbad-4010-860d-521bbc05193f\",\"name\":\"Updated archived newsletter name\",\"description\":null,\"feedback_enabled\":false,\"slug\":\"old-newsletter\",\"sender_name\":\"Jamie\",\"sender_email\":\"jamie@example.com\",\"sender_reply_to\":\"newsletter\",\"status\":\"archived\",\"visibility\":\"members\",\"subscribe_on_signup\":true,\"sort_order\":2,\"header_image\":\"http://127.0.0.1:2369/content/images/2022/05/test.jpg\",\"show_header_icon\":true,\"show_header_title\":true,\"title_font_category\":\"serif\",\"title_alignment\":\"center\",\"show_feature_image\":true,\"body_font_category\":\"serif\",\"footer_content\":null,\"show_badge\":true,\"show_header_name\":true,\"show_post_title_section\":true,\"show_comment_cta\":true,\"show_subscription_details\":false,\"show_latest_posts\":false,\"background_color\":\"light\",\"border_color\":null,\"title_color\":null,\"created_at\":\"2023-10-03T21:00:46.000Z\",\"updated_at\":\"2023-10-03T21:00:46.000Z\"}]}"
+                    }
+                }
+            }
+        ]
+    }
+}

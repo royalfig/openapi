@@ -1,0 +1,194 @@
+{
+    "parameters": [],
+    "post": {
+        "description": "",
+        "operationId": "CanAddASubscription",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "stripe_price_id": "pric_2935d8dff1e84e8c"
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "stripe_price_id": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminMembers651C80E31334699742Ce7248SubscriptionsPostRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "200": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "members": [
+                                {
+                                    "attribution": {
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "referrer_medium": "Social",
+                                        "referrer_source": "Twitter",
+                                        "referrer_url": "https://twitter.com",
+                                        "title": "HTML Ipsum",
+                                        "type": "post",
+                                        "url": "http://127.0.0.1:2369/html-ipsum/"
+                                    },
+                                    "avatar_image": null,
+                                    "comped": false,
+                                    "created_at": "2023-10-03T21:00:41.000Z",
+                                    "email": "member1@test.com",
+                                    "email_count": 0,
+                                    "email_open_rate": null,
+                                    "email_opened_count": 0,
+                                    "email_suppression": {
+                                        "info": null,
+                                        "suppressed": false
+                                    },
+                                    "geolocation": null,
+                                    "id": "651c80e31334699742ce7248",
+                                    "labels": [
+                                        {
+                                            "created_at": "2023-10-03T21:00:19.000Z",
+                                            "id": "651c80e31334699742ce7253",
+                                            "name": "Label 1",
+                                            "slug": "label-1",
+                                            "updated_at": "2023-10-03T21:00:19.000Z"
+                                        }
+                                    ],
+                                    "last_seen_at": null,
+                                    "name": "Mr Egg",
+                                    "newsletters": [
+                                        {
+                                            "description": null,
+                                            "id": "651c80e31334699742ce7250",
+                                            "name": "Daily newsletter",
+                                            "status": "active"
+                                        }
+                                    ],
+                                    "note": null,
+                                    "status": "paid",
+                                    "subscribed": true,
+                                    "subscriptions": [
+                                        {
+                                            "attribution": {
+                                                "id": null,
+                                                "referrer_medium": null,
+                                                "referrer_source": null,
+                                                "referrer_url": null,
+                                                "title": null,
+                                                "type": null,
+                                                "url": null
+                                            },
+                                            "cancel_at_period_end": false,
+                                            "cancellation_reason": null,
+                                            "current_period_end": "2023-11-03T21:00:42.000Z",
+                                            "customer": {
+                                                "email": "member1@test.com",
+                                                "id": "cust_6bb91a234708db30",
+                                                "name": null
+                                            },
+                                            "default_payment_card_last4": null,
+                                            "id": "subs_d3230ceade0e72e8",
+                                            "offer": null,
+                                            "plan": {
+                                                "amount": 500,
+                                                "currency": "USD",
+                                                "id": "pric_2935d8dff1e84e8c",
+                                                "interval": "month",
+                                                "nickname": "Monthly"
+                                            },
+                                            "price": {
+                                                "amount": 500,
+                                                "currency": "USD",
+                                                "id": "pric_2935d8dff1e84e8c",
+                                                "interval": "month",
+                                                "nickname": "Monthly",
+                                                "price_id": "651c80fa1334699742ce8b68",
+                                                "tier": {
+                                                    "id": "prod_f15f2c7c0a710b19",
+                                                    "name": "Default Product",
+                                                    "tier_id": "651c80e31334699742ce735a"
+                                                },
+                                                "type": "recurring"
+                                            },
+                                            "start_date": "2023-10-03T21:00:42.000Z",
+                                            "status": "active",
+                                            "tier": {
+                                                "active": true,
+                                                "created_at": "2023-10-03T21:00:19.000Z",
+                                                "currency": "usd",
+                                                "description": null,
+                                                "expiry_at": null,
+                                                "id": "651c80e31334699742ce735a",
+                                                "monthly_price": 500,
+                                                "monthly_price_id": "651c80e31334699742ce7262",
+                                                "name": "Default Product",
+                                                "slug": "default-product",
+                                                "trial_days": 0,
+                                                "type": "paid",
+                                                "updated_at": "2023-10-03T21:00:42.000Z",
+                                                "visibility": "public",
+                                                "welcome_page_url": "/welcome-paid",
+                                                "yearly_price": 5000,
+                                                "yearly_price_id": "651c80e31334699742ce7263"
+                                            },
+                                            "trial_end_at": null,
+                                            "trial_start_at": null
+                                        }
+                                    ],
+                                    "tiers": [
+                                        {
+                                            "active": true,
+                                            "created_at": "2023-10-03T21:00:19.000Z",
+                                            "currency": "usd",
+                                            "description": null,
+                                            "expiry_at": null,
+                                            "id": "651c80e31334699742ce735a",
+                                            "monthly_price": 500,
+                                            "monthly_price_id": "651c80e31334699742ce7262",
+                                            "name": "Default Product",
+                                            "slug": "default-product",
+                                            "trial_days": 0,
+                                            "type": "paid",
+                                            "updated_at": "2023-10-03T21:00:42.000Z",
+                                            "visibility": "public",
+                                            "welcome_page_url": "/welcome-paid",
+                                            "yearly_price": 5000,
+                                            "yearly_price_id": "651c80e31334699742ce7263"
+                                        }
+                                    ],
+                                    "updated_at": "2023-10-03T21:00:42.000Z",
+                                    "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "members": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/members.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Can add a subscription",
+        "tags": [
+            "members"
+        ]
+    }
+}

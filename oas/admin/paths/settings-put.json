@@ -1,0 +1,87 @@
+{
+    "parameters": [],
+    "put": {
+        "description": "",
+        "operationId": "StripeConnectCanAttemptToConnectToStripe",
+        "parameters": {},
+        "requestBody": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "settings": [
+                            {
+                                "key": "stripe_connect_integration_token",
+                                "value": "{\"s\":\"session_state\",\"p\":\"public_key\",\"a\":\"secret_key\",\"l\":true,\"n\":\"Display Name\",\"i\":\"account_id\"}"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "additionalProperties": false,
+                        "properties": {
+                            "settings": {
+                                "items": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "key": {
+                                            "type": "string"
+                                        },
+                                        "value": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Setting",
+                                    "type": "object"
+                                },
+                                "type": "array"
+                            }
+                        },
+                        "required": [],
+                        "title": "GhostAPIAdminSettingsPutRequest",
+                        "type": "object"
+                    }
+                }
+            },
+            "required": true
+        },
+        "responses": {
+            "400": {
+                "content": {
+                    "application/json": {
+                        "example": {
+                            "errors": [
+                                {
+                                    "code": null,
+                                    "context": "The Stripe Connect token could not be parsed.",
+                                    "details": null,
+                                    "ghostErrorCode": null,
+                                    "help": null,
+                                    "id": "f2776540-622f-11ee-b83d-01dc9a879334",
+                                    "message": "Request not understood error, cannot edit setting.",
+                                    "property": null,
+                                    "type": "BadRequestError"
+                                }
+                            ]
+                        },
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "settings": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "../components/schemas/settings.json"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "description": ""
+            }
+        },
+        "summary": "Stripe connect can attempt to connect to stripe",
+        "tags": [
+            "settings"
+        ]
+    }
+}
