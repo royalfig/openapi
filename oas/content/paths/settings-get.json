@@ -1,11 +1,7 @@
 {
     "description": "",
     "operationId": "GetSettings",
-    "parameters": [
-        {
-            "$ref": "../components/parameters/Accept-Version.json"
-        }
-    ],
+    "parameters": [],
     "responses": {
         "200": {
             "content": {

@@ -3,9 +3,6 @@
     "operationId": "GetTiers",
     "parameters": [
         {
-            "$ref": "../components/parameters/filter.json"
-        },
-        {
             "$ref": "../components/parameters/include.json"
         }
     ],
@@ -16,12 +13,12 @@
                     "example": {
                         "meta": {
                             "pagination": {
-                                "limit": 2,
+                                "limit": 3,
                                 "next": null,
                                 "page": 1,
                                 "pages": 1,
                                 "prev": null,
-                                "total": 2
+                                "total": 3
                             }
                         },
                         "tiers": [
@@ -35,9 +32,9 @@
                                 "slug": "free",
                                 "trial_days": 0,
                                 "type": "free",
-                                "updated_at": "2023-10-03T21:00:19.000Z",
+                                "updated_at": "2023-10-03T21:01:02.000Z",
                                 "visibility": "public",
-                                "welcome_page_url": null
+                                "welcome_page_url": "/welcome-free"
                             },
                             {
                                 "active": true,
@@ -51,8 +48,25 @@
                                 "slug": "default-product",
                                 "trial_days": 0,
                                 "type": "paid",
-                                "updated_at": "2023-10-03T21:00:19.000Z",
+                                "updated_at": "2023-10-03T21:01:02.000Z",
                                 "visibility": "public",
+                                "welcome_page_url": "/welcome-paid",
+                                "yearly_price": 5000
+                            },
+                            {
+                                "active": true,
+                                "benefits": [],
+                                "created_at": "2023-10-03T21:01:02.000Z",
+                                "currency": "USD",
+                                "description": null,
+                                "id": "651c810e1334699742ceaca3",
+                                "monthly_price": 500,
+                                "name": "product",
+                                "slug": "gold-2",
+                                "trial_days": 0,
+                                "type": "paid",
+                                "updated_at": "2023-10-03T21:01:02.000Z",
+                                "visibility": "none",
                                 "welcome_page_url": null,
                                 "yearly_price": 5000
                             }

@@ -3,9 +3,6 @@
     "operationId": "GetRecommendations",
     "parameters": [
         {
-            "$ref": "../components/parameters/page.json"
-        },
-        {
             "$ref": "../components/parameters/include.json"
         }
     ],
@@ -17,37 +14,73 @@
                         "meta": {
                             "pagination": {
                                 "limit": 5,
-                                "next": null,
-                                "page": 2,
+                                "next": 2,
+                                "page": 1,
                                 "pages": 2,
-                                "prev": 1,
+                                "prev": null,
                                 "total": 7
                             }
                         },
                         "recommendations": [
                             {
-                                "created_at": "1970-01-01T00:00:05.000Z",
+                                "created_at": "1970-01-01T00:00:30.000Z",
                                 "excerpt": null,
                                 "favicon": null,
                                 "featured_image": null,
-                                "id": "651c810e1334699742ceaaed",
+                                "id": "651c810e1334699742ceaaf2",
                                 "one_click_subscribe": false,
-                                "reason": "Reason 1",
-                                "title": "Recommendation 1",
+                                "reason": "Reason 6",
+                                "title": "Recommendation 6",
                                 "updated_at": "2023-10-03T21:01:02.000Z",
-                                "url": "https://recommendation1.com/"
+                                "url": "https://recommendation6.com/"
                             },
                             {
-                                "created_at": "1970-01-01T00:00:00.000Z",
+                                "created_at": "1970-01-01T00:00:25.000Z",
                                 "excerpt": null,
                                 "favicon": null,
                                 "featured_image": null,
-                                "id": "651c810e1334699742ceaaec",
+                                "id": "651c810e1334699742ceaaf1",
                                 "one_click_subscribe": false,
-                                "reason": "Reason 0",
-                                "title": "Recommendation 0",
+                                "reason": "Reason 5",
+                                "title": "Recommendation 5",
                                 "updated_at": "2023-10-03T21:01:02.000Z",
-                                "url": "https://recommendation0.com/"
+                                "url": "https://recommendation5.com/"
+                            },
+                            {
+                                "created_at": "1970-01-01T00:00:20.000Z",
+                                "excerpt": null,
+                                "favicon": null,
+                                "featured_image": null,
+                                "id": "651c810e1334699742ceaaf0",
+                                "one_click_subscribe": false,
+                                "reason": "Reason 4",
+                                "title": "Recommendation 4",
+                                "updated_at": "2023-10-03T21:01:02.000Z",
+                                "url": "https://recommendation4.com/"
+                            },
+                            {
+                                "created_at": "1970-01-01T00:00:15.000Z",
+                                "excerpt": null,
+                                "favicon": null,
+                                "featured_image": null,
+                                "id": "651c810e1334699742ceaaef",
+                                "one_click_subscribe": false,
+                                "reason": "Reason 3",
+                                "title": "Recommendation 3",
+                                "updated_at": "2023-10-03T21:01:02.000Z",
+                                "url": "https://recommendation3.com/"
+                            },
+                            {
+                                "created_at": "1970-01-01T00:00:10.000Z",
+                                "excerpt": null,
+                                "favicon": null,
+                                "featured_image": null,
+                                "id": "651c810e1334699742ceaaee",
+                                "one_click_subscribe": false,
+                                "reason": "Reason 2",
+                                "title": "Recommendation 2",
+                                "updated_at": "2023-10-03T21:01:02.000Z",
+                                "url": "https://recommendation2.com/"
                             }
                         ]
                     },

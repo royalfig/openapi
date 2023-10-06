@@ -3,9 +3,6 @@
     "operationId": "GetPagesByID",
     "parameters": [
         {
-            "$ref": "../components/parameters/include.json"
-        },
-        {
             "$ref": "../components/parameters/id.json"
         }
     ],
@@ -16,78 +13,40 @@
                     "example": {
                         "pages": [
                             {
-                                "access": false,
+                                "access": true,
                                 "canonical_url": null,
                                 "codeinjection_foot": null,
                                 "codeinjection_head": null,
-                                "comment_id": "651c810d1334699742cea984",
+                                "comment_id": "618ba1ffbe2896088840a6e9",
                                 "comments": false,
-                                "created_at": "2023-10-03T21:01:01.000+00:00",
+                                "created_at": "2023-10-03T21:00:19.000+00:00",
                                 "custom_excerpt": null,
                                 "custom_template": null,
-                                "excerpt": "",
+                                "excerpt": "Static page test is what this is for.\n\nHopefully you don't find it a bore.",
                                 "feature_image": null,
                                 "feature_image_alt": null,
                                 "feature_image_caption": null,
                                 "featured": false,
                                 "frontmatter": null,
-                                "html": "",
-                                "id": "651c810d1334699742cea984",
+                                "html": "<!--kg-card-begin: markdown--><h1>Static page test is what this is for.</h1><p>Hopefully you don't find it a bore.</p><!--kg-card-end: markdown-->",
+                                "id": "618ba1ffbe2896088840a6e9",
                                 "meta_description": null,
                                 "meta_title": null,
                                 "og_description": null,
                                 "og_image": null,
                                 "og_title": null,
-                                "published_at": "2023-10-03T21:01:46.000+00:00",
+                                "published_at": "2023-10-03T21:00:19.000+00:00",
                                 "reading_time": 0,
                                 "show_title_and_feature_image": true,
-                                "slug": "thou-shalt-not-be-seen",
-                                "tiers": [
-                                    {
-                                        "active": true,
-                                        "created_at": "2023-10-03T21:00:19.000Z",
-                                        "currency": null,
-                                        "description": null,
-                                        "id": "651c80e31334699742ce735b",
-                                        "monthly_price": null,
-                                        "monthly_price_id": null,
-                                        "name": "Free",
-                                        "slug": "free",
-                                        "trial_days": 0,
-                                        "type": "free",
-                                        "updated_at": "2023-10-03T21:00:19.000Z",
-                                        "visibility": "public",
-                                        "welcome_page_url": null,
-                                        "yearly_price": null,
-                                        "yearly_price_id": null
-                                    },
-                                    {
-                                        "active": true,
-                                        "created_at": "2023-10-03T21:00:19.000Z",
-                                        "currency": "usd",
-                                        "description": null,
-                                        "id": "651c80e31334699742ce735a",
-                                        "monthly_price": 500,
-                                        "monthly_price_id": null,
-                                        "name": "Default Product",
-                                        "slug": "default-product",
-                                        "trial_days": 0,
-                                        "type": "paid",
-                                        "updated_at": "2023-10-03T21:00:19.000Z",
-                                        "visibility": "public",
-                                        "welcome_page_url": null,
-                                        "yearly_price": 5000,
-                                        "yearly_price_id": null
-                                    }
-                                ],
-                                "title": "title",
+                                "slug": "static-page-test",
+                                "title": "This is a static page",
                                 "twitter_description": null,
                                 "twitter_image": null,
                                 "twitter_title": null,
-                                "updated_at": "2023-10-03T21:01:01.000+00:00",
-                                "url": "http://127.0.0.1:2369/404/",
-                                "uuid": "e04fb3b4-f5dc-4d17-985e-fee4d5f7ba33",
-                                "visibility": "members"
+                                "updated_at": "2023-10-03T21:00:19.000+00:00",
+                                "url": "http://127.0.0.1:2369/static-page-test/",
+                                "uuid": "2037bed8-7cbc-4156-87ff-7dd7d1f15680",
+                                "visibility": "public"
                             }
                         ]
                     },
