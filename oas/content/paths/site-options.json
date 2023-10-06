@@ -1,0 +1,20 @@
+{
+    "description": "",
+    "operationId": "OptionsSite",
+    "parameters": [],
+    "responses": {
+        "204": {
+            "description": "Unknown"
+        },
+        "401": {
+            "description": "Not authorized"
+        },
+        "404": {
+            "description": "Not found"
+        }
+    },
+    "summary": "Options site ",
+    "tags": [
+        "site"
+    ]
+}

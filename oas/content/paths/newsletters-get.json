@@ -1,0 +1,95 @@
+{
+    "description": "",
+    "operationId": "GetNewsletters",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/filter.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "meta": {
+                            "pagination": {
+                                "limit": 15,
+                                "next": null,
+                                "page": 1,
+                                "pages": 1,
+                                "prev": null,
+                                "total": 3
+                            }
+                        },
+                        "newsletters": [
+                            {
+                                "created_at": "2023-10-03T21:00:19.000Z",
+                                "description": null,
+                                "id": "651c80e31334699742ce735c",
+                                "name": "Default Newsletter",
+                                "sender_email": null,
+                                "slug": "default-newsletter",
+                                "sort_order": 0,
+                                "subscribe_on_signup": true,
+                                "updated_at": "2023-10-03T21:00:19.000Z",
+                                "uuid": "ed5d8fba-29e3-413e-9934-5499629890f4",
+                                "visibility": "members"
+                            },
+                            {
+                                "created_at": "2023-10-03T21:01:00.000Z",
+                                "description": null,
+                                "id": "651c80e31334699742ce7250",
+                                "name": "Daily newsletter",
+                                "sender_email": "jamie@example.com",
+                                "slug": "daily-newsletter",
+                                "sort_order": 1,
+                                "subscribe_on_signup": false,
+                                "updated_at": "2023-10-03T21:01:00.000Z",
+                                "uuid": "60127659-9a66-4e00-907a-2e312eb54d65",
+                                "visibility": "members"
+                            },
+                            {
+                                "created_at": "2023-10-03T21:01:00.000Z",
+                                "description": null,
+                                "id": "651c80e31334699742ce7251",
+                                "name": "Weekly newsletter",
+                                "sender_email": "jamie@example.com",
+                                "slug": "weekly-newsletter",
+                                "sort_order": 2,
+                                "subscribe_on_signup": true,
+                                "updated_at": "2023-10-03T21:01:00.000Z",
+                                "uuid": "c7f4a725-77b3-4153-9fa6-722996beda2b",
+                                "visibility": "members"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "newsletters": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/newsletters.json"
+                                }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
+                            }
+                        }
+                    }
+                }
+            },
+            "description": ""
+        },
+        "401": {
+            "description": "Not authorized"
+        },
+        "404": {
+            "description": "Not found"
+        }
+    },
+    "summary": "Get newsletters ",
+    "tags": [
+        "newsletters"
+    ]
+}

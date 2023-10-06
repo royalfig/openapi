@@ -1,0 +1,27 @@
+{
+    "description": "",
+    "operationId": "GetPosts",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/Accept-Version.json"
+        },
+        {
+            "$ref": "../components/parameters/id.json"
+        },
+        {
+            "$ref": "../components/parameters/include.json"
+        }
+    ],
+    "responses": {
+        "401": {
+            "description": "Not authorized"
+        },
+        "404": {
+            "description": "Not found"
+        }
+    },
+    "summary": "Get posts ",
+    "tags": [
+        "posts"
+    ]
+}

@@ -1,0 +1,129 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "access": {
+            "type": "boolean"
+        },
+        "canonical_url": {
+            "type": "string"
+        },
+        "codeinjection_foot": {
+            "type": "string"
+        },
+        "codeinjection_head": {
+            "type": "string"
+        },
+        "comment_id": {
+            "type": "string"
+        },
+        "comments": {
+            "type": "boolean"
+        },
+        "created_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "custom_excerpt": {
+            "type": "string"
+        },
+        "custom_template": {
+            "type": "string"
+        },
+        "email_subject": {
+            "type": "string"
+        },
+        "excerpt": {
+            "type": "string"
+        },
+        "feature_image": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-extensions": [
+                ".jpg",
+                ".png"
+            ],
+            "x-qt-uri-protocols": [
+                "http",
+                "https"
+            ]
+        },
+        "feature_image_alt": {
+            "type": "string"
+        },
+        "feature_image_caption": {
+            "type": "string"
+        },
+        "featured": {
+            "type": "boolean"
+        },
+        "frontmatter": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "meta_description": {
+            "type": "string"
+        },
+        "meta_title": {
+            "type": "string"
+        },
+        "og_description": {
+            "type": "string"
+        },
+        "og_image": {
+            "type": "string"
+        },
+        "og_title": {
+            "type": "string"
+        },
+        "published_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "reading_time": {
+            "type": "integer"
+        },
+        "slug": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "twitter_description": {
+            "type": "string"
+        },
+        "twitter_image": {
+            "type": "string"
+        },
+        "twitter_title": {
+            "type": "string"
+        },
+        "updated_at": {
+            "format": "date-time",
+            "type": "string"
+        },
+        "url": {
+            "format": "uri",
+            "type": "string",
+            "x-qt-uri-protocols": [
+                "http"
+            ]
+        },
+        "uuid": {
+            "format": "uuid",
+            "type": "string"
+        },
+        "visibility": {
+            "enum": [
+                "public",
+                "paid"
+            ],
+            "title": "Visibility",
+            "type": "string"
+        }
+    },
+    "required": [],
+    "title": "Post",
+    "type": "object"
+}
