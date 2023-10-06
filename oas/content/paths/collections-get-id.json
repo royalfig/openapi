@@ -1,6 +1,6 @@
 {
     "description": "",
-    "operationId": "GetCollectionsBySlug",
+    "operationId": "GetCollectionsByID",
     "parameters": [
         {
             "$ref": "../components/parameters/id.json"
@@ -47,7 +47,7 @@
             "description": "Not found"
         }
     },
-    "summary": "Get collections by slug",
+    "summary": "Get collections by ID",
     "tags": [
         "collections"
     ]

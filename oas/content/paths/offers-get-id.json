@@ -1,6 +1,6 @@
 {
     "description": "",
-    "operationId": "GetOffers",
+    "operationId": "GetOffersByID",
     "parameters": [
         {
             "$ref": "../components/parameters/id.json"
@@ -54,7 +54,7 @@
             "description": "Not found"
         }
     },
-    "summary": "Get offers ",
+    "summary": "Get offers by ID",
     "tags": [
         "offers"
     ]

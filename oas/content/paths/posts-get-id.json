@@ -1,6 +1,6 @@
 {
     "description": "",
-    "operationId": "GetPosts",
+    "operationId": "GetPostsByID",
     "parameters": [
         {
             "$ref": "../components/parameters/Accept-Version.json"
@@ -20,7 +20,7 @@
             "description": "Not found"
         }
     },
-    "summary": "Get posts ",
+    "summary": "Get posts by ID",
     "tags": [
         "posts"
     ]
