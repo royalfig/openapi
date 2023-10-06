@@ -38,63 +38,7 @@
             }
         }
     ],
-    "paths": {
-        "/collections/{id}": {
-            "get": {
-                "$ref": "./paths/collections-get-id.json"
-            }
-        },
-        "/newsletters": {
-            "get": {
-                "$ref": "./paths/newsletters-get.json"
-            }
-        },
-        "/offers/{id}": {
-            "get": {
-                "$ref": "./paths/offers-get-id.json"
-            }
-        },
-        "/pages/{id}": {
-            "get": {
-                "$ref": "./paths/pages-get-id.json"
-            }
-        },
-        "/pages": {
-            "get": {
-                "$ref": "./paths/pages-get.json"
-            }
-        },
-        "/posts/{id}": {
-            "get": {
-                "$ref": "./paths/posts-get-id.json"
-            }
-        },
-        "/posts": {
-            "get": {
-                "$ref": "./paths/posts-get.json"
-            }
-        },
-        "/recommendations": {
-            "get": {
-                "$ref": "./paths/recommendations-get.json"
-            }
-        },
-        "/settings": {
-            "get": {
-                "$ref": "./paths/settings-get.json"
-            }
-        },
-        "/site": {
-            "options": {
-                "$ref": "./paths/site-options.json"
-            }
-        },
-        "/tiers": {
-            "get": {
-                "$ref": "./paths/tiers-get.json"
-            }
-        }
-    },
+    "paths": {},
     "components": {
         "securitySchemes": {
             "api_key": {

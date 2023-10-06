@@ -1,9 +1,0 @@
-{
-    "description": "Filter the result set to only include resources that match the provided criteria",
-    "in": "query",
-    "name": "filter",
-    "schema": {
-        "example": "visibility:public",
-        "type": "string"
-    }
-}

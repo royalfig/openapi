@@ -1,9 +1,0 @@
-{
-    "description": "Limit the number of resources in the response",
-    "in": "query",
-    "name": "limit",
-    "schema": {
-        "example": "1",
-        "type": "string"
-    }
-}

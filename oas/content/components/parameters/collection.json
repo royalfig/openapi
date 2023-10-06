@@ -1,9 +1,0 @@
-{
-    "description": "collection",
-    "in": "query",
-    "name": "collection",
-    "schema": {
-        "example": "latest",
-        "type": "string"
-    }
-}
