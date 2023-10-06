@@ -1,0 +1,9 @@
+{
+    "description": "source",
+    "in": "query",
+    "name": "source",
+    "schema": {
+        "example": "html",
+        "type": "string"
+    }
+}

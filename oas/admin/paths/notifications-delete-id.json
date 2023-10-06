@@ -1,0 +1,16 @@
+{
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "204": {
+            "description": "Deleted"
+        }
+    },
+    "tags": [
+        "notifications"
+    ]
+}

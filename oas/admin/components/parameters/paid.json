@@ -1,0 +1,9 @@
+{
+    "description": "paid",
+    "in": "query",
+    "name": "paid",
+    "schema": {
+        "example": "true",
+        "type": "string"
+    }
+}

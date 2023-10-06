@@ -3,7 +3,7 @@
     "info": {
         "title": "content",
         "version": "1.0.0",
-        "summary": "Ghost's RESTful Content API delivers published content to the world and can be accessed in a read-only manner by any client to render in a website, app, or other embedded media.",
+        "summary": "Ghost's RESTful content API delivers published content to the world and can be accessed in a read-only manner by any client to render in a website, app, or other embedded media.",
         "contact": {
             "name": "Ghost",
             "url": "https://ghost.org"
@@ -40,34 +40,59 @@
     ],
     "paths": {
         "/collections/{id}": {
-            "$ref": "./paths/collections-get-id.json"
+            "get": {
+                "$ref": "./paths/collections-get-id.json"
+            }
         },
         "/newsletters": {
-            "$ref": "./paths/newsletters-get.json"
+            "get": {
+                "$ref": "./paths/newsletters-get.json"
+            }
         },
         "/offers/{id}": {
-            "$ref": "./paths/offers-get-id.json"
+            "get": {
+                "$ref": "./paths/offers-get-id.json"
+            }
         },
         "/pages/{id}": {
-            "$ref": "./paths/pages-get-id.json"
+            "get": {
+                "$ref": "./paths/pages-get-id.json"
+            }
         },
         "/pages": {
-            "$ref": "./paths/pages-get.json"
+            "get": {
+                "$ref": "./paths/pages-get.json"
+            }
         },
         "/posts/{id}": {
-            "$ref": "./paths/posts-get-id.json"
+            "get": {
+                "$ref": "./paths/posts-get-id.json"
+            }
         },
         "/posts": {
-            "$ref": "./paths/posts-get.json"
+            "get": {
+                "$ref": "./paths/posts-get.json"
+            }
         },
         "/recommendations": {
-            "$ref": "./paths/recommendations-get.json"
+            "get": {
+                "$ref": "./paths/recommendations-get.json"
+            }
         },
         "/settings": {
-            "$ref": "./paths/settings-get.json"
+            "get": {
+                "$ref": "./paths/settings-get.json"
+            }
+        },
+        "/site": {
+            "options": {
+                "$ref": "./paths/site-options.json"
+            }
         },
         "/tiers": {
-            "$ref": "./paths/tiers-get.json"
+            "get": {
+                "$ref": "./paths/tiers-get.json"
+            }
         }
     },
     "components": {

@@ -1,75 +1,70 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "SubscriptionsHistoryCanFetchSubscriptionsHistory",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "meta": {
-                                "cadences": [
-                                    "year",
-                                    "month"
-                                ],
-                                "tiers": [
-                                    "651c80e31334699742ce735a"
-                                ],
-                                "totals": [
-                                    {
-                                        "cadence": "month",
-                                        "count": 1,
-                                        "tier": "651c80e31334699742ce735a"
-                                    }
-                                ]
-                            },
-                            "stats": [
+    "description": "",
+    "parameters": [],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "meta": {
+                            "cadences": [
+                                "year",
+                                "month"
+                            ],
+                            "tiers": [
+                                "651c80e31334699742ce735a"
+                            ],
+                            "totals": [
                                 {
                                     "cadence": "month",
-                                    "cancellations": 0,
-                                    "count": 1,
-                                    "date": "2023-10-03",
-                                    "negative_delta": 0,
-                                    "positive_delta": 4,
-                                    "signups": 4,
-                                    "tier": "651c80e31334699742ce735a"
-                                },
-                                {
-                                    "cadence": "year",
-                                    "cancellations": 0,
-                                    "count": 0,
-                                    "date": "2023-10-03",
-                                    "negative_delta": 0,
-                                    "positive_delta": 0,
-                                    "signups": 0,
+                                    "count": 3,
                                     "tier": "651c80e31334699742ce735a"
                                 }
                             ]
                         },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "subscriptions": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/subscriptions.json"
-                                    }
-                                },
-                                "meta": {
-                                    "$ref": "../components/schemas/meta.json"
+                        "stats": [
+                            {
+                                "cadence": "month",
+                                "cancellations": 0,
+                                "count": 3,
+                                "date": "2023-10-03",
+                                "negative_delta": 1,
+                                "positive_delta": 6,
+                                "signups": 6,
+                                "tier": "651c80e31334699742ce735a"
+                            },
+                            {
+                                "cadence": "year",
+                                "cancellations": 0,
+                                "count": 0,
+                                "date": "2023-10-03",
+                                "negative_delta": 0,
+                                "positive_delta": 0,
+                                "signups": 0,
+                                "tier": "651c80e31334699742ce735a"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "subscriptions": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/subscriptions.json"
                                 }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Subscriptions history can fetch subscriptions history",
-        "tags": [
-            "subscriptions"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "subscriptions"
+    ]
 }

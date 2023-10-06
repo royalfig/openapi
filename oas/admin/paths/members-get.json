@@ -1,139 +1,173 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "SearchForPaidMembersRetrievesMemberWithEmailPaidTestCom",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "members": [
-                                {
-                                    "avatar_image": null,
-                                    "comped": false,
-                                    "created_at": "2023-10-03T21:00:41.000Z",
-                                    "email": "paid@test.com",
-                                    "email_count": 0,
-                                    "email_open_rate": 80,
-                                    "email_opened_count": 0,
-                                    "email_suppression": {
-                                        "info": null,
-                                        "suppressed": false
-                                    },
-                                    "geolocation": null,
-                                    "id": "651c80e31334699742ce724a",
-                                    "labels": [],
-                                    "last_seen_at": null,
-                                    "name": "Egon Spengler",
-                                    "newsletters": [
-                                        {
-                                            "description": null,
-                                            "id": "651c80e31334699742ce7250",
-                                            "name": "Daily newsletter",
-                                            "status": "active"
-                                        }
-                                    ],
-                                    "note": null,
-                                    "status": "paid",
-                                    "subscribed": true,
-                                    "subscriptions": [
-                                        {
-                                            "cancel_at_period_end": false,
-                                            "cancellation_reason": null,
-                                            "current_period_end": "2020-07-09T19:01:20.000Z",
-                                            "customer": {
-                                                "email": "paid@test.com",
-                                                "id": "cus_HR3tBmNhx4QsZY",
-                                                "name": "Egon Spengler"
-                                            },
-                                            "default_payment_card_last4": "4242",
-                                            "id": "sub_HR3tLNgGAHsa7b",
-                                            "offer": null,
-                                            "plan": {
-                                                "amount": 1000,
-                                                "currency": "USD",
-                                                "id": "173e16a1fffa7d232b398e4a9b08d266a456ae8f3d23e5f11cc608ced6730bb8",
-                                                "interval": "month",
-                                                "nickname": "Monthly"
-                                            },
-                                            "price": {
-                                                "amount": 1200,
-                                                "currency": "GBP",
-                                                "id": "173e16a1fffa7d232b398e4a9b08d266a456ae8f3d23e5f11cc608ced6730bb8",
-                                                "interval": "month",
-                                                "nickname": "Monthly",
-                                                "price_id": "651c80e31334699742ce7262",
-                                                "tier": {
-                                                    "id": "109c85c734fb9992e7bc30a26af66c22f5c94d8dc62e0a33cb797be902c06b2d",
-                                                    "name": "Default Product",
-                                                    "tier_id": "651c80e31334699742ce735a"
-                                                },
-                                                "type": "recurring"
-                                            },
-                                            "start_date": "2020-06-09T19:01:20.000Z",
-                                            "status": "active",
-                                            "tier": {
-                                                "active": true,
-                                                "created_at": "2023-10-03T21:00:19.000Z",
-                                                "currency": "usd",
-                                                "description": null,
-                                                "expiry_at": null,
-                                                "id": "651c80e31334699742ce735a",
-                                                "monthly_price": 500,
-                                                "monthly_price_id": "651c80e31334699742ce7262",
-                                                "name": "Default Product",
-                                                "slug": "default-product",
-                                                "trial_days": 0,
-                                                "type": "paid",
-                                                "updated_at": "2023-10-03T21:00:41.000Z",
-                                                "visibility": "public",
-                                                "welcome_page_url": "/welcome-paid",
-                                                "yearly_price": 5000,
-                                                "yearly_price_id": "651c80e31334699742ce7263"
-                                            },
-                                            "trial_end_at": null,
-                                            "trial_start_at": null
-                                        }
-                                    ],
-                                    "updated_at": "2023-10-03T21:00:41.000Z",
-                                    "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b342"
-                                }
-                            ],
-                            "meta": {
-                                "pagination": {
-                                    "limit": 15,
-                                    "next": null,
-                                    "page": 1,
-                                    "pages": 1,
-                                    "prev": null,
-                                    "total": 1
-                                }
-                            }
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "members": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/members.json"
-                                    }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/filter.json"
+        },
+        {
+            "$ref": "../components/parameters/search.json"
+        },
+        {
+            "$ref": "../components/parameters/include.json"
+        },
+        {
+            "$ref": "../components/parameters/order.json"
+        },
+        {
+            "$ref": "../components/parameters/paid.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "members": [
+                            {
+                                "avatar_image": null,
+                                "comped": false,
+                                "created_at": "2023-10-03T21:00:40.000Z",
+                                "email": "with-product@test.com",
+                                "email_count": 0,
+                                "email_open_rate": null,
+                                "email_opened_count": 0,
+                                "email_suppression": {
+                                    "info": null,
+                                    "suppressed": false
                                 },
-                                "meta": {
-                                    "$ref": "../components/schemas/meta.json"
+                                "geolocation": null,
+                                "id": "651c80e31334699742ce724f",
+                                "labels": [],
+                                "last_seen_at": null,
+                                "name": "Dana Barrett",
+                                "newsletters": [],
+                                "note": null,
+                                "status": "paid",
+                                "subscribed": false,
+                                "subscriptions": [
+                                    {
+                                        "cancel_at_period_end": false,
+                                        "cancellation_reason": null,
+                                        "current_period_end": null,
+                                        "customer": {
+                                            "email": "with-product@test.com",
+                                            "id": "",
+                                            "name": "Dana Barrett"
+                                        },
+                                        "default_payment_card_last4": "****",
+                                        "id": "",
+                                        "offer": null,
+                                        "plan": {
+                                            "amount": 0,
+                                            "currency": "USD",
+                                            "id": "",
+                                            "interval": "year",
+                                            "nickname": "Complimentary"
+                                        },
+                                        "price": {
+                                            "amount": 0,
+                                            "currency": "USD",
+                                            "id": "",
+                                            "interval": "year",
+                                            "nickname": "Complimentary",
+                                            "price_id": "",
+                                            "tier": {
+                                                "id": "",
+                                                "tier_id": "651c80e31334699742ce735a"
+                                            },
+                                            "type": "recurring"
+                                        },
+                                        "start_date": "2023-10-03T21:00:40.632Z",
+                                        "status": "active",
+                                        "tier": {
+                                            "active": true,
+                                            "created_at": "2023-10-03T21:00:19.000Z",
+                                            "currency": "usd",
+                                            "description": null,
+                                            "expiry_at": null,
+                                            "id": "651c80e31334699742ce735a",
+                                            "monthly_price": 500,
+                                            "monthly_price_id": "651c80e31334699742ce7262",
+                                            "name": "Default Product",
+                                            "slug": "default-product",
+                                            "trial_days": 0,
+                                            "type": "paid",
+                                            "updated_at": "2023-10-03T21:00:40.000Z",
+                                            "visibility": "public",
+                                            "welcome_page_url": "/welcome-paid",
+                                            "yearly_price": 5000,
+                                            "yearly_price_id": "651c80e31334699742ce7263"
+                                        }
+                                    }
+                                ],
+                                "updated_at": "2023-10-03T21:00:40.000Z",
+                                "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b347"
+                            },
+                            {
+                                "avatar_image": null,
+                                "comped": false,
+                                "created_at": "2023-10-03T21:00:40.000Z",
+                                "email": "vip-paid@test.com",
+                                "email_count": 0,
+                                "email_open_rate": null,
+                                "email_opened_count": 0,
+                                "email_suppression": {
+                                    "info": null,
+                                    "suppressed": false
+                                },
+                                "geolocation": null,
+                                "id": "651c80e31334699742ce724e",
+                                "labels": [
+                                    {
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "id": "651c80e31334699742ce7255",
+                                        "name": "VIP",
+                                        "slug": "vip",
+                                        "updated_at": "2023-10-03T21:00:19.000Z"
+                                    }
+                                ],
+                                "last_seen_at": null,
+                                "name": "Peter Venkman",
+                                "newsletters": [],
+                                "note": null,
+                                "status": "paid",
+                                "subscribed": false,
+                                "subscriptions": [],
+                                "updated_at": "2023-10-03T21:00:40.000Z",
+                                "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b346"
+                            }
+                        ],
+                        "meta": {
+                            "pagination": {
+                                "limit": 15,
+                                "next": null,
+                                "page": 1,
+                                "pages": 1,
+                                "prev": null,
+                                "total": 2
+                            }
+                        }
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "members": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/members.json"
                                 }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Search for paid members retrieves member with email paid test com",
-        "tags": [
-            "members"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "members"
+    ]
 }

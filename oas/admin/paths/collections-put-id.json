@@ -1,87 +1,90 @@
 {
-    "parameters": [],
-    "put": {
-        "description": "",
-        "operationId": "EditFailsToEditUnexistentCollection",
-        "parameters": {},
-        "requestBody": {
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "collections": [
+                        {
+                            "title": "Test Collection Edited"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "collections": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "title": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Collection",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminCollections651C80E91334699742Ce76FdPutRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "200": {
             "content": {
                 "application/json": {
                     "example": {
                         "collections": [
                             {
-                                "id": "5951f5fca366002ebd5dbef7",
-                                "title": "Editing unexistent Collection"
+                                "created_at": "2023-10-03T21:00:25.000Z",
+                                "description": null,
+                                "feature_image": null,
+                                "filter": null,
+                                "id": "651c80e91334699742ce76fd",
+                                "slug": "test-collection-to-edit",
+                                "title": "Test Collection Edited",
+                                "type": "manual",
+                                "updated_at": "2023-10-03T21:00:25.000Z"
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "collections": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "id": {
-                                            "type": "string"
-                                        },
-                                        "title": {
-                                            "type": "string"
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Collection",
-                                    "type": "object"
-                                },
-                                "type": "array"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminCollections5951F5Fca366002Ebd5Dbef7PutRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
-        },
-        "responses": {
-            "404": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Collection not found.",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": null,
-                                    "id": "dfd29950-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Resource not found error, cannot edit collection.",
-                                    "property": null,
-                                    "type": "NotFoundError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "collections": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/collections.json"
-                                    }
+                                    "$ref": "../components/schemas/collections.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
+                }
+            },
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
+                    }
+                }
             }
-        },
-        "summary": "Edit fails to edit unexistent collection",
-        "tags": [
-            "collections"
-        ]
-    }
+        }
+    },
+    "tags": [
+        "collections"
+    ]
 }

@@ -1,103 +1,101 @@
 {
+    "description": "",
     "parameters": [],
-    "post": {
-        "description": "",
-        "operationId": "FailsNicelyWhenCreatingAnOrphanedWebhook",
-        "parameters": {},
-        "requestBody": {
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "webhooks": [
+                        {
+                            "event": "test.create",
+                            "integration_id": "651c80e31334699742ce7269",
+                            "name": "test",
+                            "secret": "thisissecret",
+                            "target_url": "http://example.com/webhooks/test/extra/1"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "webhooks": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "event": {
+                                        "type": "string"
+                                    },
+                                    "integration_id": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "secret": {
+                                        "type": "string"
+                                    },
+                                    "target_url": {
+                                        "format": "uri",
+                                        "type": "string",
+                                        "x-qt-uri-protocols": [
+                                            "http"
+                                        ]
+                                    }
+                                },
+                                "required": [],
+                                "title": "Webhook",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminWebhooksPostRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "201": {
             "content": {
                 "application/json": {
                     "example": {
                         "webhooks": [
                             {
+                                "api_version": "v5.65",
+                                "created_at": "2023-10-03T21:01:00.000Z",
                                 "event": "test.create",
-                                "integration_id": "fake-integration",
+                                "id": "651c810c1334699742cea5e0",
+                                "integration_id": "651c80e31334699742ce7269",
+                                "last_triggered_at": null,
+                                "last_triggered_error": null,
+                                "last_triggered_status": null,
                                 "name": "test",
                                 "secret": "thisissecret",
-                                "target_url": "http://example.com/webhooks/test/extra/10"
+                                "target_url": "http://example.com/webhooks/test/extra/1",
+                                "updated_at": "2023-10-03T21:01:00.000Z"
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "webhooks": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "event": {
-                                            "type": "string"
-                                        },
-                                        "integration_id": {
-                                            "type": "string"
-                                        },
-                                        "name": {
-                                            "type": "string"
-                                        },
-                                        "secret": {
-                                            "type": "string"
-                                        },
-                                        "target_url": {
-                                            "format": "uri",
-                                            "type": "string",
-                                            "x-qt-uri-protocols": [
-                                                "http"
-                                            ]
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Webhook",
-                                    "type": "object"
-                                },
-                                "type": "array"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminWebhooksPostRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
-        },
-        "responses": {
-            "422": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Validation failed for 'integration_id'. 'integration_id' value does not match any existing integration.",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": "Provide the 'integration_id' of an existing integration.",
-                                    "id": "f4847350-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Validation error, cannot save webhook.",
-                                    "property": null,
-                                    "type": "ValidationError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "webhooks": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/webhooks.json"
-                                    }
+                                    "$ref": "../components/schemas/webhooks.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Fails nicely when creating an orphaned webhook",
-        "tags": [
-            "webhooks"
-        ]
-    }
+                }
+            },
+            "description": ""
+        }
+    },
+    "tags": [
+        "webhooks"
+    ]
 }

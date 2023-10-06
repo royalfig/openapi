@@ -1,94 +1,109 @@
 {
-    "parameters": [],
-    "put": {
-        "description": "",
-        "operationId": "CanSaveWithTrial_daysAsNull",
-        "parameters": {},
-        "requestBody": {
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "tiers": [
+                        {
+                            "benefits": [
+                                "daily cat pictures",
+                                "delicious avo toast"
+                            ],
+                            "description": "Updated description"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "tiers": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "benefits": {
+                                        "items": {
+                                            "type": "string"
+                                        },
+                                        "type": "array"
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Tier",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminTiers651C80E31334699742Ce735APutRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "200": {
             "content": {
                 "application/json": {
                     "example": {
                         "tiers": [
                             {
-                                "trial_days": null
+                                "active": true,
+                                "benefits": [
+                                    "daily cat pictures",
+                                    "delicious avo toast"
+                                ],
+                                "created_at": "2023-10-03T21:00:19.000Z",
+                                "currency": "USD",
+                                "description": "Updated description",
+                                "id": "651c80e31334699742ce735a",
+                                "monthly_price": 500,
+                                "name": "Default Product",
+                                "slug": "default-product",
+                                "trial_days": 0,
+                                "type": "paid",
+                                "updated_at": "2023-10-03T21:00:59.000Z",
+                                "visibility": "none",
+                                "welcome_page_url": "/welcome-paid",
+                                "yearly_price": 5000
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "tiers": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "trial_days": {
-                                            "nullable": true
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Tier",
-                                    "type": "object"
-                                },
-                                "type": "array"
+                                    "$ref": "../components/schemas/tiers.json"
+                                }
                             }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminTiers651C80E31334699742Ce735BPutRequest",
-                        "type": "object"
+                        }
                     }
                 }
             },
-            "required": true
-        },
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "tiers": [
-                                {
-                                    "active": true,
-                                    "benefits": [],
-                                    "created_at": "2023-10-03T21:00:19.000Z",
-                                    "description": null,
-                                    "id": "651c80e31334699742ce735b",
-                                    "name": "Free",
-                                    "slug": "free",
-                                    "trial_days": 0,
-                                    "type": "free",
-                                    "updated_at": "2023-10-03T21:00:59.000Z",
-                                    "visibility": "public",
-                                    "welcome_page_url": "/welcome-free"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "tiers": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/tiers.json"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "description": "",
-                "headers": {
-                    "x-cache-invalidate": {
-                        "description": "Custom header x-cache-invalidate",
-                        "schema": {
-                            "type": "string"
-                        }
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
                     }
                 }
             }
-        },
-        "summary": "Can save with trial_days as null",
-        "tags": [
-            "tiers"
-        ]
-    }
+        }
+    },
+    "tags": [
+        "tiers"
+    ]
 }

@@ -12,10 +12,8 @@
     "dev": "vite",
     "bundle": "redocly bundle -o dist/bundle.yaml",
     "lint:oas": "redocly lint",
-    "convert": "node lib/converter.js",
-    "generate": "npm run test && npm run convert && redocly bundle -o dist/bundle.yaml && redocly lint",
-    "types": "npx openapi-typescript ./dist/bundle.yaml -o ./types/schema.d.ts",
-    "test": "npx playwright test"
+    "convert": "node lib/.",
+    "types": "npx openapi-typescript ./dist/bundle.yaml -o ./types/schema.d.ts"
   },
   "devDependencies": {
     "@playwright/test": "^1.37.1",

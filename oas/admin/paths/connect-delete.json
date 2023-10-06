@@ -1,0 +1,12 @@
+{
+    "description": "",
+    "parameters": [],
+    "responses": {
+        "204": {
+            "description": "Deleted"
+        }
+    },
+    "tags": [
+        "connect"
+    ]
+}

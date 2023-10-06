@@ -1,0 +1,10 @@
+{
+    "description": "slug",
+    "in": "path",
+    "name": "slug",
+    "required": true,
+    "schema": {
+        "type": "string",
+        "example": "..."
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "description": "send_email",
+    "in": "query",
+    "name": "send_email",
+    "schema": {
+        "example": "true",
+        "type": "string"
+    }
+}

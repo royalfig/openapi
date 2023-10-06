@@ -1,91 +1,100 @@
 {
+    "description": "",
     "parameters": [],
-    "post": {
-        "description": "",
-        "operationId": "ErrorsWhenPriceIsTooLarge",
-        "parameters": {},
-        "requestBody": {
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "tiers": [
+                        {
+                            "currency": "usd",
+                            "monthly_price": 100,
+                            "name": "new premium tier"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "tiers": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "currency": {
+                                        "type": "string"
+                                    },
+                                    "monthly_price": {
+                                        "type": "integer"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Tier",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminTiersPostRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "201": {
             "content": {
                 "application/json": {
                     "example": {
                         "tiers": [
                             {
-                                "currency": "usd",
-                                "monthly_price": 9007199254740991,
-                                "name": "Blah"
+                                "active": true,
+                                "benefits": [],
+                                "created_at": "2023-10-03T21:00:59.193Z",
+                                "currency": "USD",
+                                "description": null,
+                                "id": "651c810b1334699742cea4b2",
+                                "monthly_price": 100,
+                                "name": "new premium tier",
+                                "slug": "new-premium-tier",
+                                "trial_days": 0,
+                                "type": "paid",
+                                "updated_at": null,
+                                "visibility": "public",
+                                "welcome_page_url": null,
+                                "yearly_price": 5000
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "tiers": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "currency": {
-                                            "type": "string"
-                                        },
-                                        "monthly_price": {
-                                            "type": "integer"
-                                        },
-                                        "name": {
-                                            "type": "string"
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Tier",
-                                    "type": "object"
-                                },
-                                "type": "array"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminTiersPostRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
-        },
-        "responses": {
-            "422": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Tier prices may not exceed 999999.99",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": null,
-                                    "id": "f3f94a50-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Validation error, cannot save tier.",
-                                    "property": null,
-                                    "type": "ValidationError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "tiers": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/tiers.json"
-                                    }
+                                    "$ref": "../components/schemas/tiers.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
+                }
+            },
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
+                    }
+                }
             }
-        },
-        "summary": "Errors when price is too large",
-        "tags": [
-            "tiers"
-        ]
-    }
+        }
+    },
+    "tags": [
+        "tiers"
+    ]
 }

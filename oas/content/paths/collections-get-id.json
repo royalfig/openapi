@@ -1,58 +1,46 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "ApiCanRequestACollectionBySlugAndId",
-        "parameters": [
-            {
-                "description": "id",
-                "in": "path",
-                "name": "id",
-                "required": true,
-                "schema": {
-                    "type": "string",
-                    "example": "..."
-                }
-            }
-        ],
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "collections": [
-                                {
-                                    "created_at": "2023-10-03T21:01:00.000Z",
-                                    "description": "Featured posts",
-                                    "feature_image": null,
-                                    "filter": "featured:true",
-                                    "id": "651c80e31334699742ce7359",
-                                    "slug": "featured",
-                                    "title": "Featured",
-                                    "type": "automatic",
-                                    "updated_at": "2023-10-03T21:01:00.000Z"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "collections": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/collections.json"
-                                    }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "collections": [
+                            {
+                                "created_at": "2023-10-03T21:01:00.000Z",
+                                "description": "Featured posts",
+                                "feature_image": null,
+                                "filter": "featured:true",
+                                "id": "651c80e31334699742ce7359",
+                                "slug": "featured",
+                                "title": "Featured",
+                                "type": "automatic",
+                                "updated_at": "2023-10-03T21:01:00.000Z"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "collections": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/collections.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Api can request a collection by slug and id",
-        "tags": [
-            "collections"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "collections"
+    ]
 }

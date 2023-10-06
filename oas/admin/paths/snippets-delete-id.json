@@ -1,47 +1,16 @@
 {
-    "delete": {
-        "description": "",
-        "operationId": "CannotDestroyNonExistentSnippet",
-        "parameters": {},
-        "responses": {
-            "404": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Resource could not be found.",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": null,
-                                    "id": "f2cf7050-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Resource not found error, cannot delete snippet.",
-                                    "property": null,
-                                    "type": "NotFoundError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "snippets": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/snippets.json"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Cannot destroy non existent snippet",
-        "tags": [
-            "snippets"
-        ]
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "204": {
+            "description": "Deleted"
+        }
     },
-    "parameters": []
+    "tags": [
+        "snippets"
+    ]
 }

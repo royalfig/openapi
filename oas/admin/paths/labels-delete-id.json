@@ -1,47 +1,24 @@
 {
-    "delete": {
-        "description": "",
-        "operationId": "CannotDestroyNonExistentLabel",
-        "parameters": {},
-        "responses": {
-            "404": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Resource could not be found.",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": null,
-                                    "id": "e3128210-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Resource not found error, cannot delete label.",
-                                    "property": null,
-                                    "type": "NotFoundError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "labels": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/labels.json"
-                                    }
-                                }
-                            }
-                        }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "204": {
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
                     }
-                },
-                "description": ""
+                }
             }
-        },
-        "summary": "Cannot destroy non existent label",
-        "tags": [
-            "labels"
-        ]
+        }
     },
-    "parameters": []
+    "tags": [
+        "labels"
+    ]
 }

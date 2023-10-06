@@ -1,87 +1,128 @@
 {
-    "parameters": [],
-    "put": {
-        "description": "",
-        "operationId": "HostSettingsNewsletterLimitsMaxLimitUnarchivingANewsletterFails",
-        "parameters": {},
-        "requestBody": {
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        },
+        {
+            "$ref": "../components/parameters/include.json"
+        }
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "newsletters": [
+                        {
+                            "name": "Updated newsletter name",
+                            "sender_email": "updated@example.com"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "newsletters": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "sender_email": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Newsletter",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminNewsletters651C80E31334699742Ce7250PutRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "200": {
             "content": {
                 "application/json": {
                     "example": {
+                        "meta": {
+                            "sent_email_verification": [
+                                "sender_email"
+                            ]
+                        },
                         "newsletters": [
                             {
-                                "status": "active"
+                                "background_color": "light",
+                                "body_font_category": "serif",
+                                "border_color": null,
+                                "created_at": "2023-10-03T21:00:45.000Z",
+                                "description": null,
+                                "feedback_enabled": false,
+                                "footer_content": null,
+                                "header_image": "http://127.0.0.1:2369/content/images/2022/05/test.jpg",
+                                "id": "651c80e31334699742ce7250",
+                                "name": "Updated newsletter name",
+                                "sender_email": "jamie@example.com",
+                                "sender_name": "Jamie",
+                                "sender_reply_to": "newsletter",
+                                "show_badge": true,
+                                "show_comment_cta": true,
+                                "show_feature_image": true,
+                                "show_header_icon": true,
+                                "show_header_name": true,
+                                "show_header_title": true,
+                                "show_latest_posts": false,
+                                "show_post_title_section": true,
+                                "show_subscription_details": false,
+                                "slug": "daily-newsletter",
+                                "sort_order": 1,
+                                "status": "active",
+                                "subscribe_on_signup": false,
+                                "title_alignment": "center",
+                                "title_color": null,
+                                "title_font_category": "serif",
+                                "updated_at": "2023-10-03T21:00:45.000Z",
+                                "uuid": "60127659-9a66-4e00-907a-2e312eb54d65",
+                                "visibility": "members"
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "newsletters": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "status": {
-                                            "type": "string"
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Newsletter",
-                                    "type": "object"
-                                },
-                                "type": "array"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminNewsletters651C80E31334699742Ce7252PutRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
-        },
-        "responses": {
-            "403": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Your plan supports up to 3 newsletters. Please upgrade to add more.",
-                                    "details": {
-                                        "limit": 3,
-                                        "name": "newsletters",
-                                        "total": 3
-                                    },
-                                    "ghostErrorCode": null,
-                                    "help": "https://ghost.org/help/",
-                                    "id": "ec506220-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Host Limit error, cannot edit newsletter.",
-                                    "property": null,
-                                    "type": "HostLimitError"
+                                    "$ref": "../components/schemas/newsletters.json"
                                 }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "newsletters": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/newsletters.json"
-                                    }
-                                }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
+                }
+            },
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
+                    }
+                }
             }
-        },
-        "summary": "Host settings  newsletter limits max limit unarchiving a newsletter fails",
-        "tags": [
-            "newsletters"
-        ]
-    }
+        }
+    },
+    "tags": [
+        "newsletters"
+    ]
 }

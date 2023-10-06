@@ -1,16 +1,65 @@
 {
+    "description": "",
     "parameters": [],
-    "post": {
-        "description": "",
-        "operationId": "CanDeleteNotification",
-        "parameters": {},
-        "requestBody": {
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "notifications": [
+                        {
+                            "custom": true,
+                            "id": "59a952be7d79ed06b0d21133",
+                            "message": "test notification",
+                            "type": "info"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "notifications": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "custom": {
+                                        "type": "boolean"
+                                    },
+                                    "id": {
+                                        "type": "string"
+                                    },
+                                    "message": {
+                                        "type": "string"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Notification",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminNotificationsPostRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "201": {
             "content": {
                 "application/json": {
                     "example": {
                         "notifications": [
                             {
                                 "custom": true,
+                                "dismissible": true,
+                                "id": "59a952be7d79ed06b0d21133",
+                                "location": "bottom",
                                 "message": "test notification",
                                 "status": "alert",
                                 "type": "info"
@@ -18,76 +67,22 @@
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "notifications": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "custom": {
-                                            "type": "boolean"
-                                        },
-                                        "message": {
-                                            "type": "string"
-                                        },
-                                        "status": {
-                                            "type": "string"
-                                        },
-                                        "type": {
-                                            "type": "string"
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Notification",
-                                    "type": "object"
-                                },
-                                "type": "array"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminNotificationsPostRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
-        },
-        "responses": {
-            "201": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "notifications": [
-                                {
-                                    "custom": true,
-                                    "dismissible": true,
-                                    "id": "651c80fe1334699742ce929b",
-                                    "location": "bottom",
-                                    "message": "test notification",
-                                    "status": "alert",
-                                    "type": "info"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "notifications": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/notifications.json"
-                                    }
+                                    "$ref": "../components/schemas/notifications.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Can delete notification",
-        "tags": [
-            "notifications"
-        ]
-    }
+                }
+            },
+            "description": ""
+        }
+    },
+    "tags": [
+        "notifications"
+    ]
 }

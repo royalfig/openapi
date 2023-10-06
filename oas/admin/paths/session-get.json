@@ -1,47 +1,60 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "ErrorsWhenReadingSessionAgainNowOwnerIsNotLoggedIn",
-        "parameters": {},
-        "responses": {
-            "403": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Unable to determine the authenticated user or integration. Check that cookies are being passed through if using session authentication.",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": null,
-                                    "id": "f1a01810-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Authorization failed",
-                                    "property": null,
-                                    "type": "NoPermissionError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "session": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/session.json"
-                                    }
+    "description": "",
+    "parameters": [],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "accessibility": null,
+                        "bio": "bio",
+                        "comment_notifications": true,
+                        "cover_image": null,
+                        "created_at": "2023-10-03T21:00:55.000Z",
+                        "created_by": "1",
+                        "donation_notifications": true,
+                        "email": "jbloggs@example.com",
+                        "facebook": null,
+                        "free_member_signup_notification": true,
+                        "id": "1",
+                        "last_seen": "2023-10-03T21:00:55.000Z",
+                        "locale": null,
+                        "location": "location",
+                        "mention_notifications": true,
+                        "meta_description": null,
+                        "meta_title": null,
+                        "milestone_notifications": true,
+                        "name": "Joe Bloggs",
+                        "paid_subscription_canceled_notification": false,
+                        "paid_subscription_started_notification": true,
+                        "profile_image": "https://example.com/super_photo.jpg",
+                        "recommendation_notifications": true,
+                        "slug": "joe-bloggs",
+                        "status": "active",
+                        "tour": null,
+                        "twitter": null,
+                        "updated_at": "2023-10-03T21:00:55.000Z",
+                        "updated_by": "1",
+                        "visibility": "public",
+                        "website": null
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "session": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/session.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Errors when reading session again now owner is not logged in",
-        "tags": [
-            "session"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "session"
+    ]
 }

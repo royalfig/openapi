@@ -1,47 +1,16 @@
 {
-    "delete": {
-        "description": "",
-        "operationId": "CannotDeleteANonExistentWebhook",
-        "parameters": {},
-        "responses": {
-            "404": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Resource could not be found.",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": null,
-                                    "id": "f48843e0-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Resource not found error, cannot delete webhook.",
-                                    "property": null,
-                                    "type": "NotFoundError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "webhooks": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/webhooks.json"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Cannot delete a non existent webhook",
-        "tags": [
-            "webhooks"
-        ]
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "204": {
+            "description": "Deleted"
+        }
     },
-    "parameters": []
+    "tags": [
+        "webhooks"
+    ]
 }

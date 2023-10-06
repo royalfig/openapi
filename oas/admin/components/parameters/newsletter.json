@@ -1,0 +1,9 @@
+{
+    "description": "newsletter",
+    "in": "query",
+    "name": "newsletter",
+    "schema": {
+        "example": "daily-newsletter",
+        "type": "string"
+    }
+}

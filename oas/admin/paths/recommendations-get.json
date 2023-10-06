@@ -1,109 +1,69 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "ApiBrowseUsesDefaultLimitOf5",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "meta": {
-                                "pagination": {
-                                    "limit": 5,
-                                    "next": 2,
-                                    "page": 1,
-                                    "pages": 2,
-                                    "prev": null,
-                                    "total": 6
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/filter.json"
+        },
+        {
+            "$ref": "../components/parameters/include.json"
+        },
+        {
+            "$ref": "../components/parameters/page.json"
+        },
+        {
+            "$ref": "../components/parameters/limit.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "meta": {
+                            "pagination": {
+                                "limit": 5,
+                                "next": null,
+                                "page": 1,
+                                "pages": 1,
+                                "prev": null,
+                                "total": 1
+                            }
+                        },
+                        "recommendations": [
+                            {
+                                "created_at": "1970-01-01T00:00:00.000Z",
+                                "excerpt": "Test excerpt",
+                                "favicon": "https://recommendation0.com/favicon.ico",
+                                "featured_image": "https://recommendation0.com/featured.jpg",
+                                "id": "651c81061334699742ce9b35",
+                                "one_click_subscribe": true,
+                                "reason": "Reason 0",
+                                "title": "Recommendation 0",
+                                "updated_at": "2023-10-03T21:00:54.000Z",
+                                "url": "https://recommendation0.com/"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "recommendations": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/recommendations.json"
                                 }
                             },
-                            "recommendations": [
-                                {
-                                    "created_at": "1970-01-01T00:00:25.000Z",
-                                    "excerpt": "Test excerpt",
-                                    "favicon": "https://recommendation5.com/favicon.ico",
-                                    "featured_image": "https://recommendation5.com/featured.jpg",
-                                    "id": "651c81061334699742ce9b4a",
-                                    "one_click_subscribe": true,
-                                    "reason": "Reason 5",
-                                    "title": "Recommendation 5",
-                                    "updated_at": "2023-10-03T21:00:54.000Z",
-                                    "url": "https://recommendation5.com/"
-                                },
-                                {
-                                    "created_at": "1970-01-01T00:00:20.000Z",
-                                    "excerpt": "Test excerpt",
-                                    "favicon": "https://recommendation4.com/favicon.ico",
-                                    "featured_image": "https://recommendation4.com/featured.jpg",
-                                    "id": "651c81061334699742ce9b49",
-                                    "one_click_subscribe": true,
-                                    "reason": "Reason 4",
-                                    "title": "Recommendation 4",
-                                    "updated_at": "2023-10-03T21:00:54.000Z",
-                                    "url": "https://recommendation4.com/"
-                                },
-                                {
-                                    "created_at": "1970-01-01T00:00:15.000Z",
-                                    "excerpt": "Test excerpt",
-                                    "favicon": "https://recommendation3.com/favicon.ico",
-                                    "featured_image": "https://recommendation3.com/featured.jpg",
-                                    "id": "651c81061334699742ce9b48",
-                                    "one_click_subscribe": true,
-                                    "reason": "Reason 3",
-                                    "title": "Recommendation 3",
-                                    "updated_at": "2023-10-03T21:00:54.000Z",
-                                    "url": "https://recommendation3.com/"
-                                },
-                                {
-                                    "created_at": "1970-01-01T00:00:10.000Z",
-                                    "excerpt": "Test excerpt",
-                                    "favicon": "https://recommendation2.com/favicon.ico",
-                                    "featured_image": "https://recommendation2.com/featured.jpg",
-                                    "id": "651c81061334699742ce9b47",
-                                    "one_click_subscribe": true,
-                                    "reason": "Reason 2",
-                                    "title": "Recommendation 2",
-                                    "updated_at": "2023-10-03T21:00:54.000Z",
-                                    "url": "https://recommendation2.com/"
-                                },
-                                {
-                                    "created_at": "1970-01-01T00:00:05.000Z",
-                                    "excerpt": "Test excerpt",
-                                    "favicon": "https://recommendation1.com/favicon.ico",
-                                    "featured_image": "https://recommendation1.com/featured.jpg",
-                                    "id": "651c81061334699742ce9b46",
-                                    "one_click_subscribe": true,
-                                    "reason": "Reason 1",
-                                    "title": "Recommendation 1",
-                                    "updated_at": "2023-10-03T21:00:54.000Z",
-                                    "url": "https://recommendation1.com/"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "recommendations": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/recommendations.json"
-                                    }
-                                },
-                                "meta": {
-                                    "$ref": "../components/schemas/meta.json"
-                                }
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Api browse uses default limit of 5",
-        "tags": [
-            "recommendations"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "recommendations"
+    ]
 }

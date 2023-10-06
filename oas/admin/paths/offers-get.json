@@ -1,35 +1,115 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "HasNoInitialOffers",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "offers": []
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "offers": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/offers.json"
-                                    }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/filter.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "offers": [
+                            {
+                                "amount": 50,
+                                "cadence": "month",
+                                "code": "easter",
+                                "currency": null,
+                                "currency_restriction": false,
+                                "display_description": "",
+                                "display_title": "",
+                                "duration": "once",
+                                "duration_in_months": null,
+                                "id": "651c80ff1334699742ce9381",
+                                "name": "Easter Sales",
+                                "redemption_count": 0,
+                                "status": "active",
+                                "tier": {
+                                    "id": "651c80e31334699742ce735a",
+                                    "name": "Default Product"
+                                },
+                                "type": "percent"
+                            },
+                            {
+                                "amount": 20,
+                                "cadence": "year",
+                                "code": "summer-sale",
+                                "currency": null,
+                                "currency_restriction": false,
+                                "display_description": "",
+                                "display_title": "",
+                                "duration": "once",
+                                "duration_in_months": null,
+                                "id": "651c81001334699742ce9383",
+                                "name": "Summer Sale",
+                                "redemption_count": 0,
+                                "status": "active",
+                                "tier": {
+                                    "id": "651c80e31334699742ce735a",
+                                    "name": "Default Product"
+                                },
+                                "type": "percent"
+                            },
+                            {
+                                "amount": 100,
+                                "cadence": "year",
+                                "code": "4th",
+                                "currency": "USD",
+                                "currency_restriction": true,
+                                "display_description": "",
+                                "display_title": "",
+                                "duration": "once",
+                                "duration_in_months": null,
+                                "id": "651c81001334699742ce9385",
+                                "name": "Fourth of July Sales",
+                                "redemption_count": 0,
+                                "status": "active",
+                                "tier": {
+                                    "id": "651c80e31334699742ce735a",
+                                    "name": "Default Product"
+                                },
+                                "type": "fixed"
+                            },
+                            {
+                                "amount": 20,
+                                "cadence": "year",
+                                "code": "4th-trial",
+                                "currency": null,
+                                "currency_restriction": false,
+                                "display_description": "",
+                                "display_title": "",
+                                "duration": "trial",
+                                "duration_in_months": null,
+                                "id": "651c81001334699742ce9387",
+                                "name": "Fourth of July Sales trial",
+                                "redemption_count": 0,
+                                "status": "active",
+                                "tier": {
+                                    "id": "651c80e31334699742ce735a",
+                                    "name": "Default Product"
+                                },
+                                "type": "trial"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "offers": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/offers.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Has no initial offers",
-        "tags": [
-            "offers"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "offers"
+    ]
 }

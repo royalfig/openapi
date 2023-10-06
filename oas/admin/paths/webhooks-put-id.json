@@ -1,99 +1,101 @@
 {
-    "parameters": [],
-    "put": {
-        "description": "",
-        "operationId": "CannotEditANonExistentWebhook",
-        "parameters": {},
-        "requestBody": {
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "webhooks": [
+                        {
+                            "event": "member.added",
+                            "integration_id": "ignore_me",
+                            "name": "Edit Test",
+                            "target_url": "https://example.com/new-member"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "webhooks": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "event": {
+                                        "type": "string"
+                                    },
+                                    "integration_id": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "target_url": {
+                                        "format": "uri",
+                                        "type": "string",
+                                        "x-qt-uri-protocols": [
+                                            "https"
+                                        ]
+                                    }
+                                },
+                                "required": [],
+                                "title": "Webhook",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminWebhooks651C810C1334699742Cea5E0PutRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "200": {
             "content": {
                 "application/json": {
                     "example": {
                         "webhooks": [
                             {
+                                "api_version": "v5.65",
+                                "created_at": "2023-10-03T21:01:00.000Z",
                                 "event": "member.added",
-                                "integration_id": "ignore_me",
+                                "id": "651c810c1334699742cea5e0",
+                                "integration_id": "651c80e31334699742ce7269",
+                                "last_triggered_at": null,
+                                "last_triggered_error": null,
+                                "last_triggered_status": null,
                                 "name": "Edit Test",
-                                "target_url": "https://example.com/new-member"
+                                "secret": "thisissecret",
+                                "target_url": "https://example.com/new-member",
+                                "updated_at": "2023-10-03T21:01:00.000Z"
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "webhooks": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "event": {
-                                            "type": "string"
-                                        },
-                                        "integration_id": {
-                                            "type": "string"
-                                        },
-                                        "name": {
-                                            "type": "string"
-                                        },
-                                        "target_url": {
-                                            "format": "uri",
-                                            "type": "string",
-                                            "x-qt-uri-protocols": [
-                                                "https"
-                                            ]
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Webhook",
-                                    "type": "object"
-                                },
-                                "type": "array"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminWebhooksAbcd1234Abcd1234Abcd1234PutRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
-        },
-        "responses": {
-            "404": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Resource could not be found.",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": null,
-                                    "id": "f4866f20-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Resource not found error, cannot edit webhook.",
-                                    "property": null,
-                                    "type": "NotFoundError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "webhooks": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/webhooks.json"
-                                    }
+                                    "$ref": "../components/schemas/webhooks.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Cannot edit a non existent webhook",
-        "tags": [
-            "webhooks"
-        ]
-    }
+                }
+            },
+            "description": ""
+        }
+    },
+    "tags": [
+        "webhooks"
+    ]
 }

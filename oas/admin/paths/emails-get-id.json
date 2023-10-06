@@ -1,63 +1,112 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "DoesDefaultReplacementsOnTheHtmlBodyOfAnOldEmail",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "emails": [
-                                {
-                                    "created_at": "2023-10-03T21:00:28.000Z",
-                                    "delivered_count": 0,
-                                    "email_count": 1,
-                                    "error": null,
-                                    "error_data": null,
-                                    "failed_count": 0,
-                                    "feedback_enabled": false,
-                                    "from": "support@example.com",
-                                    "html": "<p style=\"margin: 0 0 1.5em 0; line-height: 1.6em;\">Hey Jamie, Hey Jamie,</p><a href=\"http://127.0.0.1:2369/unsubscribe/?uuid=example-uuid&newsletter=preview\">Unsubscribe</a>",
-                                    "id": "651c80ec1334699742ce7a8d",
-                                    "newsletter_id": "651c80e31334699742ce7250",
-                                    "opened_count": 0,
-                                    "plaintext": "Hey Jamie, Hey Jamie\nUnsubscribe [http://127.0.0.1:2369/unsubscribe/?uuid=example-uuid&newsletter=preview]",
-                                    "post_id": "618ba1ffbe2896088840a6e3",
-                                    "recipient_filter": "all",
-                                    "reply_to": null,
-                                    "source": "{}",
-                                    "source_type": "lexical",
-                                    "status": "submitted",
-                                    "subject": "Test email",
-                                    "submitted_at": "2023-10-03T21:00:28.000Z",
-                                    "track_clicks": false,
-                                    "track_opens": false,
-                                    "updated_at": "2023-10-03T21:00:28.000Z",
-                                    "uuid": "08db1426-dffb-4838-bc01-a87ddcec8816"
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/order.json"
+        },
+        {
+            "$ref": "../components/parameters/id.json"
+        },
+        {
+            "$ref": "../components/parameters/include.json"
+        },
+        {
+            "$ref": "../components/parameters/filter.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "failures": [
+                            {
+                                "code": 555,
+                                "email_recipient": null,
+                                "enhanced_code": "5.5.5",
+                                "event_id": "event-id-651c80e31334699742ce72d3",
+                                "failed_at": "2023-10-03T21:00:19.000Z",
+                                "id": "651c80e31334699742ce72d2",
+                                "member": null,
+                                "message": "Temporary failure",
+                                "severity": "temporary"
+                            },
+                            {
+                                "code": 555,
+                                "email_recipient": null,
+                                "enhanced_code": "5.5.5",
+                                "event_id": "event-id-651c80e31334699742ce72d5",
+                                "failed_at": "2023-10-03T21:00:19.000Z",
+                                "id": "651c80e31334699742ce72d4",
+                                "member": null,
+                                "message": "Temporary failure",
+                                "severity": "temporary"
+                            },
+                            {
+                                "code": 555,
+                                "email_recipient": null,
+                                "enhanced_code": "5.5.5",
+                                "event_id": "event-id-651c80e31334699742ce72d7",
+                                "failed_at": "2023-10-03T21:00:19.000Z",
+                                "id": "651c80e31334699742ce72d6",
+                                "member": null,
+                                "message": "Temporary failure",
+                                "severity": "temporary"
+                            },
+                            {
+                                "code": 555,
+                                "email_recipient": null,
+                                "enhanced_code": "5.5.5",
+                                "event_id": "event-id-651c80e31334699742ce72d9",
+                                "failed_at": "2023-10-03T21:00:19.000Z",
+                                "id": "651c80e31334699742ce72d8",
+                                "member": null,
+                                "message": "Temporary failure",
+                                "severity": "temporary"
+                            },
+                            {
+                                "code": 555,
+                                "email_recipient": null,
+                                "enhanced_code": "5.5.5",
+                                "event_id": "event-id-651c80e31334699742ce72db",
+                                "failed_at": "2023-10-03T21:00:19.000Z",
+                                "id": "651c80e31334699742ce72da",
+                                "member": null,
+                                "message": "Test failure",
+                                "severity": "permanent"
+                            }
+                        ],
+                        "meta": {
+                            "pagination": {
+                                "limit": 15,
+                                "next": null,
+                                "page": 1,
+                                "pages": 1,
+                                "prev": null,
+                                "total": 5
+                            }
+                        }
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "emails": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/emails.json"
                                 }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "emails": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/emails.json"
-                                    }
-                                }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Does default replacements on the html body of an old email",
-        "tags": [
-            "emails"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "emails"
+    ]
 }

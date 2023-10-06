@@ -1,83 +1,74 @@
 {
+    "description": "",
     "parameters": [],
-    "post": {
-        "description": "",
-        "operationId": "ErrorsWhenAddingLabelWithTheSameName",
-        "parameters": {},
-        "requestBody": {
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "labels": [
+                        {
+                            "name": "test"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "labels": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "name": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Label",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminLabelsPostRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "201": {
             "content": {
                 "application/json": {
                     "example": {
                         "labels": [
                             {
-                                "name": "test"
+                                "created_at": "2023-10-03T21:00:30.000Z",
+                                "id": "651c80ee1334699742ce7f70",
+                                "name": "test",
+                                "slug": "test",
+                                "updated_at": "2023-10-03T21:00:30.000Z"
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "labels": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "name": {
-                                            "type": "string"
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Label",
-                                    "type": "object"
-                                },
-                                "type": "array"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminLabelsPostRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
-        },
-        "responses": {
-            "422": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Label already exists",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": null,
-                                    "id": "e30cb5b0-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Validation error, cannot save label.",
-                                    "property": null,
-                                    "type": "ValidationError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "labels": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/labels.json"
-                                    }
+                                    "$ref": "../components/schemas/labels.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Errors when adding label with the same name",
-        "tags": [
-            "labels"
-        ]
-    }
+                }
+            },
+            "description": ""
+        }
+    },
+    "tags": [
+        "labels"
+    ]
 }

@@ -1,0 +1,24 @@
+{
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "204": {
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        "tags"
+    ]
+}

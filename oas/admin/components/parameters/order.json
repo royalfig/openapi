@@ -1,0 +1,9 @@
+{
+    "description": "Order the returned resources.",
+    "in": "query",
+    "name": "order",
+    "schema": {
+        "example": "email_open_rate asc",
+        "type": "string"
+    }
+}

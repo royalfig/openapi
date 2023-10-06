@@ -1,56 +1,55 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "CanGetATrialOffer",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "offers": [
-                                {
-                                    "amount": 20,
-                                    "cadence": "year",
-                                    "code": "4th-trial",
-                                    "currency": null,
-                                    "currency_restriction": false,
-                                    "display_description": "",
-                                    "display_title": "",
-                                    "duration": "trial",
-                                    "duration_in_months": null,
-                                    "id": "651c81001334699742ce9387",
-                                    "name": "Fourth of July Sales trial",
-                                    "redemption_count": 0,
-                                    "status": "active",
-                                    "tier": {
-                                        "id": "651c80e31334699742ce735a",
-                                        "name": "Default Product"
-                                    },
-                                    "type": "trial"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "offers": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/offers.json"
-                                    }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "offers": [
+                            {
+                                "amount": 12,
+                                "cadence": "year",
+                                "code": "black-friday",
+                                "currency": null,
+                                "currency_restriction": false,
+                                "display_description": "10% off on yearly plan",
+                                "display_title": "Black Friday Sale!",
+                                "duration": "once",
+                                "duration_in_months": null,
+                                "id": "651c80ff1334699742ce937f",
+                                "name": "Black Friday",
+                                "redemption_count": 0,
+                                "status": "active",
+                                "tier": {
+                                    "id": "651c80e31334699742ce735a",
+                                    "name": "Default Product"
+                                },
+                                "type": "percent"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "offers": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/offers.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Can get a trial offer",
-        "tags": [
-            "offers"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "offers"
+    ]
 }

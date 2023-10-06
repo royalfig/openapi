@@ -1,46 +1,45 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "CanRetrieveConfigAndAllExpectedProperties",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/Accept-Version.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "site": {
+                            "accent_color": "#FF1A75",
+                            "allow_external_signup": true,
+                            "cover_image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
+                            "description": "Thoughts, stories and ideas",
+                            "icon": null,
+                            "locale": "en",
+                            "logo": null,
+                            "title": "Ghost",
+                            "url": "http://127.0.0.1:2369/",
+                            "version": "5.65"
+                        }
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
                             "site": {
-                                "accent_color": "#FF1A75",
-                                "allow_external_signup": true,
-                                "cover_image": "https://static.ghost.org/v5.0.0/images/publication-cover.jpg",
-                                "description": "Thoughts, stories and ideas",
-                                "icon": null,
-                                "locale": "en",
-                                "logo": null,
-                                "title": "Ghost",
-                                "url": "http://127.0.0.1:2369/",
-                                "version": "5.65"
-                            }
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "site": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/site.json"
-                                    }
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/site.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Can retrieve config and all expected properties",
-        "tags": [
-            "site"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "site"
+    ]
 }

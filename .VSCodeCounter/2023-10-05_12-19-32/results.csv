@@ -1,0 +1,13 @@
+"filename", "language", "JavaScript", "JSON", "comment", "blank", "total"
+"/Users/work/Projects/Tools/openapi/lib/converter.js", "JavaScript", 240, 0, 26, 52, 318
+"/Users/work/Projects/Tools/openapi/lib/data.js", "JavaScript", 275, 0, 9, 2, 286
+"/Users/work/Projects/Tools/openapi/lib/index.js", "JavaScript", 30, 0, 4, 8, 42
+"/Users/work/Projects/Tools/openapi/lib/oasConversionOptions.js", "JavaScript", 6, 0, 0, 2, 8
+"/Users/work/Projects/Tools/openapi/lib/preprocess.js", "JavaScript", 57, 0, 11, 13, 81
+"/Users/work/Projects/Tools/openapi/lib/process.js", "JavaScript", 172, 0, 6, 33, 211
+"/Users/work/Projects/Tools/openapi/lib/snippet.js", "JavaScript", 36, 0, 4, 14, 54
+"/Users/work/Projects/Tools/openapi/lib/templates.js", "JavaScript", 74, 0, 30, 5, 109
+"/Users/work/Projects/Tools/openapi/lib/test.json", "JSON", 0, 1092869, 0, 0, 1092869
+"/Users/work/Projects/Tools/openapi/lib/traverse.js", "JavaScript", 120, 0, 17, 13, 150
+"/Users/work/Projects/Tools/openapi/lib/validator.js", "JavaScript", 47, 0, 1, 13, 61
+"Total", "-", 1057, 1092869, 108, 155, 1094189

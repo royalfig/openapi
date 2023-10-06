@@ -1,0 +1,9 @@
+{
+    "description": "email_type",
+    "in": "query",
+    "name": "email_type",
+    "schema": {
+        "example": "signup",
+        "type": "string"
+    }
+}

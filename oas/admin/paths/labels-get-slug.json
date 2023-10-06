@@ -1,43 +1,42 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "CanReadBySlugAndEdit",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "labels": [
-                                {
-                                    "created_at": "2023-10-03T21:00:30.000Z",
-                                    "id": "651c80ee1334699742ce7f70",
-                                    "name": "test",
-                                    "slug": "test",
-                                    "updated_at": "2023-10-03T21:00:30.000Z"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "labels": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/labels.json"
-                                    }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/slug.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "labels": [
+                            {
+                                "created_at": "2023-10-03T21:00:30.000Z",
+                                "id": "651c80ee1334699742ce7f70",
+                                "name": "testing",
+                                "slug": "test",
+                                "updated_at": "2023-10-03T21:00:30.000Z"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "labels": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/labels.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Can read by slug and edit",
-        "tags": [
-            "labels"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "labels"
+    ]
 }

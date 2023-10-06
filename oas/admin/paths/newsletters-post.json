@@ -1,85 +1,166 @@
 {
-    "parameters": [],
-    "post": {
-        "description": "",
-        "operationId": "HostSettingsNewsletterLimitsRequestFailsWhenNewsletterLimitIsInPlace",
-        "parameters": {},
-        "requestBody": {
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/opt_in_existing.json"
+        },
+        {
+            "$ref": "../components/parameters/include.json"
+        }
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "newsletters": [
+                        {
+                            "body_font_category": "serif",
+                            "name": "New newsletter with existing members subscribed",
+                            "sender_email": null,
+                            "sender_name": "Test",
+                            "sender_reply_to": "newsletter",
+                            "show_badge": true,
+                            "show_header_icon": true,
+                            "show_header_title": true,
+                            "sort_order": 0,
+                            "status": "active",
+                            "subscribe_on_signup": true,
+                            "title_font_category": "serif"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "newsletters": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "body_font_category": {
+                                        "type": "string"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "sender_email": {
+                                        "nullable": true
+                                    },
+                                    "sender_name": {
+                                        "type": "string"
+                                    },
+                                    "sender_reply_to": {
+                                        "type": "string"
+                                    },
+                                    "show_badge": {
+                                        "type": "boolean"
+                                    },
+                                    "show_header_icon": {
+                                        "type": "boolean"
+                                    },
+                                    "show_header_title": {
+                                        "type": "boolean"
+                                    },
+                                    "sort_order": {
+                                        "type": "integer"
+                                    },
+                                    "status": {
+                                        "type": "string"
+                                    },
+                                    "subscribe_on_signup": {
+                                        "type": "boolean"
+                                    },
+                                    "title_font_category": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Newsletter",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminNewslettersPostRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "201": {
             "content": {
                 "application/json": {
                     "example": {
+                        "meta": {
+                            "opted_in_member_count": 6
+                        },
                         "newsletters": [
                             {
-                                "name": "Naughty newsletter"
+                                "background_color": "light",
+                                "body_font_category": "serif",
+                                "border_color": null,
+                                "created_at": "2023-10-03T21:00:45.000Z",
+                                "description": null,
+                                "feedback_enabled": false,
+                                "footer_content": null,
+                                "header_image": null,
+                                "id": "651c80fd1334699742ce90fc",
+                                "name": "New newsletter with existing members subscribed",
+                                "sender_email": null,
+                                "sender_name": "Test",
+                                "sender_reply_to": "newsletter",
+                                "show_badge": true,
+                                "show_comment_cta": true,
+                                "show_feature_image": true,
+                                "show_header_icon": true,
+                                "show_header_name": true,
+                                "show_header_title": true,
+                                "show_latest_posts": false,
+                                "show_post_title_section": true,
+                                "show_subscription_details": false,
+                                "slug": "new-newsletter-with-existing-members-subscribed",
+                                "sort_order": 8,
+                                "status": "active",
+                                "subscribe_on_signup": true,
+                                "title_alignment": "center",
+                                "title_color": null,
+                                "title_font_category": "serif",
+                                "updated_at": "2023-10-03T21:00:45.000Z",
+                                "uuid": "37bcddb7-f083-4643-aaf1-5ef5723d429c",
+                                "visibility": "members"
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "newsletters": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "name": {
-                                            "type": "string"
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Newsletter",
-                                    "type": "object"
-                                },
-                                "type": "array"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminNewslettersPostRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
-        },
-        "responses": {
-            "403": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "Nuh uh",
-                                    "details": {
-                                        "name": "newsletters"
-                                    },
-                                    "ghostErrorCode": null,
-                                    "help": "https://ghost.org/help/",
-                                    "id": "ec1ea3c0-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Host Limit error, cannot save newsletter.",
-                                    "property": null,
-                                    "type": "HostLimitError"
+                                    "$ref": "../components/schemas/newsletters.json"
                                 }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "newsletters": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/newsletters.json"
-                                    }
-                                }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
+                }
+            },
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
+                    }
+                }
             }
-        },
-        "summary": "Host settings  newsletter limits request fails when newsletter limit is in place",
-        "tags": [
-            "newsletters"
-        ]
-    }
+        }
+    },
+    "tags": [
+        "newsletters"
+    ]
 }

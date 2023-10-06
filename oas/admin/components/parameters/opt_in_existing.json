@@ -1,0 +1,9 @@
+{
+    "description": "opt_in_existing",
+    "in": "query",
+    "name": "opt_in_existing",
+    "schema": {
+        "example": "true",
+        "type": "string"
+    }
+}

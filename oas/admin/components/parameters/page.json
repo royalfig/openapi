@@ -1,0 +1,9 @@
+{
+    "description": "Paginate through collections of resources. By default, the first 15 records are returned.",
+    "in": "query",
+    "name": "page",
+    "schema": {
+        "example": "2",
+        "type": "string"
+    }
+}

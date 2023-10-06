@@ -1,50 +1,52 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "ReadCanReadACollectionByIdAndSlugAndIncludeThePostCounts",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "collections": [
-                                {
-                                    "count": {
-                                        "posts": 2
-                                    },
-                                    "created_at": "2023-10-03T21:00:25.000Z",
-                                    "description": "Featured posts",
-                                    "feature_image": null,
-                                    "filter": "featured:true",
-                                    "id": "651c80e31334699742ce7359",
-                                    "slug": "featured",
-                                    "title": "Featured",
-                                    "type": "automatic",
-                                    "updated_at": "2023-10-03T21:00:25.000Z"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "collections": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/collections.json"
-                                    }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/include.json"
+        },
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "collections": [
+                            {
+                                "count": {
+                                    "posts": 0
+                                },
+                                "created_at": "2023-10-03T21:00:25.000Z",
+                                "description": null,
+                                "feature_image": null,
+                                "filter": "tags:['papaya']",
+                                "id": "651c80e91334699742ce7727",
+                                "slug": "papaya-madness",
+                                "title": "Papaya madness",
+                                "type": "automatic",
+                                "updated_at": "2023-10-03T21:00:25.000Z"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "collections": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/collections.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Read can read a collection by id and slug and include the post counts",
-        "tags": [
-            "collections"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "collections"
+    ]
 }

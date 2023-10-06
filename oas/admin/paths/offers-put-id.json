@@ -1,110 +1,99 @@
 {
-    "parameters": [],
-    "put": {
-        "description": "",
-        "operationId": "CannotUpdateOfferTier",
-        "parameters": {},
-        "requestBody": {
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "offers": [
+                        {
+                            "status": "archived"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "offers": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "status": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Offer",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminOffers651C80Ff1334699742Ce937FPutRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "200": {
             "content": {
                 "application/json": {
                     "example": {
                         "offers": [
                             {
+                                "amount": 12,
+                                "cadence": "year",
+                                "code": "cyber-monday",
+                                "currency": null,
+                                "currency_restriction": false,
+                                "display_description": "10% off on yearly plan, only today",
+                                "display_title": "Cyber Monday Sale!",
+                                "duration": "once",
+                                "duration_in_months": null,
+                                "id": "651c80ff1334699742ce937f",
+                                "name": "Cyber Monday",
+                                "redemption_count": 0,
+                                "status": "archived",
                                 "tier": {
-                                    "id": "651c80e31334699742ce735b"
-                                }
+                                    "id": "651c80e31334699742ce735a",
+                                    "name": "Default Product"
+                                },
+                                "type": "percent"
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "offers": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "tier": {
-                                            "additionalProperties": false,
-                                            "properties": {
-                                                "id": {
-                                                    "type": "string"
-                                                }
-                                            },
-                                            "required": [],
-                                            "title": "Tier",
-                                            "type": "object"
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Offer",
-                                    "type": "object"
-                                },
-                                "type": "array"
+                                    "$ref": "../components/schemas/offers.json"
+                                }
                             }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminOffers651C80Ff1334699742Ce937FPutRequest",
-                        "type": "object"
+                        }
                     }
                 }
             },
-            "required": true
-        },
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "offers": [
-                                {
-                                    "amount": 12,
-                                    "cadence": "year",
-                                    "code": "cyber-monday",
-                                    "currency": null,
-                                    "currency_restriction": false,
-                                    "display_description": "10% off on yearly plan, only today",
-                                    "display_title": "Cyber Monday Sale!",
-                                    "duration": "once",
-                                    "duration_in_months": null,
-                                    "id": "651c80ff1334699742ce937f",
-                                    "name": "Cyber Monday",
-                                    "redemption_count": 0,
-                                    "status": "archived",
-                                    "tier": {
-                                        "id": "651c80e31334699742ce735a",
-                                        "name": "Default Product"
-                                    },
-                                    "type": "percent"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "offers": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/offers.json"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "description": "",
-                "headers": {
-                    "x-cache-invalidate": {
-                        "description": "Custom header x-cache-invalidate",
-                        "schema": {
-                            "type": "string"
-                        }
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
                     }
                 }
             }
-        },
-        "summary": "Cannot update offer tier",
-        "tags": [
-            "offers"
-        ]
-    }
+        }
+    },
+    "tags": [
+        "offers"
+    ]
 }

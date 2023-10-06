@@ -1,0 +1,9 @@
+{
+    "description": "search",
+    "in": "query",
+    "name": "search",
+    "schema": {
+        "example": "egon",
+        "type": "string"
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "description": "all",
+    "in": "query",
+    "name": "all",
+    "schema": {
+        "example": "true",
+        "type": "string"
+    }
+}

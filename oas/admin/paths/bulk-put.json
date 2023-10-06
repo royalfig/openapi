@@ -1,83 +1,114 @@
 {
-    "parameters": [],
-    "put": {
-        "description": "",
-        "operationId": "ApiEditCanUnpublishPosts",
-        "parameters": {},
-        "requestBody": {
-            "content": {
-                "application/json": {
-                    "example": {
-                        "bulk": {
-                            "action": "unpublish"
-                        }
-                    },
-                    "schema": {
-                        "additionalProperties": false,
-                        "properties": {
-                            "bulk": {
-                                "additionalProperties": false,
-                                "properties": {
-                                    "action": {
-                                        "type": "string"
-                                    }
-                                },
-                                "required": [],
-                                "title": "Bulk",
-                                "type": "object"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminPostsBulkPutRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/filter.json"
         },
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "bulk": {
-                                "meta": {
-                                    "errors": [],
-                                    "stats": {
-                                        "successful": 11,
-                                        "unsuccessful": 0
-                                    },
-                                    "unsuccessfulData": []
-                                }
-                            }
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "bulk": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/bulk.json"
-                                    }
-                                }
+        {
+            "$ref": "../components/parameters/all.json"
+        }
+    ],
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "bulk": {
+                        "action": "updateLink",
+                        "meta": {
+                            "link": {
+                                "to": "https://example.com/subscribe?ref=Test-newsletter"
                             }
                         }
                     }
                 },
-                "description": "",
-                "headers": {
-                    "x-cache-invalidate": {
-                        "description": "Custom header x-cache-invalidate",
-                        "schema": {
-                            "type": "string"
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "bulk": {
+                            "additionalProperties": false,
+                            "properties": {
+                                "action": {
+                                    "type": "string"
+                                },
+                                "meta": {
+                                    "additionalProperties": false,
+                                    "properties": {
+                                        "link": {
+                                            "additionalProperties": false,
+                                            "properties": {
+                                                "to": {
+                                                    "format": "uri",
+                                                    "type": "string",
+                                                    "x-qt-uri-protocols": [
+                                                        "https"
+                                                    ]
+                                                }
+                                            },
+                                            "required": [],
+                                            "title": "Link",
+                                            "type": "object"
+                                        }
+                                    },
+                                    "required": [],
+                                    "title": "Meta",
+                                    "type": "object"
+                                }
+                            },
+                            "required": [],
+                            "title": "Bulk",
+                            "type": "object"
                         }
-                    }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminLinksBulkPutRequest",
+                    "type": "object"
                 }
             }
         },
-        "summary": "Api edit can unpublish posts",
-        "tags": [
-            "bulk"
-        ]
-    }
+        "required": true
+    },
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "bulk": {
+                            "action": "updateLink",
+                            "meta": {
+                                "errors": [],
+                                "stats": {
+                                    "successful": 1,
+                                    "unsuccessful": 0
+                                },
+                                "unsuccessfulData": []
+                            }
+                        }
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "bulk": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/bulk.json"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        "bulk"
+    ]
 }

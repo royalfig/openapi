@@ -1,0 +1,9 @@
+{
+    "description": "group",
+    "in": "query",
+    "name": "group",
+    "schema": {
+        "example": "core",
+        "type": "string"
+    }
+}

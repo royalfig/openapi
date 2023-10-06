@@ -1,20 +1,124 @@
 {
+    "description": "",
     "parameters": [],
-    "post": {
-        "description": "",
-        "operationId": "SlugifiesOfferCodes",
-        "parameters": {},
-        "requestBody": {
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "offers": [
+                        {
+                            "amount": 12,
+                            "cadence": "year",
+                            "code": "black-friday",
+                            "currency": null,
+                            "currency_restriction": false,
+                            "display_description": "10% off on yearly plan",
+                            "display_title": "Black Friday Sale!",
+                            "duration": "once",
+                            "duration_in_months": null,
+                            "name": "Black Friday",
+                            "redemption_count": 0,
+                            "status": "active",
+                            "tier": {
+                                "id": "651c80e31334699742ce735a"
+                            },
+                            "type": "percent"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "offers": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "amount": {
+                                        "type": "integer"
+                                    },
+                                    "cadence": {
+                                        "type": "string"
+                                    },
+                                    "code": {
+                                        "type": "string"
+                                    },
+                                    "currency": {
+                                        "nullable": true
+                                    },
+                                    "currency_restriction": {
+                                        "type": "boolean"
+                                    },
+                                    "display_description": {
+                                        "type": "string"
+                                    },
+                                    "display_title": {
+                                        "type": "string"
+                                    },
+                                    "duration": {
+                                        "type": "string"
+                                    },
+                                    "duration_in_months": {
+                                        "nullable": true
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "redemption_count": {
+                                        "type": "integer"
+                                    },
+                                    "status": {
+                                        "type": "string"
+                                    },
+                                    "tier": {
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "id": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [],
+                                        "title": "Tier",
+                                        "type": "object"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    }
+                                },
+                                "required": [],
+                                "title": "Offer",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminOffersPostRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "200": {
             "content": {
                 "application/json": {
                     "example": {
                         "offers": [
                             {
-                                "amount": 20,
+                                "amount": 12,
                                 "cadence": "year",
-                                "code": "Summer sale",
+                                "code": "black-friday",
+                                "currency": null,
+                                "currency_restriction": false,
+                                "display_description": "10% off on yearly plan",
+                                "display_title": "Black Friday Sale!",
                                 "duration": "once",
-                                "name": "Summer Sale",
+                                "duration_in_months": null,
+                                "id": "651c811b1334699742ceba32",
+                                "name": "Black Friday",
+                                "redemption_count": 0,
+                                "status": "active",
                                 "tier": {
                                     "id": "651c80e31334699742ce735a"
                                 },
@@ -23,111 +127,30 @@
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "offers": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "amount": {
-                                            "type": "integer"
-                                        },
-                                        "cadence": {
-                                            "type": "string"
-                                        },
-                                        "code": {
-                                            "type": "string"
-                                        },
-                                        "duration": {
-                                            "type": "string"
-                                        },
-                                        "name": {
-                                            "type": "string"
-                                        },
-                                        "tier": {
-                                            "additionalProperties": false,
-                                            "properties": {
-                                                "id": {
-                                                    "type": "string"
-                                                }
-                                            },
-                                            "required": [],
-                                            "title": "Tier",
-                                            "type": "object"
-                                        },
-                                        "type": {
-                                            "type": "string"
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Offer",
-                                    "type": "object"
-                                },
-                                "type": "array"
+                                    "$ref": "../components/schemas/offers.json"
+                                }
                             }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminOffersPostRequest",
-                        "type": "object"
+                        }
                     }
                 }
             },
-            "required": true
-        },
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "offers": [
-                                {
-                                    "amount": 20,
-                                    "cadence": "year",
-                                    "code": "summer-sale",
-                                    "currency": null,
-                                    "currency_restriction": false,
-                                    "display_description": "",
-                                    "display_title": "",
-                                    "duration": "once",
-                                    "duration_in_months": null,
-                                    "id": "651c81001334699742ce9383",
-                                    "name": "Summer Sale",
-                                    "redemption_count": 0,
-                                    "status": "active",
-                                    "tier": {
-                                        "id": "651c80e31334699742ce735a"
-                                    },
-                                    "type": "percent"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "offers": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/offers.json"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "description": "",
-                "headers": {
-                    "x-cache-invalidate": {
-                        "description": "Custom header x-cache-invalidate",
-                        "schema": {
-                            "type": "string"
-                        }
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
                     }
                 }
             }
-        },
-        "summary": "Slugifies offer codes",
-        "tags": [
-            "offers"
-        ]
-    }
+        }
+    },
+    "tags": [
+        "offers"
+    ]
 }

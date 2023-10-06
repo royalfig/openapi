@@ -1,65 +1,53 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "ApiCanReadOfferDetailsFromId",
-        "parameters": [
-            {
-                "description": "id",
-                "in": "path",
-                "name": "id",
-                "required": true,
-                "schema": {
-                    "type": "string",
-                    "example": "..."
-                }
-            }
-        ],
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "offers": [
-                                {
-                                    "amount": 12,
-                                    "cadence": "year",
-                                    "currency": null,
-                                    "currency_restriction": false,
-                                    "display_description": "",
-                                    "display_title": "",
-                                    "duration": "once",
-                                    "duration_in_months": null,
-                                    "id": "651c810c1334699742cea8b8",
-                                    "name": "Black Friday",
-                                    "status": "active",
-                                    "tier": {
-                                        "id": "651c80e31334699742ce735a",
-                                        "name": "Default Product"
-                                    },
-                                    "type": "percent"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "offers": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/offers.json"
-                                    }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "offers": [
+                            {
+                                "amount": 12,
+                                "cadence": "year",
+                                "currency": null,
+                                "currency_restriction": false,
+                                "display_description": "",
+                                "display_title": "",
+                                "duration": "once",
+                                "duration_in_months": null,
+                                "id": "651c810c1334699742cea8b8",
+                                "name": "Black Friday",
+                                "status": "active",
+                                "tier": {
+                                    "id": "651c80e31334699742ce735a",
+                                    "name": "Default Product"
+                                },
+                                "type": "percent"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "offers": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/offers.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Api can read offer details from id",
-        "tags": [
-            "offers"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "offers"
+    ]
 }

@@ -47,9 +47,6 @@
         "frontmatter": {
             "type": "string"
         },
-        "html": {
-            "type": "string"
-        },
         "id": {
             "type": "string"
         },
@@ -80,91 +77,6 @@
         },
         "slug": {
             "type": "string"
-        },
-        "tiers": {
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "active": {
-                        "type": "boolean"
-                    },
-                    "created_at": {
-                        "format": "date-time",
-                        "type": "string"
-                    },
-                    "currency": {
-                        "anyOf": [
-                            {
-                                "nullable": true
-                            },
-                            {
-                                "type": "string"
-                            }
-                        ],
-                        "type": "string"
-                    },
-                    "description": {
-                        "nullable": true
-                    },
-                    "id": {
-                        "type": "string"
-                    },
-                    "monthly_price": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "nullable": true
-                            }
-                        ],
-                        "type": "integer"
-                    },
-                    "monthly_price_id": {
-                        "nullable": true
-                    },
-                    "name": {
-                        "type": "string"
-                    },
-                    "slug": {
-                        "type": "string"
-                    },
-                    "trial_days": {
-                        "type": "integer"
-                    },
-                    "type": {
-                        "type": "string"
-                    },
-                    "updated_at": {
-                        "format": "date-time",
-                        "type": "string"
-                    },
-                    "visibility": {
-                        "type": "string"
-                    },
-                    "welcome_page_url": {
-                        "nullable": true
-                    },
-                    "yearly_price": {
-                        "anyOf": [
-                            {
-                                "type": "integer"
-                            },
-                            {
-                                "nullable": true
-                            }
-                        ],
-                        "type": "integer"
-                    },
-                    "yearly_price_id": {
-                        "nullable": true
-                    }
-                },
-                "required": [],
-                "title": "Tier",
-                "type": "object"
-            },
-            "type": "array"
         },
         "title": {
             "type": "string"

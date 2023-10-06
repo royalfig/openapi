@@ -1,45 +1,44 @@
 {
-    "delete": {
-        "description": "",
-        "operationId": "BulkOperationsCanBulkDeleteMembers",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "meta": {
-                                "errors": [],
-                                "stats": {
-                                    "successful": 8,
-                                    "unsuccessful": 0
-                                },
-                                "unsuccessfulIds": []
-                            }
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "members": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/members.json"
-                                    }
-                                },
-                                "meta": {
-                                    "$ref": "../components/schemas/meta.json"
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/all.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "meta": {
+                            "errors": [],
+                            "stats": {
+                                "successful": 8,
+                                "unsuccessful": 0
+                            },
+                            "unsuccessfulIds": []
+                        }
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "members": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/members.json"
                                 }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Bulk operations can bulk delete members",
-        "tags": [
-            "members"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "members"
+    ]
 }

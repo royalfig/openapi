@@ -1,63 +1,62 @@
 {
-    "parameters": [],
-    "put": {
-        "description": "",
-        "operationId": "CanRetryAFailedEmail",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "emails": [
-                                {
-                                    "created_at": "2023-10-03T21:00:19.000Z",
-                                    "delivered_count": 0,
-                                    "email_count": 3,
-                                    "error": "Everything went south",
-                                    "error_data": null,
-                                    "failed_count": 0,
-                                    "feedback_enabled": false,
-                                    "from": null,
-                                    "html": "<p>What's that? Another email!</p>",
-                                    "id": "651c80e31334699742ce7273",
-                                    "newsletter_id": null,
-                                    "opened_count": 0,
-                                    "plaintext": "yes this is an email",
-                                    "post_id": "618ba1ffbe2896088840a6e1",
-                                    "recipient_filter": "status:-free",
-                                    "reply_to": null,
-                                    "source": null,
-                                    "source_type": "html",
-                                    "status": "pending",
-                                    "subject": "You got mailed! Again!",
-                                    "submitted_at": "2023-10-03T21:00:19.000Z",
-                                    "track_clicks": false,
-                                    "track_opens": false,
-                                    "updated_at": "2023-10-03T21:00:28.000Z",
-                                    "uuid": "365daa11-4bf0-4614-ad43-6346387ffa00"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "emails": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/emails.json"
-                                    }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/id.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "emails": [
+                            {
+                                "created_at": "2023-10-03T21:00:19.000Z",
+                                "delivered_count": 0,
+                                "email_count": 3,
+                                "error": "Everything went south",
+                                "error_data": null,
+                                "failed_count": 0,
+                                "feedback_enabled": false,
+                                "from": null,
+                                "html": "<p>What's that? Another email!</p>",
+                                "id": "651c80e31334699742ce7273",
+                                "newsletter_id": null,
+                                "opened_count": 0,
+                                "plaintext": "yes this is an email",
+                                "post_id": "618ba1ffbe2896088840a6e1",
+                                "recipient_filter": "status:-free",
+                                "reply_to": null,
+                                "source": null,
+                                "source_type": "html",
+                                "status": "pending",
+                                "subject": "You got mailed! Again!",
+                                "submitted_at": "2023-10-03T21:00:19.000Z",
+                                "track_clicks": false,
+                                "track_opens": false,
+                                "updated_at": "2023-10-03T21:00:28.000Z",
+                                "uuid": "365daa11-4bf0-4614-ad43-6346387ffa00"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "emails": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/emails.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Can retry a failed email",
-        "tags": [
-            "emails"
-        ]
-    }
+                }
+            },
+            "description": ""
+        }
+    },
+    "tags": [
+        "emails"
+    ]
 }

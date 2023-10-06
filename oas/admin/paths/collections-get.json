@@ -1,60 +1,79 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "DeleteCannotDeleteABuiltInCollection",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "collections": [
-                                {
-                                    "created_at": "2023-10-03T21:00:25.000Z",
-                                    "description": "Featured posts",
-                                    "feature_image": null,
-                                    "filter": "featured:true",
-                                    "id": "651c80e31334699742ce7359",
-                                    "slug": "featured",
-                                    "title": "Featured",
-                                    "type": "automatic",
-                                    "updated_at": "2023-10-03T21:00:25.000Z"
-                                }
-                            ],
-                            "meta": {
-                                "pagination": {
-                                    "limit": 1,
-                                    "next": null,
-                                    "page": 1,
-                                    "pages": 1,
-                                    "prev": null,
-                                    "total": 1
-                                }
-                            }
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "collections": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/collections.json"
-                                    }
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/include.json"
+        },
+        {
+            "$ref": "../components/parameters/filter.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "collections": [
+                            {
+                                "count": {
+                                    "posts": 13
                                 },
-                                "meta": {
-                                    "$ref": "../components/schemas/meta.json"
+                                "created_at": "2023-10-03T21:00:25.000Z",
+                                "description": "All posts",
+                                "feature_image": null,
+                                "filter": "",
+                                "id": "651c80e31334699742ce7358",
+                                "slug": "latest",
+                                "title": "Latest",
+                                "type": "automatic",
+                                "updated_at": "2023-10-03T21:00:25.000Z"
+                            },
+                            {
+                                "count": {
+                                    "posts": 2
+                                },
+                                "created_at": "2023-10-03T21:00:25.000Z",
+                                "description": "Featured posts",
+                                "feature_image": null,
+                                "filter": "featured:true",
+                                "id": "651c80e31334699742ce7359",
+                                "slug": "featured",
+                                "title": "Featured",
+                                "type": "automatic",
+                                "updated_at": "2023-10-03T21:00:25.000Z"
+                            }
+                        ],
+                        "meta": {
+                            "pagination": {
+                                "limit": 2,
+                                "next": null,
+                                "page": 1,
+                                "pages": 1,
+                                "prev": null,
+                                "total": 2
+                            }
+                        }
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "collections": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/collections.json"
                                 }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Delete cannot delete a built in collection",
-        "tags": [
-            "collections"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "collections"
+    ]
 }

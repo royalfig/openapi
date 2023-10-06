@@ -1,0 +1,9 @@
+{
+    "description": "convert_to_lexical",
+    "in": "query",
+    "name": "convert_to_lexical",
+    "schema": {
+        "example": "true",
+        "type": "string"
+    }
+}

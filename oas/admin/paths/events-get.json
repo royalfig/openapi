@@ -1,417 +1,767 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "MemberAttributionReturnsSubscriptionCreatedAttributionsInActivityFeed",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "events": [
-                                {
-                                    "data": {
-                                        "attribution": {
-                                            "id": null,
-                                            "referrer_medium": null,
-                                            "referrer_source": null,
-                                            "referrer_url": null,
-                                            "title": null,
-                                            "type": null,
-                                            "url": null
-                                        },
-                                        "created_at": "2023-10-03T21:00:17.000Z",
-                                        "currency": "usd",
-                                        "from_plan": null,
-                                        "id": "651c811d1334699742cebbad",
-                                        "member": {
-                                            "avatar_image": null,
-                                            "created_at": "2023-10-03T21:01:17.000Z",
-                                            "email": "cust_4deac535b9b7b59994a39fe0f10feb12@email.com",
-                                            "email_count": 0,
-                                            "email_disabled": false,
-                                            "email_open_rate": null,
-                                            "email_opened_count": 0,
-                                            "enable_comment_notifications": true,
-                                            "expertise": null,
-                                            "geolocation": null,
-                                            "id": "651c811d1334699742cebba7",
-                                            "last_commented_at": null,
-                                            "last_seen_at": null,
-                                            "name": null,
-                                            "note": null,
-                                            "status": "paid",
-                                            "updated_at": "2023-10-03T21:01:17.000Z",
-                                            "uuid": "b2a6da12-29ab-4d5b-9773-c5c336da26e6"
-                                        },
-                                        "member_id": "651c811d1334699742cebba7",
-                                        "mrr_delta": 150,
-                                        "signup": true,
-                                        "source": "stripe",
-                                        "subscription_id": "651c811d1334699742cebbac",
-                                        "tierName": "Default Product",
-                                        "to_plan": "price_123",
-                                        "type": "created"
+    "description": "",
+    "parameters": [
+        {
+            "$ref": "../components/parameters/filter.json"
+        },
+        {
+            "$ref": "../components/parameters/limit.json"
+        }
+    ],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "events": [
+                            {
+                                "data": {
+                                    "attribution": {
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "referrer_medium": "Social",
+                                        "referrer_source": "Twitter",
+                                        "referrer_url": "https://twitter.com",
+                                        "title": "HTML Ipsum",
+                                        "type": "post",
+                                        "url": "http://127.0.0.1:2369/html-ipsum/"
                                     },
-                                    "type": "subscription_event"
+                                    "created_at": "2023-10-03T21:00:24.000Z",
+                                    "currency": "usd",
+                                    "from_plan": null,
+                                    "id": "651c80e31334699742ce7308",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "member1@test.com",
+                                        "email_count": 1,
+                                        "email_disabled": false,
+                                        "email_open_rate": null,
+                                        "email_opened_count": 0,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce7248",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": "Mr Egg",
+                                        "note": null,
+                                        "status": "free",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
+                                    },
+                                    "member_id": "651c80e31334699742ce7248",
+                                    "mrr_delta": 1000,
+                                    "signup": false,
+                                    "source": "stripe",
+                                    "subscription_id": "651c80e31334699742ce725e",
+                                    "tierName": "Default Product",
+                                    "to_plan": "173e16a1fffa7d232b398e4a9b08d266a456ae8f3d23e5f11cc608ced6730bb8",
+                                    "type": "created"
                                 },
-                                {
-                                    "data": {
-                                        "attribution": {
-                                            "id": null,
-                                            "referrer_medium": null,
-                                            "referrer_source": null,
-                                            "referrer_url": null,
-                                            "title": null,
-                                            "type": null,
-                                            "url": null
-                                        },
-                                        "created_at": "2023-10-03T21:00:17.000Z",
-                                        "currency": "usd",
-                                        "from_plan": null,
-                                        "id": "651c811c1334699742cebb9f",
-                                        "member": {
-                                            "avatar_image": null,
-                                            "created_at": "2023-10-03T21:01:16.000Z",
-                                            "email": "cust_f6e0e96c136c0311ebcb02b8b0eaaf07@email.com",
-                                            "email_count": 0,
-                                            "email_disabled": false,
-                                            "email_open_rate": null,
-                                            "email_opened_count": 0,
-                                            "enable_comment_notifications": true,
-                                            "expertise": null,
-                                            "geolocation": null,
-                                            "id": "651c811c1334699742cebb99",
-                                            "last_commented_at": null,
-                                            "last_seen_at": null,
-                                            "name": null,
-                                            "note": null,
-                                            "status": "paid",
-                                            "updated_at": "2023-10-03T21:01:16.000Z",
-                                            "uuid": "14c7ae29-12ec-4ab5-bc73-577c21b1491f"
-                                        },
-                                        "member_id": "651c811c1334699742cebb99",
-                                        "mrr_delta": 150,
-                                        "signup": true,
-                                        "source": "stripe",
-                                        "subscription_id": "651c811c1334699742cebb9e",
-                                        "tierName": "Default Product",
-                                        "to_plan": "price_123",
-                                        "type": "created"
+                                "type": "subscription_event"
+                            },
+                            {
+                                "data": {
+                                    "attribution": {
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "referrer_medium": "Social",
+                                        "referrer_source": "Twitter",
+                                        "referrer_url": "https://twitter.com",
+                                        "title": "HTML Ipsum",
+                                        "type": "post",
+                                        "url": "http://127.0.0.1:2369/html-ipsum/"
                                     },
-                                    "type": "subscription_event"
+                                    "attribution_id": "618ba1ffbe2896088840a6df",
+                                    "attribution_type": "post",
+                                    "attribution_url": "/html-ipsum",
+                                    "batch_id": null,
+                                    "created_at": "2023-10-03T21:00:24.000Z",
+                                    "id": "651c80e31334699742ce72ea",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "vip-paid@test.com",
+                                        "email_count": 0,
+                                        "email_disabled": false,
+                                        "email_open_rate": null,
+                                        "email_opened_count": 0,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce724e",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": "Peter Venkman",
+                                        "note": null,
+                                        "status": "paid",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b346"
+                                    },
+                                    "member_id": "651c80e31334699742ce724e",
+                                    "postAttribution": {
+                                        "canonical_url": null,
+                                        "codeinjection_foot": null,
+                                        "codeinjection_head": null,
+                                        "comment_id": "618ba1ffbe2896088840a6df",
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "custom_excerpt": "This is my custom excerpt!",
+                                        "custom_template": null,
+                                        "email_recipient_filter": "all",
+                                        "feature_image": "https://example.com/super_photo.jpg",
+                                        "featured": false,
+                                        "html": "<!--kg-card-begin: markdown--><h1>HTML Ipsum Presents</h1><p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href=\"#\">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p><h2>Header Level 2</h2><ol><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ol><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote><h3>Header Level 3</h3><ul><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ul><pre><code>#header h1 a{display: block;width: 300px;height: 80px;}</code></pre><!--kg-card-end: markdown-->",
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "locale": null,
+                                        "newsletter_id": null,
+                                        "primary_author": null,
+                                        "primary_tag": null,
+                                        "published_at": "2015-01-01T00:00:00.000Z",
+                                        "show_title_and_feature_image": true,
+                                        "slug": "html-ipsum",
+                                        "status": "published",
+                                        "title": "HTML Ipsum",
+                                        "type": "post",
+                                        "updated_at": "2023-10-03T21:00:19.000Z",
+                                        "uuid": "557a334b-595f-4910-ab60-31e321e6ef3f",
+                                        "visibility": "public"
+                                    },
+                                    "referrer_medium": "Social",
+                                    "referrer_source": "Twitter",
+                                    "referrer_url": "https://twitter.com",
+                                    "source": "system",
+                                    "tagAttribution": {},
+                                    "userAttribution": {}
                                 },
-                                {
-                                    "data": {
-                                        "attribution": {
-                                            "id": "1",
-                                            "referrer_medium": null,
-                                            "referrer_source": null,
-                                            "referrer_url": null,
-                                            "title": "Joe Bloggs",
-                                            "type": "author",
-                                            "url": "http://127.0.0.1:2369/author/joe-bloggs/"
-                                        },
-                                        "created_at": "2023-10-03T21:00:17.000Z",
-                                        "currency": "usd",
-                                        "from_plan": null,
-                                        "id": "651c811c1334699742cebb91",
-                                        "member": {
-                                            "avatar_image": null,
-                                            "created_at": "2023-10-03T21:01:16.000Z",
-                                            "email": "cust_f5a8751af90a3f863412575b1a31fdd1@email.com",
-                                            "email_count": 0,
-                                            "email_disabled": false,
-                                            "email_open_rate": null,
-                                            "email_opened_count": 0,
-                                            "enable_comment_notifications": true,
-                                            "expertise": null,
-                                            "geolocation": null,
-                                            "id": "651c811c1334699742cebb8b",
-                                            "last_commented_at": null,
-                                            "last_seen_at": null,
-                                            "name": null,
-                                            "note": null,
-                                            "status": "paid",
-                                            "updated_at": "2023-10-03T21:01:16.000Z",
-                                            "uuid": "9b7bf3d2-12b8-47aa-8a70-3d62ad0b1db2"
-                                        },
-                                        "member_id": "651c811c1334699742cebb8b",
-                                        "mrr_delta": 150,
-                                        "signup": true,
-                                        "source": "stripe",
-                                        "subscription_id": "651c811c1334699742cebb90",
-                                        "tierName": "Default Product",
-                                        "to_plan": "price_123",
-                                        "type": "created"
+                                "type": "signup_event"
+                            },
+                            {
+                                "data": {
+                                    "attribution": {
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "referrer_medium": null,
+                                        "referrer_source": "Direct",
+                                        "referrer_url": null,
+                                        "title": "HTML Ipsum",
+                                        "type": "post",
+                                        "url": "http://127.0.0.1:2369/html-ipsum/"
                                     },
-                                    "type": "subscription_event"
+                                    "attribution_id": "618ba1ffbe2896088840a6df",
+                                    "attribution_type": "post",
+                                    "attribution_url": "/html-ipsum",
+                                    "batch_id": null,
+                                    "created_at": "2023-10-03T21:00:24.000Z",
+                                    "id": "651c80e31334699742ce72e7",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "trialing@test.com",
+                                        "email_count": 1,
+                                        "email_disabled": false,
+                                        "email_open_rate": null,
+                                        "email_opened_count": 0,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce724b",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": "Ray Stantz",
+                                        "note": null,
+                                        "status": "paid",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b343"
+                                    },
+                                    "member_id": "651c80e31334699742ce724b",
+                                    "postAttribution": {
+                                        "canonical_url": null,
+                                        "codeinjection_foot": null,
+                                        "codeinjection_head": null,
+                                        "comment_id": "618ba1ffbe2896088840a6df",
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "custom_excerpt": "This is my custom excerpt!",
+                                        "custom_template": null,
+                                        "email_recipient_filter": "all",
+                                        "feature_image": "https://example.com/super_photo.jpg",
+                                        "featured": false,
+                                        "html": "<!--kg-card-begin: markdown--><h1>HTML Ipsum Presents</h1><p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href=\"#\">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p><h2>Header Level 2</h2><ol><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ol><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote><h3>Header Level 3</h3><ul><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ul><pre><code>#header h1 a{display: block;width: 300px;height: 80px;}</code></pre><!--kg-card-end: markdown-->",
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "locale": null,
+                                        "newsletter_id": null,
+                                        "primary_author": null,
+                                        "primary_tag": null,
+                                        "published_at": "2015-01-01T00:00:00.000Z",
+                                        "show_title_and_feature_image": true,
+                                        "slug": "html-ipsum",
+                                        "status": "published",
+                                        "title": "HTML Ipsum",
+                                        "type": "post",
+                                        "updated_at": "2023-10-03T21:00:19.000Z",
+                                        "uuid": "557a334b-595f-4910-ab60-31e321e6ef3f",
+                                        "visibility": "public"
+                                    },
+                                    "referrer_medium": null,
+                                    "referrer_source": "Direct",
+                                    "referrer_url": null,
+                                    "source": "system",
+                                    "tagAttribution": {},
+                                    "userAttribution": {}
                                 },
-                                {
-                                    "data": {
-                                        "attribution": {
-                                            "id": "618ba1febe2896088840a6db",
-                                            "referrer_medium": null,
-                                            "referrer_source": null,
-                                            "referrer_url": null,
-                                            "title": "kitchen sink",
-                                            "type": "tag",
-                                            "url": "http://127.0.0.1:2369/tag/kitchen-sink/"
-                                        },
-                                        "created_at": "2023-10-03T21:00:17.000Z",
-                                        "currency": "usd",
-                                        "from_plan": null,
-                                        "id": "651c811c1334699742cebb83",
-                                        "member": {
-                                            "avatar_image": null,
-                                            "created_at": "2023-10-03T21:01:16.000Z",
-                                            "email": "cust_63ab1aeb722dfcbb291befea0459bce9@email.com",
-                                            "email_count": 0,
-                                            "email_disabled": false,
-                                            "email_open_rate": null,
-                                            "email_opened_count": 0,
-                                            "enable_comment_notifications": true,
-                                            "expertise": null,
-                                            "geolocation": null,
-                                            "id": "651c811c1334699742cebb7d",
-                                            "last_commented_at": null,
-                                            "last_seen_at": null,
-                                            "name": null,
-                                            "note": null,
-                                            "status": "paid",
-                                            "updated_at": "2023-10-03T21:01:16.000Z",
-                                            "uuid": "fe681713-09c4-4366-bbd3-4cd96b2109d1"
-                                        },
-                                        "member_id": "651c811c1334699742cebb7d",
-                                        "mrr_delta": 150,
-                                        "signup": true,
-                                        "source": "stripe",
-                                        "subscription_id": "651c811c1334699742cebb82",
-                                        "tierName": "Default Product",
-                                        "to_plan": "price_123",
-                                        "type": "created"
+                                "type": "signup_event"
+                            },
+                            {
+                                "data": {
+                                    "attribution": {
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "referrer_medium": "Social",
+                                        "referrer_source": "Twitter",
+                                        "referrer_url": "https://twitter.com",
+                                        "title": "HTML Ipsum",
+                                        "type": "post",
+                                        "url": "http://127.0.0.1:2369/html-ipsum/"
                                     },
-                                    "type": "subscription_event"
+                                    "attribution_id": "618ba1ffbe2896088840a6df",
+                                    "attribution_type": "post",
+                                    "attribution_url": "/html-ipsum",
+                                    "batch_id": null,
+                                    "created_at": "2023-10-03T21:00:24.000Z",
+                                    "id": "651c80e31334699742ce72e4",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "member1@test.com",
+                                        "email_count": 1,
+                                        "email_disabled": false,
+                                        "email_open_rate": null,
+                                        "email_opened_count": 0,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce7248",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": "Mr Egg",
+                                        "note": null,
+                                        "status": "free",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
+                                    },
+                                    "member_id": "651c80e31334699742ce7248",
+                                    "postAttribution": {
+                                        "canonical_url": null,
+                                        "codeinjection_foot": null,
+                                        "codeinjection_head": null,
+                                        "comment_id": "618ba1ffbe2896088840a6df",
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "custom_excerpt": "This is my custom excerpt!",
+                                        "custom_template": null,
+                                        "email_recipient_filter": "all",
+                                        "feature_image": "https://example.com/super_photo.jpg",
+                                        "featured": false,
+                                        "html": "<!--kg-card-begin: markdown--><h1>HTML Ipsum Presents</h1><p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href=\"#\">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p><h2>Header Level 2</h2><ol><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ol><blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote><h3>Header Level 3</h3><ul><li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li><li>Aliquam tincidunt mauris eu risus.</li></ul><pre><code>#header h1 a{display: block;width: 300px;height: 80px;}</code></pre><!--kg-card-end: markdown-->",
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "locale": null,
+                                        "newsletter_id": null,
+                                        "primary_author": null,
+                                        "primary_tag": null,
+                                        "published_at": "2015-01-01T00:00:00.000Z",
+                                        "show_title_and_feature_image": true,
+                                        "slug": "html-ipsum",
+                                        "status": "published",
+                                        "title": "HTML Ipsum",
+                                        "type": "post",
+                                        "updated_at": "2023-10-03T21:00:19.000Z",
+                                        "uuid": "557a334b-595f-4910-ab60-31e321e6ef3f",
+                                        "visibility": "public"
+                                    },
+                                    "referrer_medium": "Social",
+                                    "referrer_source": "Twitter",
+                                    "referrer_url": "https://twitter.com",
+                                    "source": "system",
+                                    "tagAttribution": {},
+                                    "userAttribution": {}
                                 },
-                                {
-                                    "data": {
-                                        "attribution": {
-                                            "id": "618ba1ffbe2896088840a6e9",
-                                            "referrer_medium": null,
-                                            "referrer_source": null,
-                                            "referrer_url": null,
-                                            "title": "This is a static page",
-                                            "type": "page",
-                                            "url": "http://127.0.0.1:2369/static-page-test/"
-                                        },
-                                        "created_at": "2023-10-03T21:00:17.000Z",
-                                        "currency": "usd",
-                                        "from_plan": null,
-                                        "id": "651c811c1334699742cebb75",
-                                        "member": {
-                                            "avatar_image": null,
-                                            "created_at": "2023-10-03T21:01:16.000Z",
-                                            "email": "cust_55c9aca9d05c3d234c1f0570f81f384f@email.com",
-                                            "email_count": 0,
-                                            "email_disabled": false,
-                                            "email_open_rate": null,
-                                            "email_opened_count": 0,
-                                            "enable_comment_notifications": true,
-                                            "expertise": null,
-                                            "geolocation": null,
-                                            "id": "651c811c1334699742cebb6f",
-                                            "last_commented_at": null,
-                                            "last_seen_at": null,
-                                            "name": null,
-                                            "note": null,
-                                            "status": "paid",
-                                            "updated_at": "2023-10-03T21:01:16.000Z",
-                                            "uuid": "0492e837-7780-4d32-b67f-a0462f2a9cde"
-                                        },
-                                        "member_id": "651c811c1334699742cebb6f",
-                                        "mrr_delta": 150,
-                                        "signup": true,
-                                        "source": "stripe",
-                                        "subscription_id": "651c811c1334699742cebb74",
-                                        "tierName": "Default Product",
-                                        "to_plan": "price_123",
-                                        "type": "created"
+                                "type": "signup_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:24.000Z",
+                                    "edited_at": null,
+                                    "html": "<p>Really original</p>",
+                                    "id": "6195c6a1e792de832cd08145",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "email": "member2@test.com",
+                                        "expertise": null,
+                                        "id": "651c80e31334699742ce7249",
+                                        "name": null,
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b341"
                                     },
-                                    "type": "subscription_event"
+                                    "parent": {
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "edited_at": null,
+                                        "html": "<p>First.</p>",
+                                        "id": "6195c6a1e792de832cd08144",
+                                        "member": null,
+                                        "status": "published"
+                                    },
+                                    "post": {
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "title": "HTML Ipsum",
+                                        "url": "http://127.0.0.1:2369/html-ipsum/",
+                                        "uuid": "557a334b-595f-4910-ab60-31e321e6ef3f"
+                                    },
+                                    "status": "published"
                                 },
-                                {
-                                    "data": {
-                                        "attribution": {
-                                            "id": null,
-                                            "referrer_medium": null,
-                                            "referrer_source": null,
-                                            "referrer_url": null,
-                                            "title": "/removed-blog-post/",
-                                            "type": "url",
-                                            "url": "http://127.0.0.1:2369/removed-blog-post/"
-                                        },
-                                        "created_at": "2023-10-03T21:00:17.000Z",
-                                        "currency": "usd",
-                                        "from_plan": null,
-                                        "id": "651c811c1334699742cebb67",
-                                        "member": {
-                                            "avatar_image": null,
-                                            "created_at": "2023-10-03T21:01:16.000Z",
-                                            "email": "cust_5f4ac0fdf5c16af0f847fd6392d934ee@email.com",
-                                            "email_count": 0,
-                                            "email_disabled": false,
-                                            "email_open_rate": null,
-                                            "email_opened_count": 0,
-                                            "enable_comment_notifications": true,
-                                            "expertise": null,
-                                            "geolocation": null,
-                                            "id": "651c811c1334699742cebb61",
-                                            "last_commented_at": null,
-                                            "last_seen_at": null,
-                                            "name": null,
-                                            "note": null,
-                                            "status": "paid",
-                                            "updated_at": "2023-10-03T21:01:16.000Z",
-                                            "uuid": "fcb2389c-a00e-4a5c-bcd6-8d8ed6bb9cac"
-                                        },
-                                        "member_id": "651c811c1334699742cebb61",
-                                        "mrr_delta": 150,
-                                        "signup": true,
-                                        "source": "stripe",
-                                        "subscription_id": "651c811c1334699742cebb66",
-                                        "tierName": "Default Product",
-                                        "to_plan": "price_123",
-                                        "type": "created"
+                                "type": "comment_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:24.000Z",
+                                    "edited_at": null,
+                                    "html": "<p>First.</p>",
+                                    "id": "6195c6a1e792de832cd08144",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "email": "member1@test.com",
+                                        "expertise": null,
+                                        "id": "651c80e31334699742ce7248",
+                                        "name": "Mr Egg",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
                                     },
-                                    "type": "subscription_event"
+                                    "post": {
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "title": "HTML Ipsum",
+                                        "url": "http://127.0.0.1:2369/html-ipsum/",
+                                        "uuid": "557a334b-595f-4910-ab60-31e321e6ef3f"
+                                    },
+                                    "status": "published"
                                 },
-                                {
-                                    "data": {
-                                        "attribution": {
-                                            "id": "618ba1ffbe2896088840a6df",
-                                            "referrer_medium": null,
-                                            "referrer_source": null,
-                                            "referrer_url": null,
-                                            "title": "HTML Ipsum",
-                                            "type": "post",
-                                            "url": "http://127.0.0.1:2369/html-ipsum/"
-                                        },
-                                        "created_at": "2023-10-03T21:00:17.000Z",
-                                        "currency": "usd",
-                                        "from_plan": null,
-                                        "id": "651c811c1334699742cebb59",
-                                        "member": {
-                                            "avatar_image": null,
-                                            "created_at": "2023-10-03T21:01:16.000Z",
-                                            "email": "cust_aefce45de2fa1c15d117f6aba12eb25c@email.com",
-                                            "email_count": 0,
-                                            "email_disabled": false,
-                                            "email_open_rate": null,
-                                            "email_opened_count": 0,
-                                            "enable_comment_notifications": true,
-                                            "expertise": null,
-                                            "geolocation": null,
-                                            "id": "651c811c1334699742cebb53",
-                                            "last_commented_at": null,
-                                            "last_seen_at": null,
-                                            "name": null,
-                                            "note": null,
-                                            "status": "paid",
-                                            "updated_at": "2023-10-03T21:01:16.000Z",
-                                            "uuid": "d7357fe0-1562-49aa-9508-11ff3c2d3cf2"
-                                        },
-                                        "member_id": "651c811c1334699742cebb53",
-                                        "mrr_delta": 150,
-                                        "signup": true,
-                                        "source": "stripe",
-                                        "subscription_id": "651c811c1334699742cebb58",
-                                        "tierName": "Default Product",
-                                        "to_plan": "price_123",
-                                        "type": "created"
+                                "type": "comment_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "id": "651c80e31334699742ce731b",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "email": "member1@test.com",
+                                        "id": "651c80e31334699742ce7248",
+                                        "name": "Mr Egg",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
                                     },
-                                    "type": "subscription_event"
+                                    "post": {
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "title": "HTML Ipsum",
+                                        "url": "http://127.0.0.1:2369/html-ipsum/",
+                                        "uuid": "557a334b-595f-4910-ab60-31e321e6ef3f"
+                                    },
+                                    "score": 0
                                 },
-                                {
-                                    "data": {
-                                        "attribution": {
-                                            "id": null,
-                                            "referrer_medium": null,
-                                            "referrer_source": null,
-                                            "referrer_url": null,
-                                            "title": "homepage",
-                                            "type": "url",
-                                            "url": "http://127.0.0.1:2369/"
-                                        },
-                                        "created_at": "2023-10-03T21:00:17.000Z",
-                                        "currency": "usd",
-                                        "from_plan": null,
-                                        "id": "651c811c1334699742cebb4b",
-                                        "member": {
-                                            "avatar_image": null,
-                                            "created_at": "2023-10-03T21:01:16.000Z",
-                                            "email": "cust_3f9a850f464287b82b2e367b0c8b0eff@email.com",
-                                            "email_count": 0,
-                                            "email_disabled": false,
-                                            "email_open_rate": null,
-                                            "email_opened_count": 0,
-                                            "enable_comment_notifications": true,
-                                            "expertise": null,
-                                            "geolocation": null,
-                                            "id": "651c811c1334699742cebb43",
-                                            "last_commented_at": null,
-                                            "last_seen_at": null,
-                                            "name": null,
-                                            "note": null,
-                                            "status": "paid",
-                                            "updated_at": "2023-10-03T21:01:16.000Z",
-                                            "uuid": "6a15a852-4622-4aa0-b032-5b4a79991d2d"
-                                        },
-                                        "member_id": "651c811c1334699742cebb43",
-                                        "mrr_delta": 150,
-                                        "signup": true,
-                                        "source": "stripe",
-                                        "subscription_id": "651c811c1334699742cebb4a",
-                                        "tierName": "Default Product",
-                                        "to_plan": "price_123",
-                                        "type": "created"
+                                "type": "feedback_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "id": "651c80e31334699742ce7313",
+                                    "link": {
+                                        "from": "/r/0",
+                                        "to": "https:://ghost.org"
                                     },
-                                    "type": "subscription_event"
-                                }
-                            ],
-                            "meta": {
-                                "pagination": {
-                                    "limit": 10,
-                                    "next": null,
-                                    "page": null,
-                                    "pages": 1,
-                                    "prev": null,
-                                    "total": 8
-                                }
-                            }
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "events": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/events.json"
+                                    "member": {
+                                        "avatar_image": null,
+                                        "email": "member1@test.com",
+                                        "id": "651c80e31334699742ce7248",
+                                        "name": "Mr Egg",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
+                                    },
+                                    "post": {
+                                        "id": "618ba1ffbe2896088840a6df",
+                                        "title": "HTML Ipsum",
+                                        "url": "http://127.0.0.1:2369/html-ipsum/",
+                                        "uuid": "557a334b-595f-4910-ab60-31e321e6ef3f"
                                     }
                                 },
-                                "meta": {
-                                    "$ref": "../components/schemas/meta.json"
+                                "type": "click_event"
+                            },
+                            {
+                                "data": {
+                                    "count": {
+                                        "clicks": 1
+                                    },
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "id": "651c80e31334699742ce7313",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "email": "member1@test.com",
+                                        "id": "651c80e31334699742ce7248",
+                                        "name": "Mr Egg",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
+                                    }
+                                },
+                                "type": "aggregated_click_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "email": {
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "delivered_count": 1,
+                                        "email_count": 2,
+                                        "error": null,
+                                        "error_data": null,
+                                        "failed_count": 0,
+                                        "feedback_enabled": false,
+                                        "from": null,
+                                        "html": "<p>Look! I'm an email</p>",
+                                        "id": "651c80e31334699742ce7272",
+                                        "newsletter_id": null,
+                                        "opened_count": 1,
+                                        "plaintext": "Waba-daba-dab-da",
+                                        "post_id": "618ba1ffbe2896088840a6df",
+                                        "recipient_filter": "all",
+                                        "reply_to": null,
+                                        "source": null,
+                                        "source_type": "html",
+                                        "status": "submitted",
+                                        "subject": "You got mailed!",
+                                        "submitted_at": "2023-10-03T21:00:19.000Z",
+                                        "track_clicks": false,
+                                        "track_opens": false,
+                                        "updated_at": "2023-10-03T21:00:19.000Z",
+                                        "uuid": "6b6afda6-4b5e-4893-bff6-f16859e8349a"
+                                    },
+                                    "id": "651c80e31334699742ce7279",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "comped@test.com",
+                                        "email_count": 1,
+                                        "email_disabled": false,
+                                        "email_open_rate": null,
+                                        "email_opened_count": 1,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce724c",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": "Vinz Clortho",
+                                        "note": null,
+                                        "status": "paid",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b344"
+                                    },
+                                    "member_id": "651c80e31334699742ce724c"
+                                },
+                                "type": "email_delivered_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "email": {
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "delivered_count": 1,
+                                        "email_count": 2,
+                                        "error": null,
+                                        "error_data": null,
+                                        "failed_count": 0,
+                                        "feedback_enabled": false,
+                                        "from": null,
+                                        "html": "<p>Look! I'm an email</p>",
+                                        "id": "651c80e31334699742ce7272",
+                                        "newsletter_id": null,
+                                        "opened_count": 1,
+                                        "plaintext": "Waba-daba-dab-da",
+                                        "post_id": "618ba1ffbe2896088840a6df",
+                                        "recipient_filter": "all",
+                                        "reply_to": null,
+                                        "source": null,
+                                        "source_type": "html",
+                                        "status": "submitted",
+                                        "subject": "You got mailed!",
+                                        "submitted_at": "2023-10-03T21:00:19.000Z",
+                                        "track_clicks": false,
+                                        "track_opens": false,
+                                        "updated_at": "2023-10-03T21:00:19.000Z",
+                                        "uuid": "6b6afda6-4b5e-4893-bff6-f16859e8349a"
+                                    },
+                                    "id": "651c80e31334699742ce7279",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "comped@test.com",
+                                        "email_count": 1,
+                                        "email_disabled": false,
+                                        "email_open_rate": null,
+                                        "email_opened_count": 1,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce724c",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": "Vinz Clortho",
+                                        "note": null,
+                                        "status": "paid",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b344"
+                                    },
+                                    "member_id": "651c80e31334699742ce724c"
+                                },
+                                "type": "email_opened_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "email": {
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "delivered_count": 1,
+                                        "email_count": 2,
+                                        "error": null,
+                                        "error_data": null,
+                                        "failed_count": 0,
+                                        "feedback_enabled": false,
+                                        "from": null,
+                                        "html": "<p>Look! I'm an email</p>",
+                                        "id": "651c80e31334699742ce7272",
+                                        "newsletter_id": null,
+                                        "opened_count": 1,
+                                        "plaintext": "Waba-daba-dab-da",
+                                        "post_id": "618ba1ffbe2896088840a6df",
+                                        "recipient_filter": "all",
+                                        "reply_to": null,
+                                        "source": null,
+                                        "source_type": "html",
+                                        "status": "submitted",
+                                        "subject": "You got mailed!",
+                                        "submitted_at": "2023-10-03T21:00:19.000Z",
+                                        "track_clicks": false,
+                                        "track_opens": false,
+                                        "updated_at": "2023-10-03T21:00:19.000Z",
+                                        "uuid": "6b6afda6-4b5e-4893-bff6-f16859e8349a"
+                                    },
+                                    "id": "651c80e31334699742ce7278",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "trialing@test.com",
+                                        "email_count": 1,
+                                        "email_disabled": false,
+                                        "email_open_rate": null,
+                                        "email_opened_count": 0,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce724b",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": "Ray Stantz",
+                                        "note": null,
+                                        "status": "paid",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b343"
+                                    },
+                                    "member_id": "651c80e31334699742ce724b"
+                                },
+                                "type": "email_sent_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "email": {
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "delivered_count": 1,
+                                        "email_count": 2,
+                                        "error": null,
+                                        "error_data": null,
+                                        "failed_count": 0,
+                                        "feedback_enabled": false,
+                                        "from": null,
+                                        "html": "<p>Look! I'm an email</p>",
+                                        "id": "651c80e31334699742ce7272",
+                                        "newsletter_id": null,
+                                        "opened_count": 1,
+                                        "plaintext": "Waba-daba-dab-da",
+                                        "post_id": "618ba1ffbe2896088840a6df",
+                                        "recipient_filter": "all",
+                                        "reply_to": null,
+                                        "source": null,
+                                        "source_type": "html",
+                                        "status": "submitted",
+                                        "subject": "You got mailed!",
+                                        "submitted_at": "2023-10-03T21:00:19.000Z",
+                                        "track_clicks": false,
+                                        "track_opens": false,
+                                        "updated_at": "2023-10-03T21:00:19.000Z",
+                                        "uuid": "6b6afda6-4b5e-4893-bff6-f16859e8349a"
+                                    },
+                                    "id": "651c80e31334699742ce7277",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "paid@test.com",
+                                        "email_count": 1,
+                                        "email_disabled": false,
+                                        "email_open_rate": 80,
+                                        "email_opened_count": 0,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce724a",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": "Egon Spengler",
+                                        "note": null,
+                                        "status": "paid",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b342"
+                                    },
+                                    "member_id": "651c80e31334699742ce724a"
+                                },
+                                "type": "email_sent_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "email": {
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "delivered_count": 1,
+                                        "email_count": 2,
+                                        "error": null,
+                                        "error_data": null,
+                                        "failed_count": 0,
+                                        "feedback_enabled": false,
+                                        "from": null,
+                                        "html": "<p>Look! I'm an email</p>",
+                                        "id": "651c80e31334699742ce7272",
+                                        "newsletter_id": null,
+                                        "opened_count": 1,
+                                        "plaintext": "Waba-daba-dab-da",
+                                        "post_id": "618ba1ffbe2896088840a6df",
+                                        "recipient_filter": "all",
+                                        "reply_to": null,
+                                        "source": null,
+                                        "source_type": "html",
+                                        "status": "submitted",
+                                        "subject": "You got mailed!",
+                                        "submitted_at": "2023-10-03T21:00:19.000Z",
+                                        "track_clicks": false,
+                                        "track_opens": false,
+                                        "updated_at": "2023-10-03T21:00:19.000Z",
+                                        "uuid": "6b6afda6-4b5e-4893-bff6-f16859e8349a"
+                                    },
+                                    "id": "651c80e31334699742ce7276",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "member2@test.com",
+                                        "email_count": 1,
+                                        "email_disabled": false,
+                                        "email_open_rate": 50,
+                                        "email_opened_count": 0,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce7249",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": null,
+                                        "note": null,
+                                        "status": "free",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b341"
+                                    },
+                                    "member_id": "651c80e31334699742ce7249"
+                                },
+                                "type": "email_sent_event"
+                            },
+                            {
+                                "data": {
+                                    "created_at": "2023-10-03T21:00:19.000Z",
+                                    "email": {
+                                        "created_at": "2023-10-03T21:00:19.000Z",
+                                        "delivered_count": 1,
+                                        "email_count": 2,
+                                        "error": null,
+                                        "error_data": null,
+                                        "failed_count": 0,
+                                        "feedback_enabled": false,
+                                        "from": null,
+                                        "html": "<p>Look! I'm an email</p>",
+                                        "id": "651c80e31334699742ce7272",
+                                        "newsletter_id": null,
+                                        "opened_count": 1,
+                                        "plaintext": "Waba-daba-dab-da",
+                                        "post_id": "618ba1ffbe2896088840a6df",
+                                        "recipient_filter": "all",
+                                        "reply_to": null,
+                                        "source": null,
+                                        "source_type": "html",
+                                        "status": "submitted",
+                                        "subject": "You got mailed!",
+                                        "submitted_at": "2023-10-03T21:00:19.000Z",
+                                        "track_clicks": false,
+                                        "track_opens": false,
+                                        "updated_at": "2023-10-03T21:00:19.000Z",
+                                        "uuid": "6b6afda6-4b5e-4893-bff6-f16859e8349a"
+                                    },
+                                    "id": "651c80e31334699742ce7275",
+                                    "member": {
+                                        "avatar_image": null,
+                                        "created_at": "2023-10-03T21:00:24.000Z",
+                                        "email": "member1@test.com",
+                                        "email_count": 1,
+                                        "email_disabled": false,
+                                        "email_open_rate": null,
+                                        "email_opened_count": 0,
+                                        "enable_comment_notifications": true,
+                                        "expertise": null,
+                                        "geolocation": null,
+                                        "id": "651c80e31334699742ce7248",
+                                        "last_commented_at": null,
+                                        "last_seen_at": null,
+                                        "name": "Mr Egg",
+                                        "note": null,
+                                        "status": "free",
+                                        "updated_at": "2023-10-03T21:00:24.000Z",
+                                        "uuid": "f6f91461-d7d8-4a3f-aa5d-8e582c40b340"
+                                    },
+                                    "member_id": "651c80e31334699742ce7248"
+                                },
+                                "type": "email_sent_event"
+                            }
+                        ],
+                        "meta": {
+                            "pagination": {
+                                "limit": "20",
+                                "next": null,
+                                "page": null,
+                                "pages": 1,
+                                "prev": null,
+                                "total": 15
+                            }
+                        }
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "events": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/events.json"
                                 }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Member attribution returns subscription created attributions in activity feed",
-        "tags": [
-            "events"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "events"
+    ]
 }

@@ -1,0 +1,9 @@
+{
+    "description": "save_revision",
+    "in": "query",
+    "name": "save_revision",
+    "schema": {
+        "example": "true",
+        "type": "string"
+    }
+}

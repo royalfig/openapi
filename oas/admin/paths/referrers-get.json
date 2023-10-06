@@ -1,58 +1,53 @@
 {
-    "get": {
-        "description": "",
-        "operationId": "ReferrerSourceHistoryStatsCanFetchAttributionStats",
-        "parameters": {},
-        "responses": {
-            "200": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "meta": {},
-                            "stats": [
-                                {
-                                    "date": "2023-10-03",
-                                    "paid_conversions": 2,
-                                    "signups": 2,
-                                    "source": null
-                                },
-                                {
-                                    "date": "2023-10-03",
-                                    "paid_conversions": 1,
-                                    "signups": 4,
-                                    "source": "Direct"
-                                },
-                                {
-                                    "date": "2023-10-03",
-                                    "paid_conversions": 2,
-                                    "signups": 4,
-                                    "source": "Twitter"
+    "description": "",
+    "parameters": [],
+    "responses": {
+        "200": {
+            "content": {
+                "application/json": {
+                    "example": {
+                        "meta": {},
+                        "stats": [
+                            {
+                                "date": "2023-10-03",
+                                "paid_conversions": 2,
+                                "signups": 2,
+                                "source": null
+                            },
+                            {
+                                "date": "2023-10-03",
+                                "paid_conversions": 1,
+                                "signups": 4,
+                                "source": "Direct"
+                            },
+                            {
+                                "date": "2023-10-03",
+                                "paid_conversions": 2,
+                                "signups": 4,
+                                "source": "Twitter"
+                            }
+                        ]
+                    },
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "referrers": {
+                                "type": "array",
+                                "items": {
+                                    "$ref": "../components/schemas/referrers.json"
                                 }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "referrers": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/referrers.json"
-                                    }
-                                },
-                                "meta": {
-                                    "$ref": "../components/schemas/meta.json"
-                                }
+                            },
+                            "meta": {
+                                "$ref": "../components/schemas/meta.json"
                             }
                         }
                     }
-                },
-                "description": ""
-            }
-        },
-        "summary": "Referrer source history stats can fetch attribution stats",
-        "tags": [
-            "referrers"
-        ]
+                }
+            },
+            "description": ""
+        }
     },
-    "parameters": []
+    "tags": [
+        "referrers"
+    ]
 }

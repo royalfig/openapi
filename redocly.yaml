@@ -1,7 +1,7 @@
 # See https://redocly.com/docs/cli/configuration/ for more information.
 apis:
   sample@v1: 
-    root: ./oas/admin/openapi.json
+    root: ./oas/content/openapi.json
 extends:
   - recommended
 rules:

@@ -40,148 +40,309 @@
     ],
     "paths": {
         "/collections/{id}": {
-            "$ref": "./paths/collections-put-id.json"
+            "delete": {
+                "$ref": "./paths/collections-delete-id.json"
+            },
+            "get": {
+                "$ref": "./paths/collections-get-id.json"
+            },
+            "put": {
+                "$ref": "./paths/collections-put-id.json"
+            }
         },
         "/collections": {
-            "$ref": "./paths/collections-post.json"
+            "get": {
+                "$ref": "./paths/collections-get.json"
+            },
+            "post": {
+                "$ref": "./paths/collections-post.json"
+            }
         },
         "/collections/slug/{slug}": {
-            "$ref": "./paths/collections-get-slug.json"
+            "get": {
+                "$ref": "./paths/collections-get-slug.json"
+            }
         },
         "/posts/{id}": {
-            "$ref": "./paths/posts-get-id.json"
+            "get": {
+                "$ref": "./paths/posts-get-id.json"
+            },
+            "post": {
+                "$ref": "./paths/posts-post-id.json"
+            },
+            "delete": {
+                "$ref": "./paths/posts-delete-id.json"
+            },
+            "put": {
+                "$ref": "./paths/posts-put-id.json"
+            }
         },
         "/emails/{id}": {
-            "$ref": "./paths/emails-put-id.json"
+            "get": {
+                "$ref": "./paths/emails-get-id.json"
+            },
+            "put": {
+                "$ref": "./paths/emails-put-id.json"
+            }
         },
         "/emails": {
-            "$ref": "./paths/emails-get.json"
+            "get": {
+                "$ref": "./paths/emails-get.json"
+            }
         },
         "/explore": {
-            "$ref": "./paths/explore-get.json"
-        },
-        "/integrations": {
-            "$ref": "./paths/integrations-get.json"
+            "get": {
+                "$ref": "./paths/explore-get.json"
+            }
         },
         "/labels/{id}": {
-            "$ref": "./paths/labels-put-id.json"
+            "delete": {
+                "$ref": "./paths/labels-delete-id.json"
+            },
+            "put": {
+                "$ref": "./paths/labels-put-id.json"
+            }
         },
         "/labels": {
-            "$ref": "./paths/labels-post.json"
+            "get": {
+                "$ref": "./paths/labels-get.json"
+            },
+            "post": {
+                "$ref": "./paths/labels-post.json"
+            }
         },
         "/labels/slug/{slug}": {
-            "$ref": "./paths/labels-get-slug.json"
+            "get": {
+                "$ref": "./paths/labels-get-slug.json"
+            }
         },
         "/links": {
-            "$ref": "./paths/links-get.json"
+            "get": {
+                "$ref": "./paths/links-get.json"
+            }
         },
         "/bulk": {
-            "$ref": "./paths/bulk-put.json"
-        },
-        "/members": {
-            "$ref": "./paths/members-post.json"
+            "put": {
+                "$ref": "./paths/bulk-put.json"
+            }
         },
         "/members/{id}": {
-            "$ref": "./paths/members-put-id.json"
+            "delete": {
+                "$ref": "./paths/members-delete-id.json"
+            },
+            "get": {
+                "$ref": "./paths/members-get-id.json"
+            },
+            "post": {
+                "$ref": "./paths/members-post-id.json"
+            },
+            "put": {
+                "$ref": "./paths/members-put-id.json"
+            }
+        },
+        "/members": {
+            "delete": {
+                "$ref": "./paths/members-delete.json"
+            },
+            "get": {
+                "$ref": "./paths/members-get.json"
+            },
+            "post": {
+                "$ref": "./paths/members-post.json"
+            }
         },
         "/events": {
-            "$ref": "./paths/events-get.json"
-        },
-        "/member_does_not_exist@example.com": {
-            "$ref": "./paths/member_does_not_exist@example.com-get.json"
-        },
-        "/stats": {
-            "$ref": "./paths/stats-get.json"
-        },
-        "/count": {
-            "$ref": "./paths/count-get.json"
+            "get": {
+                "$ref": "./paths/events-get.json"
+            }
         },
         "/mentions": {
-            "$ref": "./paths/mentions-get.json"
+            "get": {
+                "$ref": "./paths/mentions-get.json"
+            }
         },
         "/newsletters": {
-            "$ref": "./paths/newsletters-post.json"
+            "get": {
+                "$ref": "./paths/newsletters-get.json"
+            },
+            "post": {
+                "$ref": "./paths/newsletters-post.json"
+            }
         },
         "/newsletters/{id}": {
-            "$ref": "./paths/newsletters-put-id.json"
+            "get": {
+                "$ref": "./paths/newsletters-get-id.json"
+            },
+            "put": {
+                "$ref": "./paths/newsletters-put-id.json"
+            }
         },
-        "/verifications": {
-            "$ref": "./paths/verifications-put.json"
+        "/notifications/{id}": {
+            "delete": {
+                "$ref": "./paths/notifications-delete-id.json"
+            }
         },
         "/notifications": {
-            "$ref": "./paths/notifications-post.json"
+            "get": {
+                "$ref": "./paths/notifications-get.json"
+            },
+            "post": {
+                "$ref": "./paths/notifications-post.json"
+            }
         },
         "/offers": {
-            "$ref": "./paths/offers-post.json"
+            "get": {
+                "$ref": "./paths/offers-get.json"
+            },
+            "post": {
+                "$ref": "./paths/offers-post.json"
+            }
         },
         "/offers/{id}": {
-            "$ref": "./paths/offers-put-id.json"
-        },
-        "/pages": {
-            "$ref": "./paths/pages-post.json"
+            "get": {
+                "$ref": "./paths/offers-get-id.json"
+            },
+            "put": {
+                "$ref": "./paths/offers-put-id.json"
+            }
         },
         "/pages/{id}": {
-            "$ref": "./paths/pages-put-id.json"
+            "delete": {
+                "$ref": "./paths/pages-delete-id.json"
+            },
+            "get": {
+                "$ref": "./paths/pages-get-id.json"
+            },
+            "post": {
+                "$ref": "./paths/pages-post-id.json"
+            },
+            "put": {
+                "$ref": "./paths/pages-put-id.json"
+            }
+        },
+        "/pages": {
+            "delete": {
+                "$ref": "./paths/pages-delete.json"
+            },
+            "get": {
+                "$ref": "./paths/pages-get.json"
+            },
+            "post": {
+                "$ref": "./paths/pages-post.json"
+            }
         },
         "/posts": {
-            "$ref": "./paths/posts-post.json"
-        },
-        "/recommendations": {
-            "$ref": "./paths/recommendations-post.json"
+            "delete": {
+                "$ref": "./paths/posts-delete.json"
+            },
+            "get": {
+                "$ref": "./paths/posts-get.json"
+            },
+            "post": {
+                "$ref": "./paths/posts-post.json"
+            }
         },
         "/recommendations/{id}": {
-            "$ref": "./paths/recommendations-put-id.json"
+            "delete": {
+                "$ref": "./paths/recommendations-delete-id.json"
+            },
+            "get": {
+                "$ref": "./paths/recommendations-get-id.json"
+            },
+            "put": {
+                "$ref": "./paths/recommendations-put-id.json"
+            }
         },
-        "/i": {
-            "$ref": "./paths/i-get.json"
+        "/recommendations": {
+            "get": {
+                "$ref": "./paths/recommendations-get.json"
+            },
+            "post": {
+                "$ref": "./paths/recommendations-post.json"
+            }
         },
-        "/removed_endpoint": {
-            "$ref": "./paths/removed_endpoint-get.json"
-        },
-        "/session": {
-            "$ref": "./paths/session-post.json"
-        },
+       
         "/settings": {
-            "$ref": "./paths/settings-put.json"
+            "get": {
+                "$ref": "./paths/settings-get.json"
+            },
+            "put": {
+                "$ref": "./paths/settings-put.json"
+            }
+        },
+        "/connect": {
+            "delete": {
+                "$ref": "./paths/connect-delete.json"
+            }
         },
         "/site": {
-            "$ref": "./paths/site-get.json"
+            "get": {
+                "$ref": "./paths/site-get.json"
+            },
+            "options": {
+                "$ref": "./paths/site-options.json"
+            }
         },
         "/snippets/{id}": {
-            "$ref": "./paths/snippets-put-id.json"
+            "delete": {
+                "$ref": "./paths/snippets-delete-id.json"
+            },
+            "get": {
+                "$ref": "./paths/snippets-get-id.json"
+            },
+            "put": {
+                "$ref": "./paths/snippets-put-id.json"
+            }
         },
         "/snippets": {
-            "$ref": "./paths/snippets-post.json"
-        },
-        "/member_count": {
-            "$ref": "./paths/member_count-get.json"
-        },
-        "/mrr": {
-            "$ref": "./paths/mrr-get.json"
-        },
-        "/referrers": {
-            "$ref": "./paths/referrers-get.json"
-        },
-        "/subscriptions": {
-            "$ref": "./paths/subscriptions-get.json"
-        },
-        "/tags": {
-            "$ref": "./paths/tags-post.json"
+            "get": {
+                "$ref": "./paths/snippets-get.json"
+            },
+            "post": {
+                "$ref": "./paths/snippets-post.json"
+            }
         },
         "/tags/{id}": {
-            "$ref": "./paths/tags-put-id.json"
+            "delete": {
+                "$ref": "./paths/tags-delete-id.json"
+            },
+            "put": {
+                "$ref": "./paths/tags-put-id.json"
+            }
+        },
+        "/tags": {
+            "post": {
+                "$ref": "./paths/tags-post.json"
+            }
         },
         "/tiers": {
-            "$ref": "./paths/tiers-post.json"
+            "get": {
+                "$ref": "./paths/tiers-get.json"
+            },
+            "post": {
+                "$ref": "./paths/tiers-post.json"
+            }
         },
         "/tiers/{id}": {
-            "$ref": "./paths/tiers-put-id.json"
+            "get": {
+                "$ref": "./paths/tiers-get-id.json"
+            },
+            "put": {
+                "$ref": "./paths/tiers-put-id.json"
+            }
         },
         "/webhooks/{id}": {
-            "$ref": "./paths/webhooks-put-id.json"
+            "delete": {
+                "$ref": "./paths/webhooks-delete-id.json"
+            },
+            "put": {
+                "$ref": "./paths/webhooks-put-id.json"
+            }
         },
         "/webhooks": {
-            "$ref": "./paths/webhooks-post.json"
+            "post": {
+                "$ref": "./paths/webhooks-post.json"
+            }
         }
     },
     "components": {

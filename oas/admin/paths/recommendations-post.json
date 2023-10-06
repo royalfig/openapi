@@ -1,91 +1,129 @@
 {
+    "description": "",
     "parameters": [],
-    "post": {
-        "description": "",
-        "operationId": "ApiAddCannotAddTheSameRecommendationUrlTwiceExactUrlMatch",
-        "parameters": {},
-        "requestBody": {
+    "requestBody": {
+        "content": {
+            "application/json": {
+                "example": {
+                    "recommendations": [
+                        {
+                            "excerpt": "Dogs are cute",
+                            "favicon": "https://dogpictures.com/favicon.ico",
+                            "featured_image": "https://dogpictures.com/dog.jpg",
+                            "one_click_subscribe": true,
+                            "reason": "Because dogs are cute",
+                            "title": "Dog Pictures",
+                            "url": "https://dogpictures.com"
+                        }
+                    ]
+                },
+                "schema": {
+                    "additionalProperties": false,
+                    "properties": {
+                        "recommendations": {
+                            "items": {
+                                "additionalProperties": false,
+                                "properties": {
+                                    "excerpt": {
+                                        "type": "string"
+                                    },
+                                    "favicon": {
+                                        "format": "uri",
+                                        "type": "string",
+                                        "x-qt-uri-extensions": [
+                                            ".ico"
+                                        ],
+                                        "x-qt-uri-protocols": [
+                                            "https"
+                                        ]
+                                    },
+                                    "featured_image": {
+                                        "format": "uri",
+                                        "type": "string",
+                                        "x-qt-uri-extensions": [
+                                            ".jpg"
+                                        ],
+                                        "x-qt-uri-protocols": [
+                                            "https"
+                                        ]
+                                    },
+                                    "one_click_subscribe": {
+                                        "type": "boolean"
+                                    },
+                                    "reason": {
+                                        "type": "string"
+                                    },
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "format": "uri",
+                                        "type": "string",
+                                        "x-qt-uri-protocols": [
+                                            "https"
+                                        ]
+                                    }
+                                },
+                                "required": [],
+                                "title": "Recommendation",
+                                "type": "object"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "required": [],
+                    "title": "GhostAPIAdminRecommendationsPostRequest",
+                    "type": "object"
+                }
+            }
+        },
+        "required": true
+    },
+    "responses": {
+        "201": {
             "content": {
                 "application/json": {
                     "example": {
                         "recommendations": [
                             {
-                                "title": "Recommendation 3 with the exact same URL",
-                                "url": "https://recommendation3.com"
+                                "created_at": "2023-10-03T21:00:54.000Z",
+                                "excerpt": "Dogs are cute",
+                                "favicon": "https://dogpictures.com/favicon.ico",
+                                "featured_image": "https://dogpictures.com/dog.jpg",
+                                "id": "651c81061334699742ce9b88",
+                                "one_click_subscribe": true,
+                                "reason": "Because dogs are cute",
+                                "title": "Dog Pictures",
+                                "updated_at": null,
+                                "url": "https://dogpictures.com/"
                             }
                         ]
                     },
                     "schema": {
-                        "additionalProperties": false,
+                        "type": "object",
                         "properties": {
                             "recommendations": {
+                                "type": "array",
                                 "items": {
-                                    "additionalProperties": false,
-                                    "properties": {
-                                        "title": {
-                                            "type": "string"
-                                        },
-                                        "url": {
-                                            "format": "uri",
-                                            "type": "string",
-                                            "x-qt-uri-protocols": [
-                                                "https"
-                                            ]
-                                        }
-                                    },
-                                    "required": [],
-                                    "title": "Recommendation",
-                                    "type": "object"
-                                },
-                                "type": "array"
-                            }
-                        },
-                        "required": [],
-                        "title": "GhostAPIAdminRecommendationsPostRequest",
-                        "type": "object"
-                    }
-                }
-            },
-            "required": true
-        },
-        "responses": {
-            "422": {
-                "content": {
-                    "application/json": {
-                        "example": {
-                            "errors": [
-                                {
-                                    "code": null,
-                                    "context": "A recommendation with this URL already exists.",
-                                    "details": null,
-                                    "ghostErrorCode": null,
-                                    "help": null,
-                                    "id": "f15e5420-622f-11ee-b83d-01dc9a879334",
-                                    "message": "Validation error, cannot save recommendation.",
-                                    "property": null,
-                                    "type": "ValidationError"
-                                }
-                            ]
-                        },
-                        "schema": {
-                            "type": "object",
-                            "properties": {
-                                "recommendations": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "../components/schemas/recommendations.json"
-                                    }
+                                    "$ref": "../components/schemas/recommendations.json"
                                 }
                             }
                         }
                     }
-                },
-                "description": ""
+                }
+            },
+            "description": "",
+            "headers": {
+                "x-cache-invalidate": {
+                    "description": "Custom header x-cache-invalidate",
+                    "schema": {
+                        "type": "string"
+                    }
+                }
             }
-        },
-        "summary": "Api add cannot add the same recommendation url twice  exact url match ",
-        "tags": [
-            "recommendations"
-        ]
-    }
+        }
+    },
+    "tags": [
+        "recommendations"
+    ]
 }

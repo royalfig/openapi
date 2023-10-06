@@ -1,0 +1,9 @@
+{
+    "description": "cancel",
+    "in": "query",
+    "name": "cancel",
+    "schema": {
+        "example": "true",
+        "type": "string"
+    }
+}
