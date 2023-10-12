@@ -5,13 +5,22 @@
             "type": "boolean"
         },
         "canonical_url": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "codeinjection_foot": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "codeinjection_head": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "comment_id": {
             "type": "string"
@@ -24,46 +33,82 @@
             "type": "string"
         },
         "custom_excerpt": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "custom_template": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "excerpt": {
             "type": "string"
         },
         "feature_image": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "feature_image_alt": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "feature_image_caption": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "featured": {
             "type": "boolean"
         },
         "frontmatter": {
+            "type": [
+                "string",
+                "null"
+            ]
+        },
+        "html": {
             "type": "string"
         },
         "id": {
             "type": "string"
         },
         "meta_description": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "meta_title": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "og_description": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "og_image": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "og_title": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "published_at": {
             "format": "date-time",
@@ -78,17 +123,32 @@
         "slug": {
             "type": "string"
         },
+        "tiers": {
+            "items": {
+                "$ref": "./tiers.json"
+            },
+            "type": "array"
+        },
         "title": {
             "type": "string"
         },
         "twitter_description": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "twitter_image": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "twitter_title": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "updated_at": {
             "format": "date-time",

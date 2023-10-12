@@ -6,13 +6,22 @@
             "type": "string"
         },
         "excerpt": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "favicon": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "featured_image": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "id": {
             "type": "string"

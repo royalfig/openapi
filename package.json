@@ -10,7 +10,8 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "bundle": "redocly bundle -o dist/bundle.yaml",
+    "bundle:content": "redocly bundle content -o dist/content.json",
+    "bundle:admin": "redocly bundle admin -o dist/bundle.yaml",
     "lint:oas": "redocly lint",
     "convert": "node lib/.",
     "types": "npx openapi-typescript ./dist/bundle.yaml -o ./types/schema.d.ts"

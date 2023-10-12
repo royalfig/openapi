@@ -9,7 +9,10 @@
             "type": "string"
         },
         "feature_image": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "filter": {
             "type": "string"

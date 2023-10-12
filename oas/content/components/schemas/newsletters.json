@@ -6,7 +6,10 @@
             "type": "string"
         },
         "description": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "id": {
             "type": "string"
@@ -15,7 +18,10 @@
             "type": "string"
         },
         "sender_email": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "slug": {
             "type": "string"

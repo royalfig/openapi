@@ -8,10 +8,16 @@
             "type": "boolean"
         },
         "codeinjection_foot": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "codeinjection_head": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "comments_enabled": {
             "type": "string"
@@ -33,10 +39,16 @@
             "type": "string"
         },
         "firstpromoter_account": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "icon": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "lang": {
             "type": "string"
@@ -45,7 +57,10 @@
             "type": "string"
         },
         "logo": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "members_enabled": {
             "type": "boolean"
@@ -57,10 +72,16 @@
             "type": "string"
         },
         "meta_description": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "meta_title": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "navigation": {
             "items": {
@@ -80,13 +101,22 @@
             "type": "array"
         },
         "og_description": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "og_image": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "og_title": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "outbound_link_tagging": {
             "type": "boolean"
@@ -98,7 +128,10 @@
             "type": "boolean"
         },
         "portal_button_icon": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "portal_button_signup_text": {
             "type": "string"
@@ -119,7 +152,10 @@
             "type": "boolean"
         },
         "portal_signup_terms_html": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "recommendations_enabled": {
             "type": "boolean"
@@ -151,13 +187,22 @@
             "type": "string"
         },
         "twitter_description": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "twitter_image": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "twitter_title": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "url": {
             "format": "uri",

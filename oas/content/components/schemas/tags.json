@@ -1,0 +1,69 @@
+{
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "feature_image": {
+            "type": "string",
+            "format": "uri"
+        },
+        "visibility": {
+            "type": "string"
+        },
+        "meta_title": {
+            "type": "string"
+        },
+        "meta_description": {
+            "type": "string"
+        },
+        "og_image": {
+            "type": "string",
+            "format": "uri"
+        },
+        "og_title": {
+            "type": "string"
+        },
+        "og_description": {
+            "type": "string"
+        },
+        "twitter_image": {
+            "type": "string",
+            "format": "uri"
+        },
+        "twitter_title": {
+            "type": "string"
+        },
+        "twitter_description": {
+            "type": "string"
+        },
+        "codeinjection_head": {
+            "type": "string"
+        },
+        "codeinjection_foot": {
+            "type": "string"
+        },
+        "canonical_url": {
+            "type": "string"
+        },
+        "accent_color": {
+            "type": "string"
+        },
+        "url": {
+            "type": "string",
+            "format": "uri"
+        }
+    },
+    "required": [],
+    "title": "Tag",
+    "type": "object"
+}

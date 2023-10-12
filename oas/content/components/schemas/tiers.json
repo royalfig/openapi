@@ -16,7 +16,10 @@
             "type": "string"
         },
         "description": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "id": {
             "type": "string"
@@ -44,7 +47,10 @@
             "type": "string"
         },
         "welcome_page_url": {
-            "type": "string"
+            "type": [
+                "string",
+                "null"
+            ]
         },
         "yearly_price": {
             "type": "integer"
